@@ -54,7 +54,7 @@ button {
 }
 button:hover {
   border-color: #134e4a;
-  color: #ffffff;
+  /* color: #ffffff; */
 
 }
 /* button:focus,
