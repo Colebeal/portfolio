@@ -3,9 +3,13 @@ import ImageryNav from "./ImageryNav"
 import Menu from "./Menu/Menu"
 import { useState } from "react"
 
-export default function Imagery({ returnHomeHandler}) { 
-  const [slideIndex, setSlideIndex] = useState(1)
+export default function Imagery() { 
+  const [slideIndex, setSlideIndex] = useState(0)
+  const [folderDisplayed, setFolderDisplayed] = useState(0)
   const [menuStatus, setMenuStatus] = useState(false)
+  const [currentFolder, setCurrentFolder] = useState(0)
+
+  
 
   const menuHandler = () => {
     if (menuStatus) {
@@ -16,14 +20,14 @@ export default function Imagery({ returnHomeHandler}) {
     }
   }
 
-  return(
+  return (
     <>
-      {menuStatus && <Menu returnHomeHandler={returnHomeHandler} menuHandler={menuHandler}/>}
+      <Menu menuStatus={menuStatus} setSlideIndex={setSlideIndex} currentFolder={currentFolder} setCurrentFolder={setCurrentFolder} menuHandler={menuHandler}/>
       <main className="flex justify-center w-[1500px] h-[100%] animation-ease-in">
-        <Slider slideIndex={slideIndex} setSlideIndex={setSlideIndex} />
+        <Slider slideIndex={slideIndex} setSlideIndex={setSlideIndex} currentFolder={currentFolder} setCurrentFolder={setCurrentFolder} />
         {/* <Gallery /> */}
       </main>
-      <ImageryNav returnHomeHandler={returnHomeHandler} slideIndex={slideIndex} menuHandler={menuHandler}/>
+      <ImageryNav slideIndex={slideIndex} currentFolder={currentFolder} menuHandler={menuHandler}/>
     </>
   )
 }

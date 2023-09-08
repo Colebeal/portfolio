@@ -1,4 +1,6 @@
-export default function MenuContents({ menuContentHandler }) {
+export default function MenuContents({ menuHandler, menuContentHandler, folderDisplayed, setFolderDisplayed, setSlideIndex }) {
+
+  console.log('MenuContents:', setFolderDisplayed)
 
   return(
     <>

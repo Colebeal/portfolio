@@ -42,7 +42,7 @@ function App() {
   } else if (!path) {
     return (
       <>
-        <Imagery returnHomeHandler={returnHomeHandler} />
+        <Imagery />
       </>
     )
   }
