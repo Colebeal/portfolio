@@ -1,5 +1,5 @@
 import {observations, people, structure} from "../../assets/sliderData"
-import { useState } from "react"
+
 
 export default function Slider( { slideIndex, setSlideIndex, currentFolder, setCurrentFolder }) {
   const currentImage = slideIndex;
@@ -35,14 +35,13 @@ export default function Slider( { slideIndex, setSlideIndex, currentFolder, setC
     setSlideIndex(slideIndex + 1)
   }
 
-console.log('currentFolder', currentFolder)
   return (
-    <section id="slider">
-      <div className="absolute top-0 left-0 h-screen w-screen grid grid-cols-2 justify-center">
-        <div onClick={prevSlide} id="previous" className="w-auto h-full z-10"></div>
-        <div onClick={nextSlide} id="next" className="w-auto h-full z-10"></div>
+    <section id="slider" >
+      <div className="absolute top-0 left-0 w-full h-full grid grid-cols-2">
+        <div onClick={prevSlide} id="previous" className="z-10"></div>
+        <div onClick={nextSlide} id="next" className="z-10"></div>
       </div>
-      <div id="slider-container" className="flex justify-center items-center ">
+      <div id="slider-container">
         <div className="flex justify-center items-center w-[60%] h-[50%] opacity-100 animate-fade-in">
         {/* <img id={observations[slideIndex].id} key={observations[slideIndex].id} className={observations[slideIndex].className} src={observations[slideIndex].src}/> */}
         {currentFolder === 0 &&
@@ -77,54 +76,3 @@ console.log('currentFolder', currentFolder)
     </section>
   )
 }
-
-
-  // const showSlide = () => {
-  //   let folder = Object.keys(imageData)[folderDisplayed]
-  //   let source = imageData[folder][slideIndex]
-
-  //   if(slideIndex === 0){
-  //     return (
-  //       <img loading='eager' className="max-w-[1000px] max-h-[800px] object-contain will-change-contents" src={`/images/${folder}/${source}`}/>
-  //     ) 
-  //   } return (
-  //       <img className="max-w-[1000px] max-h-[800px] object-contain" src={`/images/${folder}/${source}`}/>
-  //     )
-  // }
-
-  // const renderObservations = () => {
-  //   observations.map(image => {
-  //     return(<img key={image.id} loading='eager' className={image.className} src={image.src}/>)
-  //   })
-  // }
-
-  
-  // const showSlide = (array) => {
-  //   let image = array[slideIndex]
-
-
-
-  //   if(slideIndex === 0){
-  //     return (
-  //       <img loading='eager' className="max-w-[1000px] max-h-[800px] object-contain will-change-contents" src={image.src}/>
-  //     ) 
-  //   } return (
-  //       <img className="max-w-[1000px] max-h-[800px] object-contain" src={image.src}/>
-  //     )
-  // }
-
-
-
-  // const showSlide = () => {
-  //   let folder = Object.keys(imageData)[folderDisplayed]
-  //   let source = imageData[folder][slideIndex]
-
-  //   if(slideIndex === 0){
-  //     return (
-  //       <img loading='eager' className="max-w-[1000px] max-h-[800px] object-contain will-change-contents" src={`/images/${folder}/${source}`}/>
-  //     ) 
-  //   } return (
-  //       <img className="max-w-[1000px] max-h-[800px] object-contain" src={`/images/${folder}/${source}`}/>
-  //     )
-  // }
-  
