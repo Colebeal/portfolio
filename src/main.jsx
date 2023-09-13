@@ -6,7 +6,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import App from './routes/App.jsx'
 import Imagery from './routes/Imagery'
 import RootLayout from './routes/RootLayout'
-import Dev from './components/Dev'
+import Dev from './routes/Dev'
 
 const router = createBrowserRouter([
   {path: '/', element: <RootLayout />, children: [

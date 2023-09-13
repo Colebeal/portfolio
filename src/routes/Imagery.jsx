@@ -15,7 +15,7 @@ export default function Imagery({ theme }) {
   const [slideIndex, setSlideIndex] = useState(0)
   const [menuStatus, setMenuStatus] = useState(false)
   const [currentFolder, setCurrentFolder] = useState(0)
-  const [isGallery, setIsGallery] = useState(false)
+  const [isGallery, setIsGallery] = useState(true)
 
   const galleryHandler = () => {
     if (isGallery) {

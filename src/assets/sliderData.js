@@ -333,7 +333,7 @@ const people = [
 	},
 
 	{
-		id: 3,
+		id: 2,
 		src: 'images/people/Portfolio-071.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -344,7 +344,7 @@ const people = [
 	},
 
 	{
-		id: 4,
+		id: 3,
 		src: 'images/people/Portfolio-60.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -355,7 +355,7 @@ const people = [
 	},
 
 	{
-		id: 5,
+		id: 4,
 		src: 'images/people/Downtown_John Ibsen-12.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -366,7 +366,7 @@ const people = [
 	},
 
 	{
-		id: 6,
+		id: 5,
 		src: 'images/people/Portfolio-22.jpg ',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -377,7 +377,7 @@ const people = [
 	},
 
 	{
-		id: 7,
+		id: 6,
 		src: 'images/people/Portfolio-116.jpg ',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -388,7 +388,7 @@ const people = [
 	},
 
 	{
-		id: 8,
+		id: 7,
 		src: 'images/people/Portfolio-3.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -399,7 +399,7 @@ const people = [
 	},
 
 	{
-		id: 9,
+		id: 8,
 		src: 'images/people/Portfolio-089.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -410,7 +410,7 @@ const people = [
 	},
 
 	{
-		id: 10,
+		id: 9,
 		src: 'images/people/Portfolio-118.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -421,7 +421,7 @@ const people = [
 	},
 
 	{
-		id: 11,
+		id: 10,
 		src: 'images/people/Portfolio-117.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -432,7 +432,7 @@ const people = [
 	},
 
 	{
-		id: 12,
+		id: 11,
 		src: 'images/people/Portfolio-34.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -443,7 +443,7 @@ const people = [
 	},
 
 	{
-		id: 13,
+		id: 12,
 		src: 'images/people/Portfolio-130.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -454,7 +454,7 @@ const people = [
 	},
 
 	{
-		id: 14,
+		id: 13,
 		src: 'images/people/Portfolio-108.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -465,7 +465,7 @@ const people = [
 	},
 
 	{
-		id: 15,
+		id: 14,
 		src: 'images/people/Portfolio-121.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -476,7 +476,7 @@ const people = [
 	},
 
 	{
-		id: 16,
+		id: 15,
 		src: 'images/people/Portfolio-36.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -487,7 +487,7 @@ const people = [
 	},
 
 	{
-		id: 17,
+		id: 16,
 		src: 'images/people/Portfolio-078.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -498,7 +498,7 @@ const people = [
 	},
 
 	{
-		id: 18,
+		id: 17,
 		src: 'images/people/Portfolio-40.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -509,7 +509,7 @@ const people = [
 	},
 
 	{
-		id: 19,
+		id: 18,
 		src: 'images/people/Portfolio-49.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -520,7 +520,7 @@ const people = [
 	},
 
 	{
-		id: 20,
+		id: 19,
 		src: 'images/people/Portfolio-080.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -531,7 +531,7 @@ const people = [
 	},
 
 	{
-		id: 21,
+		id: 20,
 		src: 'images/people/Portfolio-115.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -542,7 +542,7 @@ const people = [
 	},
 
 	{
-		id: 22,
+		id: 21,
 		src: 'images/people/Portfolio-43.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -553,7 +553,7 @@ const people = [
 	},
 
 	{
-		id: 23,
+		id: 22,
 		src: 'images/people/Portfolio-51.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -564,7 +564,7 @@ const people = [
 	},
 
 	{
-		id: 24,
+		id: 23,
 		src: 'images/people/Portfolio-081.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -575,7 +575,7 @@ const people = [
 	},
 
 	{
-		id: 25,
+		id: 24,
 		src: 'images/people/Portfolio-52.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -586,7 +586,7 @@ const people = [
 	},
 
 	{
-		id: 26,
+		id: 25,
 		src: 'images/people/Portfolio-127.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -597,7 +597,7 @@ const people = [
 	},
 
 	{
-		id: 27,
+		id: 26,
 		src: 'images/people/Portfolio-084.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -608,7 +608,7 @@ const people = [
 	},
 
 	{
-		id: 28,
+		id: 27,
 		src: 'images/people/MEX_RESIZE_9853-17.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -619,7 +619,7 @@ const people = [
 	},
 
 	{
-		id: 29,
+		id: 28,
 		src: 'images/people/Portfolio-44.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -630,7 +630,7 @@ const people = [
 	},
 
 	{
-		id: 30,
+		id: 29,
 		src: 'images/people/Portfolio-53.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -641,7 +641,7 @@ const people = [
 	},
 
 	{
-		id: 31,
+		id: 30,
 		src: 'images/people/Portfolio-110.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -652,7 +652,7 @@ const people = [
 	},
 
 	{
-		id: 32,
+		id: 31,
 		src: 'images/people/Portfolio-56.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -663,7 +663,7 @@ const people = [
 	},
 
 	{
-		id: 33,
+		id: 32,
 		src: 'images/people/Portfolio-112.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -674,7 +674,7 @@ const people = [
 	},
 
 	{
-		id: 34,
+		id: 33,
 		src: 'images/people/Portfolio-58.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -685,7 +685,7 @@ const people = [
 	},
 
 	{
-		id: 35,
+		id: 34,
 		src: 'images/people/Portfolio-62.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -696,7 +696,7 @@ const people = [
 	},
 
 	{
-		id: 36,
+		id: 35,
 		src: 'images/people/Portfolio-63.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -707,7 +707,7 @@ const people = [
 	},
 
 	{
-		id: 37,
+		id: 36,
 		src: 'images/people/Portfolio-129.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -718,7 +718,7 @@ const people = [
 	},
 
 	{
-		id: 38,
+		id: 37,
 		src: 'images/people/Portfolio-107.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
@@ -729,7 +729,7 @@ const people = [
 	},
 
 	{
-		id: 39,
+		id: 38,
 		src: 'images/people/Top_Wedding_Film-109.jpg',
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',

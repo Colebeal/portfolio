@@ -1,6 +1,6 @@
 import {AiFillGithub, AiFillLinkedin, AiFillInstagram } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
-import ThemeToggle from './ThemeToggle'
+import ThemeToggle from '../components/ThemeToggle'
 
 export default function Dev({ returnHomeHandler }) { 
 
