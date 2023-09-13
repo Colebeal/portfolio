@@ -1,5 +1,7 @@
-import {observations, people, structure} from "../../assets/sliderData"
+import { Link } from "react-router-dom"
 import {BsLayoutWtf} from 'react-icons/bs'
+
+import {observations, people, structure} from "../../assets/sliderData"
 
 export default function ImageryNav({menuStatus, slideIndex, menuHandler, currentFolder, galleryHandler}) {
   const folderLength = [31, 39, 36]
@@ -12,9 +14,9 @@ export default function ImageryNav({menuStatus, slideIndex, menuHandler, current
   return (
     <header className={!menuStatus ? navStyles.show : navStyles.hide}>
       <div className="z-20">
-        <h2 className="text-center">{slideIndex + 1} of {folderLength[currentFolder]}</h2> 
-        <button onClick={menuHandler} className="bg-transparent rounded-none mt-2 ">menu</button>
-        <button onClick={galleryHandler} className="bg-transparent rounded-none mt-2">gallery</button>
+        <h2 className="mb-2">{slideIndex + 1} of {folderLength[currentFolder]}</h2> 
+        <Link onClick={menuHandler} className="m-5">menu</Link>
+        <Link onClick={galleryHandler} className="m-5">gallery</Link>
       </div>
     </header>
   )

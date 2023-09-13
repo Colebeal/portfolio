@@ -19,9 +19,13 @@
   transition: color 250ms, background-color 0.25s ease-in-out;
 }
 
-.dark{
+html {
+  background-color: #fff7ed;
+}
+
+.dark {
+  color: #ffffff;
   background-color: #042f2e;
-  color: #fff;
 }
 
 body {
@@ -49,30 +53,31 @@ button {
   cursor: pointer;
   transition: border-color 0.25s, background-color 0.25s ease-in-out
 }
-button:hover {
+button:hover{
   border-color: #134e4a;
   /* color: #ffffff; */
-
 }
+
+
 /* button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 } */
 
-@media (prefers-color-scheme: dark) {
-  :root {
+/* @media (prefers-color-scheme: dark) { */
+  /* :root {
     color: #ffffff;
     background-color: #042f2e;
-  }
+  } */
   /* a:hover {
     color: #747bff;
   } */
-  button {
+  /* button {
     color: #ffffff;    
     transition: border-color 0.25s;   
   }
 
   button:hover {
     border-color: #134e4a;
-  }
-}
+  } */
+/* } */
