@@ -43,32 +43,19 @@ export default function Slider( { slideIndex, setSlideIndex, currentFolder, setC
       </div>
       <div id="slider-container">
         <div className="flex justify-center items-center w-[60%] h-[50%] opacity-100 animate-fade-in">
-        {/* <img id={observations[slideIndex].id} key={observations[slideIndex].id} className={observations[slideIndex].className} src={observations[slideIndex].src}/> */}
         {currentFolder === 0 &&
           observations.map((image,index) => {
-            if (index === currentImage) {
-              return <img id={image.id} key={index} loading={index === 0 ? 'eager' : 'lazy'} className={currentImage === index ? image.className : image.hidden} src={image.src}/>
-            } else {
-              return <img id={image.id} key={image.id} loading={"lazy"} className={image.hidden} src={image.src}/>
-            }
+            return <img id={image.id} key={index} className={currentImage === index ? image.className : image.hidden} src={image.src}/>
           })
         }
         {currentFolder === 1 &&
           people.map((image,index) => {
-            if (index === currentImage) {
-              return <img id={image.id} key={index} loading={index === 0 ? 'eager' : 'lazy'} className={currentImage === index ? image.className : image.hidden} src={image.src}/>
-            } else {
-              return <img id={image.id} key={image.id} loading={"lazy"} className={image.hidden} src={image.src}/>
-            }
+            return <img id={image.id} key={index} className={currentImage === index ? image.className : image.hidden} src={image.src}/>
           })
         }
         {currentFolder === 2 &&
           structure.map((image,index) => {
-            if (index === currentImage) {
-              return <img id={image.id} key={index} loading={image.loading} className={currentImage === index ? image.className : image.hidden} src={image.src}/>
-            } else {
-              return <img id={image.id} key={image.id} loading={"lazy"} className={image.hidden} src={image.src}/>
-            }
+            return <img id={image.id} key={index} className={currentImage === index ? image.className : image.hidden} src={image.src}/>
           })
         }
         </div>
