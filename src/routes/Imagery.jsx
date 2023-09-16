@@ -35,12 +35,18 @@ export default function Imagery({ theme }) {
   }
 
   const mobileToggles = {
-    slider: 'z-20 flex md:flex-col w-fit h-fit p-2 rounded-md gap-4 bg-orange-100 dark:bg-teal-900 absolute top-10 right-5 shadow-lg',
+    slider: 'z-20 flex md:flex-col w-fit h-fit p-2 rounded-md gap-4 bg-orange-100 dark:bg-teal-900 fixed top-10 right-5 shadow-lg',
     gallery:'z-20 flex md:flex-col w-fit h-fit p-2 rounded-md gap-4 bg-orange-100 dark:bg-teal-900 fixed bottom-10 md:top-10 right-5 md:right-5 shadow-lg',
   }
 
   return (
-    <>
+    <section id="wrapper">
+      {isGallery && <Gallery slideIndex={slideIndex} setSlideIndex={setSlideIndex} currentFolder={currentFolder} setCurrentFolder={setCurrentFolder} setIsGallery={setIsGallery}/>}
+      {!isGallery && <main className="xl:w-[1250px] 2xl:w-[1500px] animation-ease-in">
+        <Slider slideIndex={slideIndex} setSlideIndex={setSlideIndex} currentFolder={currentFolder} setCurrentFolder={setCurrentFolder} />
+      </main>}
+      {!isGallery && <ImageryNav menuStatus={menuStatus} slideIndex={slideIndex} currentFolder={currentFolder} menuHandler={menuHandler} galleryHandler={galleryHandler}/>}    
+      <Menu menuStatus={menuStatus} setSlideIndex={setSlideIndex} currentFolder={currentFolder} setCurrentFolder={setCurrentFolder} menuHandler={menuHandler}/>
       <div className={isGallery ? mobileToggles.gallery : mobileToggles.slider}>
         <ThemeToggle />
         <Link to="/">
@@ -48,13 +54,7 @@ export default function Imagery({ theme }) {
         </Link>
         {isGallery && <HiMenu onClick={menuHandler} className="z-50 text-2xl cursor-pointer text-teal-900 dark:text-orange-50 animate-fade-in"/>}
       </div>
-      <Menu menuStatus={menuStatus} setSlideIndex={setSlideIndex} currentFolder={currentFolder} setCurrentFolder={setCurrentFolder} menuHandler={menuHandler}/>
-      {isGallery && <Gallery slideIndex={slideIndex} setSlideIndex={setSlideIndex} currentFolder={currentFolder} setCurrentFolder={setCurrentFolder} setIsGallery={setIsGallery}/>}
-      {!isGallery && <main className="flex justify-center xl:w-[1250px] 2xl:w-[1500px] h-full animation-ease-in">
-        <Slider slideIndex={slideIndex} setSlideIndex={setSlideIndex} currentFolder={currentFolder} setCurrentFolder={setCurrentFolder} />
-      </main>}
-      {!isGallery && <ImageryNav menuStatus={menuStatus} slideIndex={slideIndex} currentFolder={currentFolder} menuHandler={menuHandler} galleryHandler={galleryHandler}/>}    
-    </>
+    </section>
   )
 }
 
