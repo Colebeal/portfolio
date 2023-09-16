@@ -35,6 +35,8 @@ export default function Slider( { slideIndex, setSlideIndex, currentFolder, setC
     setSlideIndex(slideIndex + 1)
   }
 
+  {document.body.classList.add = "overflow-hidden"}
+
   return (
     <section id="slider" >
       <div className="absolute top-0 left-0 w-full h-full grid grid-cols-2">
