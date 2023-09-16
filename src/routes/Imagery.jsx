@@ -39,6 +39,8 @@ export default function Imagery({ theme }) {
     gallery:'z-20 flex md:flex-col w-fit h-fit p-2 rounded-md gap-4 bg-orange-100 dark:bg-teal-900 fixed bottom-10 md:top-10 right-5 md:right-5 shadow-lg',
   }
 
+  isGallery ? document.body.style.overflow = 'auto' : document.body.style.overflow = 'hidden'
+
   return (
     <section id="wrapper">
       {isGallery && <Gallery slideIndex={slideIndex} setSlideIndex={setSlideIndex} currentFolder={currentFolder} setCurrentFolder={setCurrentFolder} setIsGallery={setIsGallery}/>}
