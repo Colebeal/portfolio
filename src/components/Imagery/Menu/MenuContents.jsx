@@ -10,7 +10,6 @@ export default function MenuContents({ menuHandler, menuContentHandler, folderDi
           <h3 className="pb-3 sm:pb-0 w-[100%] font-bold">About me</h3>
           <p>I am a twenty-something, now photography hobbyist, that primarily looks to compose timeless images inspired by shadows and natural light. Traditionally trained as an analogue photographer, I use this methodology of shooting in my digital workflow. With a heavy emphasis on color, tone, and feeling of an image.</p>
         </div>
-        <div className="fixed right-0 bottom-32 w-[300px] h-[200px] bg-center bg-cover bg-[url('/images/people/Portfolio-116.jpg')]"></div>
         <ul className="flex flex-col 2xl:flex-row mt-5 gap-3">
           <li className='flex gap-2'>
             <AiFillInstagram className='text-2xl text-teal-900 dark:text-white'/>
@@ -31,6 +30,7 @@ export default function MenuContents({ menuHandler, menuContentHandler, folderDi
             </a>
           </li>
         </ul>
+        <div className="mt-8 md:fixed md:right-0 md:bottom-32 md:w-[300px] h-[200px] bg-center bg-cover bg-[url('/images/people/Portfolio-116.jpg')]"></div>
       </main>
     </>
   )

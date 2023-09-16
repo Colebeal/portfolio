@@ -5,7 +5,8 @@ const observations = [
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
-		gallery: 'cursor-pointer self-center md:max-w-[400px]',
+		gallery:
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'eager',
 	},
 
@@ -15,7 +16,8 @@ const observations = [
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
-		gallery: 'cursor-pointer self-center max-w-[400px]',
+		gallery:
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'eager',
 	},
 
@@ -25,7 +27,8 @@ const observations = [
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
-		gallery: 'cursor-pointer self-center max-w-[400px]',
+		gallery:
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'eager',
 	},
 
@@ -35,7 +38,8 @@ const observations = [
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
-		gallery: 'cursor-pointer self-center max-w-[400px]',
+		gallery:
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -45,7 +49,8 @@ const observations = [
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
-		gallery: 'cursor-pointer self-center row-span-2 max-w-[400px]',
+		gallery:
+			'cursor-pointer self-center row-span-2 max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'eager',
 	},
 
@@ -55,7 +60,8 @@ const observations = [
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
-		gallery: 'cursor-pointer self-center max-w-[400px]',
+		gallery:
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -65,7 +71,8 @@ const observations = [
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
-		gallery: 'cursor-pointer self-center max-w-[400px]',
+		gallery:
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'eager',
 	},
 
@@ -75,7 +82,8 @@ const observations = [
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
-		gallery: 'cursor-pointer self-center max-w-[400px]',
+		gallery:
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'eager',
 	},
 
@@ -85,7 +93,8 @@ const observations = [
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
-		gallery: 'cursor-pointer self-center max-w-[400px]',
+		gallery:
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'eager',
 	},
 
@@ -95,7 +104,8 @@ const observations = [
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
-		gallery: 'cursor-pointer self-center max-w-[400px]',
+		gallery:
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -105,7 +115,8 @@ const observations = [
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
-		gallery: 'cursor-pointer self-center max-w-[400px]',
+		gallery:
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -115,7 +126,8 @@ const observations = [
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
-		gallery: 'cursor-pointer self-center max-w-[400px]',
+		gallery:
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -125,7 +137,8 @@ const observations = [
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
-		gallery: 'cursor-pointer self-center max-w-[400px]',
+		gallery:
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -135,7 +148,8 @@ const observations = [
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
-		gallery: 'cursor-pointer self-center max-w-[400px]',
+		gallery:
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -145,7 +159,8 @@ const observations = [
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
-		gallery: 'cursor-pointer row-span-2 self-center max-w-[400px]',
+		gallery:
+			'cursor-pointer row-span-2 self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -155,7 +170,8 @@ const observations = [
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
-		gallery: 'cursor-pointer self-center max-w-[400px]',
+		gallery:
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -165,7 +181,8 @@ const observations = [
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
-		gallery: 'cursor-pointer self-center max-w-[400px]',
+		gallery:
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -174,7 +191,8 @@ const observations = [
 		src: 'images/observations/Portfolio-085.jpg',
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
-		gallery: 'cursor-pointer self-center max-w-[400px]',
+		gallery:
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -184,7 +202,8 @@ const observations = [
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
-		gallery: 'cursor-pointer self-center max-w-[400px]',
+		gallery:
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -194,7 +213,8 @@ const observations = [
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
-		gallery: 'cursor-pointer self-center max-w-[400px]',
+		gallery:
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'eager',
 	},
 
@@ -204,7 +224,8 @@ const observations = [
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
-		gallery: 'cursor-pointer self-center max-w-[400px]',
+		gallery:
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -214,7 +235,8 @@ const observations = [
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
-		gallery: 'cursor-pointer self-center max-w-[400px]',
+		gallery:
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -224,7 +246,8 @@ const observations = [
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
-		gallery: 'cursor-pointer self-center max-w-[400px]',
+		gallery:
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -234,7 +257,8 @@ const observations = [
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
-		gallery: 'cursor-pointer self-center max-w-[400px]',
+		gallery:
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -244,7 +268,8 @@ const observations = [
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
-		gallery: 'cursor-pointer self-center max-w-[400px]',
+		gallery:
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -254,7 +279,8 @@ const observations = [
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
-		gallery: 'cursor-pointer self-center max-w-[400px]',
+		gallery:
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -264,7 +290,8 @@ const observations = [
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
-		gallery: 'cursor-pointer row-span-2 self-center max-w-[400px]',
+		gallery:
+			'cursor-pointer row-span-2 self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -274,7 +301,8 @@ const observations = [
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
-		gallery: 'cursor-pointer self-center max-w-[400px]',
+		gallery:
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -284,7 +312,8 @@ const observations = [
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
-		gallery: 'cursor-pointer self-center max-w-[400px]',
+		gallery:
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -294,7 +323,8 @@ const observations = [
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
-		gallery: 'cursor-pointer self-center max-w-[400px]',
+		gallery:
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -304,7 +334,8 @@ const observations = [
 		alt: '',
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
-		gallery: 'cursor-pointer self-center max-w-[400px] col-span-2',
+		gallery:
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px]',
 		loading: 'eager',
 	},
 ];
@@ -317,7 +348,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[400px]',
 		loading: 'lazy',
 	},
 
@@ -328,7 +359,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px]',
 		loading: 'lazy',
 	},
 
@@ -339,7 +370,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -350,7 +381,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -361,7 +392,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -372,7 +403,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -383,7 +414,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -394,7 +425,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -405,7 +436,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -416,7 +447,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -427,7 +458,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -438,7 +469,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -449,7 +480,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -460,7 +491,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -471,7 +502,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -482,7 +513,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -493,7 +524,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -504,7 +535,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -515,7 +546,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -526,7 +557,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -537,7 +568,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -548,7 +579,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -559,7 +590,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -570,7 +601,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -581,7 +612,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -592,7 +623,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -603,7 +634,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -614,7 +645,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -625,7 +656,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -636,7 +667,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -647,7 +678,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -658,7 +689,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -669,7 +700,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -680,7 +711,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -691,7 +722,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -702,7 +733,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -713,7 +744,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -724,7 +755,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -735,7 +766,7 @@ const people = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'eager',
 	},
 ];
@@ -748,7 +779,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -759,7 +790,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -770,7 +801,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -781,7 +812,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -792,7 +823,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -803,7 +834,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -814,7 +845,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -825,7 +856,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -836,7 +867,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -847,7 +878,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -858,7 +889,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -869,7 +900,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -880,7 +911,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -891,7 +922,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -902,7 +933,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -913,7 +944,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -924,7 +955,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -935,7 +966,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -946,7 +977,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -957,7 +988,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -968,7 +999,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -979,7 +1010,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -990,7 +1021,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -1001,7 +1032,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -1012,7 +1043,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -1023,7 +1054,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -1034,7 +1065,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -1045,7 +1076,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -1056,7 +1087,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -1067,7 +1098,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -1078,7 +1109,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -1089,7 +1120,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -1100,7 +1131,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -1111,7 +1142,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -1122,7 +1153,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'lazy',
 	},
 
@@ -1133,7 +1164,7 @@ const structure = [
 		className: 'absolute top-20 h-[600px] object-contain',
 		hidden: 'absolute top-20 hidden h-[600px] object-contain',
 		gallery:
-			'cursor-pointer self-center max-w-[400px] max-h-[500px] justify-self-center object-cover',
+			'cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover',
 		loading: 'eager',
 	},
 ];

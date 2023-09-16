@@ -26,9 +26,9 @@ export default function ThemeToggle() {
 
   return (
     <>
-      {theme === 'light' ? <BiSun onClick={handleThemeSwitch} className="absolute top-5 right-3 m-5 z-50 text-2xl cursor-pointer text-teal-900 dark:text-orange-50 animate-fade-in"/>: <BiMoon onClick={handleThemeSwitch} className="absolute top-5 right-3 m-5 z-50 text-2xl cursor-pointer text-teal-900 dark:text-orange-50 animate-fade-in"/>}
+      {theme === 'light' ? <BiSun onClick={handleThemeSwitch} className= "z-50 text-2xl cursor-pointer text-teal-900 animate-fade-in"/>: <BiMoon onClick={handleThemeSwitch} className="z-50 text-2xl cursor-pointer text-teal-900 dark:text-orange-50 animate-fade-in"/>}
     </>  
-
-
   )
 }
+
+// {theme === 'light' ? <BiSun onClick={handleThemeSwitch} className="fixed top-9 right-4 md:absolute md:right-3 md:m-5 z-50 text-2xl cursor-pointer text-teal-900 animate-fade-in"/>: <BiMoon onClick={handleThemeSwitch} className=" fixed top-10 right-3 md:absolute md:top-5 md:right-3 md:m-5 z-50 text-2xl cursor-pointer text-teal-900 dark:text-orange-50 animate-fade-in"/>}

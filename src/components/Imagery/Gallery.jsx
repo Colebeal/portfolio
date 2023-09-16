@@ -9,7 +9,7 @@ export default function Slider( { slideIndex, setSlideIndex, currentFolder, setC
   }
 
   return (
-    <section className='w-screen animate-rise-up' id="gallery" >
+    <section className='w-screen md:w-auto m-auto md:mt-10 animate-rise-up' id="gallery" >
       <div>
       {currentFolder === 0 && 
         <div className="w-full h-full flex flex-col flex-1 lg:grid lg:grid-cols-2 xl:grid-cols-3 gap-10 md:gap-16">
