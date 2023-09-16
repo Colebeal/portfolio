@@ -1,24 +1,11 @@
 import '../App.css'
-import { Routes, Route } from 'react-router-dom'
-
-
 import Greet from '../components/Greet'
-import Imagery from './Imagery'
-import Dev from './Dev'
 
-  function App() {
+export default function App() {
 
   return(
     <>   
-      <Routes>
-        <Route path="/" element={<Greet />} />
-        <Route path="/dev" element={<Dev />} />
-        <Route path="/imagery" element={<Imagery />} />
-        <Route path="*" element={<Greet />} />
-      </Routes>
+      <Greet/> 
     </>
   )
 }
-
-
-export default App
