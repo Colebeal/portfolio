@@ -42,20 +42,20 @@ export default function Slider( { slideIndex, setSlideIndex, currentFolder, setC
         <div onClick={nextSlide} id="next" className="z-10"></div>
       </div>
       <div id="slider-container">
-        <div className="flex justify-center items-center w-[60%] h-[50%] opacity-100 animate-fade-in">
+        <div className="flex justify-center items-center animate-fade-in">
         {currentFolder === 0 &&
           observations.map((image,index) => {
-            return <img id={image.id} key={index} className={currentImage === index ? image.className : image.hidden} src={image.src}/>
+            return <img id={image.id} key={index} width='1600px' className={currentImage === index ? image.className : image.hidden} src={image.src}/>
           })
         }
         {currentFolder === 1 &&
           people.map((image,index) => {
-            return <img id={image.id} key={index} className={currentImage === index ? image.className : image.hidden} src={image.src}/>
+            return <img id={image.id} key={index} width='1600px' className={currentImage === index ? image.className : image.hidden} src={image.src}/>
           })
         }
         {currentFolder === 2 &&
           structure.map((image,index) => {
-            return <img id={image.id} key={index} className={currentImage === index ? image.className : image.hidden} src={image.src}/>
+            return <img id={image.id} key={index} width='1600px' className={currentImage === index ? image.className : image.hidden} src={image.src}/>
           })
         }
         </div>
