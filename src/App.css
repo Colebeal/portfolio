@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  overflow: hidden;
 }
 
 #wrapper { 
@@ -15,6 +16,18 @@
   justify-content: center;
   align-items: center;
 }
+
+#hero {
+  background: url(/public/images/hero-image.jpg) no-repeat bottom;
+  background-size: cover;
+}
+
+.placeholder {
+  max-width: 1000px;
+  height: 500px;
+  background-color: #325ad4;
+}
+
 
 @media (min-width: 768px) {
   #wrapper {

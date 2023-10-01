@@ -7,8 +7,8 @@ export default function MenuContents({ menuHandler, menuContentHandler, folderDi
     <>
       <main className="mx-10 pt-5 h-full text-left animate-fade-in overflow-auto">
         <div className="flex flex-col 2xl:flex-row ">
-          <h3 className="pb-3 sm:pb-0 w-[100%] font-bold">About me</h3>
-          <p>I am a twenty-something, now photography hobbyist, that primarily looks to compose timeless images inspired by shadows and natural light. Traditionally trained as an analogue photographer, I use this methodology of shooting in my digital workflow. With a heavy emphasis on color, tone, and feeling of an image.</p>
+          <h3 className="pb-3 sm:pb-0 w-[100%] text-lg mb-3">About me</h3>
+          <p>I am a twenty-something, now photography hobbyist, inspired primarily by shadows and natural light. Traditionally trained as an analogue photographer, I use this methodology of slow selective shooting in my digital workflow.</p>
         </div>
         <ul className="flex flex-col 2xl:flex-row mt-5 gap-3">
           <li className='flex gap-2'>
@@ -25,7 +25,7 @@ export default function MenuContents({ menuHandler, menuContentHandler, folderDi
           </li>
           <li className='flex gap-2'>
             <MdOutlineComputer className='text-2xl text-teal-900 dark:text-white' />
-            <a href="/development">
+            <a href="/dev">
               <span className='hover:underline cursor-pointer'>Web Development </span>
             </a>
           </li>

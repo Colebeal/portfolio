@@ -21,7 +21,7 @@ export default function MenuInformation({  setCurrentFolder, setSlideIndex, menu
       <ul className="pt-5 flex flex-col h-full animate-fade-in">
         <div className="text-left mx-10">
           <li>
-            <h2 className="font-semibold">Personal Works</h2> 
+            <h2 className="text-base">Personal Works</h2> 
             <a onClick={()=>{selectFolder(0)}} className="cursor-pointer hover:underline flex justify-between m-10">
               <span>Observations</span>
               <span className=" sm:mr-10">{imageData.observations.length}</span>
@@ -41,7 +41,7 @@ export default function MenuInformation({  setCurrentFolder, setSlideIndex, menu
           </li>
         </div>
         <div className="m-10 text-left">
-          <h2 className="font-semibold">Published Works</h2>
+          <h2 className="font-semibold text-base">Published Works</h2>
           <li className="m-10">
             <a className="hover:cursor-default hover:underline flex justify-between">
               <span>The Process (coming soon)</span>

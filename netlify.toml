@@ -1,4 +1,12 @@
 [[redirects]]
+from = "/dev/"
+to = "/dev"
+
+[[redirects]]
+from = "/imagery/"
+to = "/imagery"
+
+[[redirects]]
 from = "/*"
 to = "/index.html"
 status = 200

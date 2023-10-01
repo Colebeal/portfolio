@@ -1,28 +1,40 @@
-import {AiFillGithub, AiFillLinkedin, AiFillInstagram } from 'react-icons/ai'
-import { Link } from 'react-router-dom'
-import ThemeToggle from '../components/ThemeToggle'
+import { useRef } from 'react'
+import Nav from '../components/Dev/Nav'
+import Footer from '../components/Dev/Footer'
+import Hero from '../components/Dev/Hero'
+import TechStack from '../components/Dev/TechStack'
+import About from '../components/Dev/About'
+import Services from '../components/Dev/Services'
+import Portfolio from '../components/Dev/Porfolio'
 
-export default function Dev({ returnHomeHandler }) { 
+
+
+export default function Dev() { 
+  const servicesRef = useRef(null)
+  const aboutRef = useRef(null)
+  const porfolioRef = useRef(null)
+  document.body.style.overflow ? document.body.style.overflow = 'auto' : document.body.style.overflow = 'hidden'
 
   return (
     <>
-      <ThemeToggle/>
-      <div onClick={returnHomeHandler} className="cursor-pointer font-dm-sans max-w-full transition-opacity animate-rise-up flex flex-col items-center">
-        <h1 className="m-5 mb-1">This section is currently under construction.</h1>
-        <h2 className='text-2xl'>Feel free to check out some of my finished work.</h2>
-        <ul className='flex justify-center items-center gap-4 m-5'>
-          <li>
-            <a href="https://github.com/Colebeal" target="_blank" rel="noopener noreferrer" ><AiFillGithub className='text-7xl hover:text-teal-900'/></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/colebeal/" target="_blank" rel="noopener noreferrer" ><AiFillLinkedin className='text-5xl hover:text-teal-900'/></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/colebeal/" target="_blank" rel="noopener noreferrer" ><AiFillInstagram className='text-4xl hover:text-teal-900'/></a>
-          </li>
-        </ul>
-        <Link to="/" className="m-5 border-b-2 border-b-transparent hover:border-b-black dark:hover:border-b-white w-fit">or Click me to return to home</Link>
+      <Nav servicesRef={servicesRef} aboutRef={aboutRef} porfolioRef={porfolioRef}/>
+      <Hero/>
+      <TechStack aboutRef={aboutRef}/>
+      <div className='m-5 md:m-20 md:mt-0'>
+        <About/>
+        <Services servicesRef={servicesRef}/>
+        <Portfolio porfolioRef={porfolioRef}/>
       </div>
+      <Footer/>
     </>
   )
 }
+          {/* <div className='text-left'>
+            <h2 className='my-5 text-3xl font-semibold text-orange-300'>more about me</h2>
+            <p className='my-5 text-base'>
+              I found my way to front-end development after working with websites for over 4 years, photography for over 13 years, and needed to find a way to merge the two. Whether it was frustration with the limitations of website builders, or the desire to create something more unique, I found myself wanting to learn how to code.               
+            </p>
+            <p className='my-5 text-base'>
+              Making a career switch into tech is hardly original, however I am proud to say that I have done so without the help of a bootcamp. Aside from HTML, CSS, JS, React and Tailwind, I most importantly discovered how to learn. Equipped with the technical knowledge to build and deploy a site from the ground up, I am looking to add value to your project or team.
+            </p>
+          </div> */}

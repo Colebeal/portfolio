@@ -30,23 +30,25 @@ export default {
 				'fade-in-fast': 'fadeIn 500ms ease-out',
 				'rise-up': 'riseUp 750ms ease-out',
 				'fade-out': 'fadeOut 500ms ease-in-out',
+				marquee: 'marquee 25s linear infinite',
+				marquee2: 'marquee2 25s linear infinite',
 			},
 			keyframes: {
 				fadeIn: {
 					'0%': { opacity: '0%' },
 					'100%': { opacity: '100%' },
 				},
-				fadeInBkg: {
-					'0%': { opacity: '0%' },
-					'60%': { opacity: '60%' },
-				},
 				riseUp: {
 					'0%': { transform: 'translateY(15%)', opacity: '0%' },
 					'100%': { transform: 'translateY(0%)', opacity: '100%' },
 				},
-				fadeOut: {
-					'0%': { opacity: '100%' },
-					'100%': { opacity: '0%' },
+				marquee: {
+					'0%': { transform: 'translateX(0%)' },
+					'100%': { transform: 'translateX(-100%)' },
+				},
+				marquee2: {
+					'0%': { transform: 'translateX(100%)' },
+					'100%': { transform: 'translateX(0%)' },
 				},
 			},
 		},

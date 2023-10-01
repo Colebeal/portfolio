@@ -7,12 +7,14 @@ import App from './routes/App.jsx'
 import Imagery from './routes/Imagery'
 import RootLayout from './routes/RootLayout'
 import Dev from './routes/Dev'
+import NotFound from './routes/NotFound'
 
 const router = createBrowserRouter([
   {path: '/', element: <RootLayout />, children: [
     {path: '/', element: <App />},
     {path: '/imagery', element: <Imagery />},
-    {path: '/dev', element: <Dev />}
+    {path: '/dev', element: <Dev />},
+    {path: '*', element: <NotFound />},
   ]},
 ])
 
