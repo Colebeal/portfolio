@@ -11,7 +11,7 @@ export default function Hero() {
         <h1 className="text-teal-700 dark:text-orange-300 text-5xl md:text-7xl font-semibold md:[writing-mode:vertical-lr]">Developer</h1>
         <h1 className="text-teal-900 dark:text-orange-100 text-7xl md:text-9xl font-semibold md:[writing-mode:vertical-lr]">Cole Beal</h1>
       </div>
-      <img src="/public/images/hero-image.jpg" alt="Self Portrait at a Picnic" className='md:hidden cover'/>
+      <img src="/images/hero-image.jpg" alt="Self Portrait at a Picnic" className='md:hidden cover'/>
     </section>
   )
 }
