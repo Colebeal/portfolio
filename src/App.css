@@ -1,6 +1,5 @@
 #root {
   margin: 0 auto;
-  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,7 +17,7 @@
 }
 
 #hero {
-  background: url(/public/images/hero-image.jpg) no-repeat bottom;
+  background: url(/images/hero-image.jpg) no-repeat bottom;
   background-size: cover;
 }
 
