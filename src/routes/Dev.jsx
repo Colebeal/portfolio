@@ -13,7 +13,8 @@ export default function Dev() {
   const servicesRef = useRef(null)
   const aboutRef = useRef(null)
   const porfolioRef = useRef(null)
-  document.body.style.overflow ? document.body.style.overflow = 'auto' : document.body.style.overflow = 'hidden'
+  
+  document.body.style.overflow = 'auto'
 
   return (
     <>
