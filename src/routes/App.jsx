@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom"
 
 import '../App.css'
-import Greet from '../components/Greet'
 
 export default function App() {
   document.body.style.overflow = 'hidden'
