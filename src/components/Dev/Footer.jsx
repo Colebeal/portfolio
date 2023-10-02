@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 export default function Footer() {
   return (
@@ -24,9 +25,9 @@ export default function Footer() {
             </a>
           </li>
           <li>
-            <a href="/imagery">
+            <Link to="../imagery">
               Imagery
-            </a>
+            </Link>
           </li>
           <li>
             <a href="mailto:beal.cole@gmail.com">

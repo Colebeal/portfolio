@@ -1,5 +1,6 @@
 import { AiFillInstagram } from 'react-icons/ai';
 import { MdMail, MdOutlineComputer } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 export default function MenuContents({ menuHandler, menuContentHandler, folderDisplayed, setFolderDisplayed, setSlideIndex }) {
 
@@ -25,9 +26,9 @@ export default function MenuContents({ menuHandler, menuContentHandler, folderDi
           </li>
           <li className='flex gap-2'>
             <MdOutlineComputer className='text-2xl text-teal-900 dark:text-white' />
-            <a href="/dev">
+            <Link to="../dev">
               <span className='hover:underline cursor-pointer'>Web Development </span>
-            </a>
+            </Link>
           </li>
         </ul>
         <div className="mt-8 md:fixed md:right-0 md:bottom-32 md:w-[300px] h-[200px] bg-center bg-cover bg-[url('/images/people/Portfolio-116.jpg')]"></div>

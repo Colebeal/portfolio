@@ -14,7 +14,7 @@ export default function Nav({servicesRef, aboutRef, porfolioRef}) {
 
   return(
     <header className="hidden md:my-5 px-10 h-12 w-screen text-lg md:flex justify-between items-center z-10 text-teal-900 dark:text-orange-100">
-      <Link to="/" className='hidden md:block'> 
+      <Link to=".." className='hidden md:block'> 
         <HiOutlineHome className="text-2xl cursor-pointer animate-fade-in"/>
       </Link>
       <ul className="hidden md:flex gap-20 items-center">
@@ -41,8 +41,6 @@ export default function Nav({servicesRef, aboutRef, porfolioRef}) {
       </ul>
       <div className='z-20 flex flex-col md:flex-row w-fit h-fit p-2 rounded-md gap-4 fixed md:static bottom-10 right-10'>
         <ThemeToggle />
-        <Link to="/">
-        </Link>
       </div>
     </header>
   )

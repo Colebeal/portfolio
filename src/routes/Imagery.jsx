@@ -51,7 +51,7 @@ export default function Imagery({ theme }) {
       <Menu menuStatus={menuStatus} setSlideIndex={setSlideIndex} currentFolder={currentFolder} setCurrentFolder={setCurrentFolder} menuHandler={menuHandler}/>
       <div className={isGallery ? mobileToggles.gallery : mobileToggles.slider}>
         <ThemeToggle />
-        <Link to="/">
+        <Link to="..">
           <HiOutlineHome className="text-2xl cursor-pointer text-teal-900 dark:text-orange-50 animate-fade-in"/>
         </Link>
         {isGallery && <HiMenu onClick={menuHandler} className="z-50 text-2xl cursor-pointer text-teal-900 dark:text-orange-50 animate-fade-in"/>}
