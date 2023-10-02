@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-export default function Greet({ dev, imagery }) {
+export default function Greet() {
 document.body.style.overflow = 'hidden'
 
   return (
