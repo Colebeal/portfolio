@@ -1,37 +1,58 @@
-import { AiFillInstagram } from 'react-icons/ai';
-import { MdMail, MdOutlineComputer } from 'react-icons/md';
-import { Link } from 'react-router-dom';
+import { AiFillInstagram } from "react-icons/ai"
+import { MdMail, MdOutlineComputer } from "react-icons/md"
+import { Link } from "react-router-dom"
 
-export default function MenuContents({ menuHandler, menuContentHandler, folderDisplayed, setFolderDisplayed, setSlideIndex }) {
-
-  return(
+export default function MenuContents({
+  menuHandler,
+  menuContentHandler,
+  folderDisplayed,
+  setFolderDisplayed,
+  setSlideIndex,
+}) {
+  return (
     <>
-      <main className="mx-10 pt-5 h-full text-left animate-fade-in overflow-auto">
+      <main className="mx-10 h-full animate-fade-in overflow-auto pt-5 text-left">
         <div className="flex flex-col 2xl:flex-row ">
-          <h3 className="pb-3 sm:pb-0 w-[100%] text-lg mb-3">About me</h3>
-          <p>I am a twenty-something, now photography hobbyist, inspired primarily by shadows and natural light. Traditionally trained as an analogue photographer, I use this methodology of slow selective shooting in my digital workflow.</p>
+          <h3 className="mb-3 w-[100%] pb-3 text-lg sm:pb-0">About me</h3>
+          <p>
+            I am a twenty-something, now photography hobbyist, inspired
+            primarily by shadows and natural light. Traditionally trained as an
+            analogue photographer, I use this methodology of slow selective
+            shooting in my digital workflow.
+          </p>
         </div>
-        <ul className="flex flex-col 2xl:flex-row mt-5 gap-3">
-          <li className='flex gap-2'>
-            <AiFillInstagram className='text-2xl text-teal-900 dark:text-white'/>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/colebeal/">
-              <span className='hover:underline cursor-pointer'>@colebeal</span>
+        <ul className="mt-5 flex flex-col gap-3 2xl:flex-row">
+          <li className="flex gap-2">
+            <AiFillInstagram className="text-2xl text-teal-900 dark:text-white" />
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.instagram.com/colebeal/"
+            >
+              <span className="cursor-pointer hover:underline">@colebeal</span>
             </a>
           </li>
-          <li href="mailto:cole@colebeal.com?subject=Let's connect!" className='flex gap-2'>
-            <MdMail className='text-2xl text-teal-900 dark:text-white' />
+          <li
+            href="mailto:cole@colebeal.com?subject=Let's connect!"
+            className="flex gap-2"
+          >
+            <MdMail className="text-2xl text-teal-900 dark:text-white" />
             <a href="mailto:cole@colebeal.com?subject=Let's connect!">
-              <span className='hover:underline cursor-pointer'>cole@colebeal.com</span>
+              <span className="cursor-pointer hover:underline">
+                cole@colebeal.com
+              </span>
             </a>
           </li>
-          <li className='flex gap-2'>
-            <MdOutlineComputer className='text-2xl text-teal-900 dark:text-white' />
+          <li className="flex gap-2">
+            <MdOutlineComputer className="text-2xl text-teal-900 dark:text-white" />
             <Link to="../dev">
-              <span className='hover:underline cursor-pointer'>Web Development </span>
+              <span className="cursor-pointer hover:underline">
+                Web Development{" "}
+              </span>
             </Link>
           </li>
         </ul>
-        <div className="mt-8 md:fixed md:right-0 md:bottom-32 md:w-[300px] h-[200px] bg-center bg-cover bg-[url('/images/people/Portfolio-116.jpg')]"></div>
+        <div className="mt-8 h-[200px] bg-[url('/images/people/Portfolio-116.jpg')] bg-cover bg-center md:fixed md:bottom-32 md:right-0 md:w-[300px]"></div>
       </main>
     </>
   )

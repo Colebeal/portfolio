@@ -1,33 +1,43 @@
-import { useState, useEffect } from 'react';
-import { BiSun, BiMoon } from 'react-icons/bi';
+import { useState, useEffect } from "react"
+import { BiSun, BiMoon } from "react-icons/bi"
 
 export default function ThemeToggle() {
-  const [theme, setTheme] = useState(
-    localStorage.getItem('theme') || 'dark' 
-  );
-  
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark")
+
   useEffect(() => {
-    if (theme === 'dark') {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark")
+      localStorage.setItem("theme", "dark")
       console.log(theme)
     } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-      setTimeout(() => {console.log(theme)}, 1000);
+      document.documentElement.classList.remove("dark")
+      localStorage.setItem("theme", "light")
+      setTimeout(() => {
+        console.log(theme)
+      }, 1000)
       console.log(theme)
     }
-  }, [theme]);
+  }, [theme])
 
   const handleThemeSwitch = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light');
+    setTheme(theme === "light" ? "dark" : "light")
     console.log(theme)
-  };
+  }
 
   return (
     <>
-      {theme === 'light' ? <BiSun onClick={handleThemeSwitch} className= "z-50 text-2xl cursor-pointer text-teal-900 animate-fade-in"/>: <BiMoon onClick={handleThemeSwitch} className="z-50 text-2xl cursor-pointer text-teal-900 dark:text-orange-50 animate-fade-in"/>}
-    </>  
+      {theme === "light" ? (
+        <BiSun
+          onClick={handleThemeSwitch}
+          className="z-50 animate-fade-in cursor-pointer text-2xl text-teal-900"
+        />
+      ) : (
+        <BiMoon
+          onClick={handleThemeSwitch}
+          className="z-50 animate-fade-in cursor-pointer text-2xl text-teal-900 dark:text-orange-50"
+        />
+      )}
+    </>
   )
 }
 

@@ -3,25 +3,37 @@ import { Link } from "react-router-dom"
 import ThemeToggle from "../components/ThemeToggle"
 
 export default function App() {
-  document.body.style.overflow = 'hidden'
+  document.body.style.overflow = "hidden"
 
   return (
     <>
-      <div id='greet' className="absolute h-full w-full m-auto flex flex-col justify-center items-center animate-rise-up text-teal-900 ">
-        <h2 className="dark:text-orange-100 text-6xl">Hi, I'm Cole.</h2>
-        <div id="selfie" className="bg-orange-300 w-[250px] h-[250px] md:w-[300px] md:h-[300px] rounded-full m-5 bg-center bg-cover bg-[url('/images/people/Portfolio-116.jpg')]"></div>
+      <div
+        id="greet"
+        className="absolute m-auto flex h-full w-full animate-rise-up flex-col items-center justify-center text-teal-900 "
+      >
+        <h2 className="text-6xl dark:text-orange-100">Hi, I'm Cole.</h2>
+        <div
+          id="selfie"
+          className="m-5 h-[250px] w-[250px] rounded-full bg-orange-300 bg-[url('/images/people/Portfolio-116.jpg')] bg-cover bg-center md:h-[300px] md:w-[300px]"
+        ></div>
         <div className="m-5">
-          <Link to='/dev' className="p-3 m-2 sm:m-5 rounded-lg bg-orange-100 shadow-lg dark:bg-teal-900 dark:text-white">
+          <Link
+            to="/dev"
+            className="m-2 rounded-lg bg-orange-100 p-3 shadow-lg dark:bg-teal-900 dark:text-white sm:m-5"
+          >
             Development
           </Link>
-          <Link to='/imagery' className="p-3 m-2 rounded-lg bg-orange-100 shadow-lg dark:bg-teal-900 dark:text-white">
+          <Link
+            to="/imagery"
+            className="m-2 rounded-lg bg-orange-100 p-3 shadow-lg dark:bg-teal-900 dark:text-white"
+          >
             Imagery
           </Link>
         </div>
       </div>
       <div className="hidden">
-        <ThemeToggle/> 
+        <ThemeToggle />
       </div>
     </>
-)
+  )
 }
