@@ -16,22 +16,43 @@ export default function Dev() {
 
   document.body.style.overflow = "auto"
 
+  // window.innerWidth > 768 ? { translateY: 0 } : { translateY: 200 }
+  // window.innerWidth > 768 ?   { duration: 0.5, ease: "easeInOut" } :   { duration: 0.5, delay: 2, ease: "easeInOut" }
+
   return (
-    <m.div>
-      <Nav
-        servicesRef={servicesRef}
-        aboutRef={aboutRef}
-        porfolioRef={porfolioRef}
-      />
-      <Hero />
-      <TechStack aboutRef={aboutRef} />
-      <div className="m-5 md:m-20 md:mt-0">
-        <About />
-        <Services servicesRef={servicesRef} />
-        <Portfolio porfolioRef={porfolioRef} />
-      </div>
-      <Footer />
-    </m.div>
+    <>
+      <m.div
+        initial={
+          window.innerWidth > 768 ? { translateY: 0 } : { translateY: 0 }
+        }
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={
+          window.innerWidth > 768
+            ? { duration: 0.5, ease: "easeInOut" }
+            : { duration: 0.5, ease: "easeInOut" }
+        }
+      >
+        <Nav
+          servicesRef={servicesRef}
+          aboutRef={aboutRef}
+          porfolioRef={porfolioRef}
+        />
+        <Hero />
+        <TechStack aboutRef={aboutRef} />
+        <m.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 1.5, ease: "easeInOut" }}
+          className="m-5 md:m-20 md:mt-0"
+        >
+          <About />
+          <Services servicesRef={servicesRef} />
+          <Portfolio porfolioRef={porfolioRef} />
+        </m.div>
+        <Footer />
+      </m.div>
+    </>
   )
 }
 {

@@ -1,4 +1,7 @@
 import { observations, people, structure } from "../../assets/sliderData"
+import { motion as m } from "framer-motion"
+
+import MiniMenu from "./MiniMenu"
 
 export default function Slider({
   slideIndex,
@@ -16,12 +19,18 @@ export default function Slider({
 
   return (
     <section
-      className="m-auto w-screen animate-rise-up md:mt-10 md:w-auto"
+      className="m-auto w-screen bg-white dark:bg-teal-950 md:mt-10 md:w-auto"
       id="gallery"
     >
       <div>
         {currentFolder === 0 && (
-          <div className="flex h-full w-full flex-1 flex-col gap-10 md:gap-16 lg:grid lg:grid-cols-2 xl:grid-cols-3">
+          <m.div
+            initial={{ translateY: 500, opacity: 0 }}
+            animate={{ translateY: 0, opacity: 1 }}
+            exit={{ translateY: 500, opacity: 0 }}
+            transition={{ duration: 1, delay: 0.5, ease: "easeInOut" }}
+            className="flex h-full w-full flex-1 flex-col gap-10 md:gap-16 lg:grid lg:grid-cols-2 xl:grid-cols-3"
+          >
             {observations.map((image) => (
               <img
                 onClick={() => {
@@ -33,10 +42,16 @@ export default function Slider({
                 src={image.src}
               />
             ))}
-          </div>
+          </m.div>
         )}
         {currentFolder === 1 && (
-          <div className="flex h-full w-full flex-1 flex-col gap-10 lg:grid lg:grid-cols-2 xl:grid-cols-3">
+          <m.div
+            initial={{ translateY: 500, opacity: 0 }}
+            animate={{ translateY: 0, opacity: 1 }}
+            exit={{ translateY: 500, opacity: 0 }}
+            transition={{ duration: 1, delay: 0.5, ease: "easeInOut" }}
+            className="flex h-full w-full flex-1 flex-col gap-10 lg:grid lg:grid-cols-2 xl:grid-cols-3"
+          >
             {people.map((image) => (
               <img
                 onClick={() => {
@@ -48,10 +63,16 @@ export default function Slider({
                 src={image.src}
               />
             ))}
-          </div>
+          </m.div>
         )}
         {currentFolder === 2 && (
-          <div className="flex h-full w-full flex-1 flex-col gap-10 lg:grid lg:grid-cols-2 xl:grid-cols-3">
+          <m.div
+            initial={{ translateY: 500, opacity: 0 }}
+            animate={{ translateY: 0, opacity: 1 }}
+            exit={{ translateY: 500, opacity: 0 }}
+            transition={{ duration: 1, delay: 0.5, ease: "easeInOut" }}
+            className="flex h-full w-full flex-1 flex-col gap-10 lg:grid lg:grid-cols-2 xl:grid-cols-3"
+          >
             {structure.map((image) => (
               <img
                 onClick={() => {
@@ -63,7 +84,7 @@ export default function Slider({
                 src={image.src}
               />
             ))}
-          </div>
+          </m.div>
         )}
       </div>
     </section>

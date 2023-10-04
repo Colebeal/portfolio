@@ -1,6 +1,7 @@
 import ThemeToggle from "../ThemeToggle"
 import { HiOutlineHome } from "react-icons/hi"
 import { Link } from "react-router-dom"
+import { motion as m } from "framer-motion"
 
 export default function Nav({ servicesRef, aboutRef, porfolioRef }) {
   const handleScroll = (ref) => {
@@ -13,7 +14,12 @@ export default function Nav({ servicesRef, aboutRef, porfolioRef }) {
 
   return (
     <>
-      <header className="z-10 hidden h-12 w-screen items-center justify-between px-10 text-lg text-teal-900 dark:text-orange-100 md:my-5 md:flex">
+      <m.header
+        initial={{ translateY: -25, opacity: 0 }}
+        animate={{ translateY: 0, opacity: 1 }}
+        transition={{ duration: 1, delay: 1.5, ease: "easeInOut" }}
+        className="z-10 hidden h-12 w-screen items-center justify-between px-10 text-lg text-teal-900 dark:text-orange-100 md:my-5 md:flex"
+      >
         <Link to=".." className="hidden md:block">
           <HiOutlineHome className="animate-fade-in cursor-pointer text-2xl" />
         </Link>
@@ -52,7 +58,7 @@ export default function Nav({ servicesRef, aboutRef, porfolioRef }) {
         <div className="fixed bottom-10 right-10 z-20 flex h-fit w-fit flex-col gap-4 rounded-md p-2 md:static md:flex-row">
           <ThemeToggle />
         </div>
-      </header>
+      </m.header>
       <div className="fixed bottom-10 right-5 z-20 flex h-fit w-fit gap-4 rounded-md bg-orange-100 p-2 shadow-lg dark:bg-teal-900 md:top-16 md:hidden">
         <ThemeToggle />
         <Link to="..">

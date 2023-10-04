@@ -1,14 +1,12 @@
 import { useState } from "react"
-import { Link } from "react-router-dom"
-import { HiOutlineHome, HiMenu } from "react-icons/hi"
+import { motion as m, AnimatePresence, easeInOut } from "framer-motion"
 
-import Slider from "../components/Imagery/Slider"
-import ImageryNav from "../components/Imagery/ImageryNav"
+import Slider from "../components/Imagery/Slider/Slider"
 import Menu from "../components/Imagery/Menu/Menu"
 import Gallery from "../components/Imagery/Gallery"
-import ThemeToggle from "../components/ThemeToggle"
+import MiniMenu from "../components/Imagery/MiniMenu"
 
-export default function Imagery({ theme }) {
+export default function Imagery() {
   const [slideIndex, setSlideIndex] = useState(0)
   const [menuStatus, setMenuStatus] = useState(false)
   const [currentFolder, setCurrentFolder] = useState(0)
@@ -32,47 +30,18 @@ export default function Imagery({ theme }) {
     }
   }
 
-  const mobileToggles = {
-    slider:
-      "z-20 flex md:flex-col w-fit h-fit p-2 rounded-md gap-4 bg-orange-100 dark:bg-teal-900 fixed top-10 left-5 shadow-lg",
-    gallery:
-      "z-20 flex md:flex-col w-fit h-fit p-2 rounded-md gap-4 bg-orange-100 dark:bg-teal-900 fixed bottom-10 md:top-10 left-5 shadow-lg",
-  }
-
   isGallery
     ? (document.body.style.overflow = "auto")
     : (document.body.style.overflow = "hidden")
 
   return (
-    <section id="wrapper">
-      {isGallery && (
-        <Gallery
-          slideIndex={slideIndex}
-          setSlideIndex={setSlideIndex}
-          currentFolder={currentFolder}
-          setCurrentFolder={setCurrentFolder}
-          setIsGallery={setIsGallery}
-        />
-      )}
-      {!isGallery && (
-        <main className="animation-ease-in xl:w-[1250px] 2xl:w-[1500px]">
-          <Slider
-            slideIndex={slideIndex}
-            setSlideIndex={setSlideIndex}
-            currentFolder={currentFolder}
-            setCurrentFolder={setCurrentFolder}
-          />
-        </main>
-      )}
-      {!isGallery && (
-        <ImageryNav
-          menuStatus={menuStatus}
-          slideIndex={slideIndex}
-          currentFolder={currentFolder}
-          menuHandler={menuHandler}
-          galleryHandler={galleryHandler}
-        />
-      )}
+    <m.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5, ease: easeInOut }}
+      id="wrapper"
+    >
       <Menu
         menuStatus={menuStatus}
         setSlideIndex={setSlideIndex}
@@ -80,26 +49,36 @@ export default function Imagery({ theme }) {
         setCurrentFolder={setCurrentFolder}
         menuHandler={menuHandler}
       />
-      <div className={isGallery ? mobileToggles.gallery : mobileToggles.slider}>
-        <ThemeToggle />
-        <Link to="..">
-          <HiOutlineHome className="animate-fade-in cursor-pointer text-2xl text-teal-900 dark:text-orange-50" />
-        </Link>
+
+      <MiniMenu />
+
+      {/* Gallery and Slider Logic */}
+
+      <AnimatePresence mode="wait">
         {isGallery && (
-          <HiMenu
-            onClick={menuHandler}
-            className="z-50 animate-fade-in cursor-pointer text-2xl text-teal-900 dark:text-orange-50"
+          <Gallery
+            key={"gallery"}
+            slideIndex={slideIndex}
+            setSlideIndex={setSlideIndex}
+            currentFolder={currentFolder}
+            setCurrentFolder={setCurrentFolder}
+            setIsGallery={setIsGallery}
           />
         )}
-      </div>
-    </section>
+        {!isGallery && (
+          <Slider
+            key={"slider"}
+            slideIndex={slideIndex}
+            setSlideIndex={setSlideIndex}
+            currentFolder={currentFolder}
+            setCurrentFolder={setCurrentFolder}
+            isGallery={isGallery}
+            menuStatus={menuStatus}
+            menuHandler={menuHandler}
+            galleryHandler={galleryHandler}
+          />
+        )}
+      </AnimatePresence>
+    </m.section>
   )
-}
-
-{
-  /* <ThemeToggle />
-<Link to="/">
-  <HiOutlineHome className="fixed top-20 right-4 md:absolute md:top-5 md:left-3 md:m-5 z-50 text-2xl cursor-pointer text-teal-900 dark:text-orange-50 animate-fade-in"/>
-</Link>
-{isGallery && <HiMenu onClick={menuHandler} className="fixed top-32 right-4 md:absolute md:top-14 md:left-3 md:m-5 z-50 text-2xl cursor-pointer text-teal-900 dark:text-orange-50 animate-fade-in"/>} */
 }

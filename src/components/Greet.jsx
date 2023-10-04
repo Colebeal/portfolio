@@ -1,23 +1,20 @@
-import { motion as m } from "framer-motion"
 import { Link } from "react-router-dom"
+import { motion as m, AnimatePresence } from "framer-motion"
 
 import ThemeToggle from "../components/ThemeToggle"
 
-export default function App() {
-  document.body.style.overflow = "hidden"
-
+export default function Greet() {
   return (
     <>
-      <m.div
+      <div
         id="greet"
-        exit={{ opacity: 0 }}
-        transition={{ duration: 1, ease: "easeInOut" }}
         className="absolute m-auto flex h-full w-full flex-col items-center justify-center text-teal-900 "
       >
         <m.h2
           initial={{ translateY: 200, opacity: 0 }}
           animate={{ translateY: 0, opacity: 1 }}
-          transition={{ duration: 1.5, ease: "easeInOut" }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 1, delay: 0.5, ease: "easeInOut" }}
           className="text-6xl dark:text-orange-100"
         >
           Hi, I'm Cole.
@@ -25,7 +22,8 @@ export default function App() {
         <m.div
           initial={{ translateY: 0, opacity: 0 }}
           animate={{ translateY: 0, opacity: 1 }}
-          transition={{ duration: 0.75, delay: 1.25, ease: "easeInOut" }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.75, delay: 2, ease: "easeInOut" }}
         >
           <div
             id="selfie"
@@ -46,7 +44,7 @@ export default function App() {
             </Link>
           </div>
         </m.div>
-      </m.div>
+      </div>
       <div className="hidden">
         <ThemeToggle />
       </div>
