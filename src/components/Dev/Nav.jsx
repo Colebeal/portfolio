@@ -18,7 +18,7 @@ export default function Nav({ servicesRef, aboutRef, porfolioRef }) {
         initial={{ translateY: -25, opacity: 0 }}
         animate={{ translateY: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 1.5, ease: "easeInOut" }}
-        className="z-10 hidden h-12 w-screen items-center justify-between px-10 text-lg text-teal-900 dark:text-orange-100 md:my-5 md:flex"
+        className="z-10 hidden h-12 w-screen items-center justify-between px-10 text-base text-teal-900 dark:text-orange-100 md:my-5 md:flex"
       >
         <Link to=".." className="hidden md:block">
           <HiOutlineHome className="animate-fade-in cursor-pointer text-2xl" />
