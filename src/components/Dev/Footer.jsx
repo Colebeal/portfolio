@@ -64,27 +64,28 @@ export default function Footer() {
                 animate={{ translateY: -350, opacity: 1 }}
                 exit={{ translateY: -375, opacity: 0 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
-                className="absolute right-10 m-5 whitespace-nowrap rounded-lg p-5 px-10 text-left backdrop-blur-sm backdrop-brightness-150 backdrop-opacity-100"
+                className="absolute right-10 m-5 whitespace-nowrap rounded-lg bg-orange-50 p-5 px-10 text-left backdrop-blur-sm backdrop-opacity-100 dark:bg-transparent dark:backdrop-brightness-150"
               >
                 <ul className="flex flex-col gap-4 text-base">
                   <li className="flex items-center gap-2">
-                    <SiReact className="text-xl text-orange-300" />
+                    <SiReact className="text-2xl text-orange-300" />
                     React for Code
                   </li>
                   <li className="flex items-center gap-2">
-                    <SiTailwindcss className="text-xl text-orange-300" />
+                    <SiTailwindcss className="text-2xl text-orange-300" />
                     Tailwind for Styles
                   </li>
                   <li className="flex items-center gap-2">
-                    <SiNetlify className="text-xl text-orange-300" />
+                    <SiNetlify className="text-2xl text-orange-300" />
                     Netlify for hosting
                   </li>
                   <li className="flex items-center gap-2">
-                    <SiGithub className="text-xl text-orange-300" />
+                    <SiGithub className="text-2xl text-orange-300" />
                     Github for versions
                   </li>
                   <li className="flex items-center gap-2">
-                    Heading Font: <h2>Acorn</h2>
+                    Heading Font:{" "}
+                    <h2 className="text-xl text-orange-300">Acorn</h2>
                   </li>
                   <li>Body Font: GT Planar</li>
                 </ul>
