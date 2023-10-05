@@ -11,6 +11,7 @@ export default function Imagery() {
   const [menuStatus, setMenuStatus] = useState(false)
   const [currentFolder, setCurrentFolder] = useState(0)
   const [isGallery, setIsGallery] = useState(false)
+  const [isTransitioning, setIsTransitioning] = useState(false)
 
   const galleryHandler = () => {
     if (isGallery) {
@@ -62,6 +63,8 @@ export default function Imagery() {
             currentFolder={currentFolder}
             setCurrentFolder={setCurrentFolder}
             setIsGallery={setIsGallery}
+            isTransitioning={isTransitioning}
+            setIsTransitioning={setIsTransitioning}
           />
         )}
         {!isGallery && (
@@ -75,6 +78,8 @@ export default function Imagery() {
             menuStatus={menuStatus}
             menuHandler={menuHandler}
             galleryHandler={galleryHandler}
+            isTransitioning={isTransitioning}
+            setIsTransitioning={setIsTransitioning}
           />
         )}
       </AnimatePresence>

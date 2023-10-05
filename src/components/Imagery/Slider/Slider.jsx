@@ -1,6 +1,7 @@
 import { observations, people, structure } from "../../../assets/sliderData"
 import { AnimatePresence, motion as m } from "framer-motion"
 import { useSwipeable } from "react-swipeable"
+import { useState } from "react"
 
 import ImageryNav from "../ImageryNav"
 import Observations from "./Observations"
@@ -16,6 +17,8 @@ export default function Slider({
   menuHandler,
   galleryHandler,
   isGallery,
+  isTransitioning,
+  setIsTransitioning,
 }) {
   const currentImage = slideIndex
   const folder = [observations, people, structure]
@@ -23,10 +26,12 @@ export default function Slider({
   const prevSlide = () => {
     let previousFolder = folder[currentFolder - 1]
 
-    if (slideIndex === 0 && currentFolder === 0) {
+    if (isTransitioning === true) {
+      return
+    } else if (slideIndex === 0 && currentFolder === 0) {
       setSlideIndex(structure.length - 1)
       setCurrentFolder(2)
-    } else if (slideIndex <= 0) {
+    } else if (slideIndex == 0) {
       setSlideIndex(previousFolder.length - 1)
       setCurrentFolder(currentFolder - 1)
     } else {
@@ -37,16 +42,27 @@ export default function Slider({
   const nextSlide = () => {
     let selectedFolder = folder[currentFolder]
 
-    if (slideIndex === structure.length - 1 && currentFolder === 2) {
+    if (isTransitioning === true) {
+      return
+    } else if (slideIndex === structure.length - 1 && currentFolder === 2) {
       setCurrentFolder(0)
       setSlideIndex(0)
+      // setIsTransitioning(true)
+      // setTimeout(() => {
+      //   setIsTransitioning(false)
+      // }, 3500)
       return
     } else if (slideIndex >= selectedFolder.length - 1) {
       setSlideIndex(0)
       setCurrentFolder(currentFolder + 1)
+      // setIsTransitioning(true)
+      // setTimeout(() => {
+      //   setIsTransitioning(false)
+      // }, 3500)
       return
+    } else {
+      setSlideIndex(slideIndex + 1)
     }
-    setSlideIndex(slideIndex + 1)
   }
 
   const swipeHandlers = useSwipeable({
@@ -55,8 +71,6 @@ export default function Slider({
     preventDefaultTouchmoveEvent: true,
     trackMouse: true,
   })
-
-  console.log()
 
   return (
     <m.section
@@ -73,7 +87,7 @@ export default function Slider({
         <div onClick={nextSlide} id="next" className="z-20"></div>
       </div>
       <div id="slider-container" className="flex items-center justify-center">
-        <m.h2 className="absolute text-6xl text-teal-600">
+        <m.h2 className="absolute text-5xl text-teal-600">
           {currentFolder === 0 && "Observations"}
           {currentFolder === 1 && "People"}
           {currentFolder === 2 && "Structure"}
@@ -88,6 +102,8 @@ export default function Slider({
                 animate={{ opacity: [0, 0, 1] }}
                 exit={{ opacity: [1, 0, 0] }}
                 transition={{ duration: 2, delay: 0.25 }}
+                onAnimationStart={() => setIsTransitioning(true)}
+                onAnimationComplete={() => setIsTransitioning(false)}
                 className="z-10 "
               >
                 <Observations currentImage={currentImage} />
@@ -100,6 +116,8 @@ export default function Slider({
                 animate={{ opacity: [0, 0, 1] }}
                 exit={{ opacity: [1, 0, 0] }}
                 transition={{ duration: 2, delay: 0.25 }}
+                onAnimationStart={() => setIsTransitioning(true)}
+                onAnimationComplete={() => setIsTransitioning(false)}
                 className="z-10 "
               >
                 <People currentImage={currentImage} />
@@ -112,6 +130,8 @@ export default function Slider({
                 animate={{ opacity: [0, 0, 1] }}
                 exit={{ opacity: [1, 0, 0] }}
                 transition={{ duration: 2, delay: 0.25 }}
+                onAnimationStart={() => setIsTransitioning(true)}
+                onAnimationComplete={() => setIsTransitioning(false)}
                 className="z-10 "
               >
                 <Structure currentImage={currentImage} />
