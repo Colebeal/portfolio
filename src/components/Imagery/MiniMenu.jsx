@@ -20,7 +20,7 @@ export default function MiniMenu({ isGallery, menuHandler }) {
       </Link>
       <HiMenu
         onClick={menuHandler}
-        className="z-50 cursor-pointer text-2xl text-teal-900 dark:text-orange-50"
+        className="z-50 cursor-pointer text-2xl text-teal-900 dark:text-orange-50 md:hidden"
       />
     </div>
   )

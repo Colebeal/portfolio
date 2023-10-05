@@ -13,7 +13,7 @@ export default function MenuContents({
     <>
       <main className="mx-10 h-full animate-fade-in overflow-auto pt-5 text-left">
         <div className="flex flex-col 2xl:flex-row ">
-          <h3 className="mb-3 w-[100%] pb-3 text-lg sm:pb-0">About me</h3>
+          <h2 className="mb-3 w-[100%] pb-3 text-xl sm:pb-0">About me</h2>
           <p>
             I am a twenty-something, now photography hobbyist, inspired
             primarily by shadows and natural light. Traditionally trained as an

@@ -1,5 +1,6 @@
 import { observations, people, structure } from "../../../assets/sliderData"
 import { AnimatePresence, motion as m } from "framer-motion"
+import { useSwipeable } from "react-swipeable"
 
 import ImageryNav from "../ImageryNav"
 import Observations from "./Observations"
@@ -48,6 +49,15 @@ export default function Slider({
     setSlideIndex(slideIndex + 1)
   }
 
+  const swipeHandlers = useSwipeable({
+    onSwipedLeft: () => nextSlide(),
+    onSwipedRight: () => prevSlide(),
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true,
+  })
+
+  console.log()
+
   return (
     <m.section
       initial={{ opacity: 0 }}
@@ -56,13 +66,14 @@ export default function Slider({
       transition={{ duration: 2, ease: "easeInOut" }}
       id="slider"
       className="relative flex flex-col items-center justify-center"
+      {...swipeHandlers}
     >
       <div className="absolute left-0 top-0 grid h-full w-full grid-cols-2">
         <div onClick={prevSlide} id="previous" className="z-20"></div>
         <div onClick={nextSlide} id="next" className="z-20"></div>
       </div>
       <div id="slider-container" className="flex items-center justify-center">
-        <m.h2 className="absolute z-0 m-auto text-6xl text-teal-600">
+        <m.h2 className="absolute text-6xl text-teal-600">
           {currentFolder === 0 && "Observations"}
           {currentFolder === 1 && "People"}
           {currentFolder === 2 && "Structure"}
