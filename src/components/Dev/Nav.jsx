@@ -52,7 +52,7 @@ export default function Nav({ servicesRef, aboutRef, porfolioRef }) {
             </a>
           </li>
           <li>
-            <a href="mailto:beal.cole@gmail.com">Email</a>
+            <a href="mailto:cole@colebeal.com">Email</a>
           </li>
         </ul>
         <div className="fixed bottom-10 right-10 z-20 flex h-fit w-fit flex-col gap-4 rounded-md p-2 md:static md:flex-row">
