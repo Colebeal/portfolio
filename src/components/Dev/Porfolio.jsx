@@ -11,7 +11,7 @@ export default function Portfolio({ porfolioRef }) {
         For more information about previous projects,
         <a
           className="mx-2 text-teal-600 underline underline-offset-4 hover:text-teal-800 dark:text-teal-300 "
-          href="mailto:beal.cole@gmail.com"
+          href="mailto:cole@colebeal.com?subject=Would love to see more!"
         >
           shoot me an email!
         </a>

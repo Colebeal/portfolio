@@ -1,7 +1,6 @@
 import { observations, people, structure } from "../../../assets/sliderData"
 import { AnimatePresence, motion as m } from "framer-motion"
 import { useSwipeable } from "react-swipeable"
-import { useState } from "react"
 
 import ImageryNav from "../ImageryNav"
 import Observations from "./Observations"
@@ -47,18 +46,10 @@ export default function Slider({
     } else if (slideIndex === structure.length - 1 && currentFolder === 2) {
       setCurrentFolder(0)
       setSlideIndex(0)
-      // setIsTransitioning(true)
-      // setTimeout(() => {
-      //   setIsTransitioning(false)
-      // }, 3500)
       return
     } else if (slideIndex >= selectedFolder.length - 1) {
       setSlideIndex(0)
       setCurrentFolder(currentFolder + 1)
-      // setIsTransitioning(true)
-      // setTimeout(() => {
-      //   setIsTransitioning(false)
-      // }, 3500)
       return
     } else {
       setSlideIndex(slideIndex + 1)
@@ -80,6 +71,7 @@ export default function Slider({
       transition={{ duration: 2, ease: "easeInOut" }}
       id="slider"
       className="relative flex flex-col items-center justify-center"
+      onKeyDown={() => console.log("keydown")}
       {...swipeHandlers}
     >
       <div className="absolute left-0 top-0 grid h-full w-full grid-cols-2">

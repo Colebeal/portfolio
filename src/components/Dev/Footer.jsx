@@ -45,7 +45,9 @@ export default function Footer() {
             <Link to="../imagery">Imagery</Link>
           </li>
           <li>
-            <a href="mailto:beal.cole@gmail.com">Email</a>
+            <a href="mailto:info@colebeal.com?subject=Loved your website!">
+              Email
+            </a>
           </li>
         </ul>
         <div

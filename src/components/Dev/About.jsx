@@ -15,7 +15,7 @@ export default function About() {
           needs.
         </p>
         <a
-          href="mailto:beal.cole@gmail.com"
+          href="mailto:cole@colebeal.com?subject=Let's collaborate"
           className="font text-orange-300 underline underline-offset-8 hover:text-orange-400 dark:hover:text-orange-200"
         >
           <h3>Lets collaborate</h3>

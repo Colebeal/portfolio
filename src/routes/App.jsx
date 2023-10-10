@@ -11,7 +11,7 @@ export default function App() {
       <m.div
         id="greet"
         exit={{ opacity: 0 }}
-        transition={{ duration: 1, ease: "easeInOut" }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
         className="absolute m-auto flex h-full w-full flex-col items-center justify-center text-teal-900 "
       >
         <m.h2
