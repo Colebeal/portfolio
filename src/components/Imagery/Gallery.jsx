@@ -62,7 +62,7 @@ export default function Slider({
                 className={image.gallery}
                 src={image.src}
               />
-            ))}
+            ))}d
           </m.div>
         )}
         {currentFolder === 2 && (
