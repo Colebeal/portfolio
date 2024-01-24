@@ -9,7 +9,7 @@ export default function About() {
       <div className="basis-3/4 md:max-w-7xl">
         <p className="mb-5">
           As a self-taught developer, my mission is to work with like-minded
-          individuals to create unique and engaging experiences purposed to
+          individuals to create authentic and engaging experiences purposed to
           solve your unique problems. Whether custom or using a CMS of your
           choice, let's explore options to create something that meets your
           needs.

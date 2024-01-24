@@ -24,7 +24,7 @@ export default function Services({ servicesRef }) {
             <p>
               Designing, wireframing and prototyping are vital to the success of
               a digital experience. Together we can partner around building a
-              personalized user-interface and design for your site.{" "}
+              personalized user-interface and design for your site.
             </p>
           </div>
           <div className="bg grow basis-1/3">
