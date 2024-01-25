@@ -41,8 +41,8 @@ export default function Dev() {
         >
           <About />
           <Services servicesRef={servicesRef} />
-          <Portfolio porfolioRef={porfolioRef} />
         </m.div>
+        <Portfolio porfolioRef={porfolioRef} />
         <Footer />
       </m.div>
     </>
