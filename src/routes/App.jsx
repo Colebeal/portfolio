@@ -36,13 +36,13 @@ export default function App() {
               to="/dev"
               className="m-2 rounded-lg bg-orange-100 p-3 shadow-lg dark:bg-teal-900 dark:text-white sm:m-5"
             >
-              Development
+              Web Developer
             </Link>
             <Link
               to="/imagery"
               className="m-2 rounded-lg bg-orange-100 p-3 shadow-lg dark:bg-teal-900 dark:text-white"
             >
-              Imagery
+              Photographer
             </Link>
           </div>
         </m.div>
