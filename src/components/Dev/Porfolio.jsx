@@ -129,14 +129,24 @@ export default function Portfolio({ porfolioRef }) {
               share a similar feel on both desktop and mobile, the site has a
               playful feel that is sure to please the client and his customers.
             </p>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="http://aarondorff.netlify.app/"
-              className="text-left text-3xl text-orange-300 underline underline-offset-8 hover:text-orange-400 dark:hover:text-orange-200"
-            >
-              <h3>See this site for yourself</h3>
-            </a>
+            <div className="flex gap-5">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://aarondorff.netlify.app/"
+                className="text-3xl text-orange-400 underline underline-offset-8 hover:text-orange-500 dark:hover:text-orange-200"
+              >
+                <h3>See this site for yourself</h3>
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/Colebeal/aaron-dorff"
+                className="flex items-end text-2xl text-orange-300 hover:text-orange-400 dark:hover:text-orange-200"
+              >
+                <h4>View source code</h4>
+              </a>
+            </div>
           </div>
           <div className="m-auto basis-1/3">
             <img

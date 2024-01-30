@@ -6,18 +6,29 @@ import ThemeToggle from "../components/ThemeToggle"
 export default function App() {
   document.body.style.overflow = "hidden"
 
+  const loadAnimation = {
+    initialTitle: { translateY: 500, opacity: 0 },
+    initial: { opacity: 1 },
+    animate: {
+      translateY: 0,
+      opacity: 1,
+      transition: { duration: 0.25, ease: "easeInOut" },
+    },
+    exit: { opacity: 0, transition: { duration: 0.5, ease: "easeInOut" } },
+  }
+
   return (
     <>
       <m.div
         id="greet"
         exit={{ opacity: 0 }}
-        transition={{ duration: 0.5, ease: "easeInOut" }}
+        transition={{ duration: 0.25, ease: "easeInOut" }}
         className="absolute m-auto flex h-full w-full flex-col items-center justify-center text-teal-900 "
       >
         <m.h2
-          initial={{ translateY: 200, opacity: 0 }}
+          initial={{ translateY: 150, opacity: 0 }}
           animate={{ translateY: 0, opacity: 1 }}
-          transition={{ duration: 1.5, ease: "easeInOut" }}
+          transition={{ duration: 1, ease: "easeInOut" }}
           className="text-6xl dark:text-orange-100"
         >
           Hi, I'm Cole.
@@ -25,7 +36,7 @@ export default function App() {
         <m.div
           initial={{ translateY: 0, opacity: 0 }}
           animate={{ translateY: 0, opacity: 1 }}
-          transition={{ duration: 0.75, delay: 1.25, ease: "easeInOut" }}
+          transition={{ duration: .8, delay: .75, ease: "easeInOut" }}
         >
           <div
             id="selfie"
