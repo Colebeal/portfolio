@@ -15,7 +15,7 @@ let observations = [
     className: "h-[500px] md:h-[600px] object-contain",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover",
+      "cursor-pointer self-center max-w-[275px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover",
     loading: "eager",
   },
 

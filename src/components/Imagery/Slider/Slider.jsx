@@ -101,7 +101,7 @@ export default function Slider({
       >
         <div
           id="topSpacer"
-          className="bg-red min-h-[200px] xl:min-h-[150px] z-100 w-full"
+          className="bg-red min-h-[115px] xl:min-h-[150px] z-100 w-full"
         ></div>
         <AnimatePresence mode="wait">
           {currentFolder === 0 && (
@@ -153,7 +153,7 @@ export default function Slider({
                 exit="exit"
                 onAnimationStart={() => setIsTransitioning(true)}
                 onAnimationComplete={() => setIsTransitioning(false)}
-                className="z-10 "
+                className="z-10"
               >
                 <Observations currentImage={currentImage} />
               </m.div>
