@@ -18,7 +18,7 @@ export default function ImageryNav({
       initial={{ opacity: 0 }}
       animate={{ translateY: 0, opacity: 1 }}
       transition={{ duration: 1, delay: 2, ease: easeInOut }}
-      className="z-20 m-5 flex h-10 w-full justify-center  md:mt-10"
+      className="z-20 -mt-10 xl:m-5 flex h-10 w-full justify-center  md:mt-10"
     >
       <div className="flex z-50 h-fit w-fit rounded-lg bg-orange-100 p-2 shadow-lg dark:bg-teal-900">
         <Link onClick={menuHandler} className="m-2 font-semibold">
