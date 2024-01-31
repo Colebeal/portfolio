@@ -63,14 +63,31 @@ export default function Slider({
     trackMouse: true,
   })
 
+  const animation = {
+    title: {
+      initial: { opacity: 0, translateY: -100 },
+      animate: {
+        opacity: 1,
+        translateY: 0,
+        transition: { duration: 1, delay: 1 },
+      },
+      exit: { opacity: 0, translateY: 50, transition: { duration: 1 } },
+    },
+    slider: {
+      initial: { opacity: 0 },
+      animate: { opacity: 1, transition: { duration: .25} },
+      exit: { opacity: 0 },
+    },
+  }
+
   return (
     <m.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 2, ease: "easeInOut" }}
+      transition={{ duration: 0.5, ease: "easeInOut" }}
       id="slider"
-      className="relative flex flex-col items-center justify-center"
+      className="absolute top-0 flex w-full flex-col items-center justify-center"
       onKeyDown={() => console.log("keydown")}
       {...swipeHandlers}
     >
@@ -78,22 +95,62 @@ export default function Slider({
         <div onClick={prevSlide} id="previous" className="z-20"></div>
         <div onClick={nextSlide} id="next" className="z-20"></div>
       </div>
-      <div id="slider-container" className="flex items-center justify-center">
-        <m.h2 className="absolute text-5xl text-teal-600">
-          {currentFolder === 0 && "Observations"}
-          {currentFolder === 1 && "People"}
-          {currentFolder === 2 && "Structure"}
-        </m.h2>
+      <div
+        id="slider-container"
+        className="flex flex-col items-center justify-center"
+      >
+        <div
+          id="topSpacer"
+          className="bg-red min-h-[225px] lg:min-h-[150px] z-100 w-full"
+        ></div>
+        <AnimatePresence mode="wait">
+          {currentFolder === 0 && (
+            <m.h2
+              key={0}
+              variants={animation.title}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              className="fixed left-5 top-10 text-4xl text-teal-900 dark:text-teal-700 lg:left-20 lg:text-5xl"
+            >
+              Observations
+            </m.h2>
+          )}
+          {currentFolder === 1 && (
+            <m.h2
+              key={1}
+              variants={animation.title}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              className="fixed left-5 top-10 text-4xl text-teal-900 dark:text-teal-700 lg:left-20 lg:text-5xl"
+            >
+              People
+            </m.h2>
+          )}
+          {currentFolder === 2 && (
+            <m.h2
+              key={2}
+              variants={animation.title}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              className="fixed left-5 top-10 text-4xl text-teal-900 dark:text-teal-700 lg:left-20 lg:text-5xl"
+            >
+              Structure
+            </m.h2>
+          )}
+        </AnimatePresence>
 
         <div className="flex items-center justify-center">
           <AnimatePresence mode="wait">
             {currentFolder === 0 && (
               <m.div
                 key={0}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: [0, 0, 1] }}
-                exit={{ opacity: [1, 0, 0] }}
-                transition={{ duration: 2, delay: 0.25 }}
+                variants={animation.slider}
+                initial="intial"
+                animate="animate"
+                exit="exit"
                 onAnimationStart={() => setIsTransitioning(true)}
                 onAnimationComplete={() => setIsTransitioning(false)}
                 className="z-10 "
@@ -104,10 +161,10 @@ export default function Slider({
             {currentFolder === 1 && (
               <m.div
                 key={1}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: [0, 0, 1] }}
-                exit={{ opacity: [1, 0, 0] }}
-                transition={{ duration: 2, delay: 0.25 }}
+                variants={animation.slider}
+                initial="intial"
+                animate="animate"
+                exit="exit"
                 onAnimationStart={() => setIsTransitioning(true)}
                 onAnimationComplete={() => setIsTransitioning(false)}
                 className="z-10 "
@@ -118,10 +175,10 @@ export default function Slider({
             {currentFolder === 2 && (
               <m.div
                 key={2}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: [0, 0, 1] }}
-                exit={{ opacity: [1, 0, 0] }}
-                transition={{ duration: 2, delay: 0.25 }}
+                variants={animation.slider}
+                initial="intial"
+                animate="animate"
+                exit="exit"
                 onAnimationStart={() => setIsTransitioning(true)}
                 onAnimationComplete={() => setIsTransitioning(false)}
                 className="z-10 "

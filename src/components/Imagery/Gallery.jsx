@@ -17,6 +17,20 @@ export default function Slider({
     setSlideIndex(e)
   }
 
+  const animation = {
+    initial: { translateY: 100, opacity: 0 },
+    animate: {
+      translateY: 0,
+      opacity: 1,
+      transition: { duration: 1, ease: "easeInOut" },
+    },
+    exit: {
+      translateY: 0,
+      opacity: 0,
+      transition: { duration: .5, ease: "easeInOut" },
+    },
+  }
+
   return (
     <section
       className="m-auto w-screen bg-white dark:bg-teal-950 md:mt-10 md:w-auto"
@@ -25,10 +39,10 @@ export default function Slider({
       <div>
         {currentFolder === 0 && (
           <m.div
-            initial={{ translateY: 500, opacity: 0 }}
-            animate={{ translateY: 0, opacity: 1 }}
-            exit={{ translateY: 500, opacity: 0 }}
-            transition={{ duration: 1, delay: 0.5, ease: "easeInOut" }}
+            variants={animation}
+            initial="initial"
+            animate="animate"
+            exit="exit"
             className="flex h-full w-full flex-1 flex-col gap-10 md:gap-16 lg:grid lg:grid-cols-2 xl:grid-cols-3"
           >
             {observations.map((image) => (
@@ -46,10 +60,10 @@ export default function Slider({
         )}
         {currentFolder === 1 && (
           <m.div
-            initial={{ translateY: 500, opacity: 0 }}
-            animate={{ translateY: 0, opacity: 1 }}
-            exit={{ translateY: 500, opacity: 0 }}
-            transition={{ duration: 1, delay: 0.5, ease: "easeInOut" }}
+            variants={animation}
+            initial="initial"
+            animate="animate"
+            exit="exit"
             className="flex h-full w-full flex-1 flex-col gap-10 lg:grid lg:grid-cols-2 xl:grid-cols-3"
           >
             {people.map((image) => (
@@ -62,15 +76,16 @@ export default function Slider({
                 className={image.gallery}
                 src={image.src}
               />
-            ))}d
+            ))}
+            d
           </m.div>
         )}
         {currentFolder === 2 && (
           <m.div
-            initial={{ translateY: 500, opacity: 0 }}
-            animate={{ translateY: 0, opacity: 1 }}
-            exit={{ translateY: 500, opacity: 0 }}
-            transition={{ duration: 1, delay: 0.5, ease: "easeInOut" }}
+            variants={animation}
+            initial="initial"
+            animate="animate"
+            exit="exit"
             className="flex h-full w-full flex-1 flex-col gap-10 lg:grid lg:grid-cols-2 xl:grid-cols-3"
           >
             {structure.map((image) => (
