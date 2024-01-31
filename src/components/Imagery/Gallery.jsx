@@ -14,7 +14,7 @@ export default function Slider({
 
   const enlargeImage = (e) => {
     setIsGallery(false)
-    setSlideIndex(e)
+    setSlideIndex(e - 1) 
   }
 
   const animation = {

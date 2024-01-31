@@ -1033,6 +1033,7 @@ let structure = [
   },
 ]
 
+let index = -1;
 
 observations = observations.map((item, index) => ({ ...item, id: index + 1 }))
 people = people.map((item, index) => ({ ...item, id: index + 1 }))
