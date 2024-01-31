@@ -101,7 +101,7 @@ export default function Slider({
       >
         <div
           id="topSpacer"
-          className="bg-red min-h-[225px] lg:min-h-[150px] z-100 w-full"
+          className="bg-red min-h-[150px] z-100 w-full"
         ></div>
         <AnimatePresence mode="wait">
           {currentFolder === 0 && (
