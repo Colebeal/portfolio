@@ -1,10 +1,12 @@
 import { motion as m } from "framer-motion"
 import { Link } from "react-router-dom"
+import { Cloudinary } from "@cloudinary/url-gen"
 
 import ThemeToggle from "../components/ThemeToggle"
 
 export default function App() {
   document.body.style.overflow = "hidden"
+  const cld = new Cloudinary({ cloud: { cloudName: "dvfqeowxm" } })
 
   const loadAnimation = {
     initialTitle: { translateY: 500, opacity: 0 },
@@ -36,11 +38,11 @@ export default function App() {
         <m.div
           initial={{ translateY: 0, opacity: 0 }}
           animate={{ translateY: 0, opacity: 1 }}
-          transition={{ duration: .8, delay: .75, ease: "easeInOut" }}
+          transition={{ duration: 0.8, delay: 0.75, ease: "easeInOut" }}
         >
           <div
             id="selfie"
-            className="m-5 h-[250px] w-[250px] rounded-full bg-orange-300 bg-[url('/images/people/Portfolio-116.jpg')] bg-cover bg-center md:h-[300px] md:w-[300px]"
+            className="m-5 h-[250px] w-[250px] rounded-full bg-orange-300 bg-[url('https://res.cloudinary.com/dvfqeowxm/image/upload/f_auto,q_auto/mmelrqrlyc9msjyvnlc8')] bg-cover bg-center md:h-[300px] md:w-[300px]"
           ></div>
           <div className="mt-10">
             <Link

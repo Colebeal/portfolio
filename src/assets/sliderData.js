@@ -1,6 +1,6 @@
 let observations = [
   {
-    src: "images/observations/Portfolio-096.jpg",
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/f_auto,q_auto/Portfolio-096",
     alt: "",
     className: "h-[500px] md:h-[600px] object-contain",
     hidden: "hidden",
@@ -10,7 +10,7 @@ let observations = [
   },
 
   {
-    src: "images/observations/Portfolio-097.jpg",
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/f_auto,q_auto/Portfolio-097",
     alt: "",
     className: "h-[500px] md:h-[600px] object-contain",
     hidden: "hidden",
@@ -20,7 +20,7 @@ let observations = [
   },
 
   {
-    src: "images/observations/Portfolio-123.jpg",
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/f_auto,q_auto/Portfolio-123",
     alt: "",
     className: "h-[500px] md:h-[600px] object-contain",
     hidden: "hidden",
@@ -30,7 +30,7 @@ let observations = [
   },
 
   {
-    src: "images/observations/Portfolio-120.jpg",
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/f_auto,q_auto/Portfolio-120",
     alt: "",
     className: "h-[500px] md:h-[600px] object-contain",
     hidden: "hidden",
@@ -40,7 +40,7 @@ let observations = [
   },
 
   {
-    src: "images/observations/Portfolio-106.jpg",
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/f_auto,q_auto/Portfolio-106",
     alt: "",
     className: "h-[500px] md:h-[600px] object-contain",
     hidden: "hidden",
@@ -50,7 +50,7 @@ let observations = [
   },
 
   {
-    src: "images/observations/Portfolio-103.jpg",
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/f_auto,q_auto/Portfolio-103",
     alt: "",
     className: "h-[500px] md:h-[600px] object-contain",
     hidden: "hidden",
@@ -60,7 +60,7 @@ let observations = [
   },
 
   {
-    src: "images/observations/Portfolio-098.jpg",
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/f_auto,q_auto/Portfolio-098",
     alt: "",
     className: "h-[500px] md:h-[600px] object-contain",
     hidden: "hidden",
@@ -70,7 +70,7 @@ let observations = [
   },
 
   {
-    src: "images/observations/Portfolio-134.jpg",
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/f_auto,q_auto/Portfolio-134",
     alt: "",
     className: "h-[500px] md:h-[600px] object-contain",
     hidden: "hidden",
@@ -80,7 +80,7 @@ let observations = [
   },
 
   {
-    src: "images/observations/64600023.JPG",
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/f_auto,q_auto/64600023",
     alt: "",
     className: "h-[500px] md:h-[600px] object-contain",
     hidden: "hidden",
@@ -90,7 +90,7 @@ let observations = [
   },
 
   {
-    src: "images/observations/Portfolio-5.jpg",
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/f_auto,q_auto/Portfolio-5",
     alt: "",
     className: "h-[500px] md:h-[600px] object-contain",
     hidden: "hidden",
@@ -100,7 +100,7 @@ let observations = [
   },
 
   {
-    src: "images/observations/Portfolio-088.jpg",
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/f_auto,q_auto/Portfolio-088",
     alt: "",
     className: "h-[500px] md:h-[600px] object-contain",
     hidden: "hidden",
@@ -110,7 +110,7 @@ let observations = [
   },
 
   {
-    src: "images/observations/Portfolio-6.jpg",
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/f_auto,q_auto/Portfolio-6",
     alt: "",
     className: "h-[500px] md:h-[600px] object-contain",
     hidden: "hidden",
@@ -120,7 +120,7 @@ let observations = [
   },
 
   {
-    src: "images/observations/Portfolio-24.jpg",
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/f_auto,q_auto/Portfolio-24",
     alt: "",
     className: "h-[500px] md:h-[600px] object-contain",
     hidden: "hidden",
@@ -130,7 +130,7 @@ let observations = [
   },
 
   {
-    src: "images/observations/Portfolio-090.jpg",
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/f_auto,q_auto/Portfolio-090",
     alt: "",
     className: "h-[500px] md:h-[600px] object-contain",
     hidden: "hidden",
@@ -140,7 +140,7 @@ let observations = [
   },
 
   {
-    src: "images/observations/Portfolio-075.jpg",
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/f_auto,q_auto/Portfolio-075",
     alt: "",
     className: "h-[500px] md:h-[600px] object-contain",
     hidden: "hidden",
@@ -150,7 +150,7 @@ let observations = [
   },
 
   {
-    src: "images/observations/Portfolio-32.jpg",
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/f_auto,q_auto/Portfolio-32",
     alt: "",
     className: "h-[500px] md:h-[600px] object-contain",
     hidden: "hidden",
@@ -160,7 +160,7 @@ let observations = [
   },
 
   {
-    src: "images/observations/Portfolio-35.jpg",
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/f_auto,q_auto/Portfolio-35",
     alt: "",
     className: "h-[500px] md:h-[600px] object-contain",
     hidden: "hidden",
@@ -170,7 +170,7 @@ let observations = [
   },
 
   {
-    src: "images/observations/Portfolio-085.jpg",
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/f_auto,q_auto/Portfolio-085",
     className: "h-[500px] md:h-[600px] object-contain",
     hidden: "hidden",
     gallery:
@@ -179,7 +179,7 @@ let observations = [
   },
 
   {
-    src: "images/observations/Portfolio-64.jpg",
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/f_auto,q_auto/Portfolio-64",
     alt: "",
     className: "h-[500px] md:h-[600px] object-contain",
     hidden: "hidden",
@@ -189,7 +189,7 @@ let observations = [
   },
 
   {
-    src: "images/observations/Portfolio-113.jpg",
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/f_auto,q_auto/Portfolio-113",
     alt: "",
     className: "h-[500px] md:h-[600px] object-contain",
     hidden: "hidden",
@@ -199,7 +199,7 @@ let observations = [
   },
 
   {
-    src: "images/observations/Portfolio-38.jpg",
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/f_auto,q_auto/Portfolio-38",
     alt: "",
     className: "h-[500px] md:h-[600px] object-contain",
     hidden: "hidden",
@@ -209,7 +209,7 @@ let observations = [
   },
 
   {
-    src: "images/observations/Portfolio-39.jpg",
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/f_auto,q_auto/Portfolio-39",
     alt: "",
     className: "h-[500px] md:h-[600px] object-contain",
     hidden: "hidden",
@@ -219,7 +219,7 @@ let observations = [
   },
 
   {
-    src: "images/observations/Portfolio-077.jpg",
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/f_auto,q_auto/Portfolio-077",
     alt: "",
     className: "h-[500px] md:h-[600px] object-contain",
     hidden: "hidden",
@@ -229,7 +229,7 @@ let observations = [
   },
 
   {
-    src: "images/observations/Portfolio-42.jpg",
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/f_auto,q_auto/Portfolio-42",
     alt: "",
     className: "h-[500px] md:h-[600px] object-contain",
     hidden: "hidden",
@@ -239,7 +239,7 @@ let observations = [
   },
 
   {
-    src: "images/observations/Portfolio-47.jpg",
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/f_auto,q_auto/Portfolio-47",
     alt: "",
     className: "h-[500px] md:h-[600px] object-contain",
     hidden: "hidden",
@@ -249,7 +249,7 @@ let observations = [
   },
 
   {
-    src: "images/observations/san-fran_roll 2_6491-2.jpg",
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/f_auto,q_auto/san-fran_roll-2",
     alt: "",
     className: "h-[500px] md:h-[600px] object-contain",
     hidden: "hidden",
@@ -259,7 +259,7 @@ let observations = [
   },
 
   {
-    src: "images/observations/Portfolio-54.jpg",
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/f_auto,q_auto/Portfolio-54",
     alt: "",
     className: "h-[500px] md:h-[600px] object-contain",
     hidden: "hidden",
@@ -269,7 +269,7 @@ let observations = [
   },
 
   {
-    src: "images/observations/san-fran_roll 3_6492-5.jpg",
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/f_auto,q_auto/san-fran_roll-3",
     alt: "",
     className: "h-[500px] md:h-[600px] object-contain",
     hidden: "hidden",
@@ -279,7 +279,7 @@ let observations = [
   },
 
   {
-    src: "images/observations/Portfolio-131.jpg",
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/f_auto,q_auto/Portfolio-131",
     alt: "",
     className: "h-[500px] md:h-[600px] object-contain",
     hidden: "hidden",
@@ -289,7 +289,7 @@ let observations = [
   },
 
   {
-    src: "images/observations/Portfolio-132.jpg",
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/f_auto,q_auto/Portfolio-132",
     alt: "",
     className: "h-[500px] md:h-[600px] object-contain",
     hidden: "hidden",
@@ -299,7 +299,7 @@ let observations = [
   },
 
   {
-    src: "images/observations/Portfolio-68.jpg",
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/f_auto,q_auto/Portfolio-68",
     alt: "",
     className: "h-[500px] md:h-[600px] object-contain",
     hidden: "hidden",
