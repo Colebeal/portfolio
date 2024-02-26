@@ -44,7 +44,7 @@ export default function Hero() {
         className="m-5 mb-2"
       >
         <img
-          src="/images/hero-image.jpg"
+          src="https://res.cloudinary.com/dvfqeowxm/image/upload/f_auto,q_auto/hero-image_jfzrz0"
           alt="Self Portrait at a Picnic"
           className="cover rounded-lg md:hidden"
         />
