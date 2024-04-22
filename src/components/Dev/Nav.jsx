@@ -122,8 +122,8 @@ export default function Nav({ servicesRef, aboutRef, porfolioRef }) {
             />
           )}
           <ul
-            className={` absolute -right-2 bottom-14 flex flex-col gap-4 rounded-lg bg-orange-200 p-6 px-10 text-right text-4xl shadow-lg transition-opacity dark:bg-teal-800 md:px-16 md:py-12 md:text-6xl ${
-              isHovering ? "opacity-1" : "opacity-0"
+            className={` absolute -right-2 bottom-14 -z-10 flex flex-col gap-4 rounded-lg bg-orange-200 p-6 px-10 text-right text-4xl shadow-lg dark:bg-teal-800 md:px-16 md:py-12 md:text-6xl ${
+              isHovering ? "" : "hidden "
             }`}
           >
             <li>

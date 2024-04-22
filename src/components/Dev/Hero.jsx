@@ -15,7 +15,7 @@ export default function Hero() {
         initial={{ translateY: 25, opacity: 0 }}
         animate={{ translateY: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 1.5, ease: "easeInOut" }}
-        className="3xl:min-h-[900px] 4xl:min-h-[1150px] relative ml-10 hidden min-h-[700px] grow basis-4/5 rounded-lg md:col-span-5 lg:block"
+        className=" 4xl:min-h-[1150px] relative ml-10 hidden min-h-[700px] grow basis-4/5 rounded-lg md:col-span-5 lg:block"
       ></m.div>
       <div className="m-5 flex basis-1/5 flex-col-reverse items-start justify-center lg:my-0 lg:flex-row lg:items-end">
         <m.h1

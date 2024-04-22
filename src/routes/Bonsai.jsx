@@ -1,6 +1,7 @@
 import { motion as m } from "framer-motion"
 import { useRef, useLayoutEffect } from "react"
 import Nav from "../components/Dev/Nav"
+import { Link } from "react-router-dom"
 
 const Bonsai = () => {
   const navRef = useRef(null)
@@ -287,12 +288,12 @@ const Bonsai = () => {
           was able to achieve this by instructing ChatGPT to output in JSON
           format followed by a structured JSON object displaying the format I
           wished to receive.
-          <a
-            className=" m-3 text-orange-400 underline hover:text-orange-300 dark:hover:text-orange-200"
-            href="https://github.com/Colebeal/bonsai/blob/main/src/lib/promptData.ts"
+          <Link
+            to="https://github.com/Colebeal/bonsai/blob/main/src/lib/promptData.ts"
+            className="m-3 text-orange-400 underline underline-offset-8 hover:text-orange-300 dark:hover:text-orange-200"
           >
             See the prompt.
-          </a>
+          </Link>
         </p>
         <p className="flex flex-grow basis-1/3 text-teal-950 dark:text-orange-100 xl:text-3xl">
           Following the OpenAI documentation for implementation was a valuable
