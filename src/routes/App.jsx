@@ -46,7 +46,7 @@ export default function App() {
           ></div>
           <div className="mt-10">
             <Link
-              to="/dev"
+              to="/dev/home"
               className="m-2 rounded-lg bg-orange-100 p-3 shadow-lg dark:bg-teal-900 dark:text-white sm:m-5"
             >
               Web Developer

@@ -12,8 +12,9 @@ export default function TechStack({ aboutRef }) {
     >
       <div className="flex animate-marquee whitespace-nowrap">
         <span className="mx-2 md:mx-6">react</span>
-        <span className="mx-2 md:mx-6">tailwind</span>
-        <span className="mx-2 md:mx-6">ux/ui</span>
+        <span className="mx-2 md:mx-6">firebase</span>
+        <span className="mx-2 md:mx-6">next.js</span>
+        <span className="mx-2 md:mx-6">typescript</span>
         <span className="mx-2 text-teal-700 md:mx-6">technologies:</span>
         <span className="mx-2 md:mx-6">html</span>
         <span className="mx-2 md:mx-6">css</span>
@@ -21,8 +22,9 @@ export default function TechStack({ aboutRef }) {
       </div>
       <div className="flex animate-marquee whitespace-nowrap">
         <span className="mx-2 md:mx-6">react</span>
-        <span className="mx-2 md:mx-6">tailwind</span>
-        <span className="mx-2 md:mx-6">ux/ui</span>
+        <span className="mx-2 md:mx-6">firebase</span>
+        <span className="mx-2 md:mx-6">next.js</span>
+        <span className="mx-2 md:mx-6">typescript</span>
         <span className="mx-2 text-teal-700 md:mx-6">technologies:</span>
         <span className="mx-2 md:mx-6">html</span>
         <span className="mx-2 md:mx-6">css</span>
@@ -30,8 +32,9 @@ export default function TechStack({ aboutRef }) {
       </div>
       <div className="flex animate-marquee whitespace-nowrap">
         <span className="mx-2 md:mx-6">react</span>
-        <span className="mx-2 md:mx-6">tailwind</span>
-        <span className="mx-2 md:mx-6">ux/ui</span>
+        <span className="mx-2 md:mx-6">firebase</span>
+        <span className="mx-2 md:mx-6">next.js</span>
+        <span className="mx-2 md:mx-6">typescript</span>
         <span className="mx-2 text-teal-700 md:mx-6">technologies:</span>
         <span className="mx-2 md:mx-6">html</span>
         <span className="mx-2 md:mx-6">css</span>

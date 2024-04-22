@@ -1,6 +1,4 @@
-import { TfiArrowCircleDown } from "react-icons/tfi"
-import { IoMdArrowRoundDown } from "react-icons/io"
-import { animate, motion as m } from "framer-motion"
+import { motion as m } from "framer-motion"
 
 export default function Hero() {
   let initialName =
@@ -11,20 +9,20 @@ export default function Hero() {
     window.innerWidth < 768 ? { opacity: 1 } : { translateY: 0, opacity: 1 }
 
   return (
-    <section className="md:flex md:w-full">
+    <section className="md:w-full lg:flex">
       <m.div
         id="hero"
         initial={{ translateY: 25, opacity: 0 }}
         animate={{ translateY: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 1.5, ease: "easeInOut" }}
-        className="relative ml-10 hidden min-h-[700px] grow basis-4/5 rounded-lg md:col-span-5 md:block"
+        className="3xl:min-h-[900px] 4xl:min-h-[1150px] relative ml-10 hidden min-h-[700px] grow basis-4/5 rounded-lg md:col-span-5 lg:block"
       ></m.div>
-      <div className="m-5 flex basis-1/5 flex-col-reverse items-start justify-center md:my-0 md:flex-row md:items-end">
+      <div className="m-5 flex basis-1/5 flex-col-reverse items-start justify-center lg:my-0 lg:flex-row lg:items-end">
         <m.h1
           initial={initialTitle}
           animate={animate}
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="text-5xl font-semibold text-teal-700 dark:text-orange-300 md:text-7xl md:[writing-mode:vertical-lr]"
+          className="3xl text-5xl font-semibold text-teal-700 dark:text-orange-300 lg:text-7xl lg:[writing-mode:vertical-lr]"
         >
           Developer
         </m.h1>
@@ -32,7 +30,7 @@ export default function Hero() {
           initial={initialName}
           animate={animate}
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="text-7xl font-semibold text-teal-900 dark:text-orange-100 md:text-9xl md:[writing-mode:vertical-lr]"
+          className="text-7xl font-semibold text-teal-900 dark:text-orange-100 lg:text-9xl lg:[writing-mode:vertical-lr]"
         >
           Cole Beal
         </m.h1>
@@ -46,11 +44,9 @@ export default function Hero() {
         <img
           src="https://res.cloudinary.com/dvfqeowxm/image/upload/f_auto,q_auto/hero-image_jfzrz0"
           alt="Self Portrait at a Picnic"
-          className="cover rounded-lg md:hidden"
+          className="cover rounded-lg lg:hidden"
         />
       </m.div>
     </section>
   )
 }
-
-// md:grid md:grid-cols-6

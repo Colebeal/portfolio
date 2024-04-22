@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="mx-16 my-8 flex flex-col-reverse items-center justify-around border-t-2 border-teal-800 text-teal-900 dark:border-teal-800 dark:text-orange-100 md:my-0 md:flex-row">
         <div className="text-base text-teal-900 dark:text-orange-100">
           <span className="text-xl">© </span>
-          <span> 2023</span>
+          <span> 2024</span>
         </div>
         <ul className="h-full items-center justify-center gap-20 p-5 text-base md:flex">
           <li>

@@ -75,7 +75,7 @@ export default function Slider({
     },
     slider: {
       initial: { opacity: 0 },
-      animate: { opacity: 1, transition: { duration: .25} },
+      animate: { opacity: 1, transition: { duration: 0.25 } },
       exit: { opacity: 0 },
     },
   }
@@ -101,7 +101,7 @@ export default function Slider({
       >
         <div
           id="topSpacer"
-          className="min-h-[100px] xl:min-h-[150px] z-100 w-full"
+          className="z-100 min-h-[100px] w-full xl:min-h-[150px]"
         ></div>
         <AnimatePresence mode="wait">
           {currentFolder === 0 && (

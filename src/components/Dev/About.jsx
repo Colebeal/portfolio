@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="my-10 flex flex-col items-start justify-between text-left text-xl text-teal-900 dark:text-orange-100 md:mx-12 md:mb-24 md:mt-32 md:flex-row md:text-3xl"
+      className="my-10 flex flex-col items-start justify-between text-left text-xl text-teal-900 dark:text-orange-100 md:mb-24 md:mt-32 md:flex-row md:text-3xl xl:mx-12"
     >
       <div className="basis-3/4 md:max-w-7xl">
         <p className="mb-5">
@@ -16,7 +16,7 @@ export default function About() {
         </p>
         <a
           href="mailto:cole@colebeal.com?subject=Let's collaborate"
-          className="font text-orange-300 underline underline-offset-8 hover:text-orange-400 dark:hover:text-orange-200"
+          className=" text-orange-400 underline underline-offset-8 hover:text-orange-400 dark:hover:text-orange-200"
         >
           <h3>Lets collaborate</h3>
         </a>
