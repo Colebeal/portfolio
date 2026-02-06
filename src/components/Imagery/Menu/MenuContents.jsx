@@ -21,6 +21,9 @@ export default function MenuContents({
           </p>
         </div>
         <ul className="mt-5 flex flex-col gap-3 2xl:flex-row">
+          <li>
+            <h3 className="text-lg font-bold">Get In Touch</h3>
+          </li>
           <li className="flex gap-2">
             <AiFillInstagram className="text-2xl text-teal-900 dark:text-white" />
             <a
@@ -43,7 +46,7 @@ export default function MenuContents({
             </a>
           </li>
         </ul>
-        <div className="mt-8 h-[200px] bg-[url('/images/people/Portfolio-116.jpg')] bg-cover bg-center md:fixed md:bottom-32 md:right-0 md:w-[300px]"></div>
+        <div className=" mt-8 aspect-square bg-[url('/images/hero-image.jpg')] bg-cover bg-center md:fixed md:bottom-32 md:right-0 md:w-[300px]"></div>
       </main>
     </>
   )
