@@ -111,7 +111,7 @@ export default function Slider({
               initial="initial"
               animate="animate"
               exit="exit"
-              className="fixed left-5 top-10 text-4xl text-teal-900 dark:text-teal-700 lg:left-20 lg:text-5xl"
+              className="w-full pb-4 pl-6 text-left text-4xl text-teal-900 dark:text-teal-700 lg:left-20 lg:text-center lg:text-5xl"
             >
               Observations
             </m.h2>
@@ -123,7 +123,7 @@ export default function Slider({
               initial="initial"
               animate="animate"
               exit="exit"
-              className="fixed left-5 top-10 text-4xl text-teal-900 dark:text-teal-700 lg:left-20 lg:text-5xl"
+              className="w-full pb-4 pl-6 text-left text-4xl text-teal-900 dark:text-teal-700 lg:left-20 lg:text-center lg:text-5xl"
             >
               People
             </m.h2>
@@ -135,7 +135,7 @@ export default function Slider({
               initial="initial"
               animate="animate"
               exit="exit"
-              className="fixed left-5 top-10 text-4xl text-teal-900 dark:text-teal-700 lg:left-20 lg:text-5xl"
+              className="w-full pb-4 pl-6 text-left text-4xl text-teal-900 dark:text-teal-700 lg:left-20 lg:text-center lg:text-5xl"
             >
               Structure
             </m.h2>
@@ -148,7 +148,7 @@ export default function Slider({
               <m.div
                 key={0}
                 variants={animation.slider}
-                initial="intial"
+                initial="initial"
                 animate="animate"
                 exit="exit"
                 onAnimationStart={() => setIsTransitioning(true)}
