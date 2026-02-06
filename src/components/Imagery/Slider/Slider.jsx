@@ -87,7 +87,7 @@ export default function Slider({
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5, ease: "easeInOut" }}
       id="slider"
-      className="absolute top-0 flex w-full flex-col items-center justify-center"
+      className="flex h-[100vh] w-full flex-col items-center justify-center"
       onKeyDown={() => console.log("keydown")}
       {...swipeHandlers}
     >
@@ -97,12 +97,8 @@ export default function Slider({
       </div>
       <div
         id="slider-container"
-        className="flex flex-col items-center justify-center"
+        className="flex flex-col items-center justify-center py-4"
       >
-        <div
-          id="topSpacer"
-          className="z-100 min-h-[100px] w-full xl:min-h-[150px]"
-        ></div>
         <AnimatePresence mode="wait">
           {currentFolder === 0 && (
             <m.h2
@@ -111,7 +107,7 @@ export default function Slider({
               initial="initial"
               animate="animate"
               exit="exit"
-              className="w-full pb-4 pl-6 text-left text-4xl text-teal-900 dark:text-teal-700 lg:left-20 lg:text-center lg:text-5xl"
+              className="w-full pb-4 pl-6 text-center text-4xl text-teal-900 dark:text-teal-700 lg:left-20 lg:text-5xl"
             >
               Observations
             </m.h2>
@@ -123,7 +119,7 @@ export default function Slider({
               initial="initial"
               animate="animate"
               exit="exit"
-              className="w-full pb-4 pl-6 text-left text-4xl text-teal-900 dark:text-teal-700 lg:left-20 lg:text-center lg:text-5xl"
+              className="w-full pb-4 pl-6 text-center text-4xl text-teal-900 dark:text-teal-700 lg:left-20 lg:text-5xl"
             >
               People
             </m.h2>
@@ -135,7 +131,7 @@ export default function Slider({
               initial="initial"
               animate="animate"
               exit="exit"
-              className="w-full pb-4 pl-6 text-left text-4xl text-teal-900 dark:text-teal-700 lg:left-20 lg:text-center lg:text-5xl"
+              className="w-full pb-4 pl-6 text-center text-4xl text-teal-900 dark:text-teal-700 lg:left-20 lg:text-5xl"
             >
               Structure
             </m.h2>
