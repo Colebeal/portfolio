@@ -50,7 +50,7 @@ export default function Imagery() {
         setCurrentFolder={setCurrentFolder}
         menuHandler={menuHandler}
       />
-      <MiniMenu menuHandler={menuHandler} />
+      <MiniMenu menuHandler={menuHandler} isGallery={isGallery} />
 
       {/* Gallery and Slider Logic */}
 

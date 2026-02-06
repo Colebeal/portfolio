@@ -7,9 +7,9 @@ import ThemeToggle from "../ThemeToggle"
 export default function MiniMenu({ isGallery, menuHandler }) {
   const mobileToggles = {
     slider:
-      "basis-1/5 z-40 flex sm:flex-col w-fit h-fit p-2 rounded-md gap-4 bg-orange-100 dark:bg-teal-900 fixed top-10 right-5 shadow-lg",
+      "hidden sm:flex basis-1/5 z-40 sm:flex-col w-fit h-fit p-2 rounded-md gap-4 bg-white border-[1px] border-black  dark:bg-teal-900 fixed top-10 right-5 shadow-lg",
     gallery:
-      " z-40 flex flex-col w-fit h-fit p-2 rounded-md gap-4 bg-orange-100 dark:bg-teal-900 fixed bottom-10 md:top-10 right-5 shadow-lg",
+      "z-40 flex flex-col w-fit h-fit p-2 rounded-md gap-4 bg-orange-100 bg-white border-[1px] border-black dark:bg-teal-900 fixed bottom-10 md:top-10 right-5 shadow-lg ",
   }
 
   return (
@@ -20,7 +20,7 @@ export default function MiniMenu({ isGallery, menuHandler }) {
       </Link> */}
       <HiMenu
         onClick={menuHandler}
-        className="z-50 cursor-pointer text-2xl text-teal-900 dark:text-orange-50"
+        className="z-50 cursor-pointer text-2xl  text-teal-900 dark:text-white sm:flex"
       />
     </div>
   )

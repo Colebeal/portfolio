@@ -10,7 +10,6 @@ export default function ImageryNav({
   currentFolder,
   galleryHandler,
 }) {
-
   const folderLength = [observations.length, people.length, structure.length]
 
   return (
@@ -18,13 +17,13 @@ export default function ImageryNav({
       initial={{ opacity: 0 }}
       animate={{ translateY: 0, opacity: 1 }}
       transition={{ duration: 1, delay: 2, ease: easeInOut }}
-      className="z-20 my-1 xl:m-5 flex h-10 w-full justify-center md:mt-10"
+      className="z-20 my-1 flex h-10 w-full justify-center md:mt-10 xl:m-5"
     >
-      <div className="flex z-50 h-fit w-fit rounded-lg bg-orange-100 p-2 shadow-lg dark:bg-teal-900">
+      <div className="z-50 flex h-fit w-fit rounded-lg border-[1px] border-black bg-white p-2 shadow-lg dark:bg-teal-900">
         <Link onClick={menuHandler} className="m-2 font-semibold">
           Menu
         </Link>
-        <h2 className="m-2 text-md w-[100px]">
+        <h2 className="text-md m-2 w-[100px]">
           {slideIndex + 1} of {folderLength[currentFolder]}
         </h2>
 
