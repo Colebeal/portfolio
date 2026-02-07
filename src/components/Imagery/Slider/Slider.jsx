@@ -6,6 +6,7 @@ import {
 } from "../../../assets/sliderData"
 import { AnimatePresence, motion as m } from "framer-motion"
 import { useSwipeable } from "react-swipeable"
+import { useRef } from "react"
 
 import ImageryNav from "../ImageryNav"
 import Observations from "./Observations"
@@ -27,6 +28,8 @@ export default function Slider({
 }) {
   const currentImage = slideIndex
   const folder = [scottieAmex, people, structure, observations]
+  const prevCursorRef = useRef(null)
+  const nextCursorRef = useRef(null)
 
   const prevSlide = () => {
     let previousFolder = folder[currentFolder - 1]
@@ -86,6 +89,30 @@ export default function Slider({
     },
   }
 
+  const cursorHandler = (e, ref) => {
+    const el = ref.current
+    if (!el) return
+    el.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`
+  }
+
+  const showPrev = () => {
+    const el = prevCursorRef.current
+    if (el) el.style.opacity = "1"
+  }
+  const hidePrev = () => {
+    const el = prevCursorRef.current
+    if (el) el.style.opacity = "0"
+  }
+
+  const showNext = () => {
+    const el = nextCursorRef.current
+    if (el) el.style.opacity = "1"
+  }
+  const hideNext = () => {
+    const el = nextCursorRef.current
+    if (el) el.style.opacity = "0"
+  }
+
   return (
     <m.section
       initial={{ opacity: 0 }}
@@ -98,8 +125,38 @@ export default function Slider({
       {...swipeHandlers}
     >
       <div className="absolute left-0 top-0 grid h-full w-full grid-cols-2">
-        <div onClick={prevSlide} id="previous" className="z-20"></div>
-        <div onClick={nextSlide} id="next" className="z-20"></div>
+        <div
+          onClick={prevSlide}
+          onMouseMove={() => cursorHandler(event, prevCursorRef)}
+          onMouseEnter={showPrev}
+          onMouseLeave={hidePrev}
+          id="previous"
+          className="z-20 cursor-none"
+        >
+          <div
+            id="previous-cursor"
+            ref={prevCursorRef}
+            className="pointer-events-none fixed left-0 top-0 z-50 opacity-0 transition-opacity"
+          >
+            Previous
+          </div>
+        </div>
+        <div
+          onClick={nextSlide}
+          onMouseMove={() => cursorHandler(event, nextCursorRef)}
+          onMouseEnter={showNext}
+          onMouseLeave={hideNext}
+          id="next"
+          className="z-20 cursor-none"
+        >
+          <div
+            ref={nextCursorRef}
+            id="next-cursor"
+            className="pointer-events-none fixed left-0 top-0 z-50 opacity-0 transition-opacity"
+          >
+            Next
+          </div>
+        </div>
       </div>
       <div
         id="slider-container"
