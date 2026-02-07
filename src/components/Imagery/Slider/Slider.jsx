@@ -131,12 +131,12 @@ export default function Slider({
           onMouseEnter={showPrev}
           onMouseLeave={hidePrev}
           id="previous"
-          className="z-20 cursor-none"
+          className="z-20 lg:cursor-none"
         >
           <div
             id="previous-cursor"
             ref={prevCursorRef}
-            className="pointer-events-none fixed left-0 top-0 z-50 opacity-0 transition-opacity"
+            className="pointer-events-none fixed left-0 top-0 z-50 hidden opacity-0 transition-opacity lg:block"
           >
             Previous
           </div>
@@ -147,12 +147,12 @@ export default function Slider({
           onMouseEnter={showNext}
           onMouseLeave={hideNext}
           id="next"
-          className="z-20 cursor-none"
+          className="z-20 lg:cursor-none"
         >
           <div
             ref={nextCursorRef}
             id="next-cursor"
-            className="pointer-events-none fixed left-0 top-0 z-50 opacity-0 transition-opacity"
+            className="pointer-events-none fixed left-0 top-0 z-50 hidden opacity-0 transition-opacity lg:block"
           >
             Next
           </div>
@@ -170,7 +170,7 @@ export default function Slider({
               initial="initial"
               animate="animate"
               exit="exit"
-              className="w-full pb-4 pl-6 text-center text-4xl text-teal-900 dark:text-teal-700 lg:left-20 lg:text-5xl"
+              className="w-full pb-4 pl-6 text-center text-4xl text-teal-900 dark:text-white lg:left-20 lg:text-5xl"
             >
               Scottie Scheffler
             </m.h2>
@@ -182,7 +182,7 @@ export default function Slider({
               initial="initial"
               animate="animate"
               exit="exit"
-              className="w-full pb-4 pl-6 text-center text-4xl text-teal-900 dark:text-teal-700 lg:left-20 lg:text-5xl"
+              className="w-full pb-4 pl-6 text-center text-4xl text-teal-900 dark:text-white lg:left-20 lg:text-5xl"
             >
               People
             </m.h2>
@@ -194,7 +194,7 @@ export default function Slider({
               initial="initial"
               animate="animate"
               exit="exit"
-              className="w-full pb-4 pl-6 text-center text-4xl text-teal-900 dark:text-teal-700 lg:left-20 lg:text-5xl"
+              className="w-full pb-4 pl-6 text-center text-4xl text-teal-900 dark:text-white lg:left-20 lg:text-5xl"
             >
               Structure
             </m.h2>
@@ -206,7 +206,7 @@ export default function Slider({
               initial="initial"
               animate="animate"
               exit="exit"
-              className="w-full pb-4 pl-6 text-center text-4xl text-teal-900 dark:text-teal-700 lg:left-20 lg:text-5xl"
+              className="w-full pb-4 pl-6 text-center text-4xl text-teal-900 dark:text-white lg:left-20 lg:text-5xl"
             >
               Observations
             </m.h2>

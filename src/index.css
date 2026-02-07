@@ -1,36 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&family=Space+Mono:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&family=Space+Mono:ital@0;1&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Acorn-Bold';
+  font-family: "Acorn-Bold";
   src: url(/src/fonts/Acorn-Bold.woff2) format(woff2);
 }
 
 @font-face {
-  font-family: 'Acorn-Semi';
+  font-family: "Acorn-Semi";
   src: url(/src/fonts/Acorn-SemiBold.woff2) format(woff2);
 }
 
 @font-face {
-  font-family: 'Acorn-Medium';
+  font-family: "Acorn-Medium";
   src: url(/src/fonts/Acorn-Medium.woff2) format(woff2);
 }
 
 @font-face {
-  font-family: 'Gt-Planar';
+  font-family: "Gt-Planar";
   src: url(/src/fonts/GT-Planar-Regular.otf) format(opentype);
 }
 
 @font-face {
-  font-family: 'Gt-Planar-Medium';
+  font-family: "Gt-Planar-Medium";
   src: url(/src/fonts/GT-Planar-Medium.otf) format(opentype);
 }
 
 @font-face {
-  font-family: 'Gt-Planar-Bold';
+  font-family: "Gt-Planar-Bold";
   src: url(/src/fonts/GT-Planar-Bold.otf) format(opentype);
 }
 
@@ -39,7 +39,19 @@
 } */
 
 :root {
-  font-family: Gt-Planar, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    Gt-Planar,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
@@ -50,7 +62,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  transition: color 250ms, background-color 0.25s ease-in-out;
+  transition:
+    color 250ms,
+    background-color 0.25s ease-in-out;
 }
 
 #root {
@@ -61,23 +75,60 @@
 
 body {
   margin: 0;
-  font-size: .8rem;
+  font-size: 0.8rem;
   min-width: 320px;
   min-height: 100vh;
 }
 
 h1 {
-  font-family: Acorn-Bold, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    Acorn-Bold,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   font-size: 3.2em;
   line-height: 1.1;
 }
 
 h2 {
-  font-family: Acorn-Semi, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    Acorn-Semi,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
 }
 
-h3, h4 {
-  font-family: Acorn-Medium, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+h3,
+h4 {
+  font-family:
+    Acorn-Medium,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
 }
 
 button {
@@ -89,18 +140,21 @@ button {
   font-family: inherit;
   background-color: #ffffff;
   cursor: pointer;
-  transition: border-color 0.25s, background-color 0.25s ease-in-out
+  transition:
+    border-color 0.25s,
+    background-color 0.25s ease-in-out;
 }
-button:hover{
+button:hover {
   border-color: #134e4a;
 }
 
 .dark {
   color: #ffffff;
-  background-color: #042f2e;
+  /* background-color: #042f2e; */
+  background-color: #111111;
 }
 
-#wrapper { 
+#wrapper {
   min-height: 100vh;
   display: flex;
   flex-direction: column;

@@ -4,7 +4,7 @@ import { observations } from "../../../assets/sliderData"
 export default function Observations({ currentImage }) {
   return (
     <m.div
-      key={1}
+      key={0}
       initial={{ opacity: 0 }}
       animate={{ opacity: [0, 0, 1] }}
       exit={{ opacity: [1, 0, 0] }}

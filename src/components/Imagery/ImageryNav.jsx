@@ -29,7 +29,7 @@ export default function ImageryNav({
       transition={{ duration: 1, delay: 2, ease: easeInOut }}
       className="z-20 my-1 flex h-10 w-full justify-center md:mt-10 xl:m-5"
     >
-      <div className="z-50 flex h-fit w-fit rounded-lg border-[1px] border-black bg-white p-2 shadow-lg dark:bg-teal-900">
+      <div className="z-50 flex h-fit w-fit rounded-lg border-[1px] border-black bg-white p-2 shadow-lg dark:bg-[#333333]">
         <Link onClick={menuHandler} className="m-2 font-semibold">
           Menu
         </Link>
