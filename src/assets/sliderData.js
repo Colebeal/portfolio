@@ -1038,10 +1038,10 @@ let scottieAmex = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770428749/Scottie-Amex-14_fr2hdq.jpg",
     alt: "Scottie AMEX with his son",
     className:
-      "h-[500px] lg:h-[900px] object-contain m-auto w-fit lg:border-[2px] dark:border-white border-black",
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[2px] dark:border-white border-black",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1049,10 +1049,10 @@ let scottieAmex = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770428753/Scottie-Amex-2_g22mpl.jpg",
     alt: "Scottie AMEX chip",
     className:
-      "h-[500px] lg:h-[900px] object-contain m-auto w-fit lg:border-[2px] dark:border-white border-black",
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[2px] dark:border-white border-black",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1060,10 +1060,10 @@ let scottieAmex = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770428897/Scottie-Amex_uim7gt.jpg",
     alt: "",
     className:
-      "h-[500px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1071,10 +1071,10 @@ let scottieAmex = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770428753/Scottie-Amex-7_rs8eqm.jpg",
     alt: "scottie fairway chunk",
     className:
-      "h-[500px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1082,10 +1082,10 @@ let scottieAmex = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770429027/Scottie-Amex-15_jzmmlg.jpg",
     alt: "",
     className:
-      "h-[500px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1093,10 +1093,10 @@ let scottieAmex = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770429033/Scottie-Amex-16_naekc6.jpg",
     alt: "",
     className:
-      "h-[500px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1104,10 +1104,10 @@ let scottieAmex = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770428753/Scottie-Amex-8_zhxhkz.jpg",
     alt: "",
     className:
-      "h-[500px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1115,10 +1115,10 @@ let scottieAmex = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770428751/Scottie-Amex-9_lqpfqp.jpg",
     alt: "",
     className:
-      "h-[500px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1126,10 +1126,10 @@ let scottieAmex = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770428749/Scottie-Amex-6_eicqmn.jpg",
     alt: "",
     className:
-      "h-[500px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1137,10 +1137,10 @@ let scottieAmex = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770429029/Scottie-Amex-17_v0itmt.jpg",
     alt: "",
     className:
-      "h-[500px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1148,10 +1148,10 @@ let scottieAmex = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770428897/Scottie-Amex_uim7gt.jpg",
     alt: "",
     className:
-      "h-[500px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1159,10 +1159,10 @@ let scottieAmex = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770429028/Scottie-Amex-18_fzzte0.jpg",
     alt: "",
     className:
-      "h-[500px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "eager",
   },
 ]

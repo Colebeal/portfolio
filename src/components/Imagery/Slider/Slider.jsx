@@ -172,6 +172,9 @@ export default function Slider({
               exit="exit"
               className="w-full pb-4 pl-6 text-center text-4xl text-teal-900 dark:text-white lg:left-20 lg:text-5xl"
             >
+              <p className="lg:text-md text-xs font-light">
+                The Amex • PGA • 2026
+              </p>
               Scottie Scheffler
             </m.h2>
           )}
