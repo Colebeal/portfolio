@@ -1,4 +1,9 @@
-import { observations, people, structure } from "../../assets/sliderData"
+import {
+  scottieAmex,
+  people,
+  structure,
+  observations,
+} from "../../assets/sliderData"
 import { motion as m } from "framer-motion"
 
 import MiniMenu from "./MiniMenu"
@@ -14,7 +19,7 @@ export default function Slider({
 
   const enlargeImage = (e) => {
     setIsGallery(false)
-    setSlideIndex(e - 1) 
+    setSlideIndex(e - 1)
   }
 
   const animation = {
@@ -27,7 +32,7 @@ export default function Slider({
     exit: {
       translateY: 0,
       opacity: 0,
-      transition: { duration: .5, ease: "easeInOut" },
+      transition: { duration: 0.5, ease: "easeInOut" },
     },
   }
 
@@ -45,7 +50,7 @@ export default function Slider({
             exit="exit"
             className="flex h-full w-full flex-1 flex-col gap-10 md:gap-16 lg:grid lg:grid-cols-2 xl:grid-cols-3"
           >
-            {observations.map((image) => (
+            {scottieAmex.map((image) => (
               <img
                 onClick={() => {
                   enlargeImage(image.id)
@@ -89,6 +94,27 @@ export default function Slider({
             className="flex h-full w-full flex-1 flex-col gap-10 lg:grid lg:grid-cols-2 xl:grid-cols-3"
           >
             {structure.map((image) => (
+              <img
+                onClick={() => {
+                  enlargeImage(image.id)
+                }}
+                id={image.id}
+                key={image.id}
+                className={image.gallery}
+                src={image.src}
+              />
+            ))}
+          </m.div>
+        )}
+        {currentFolder === 3 && (
+          <m.div
+            variants={animation}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            className="flex h-full w-full flex-1 flex-col gap-10 lg:grid lg:grid-cols-2 xl:grid-cols-3"
+          >
+            {observations.map((image) => (
               <img
                 onClick={() => {
                   enlargeImage(image.id)

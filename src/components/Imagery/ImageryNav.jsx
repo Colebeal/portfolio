@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom"
 import { motion as m, AnimatePresence, easeInOut } from "framer-motion"
 
-import { observations, people, structure } from "../../assets/sliderData"
+import {
+  scottieAmex,
+  people,
+  structure,
+  observations,
+} from "../../assets/sliderData"
 
 export default function ImageryNav({
   menuStatus,
@@ -10,7 +15,12 @@ export default function ImageryNav({
   currentFolder,
   galleryHandler,
 }) {
-  const folderLength = [observations.length, people.length, structure.length]
+  const folderLength = [
+    scottieAmex.length,
+    people.length,
+    structure.length,
+    observations.length,
+  ]
 
   return (
     <m.header

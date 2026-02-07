@@ -1,4 +1,9 @@
-import { observations, people, structure } from "../../../assets/sliderData"
+import {
+  observations,
+  people,
+  structure,
+  scottieAmex,
+} from "../../../assets/sliderData"
 import { AnimatePresence, motion as m } from "framer-motion"
 import { useSwipeable } from "react-swipeable"
 
@@ -6,6 +11,7 @@ import ImageryNav from "../ImageryNav"
 import Observations from "./Observations"
 import People from "./People"
 import Structure from "./Structure"
+import ScottieAmex from "./ScottieAmex"
 
 export default function Slider({
   slideIndex,
@@ -20,7 +26,7 @@ export default function Slider({
   setIsTransitioning,
 }) {
   const currentImage = slideIndex
-  const folder = [observations, people, structure]
+  const folder = [scottieAmex, people, structure, observations]
 
   const prevSlide = () => {
     let previousFolder = folder[currentFolder - 1]
@@ -28,8 +34,8 @@ export default function Slider({
     if (isTransitioning === true) {
       return
     } else if (slideIndex === 0 && currentFolder === 0) {
-      setSlideIndex(structure.length - 1)
-      setCurrentFolder(2)
+      setSlideIndex(observations.length - 1)
+      setCurrentFolder(3)
     } else if (slideIndex == 0) {
       setSlideIndex(previousFolder.length - 1)
       setCurrentFolder(currentFolder - 1)
@@ -43,7 +49,7 @@ export default function Slider({
 
     if (isTransitioning === true) {
       return
-    } else if (slideIndex === structure.length - 1 && currentFolder === 2) {
+    } else if (slideIndex === observations.length - 1 && currentFolder === 3) {
       setCurrentFolder(0)
       setSlideIndex(0)
       return
@@ -109,7 +115,7 @@ export default function Slider({
               exit="exit"
               className="w-full pb-4 pl-6 text-center text-4xl text-teal-900 dark:text-teal-700 lg:left-20 lg:text-5xl"
             >
-              Observations
+              Scottie Scheffler
             </m.h2>
           )}
           {currentFolder === 1 && (
@@ -136,6 +142,18 @@ export default function Slider({
               Structure
             </m.h2>
           )}
+          {currentFolder === 3 && (
+            <m.h2
+              key={3}
+              variants={animation.title}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              className="w-full pb-4 pl-6 text-center text-4xl text-teal-900 dark:text-teal-700 lg:left-20 lg:text-5xl"
+            >
+              Observations
+            </m.h2>
+          )}
         </AnimatePresence>
 
         <div className="flex items-center justify-center">
@@ -151,14 +169,14 @@ export default function Slider({
                 onAnimationComplete={() => setIsTransitioning(false)}
                 className="z-10"
               >
-                <Observations currentImage={currentImage} />
+                <ScottieAmex currentImage={currentImage} />
               </m.div>
             )}
             {currentFolder === 1 && (
               <m.div
                 key={1}
                 variants={animation.slider}
-                initial="intial"
+                initial="initial"
                 animate="animate"
                 exit="exit"
                 onAnimationStart={() => setIsTransitioning(true)}
@@ -172,14 +190,28 @@ export default function Slider({
               <m.div
                 key={2}
                 variants={animation.slider}
-                initial="intial"
+                initial="initial"
                 animate="animate"
                 exit="exit"
                 onAnimationStart={() => setIsTransitioning(true)}
                 onAnimationComplete={() => setIsTransitioning(false)}
-                className="z-10 "
+                className="z-10"
               >
                 <Structure currentImage={currentImage} />
+              </m.div>
+            )}
+            {currentFolder === 3 && (
+              <m.div
+                key={3}
+                variants={animation.slider}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                onAnimationStart={() => setIsTransitioning(true)}
+                onAnimationComplete={() => setIsTransitioning(false)}
+                className="z-10"
+              >
+                <Observations currentImage={currentImage} />
               </m.div>
             )}
           </AnimatePresence>

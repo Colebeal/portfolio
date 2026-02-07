@@ -24,14 +24,18 @@ export default function MenuInformation({
       <ul className="flex h-full animate-fade-in flex-col pt-5">
         <div className="mx-10 mt-auto text-left md:my-auto">
           <li>
+            <span>More Work Uploading...</span>
+            <span className=" sm:mr-10"> Very Soon</span>
+          </li>
+          <li>
             <a
               onClick={() => {
                 selectFolder(0)
               }}
               className="my-4 flex cursor-pointer justify-between hover:underline"
             >
-              <span>Observations</span>
-              <span className=" sm:mr-10">{imageData.observations.length}</span>
+              <span>Scottie Scheffler - 2026 PGA</span>
+              <span className=" sm:mr-10">{imageData.scottieAmex.length}</span>
             </a>
           </li>
           <li>
@@ -54,6 +58,17 @@ export default function MenuInformation({
             >
               <span>Structure</span>
               <span className=" sm:mr-10">{imageData.structure.length}</span>
+            </a>
+          </li>
+          <li>
+            <a
+              onClick={() => {
+                selectFolder(3)
+              }}
+              className="my-4 flex cursor-pointer justify-between hover:underline"
+            >
+              <span>Observations</span>
+              <span className=" sm:mr-10">{imageData.observations.length}</span>
             </a>
           </li>
         </div>

@@ -1,7 +1,7 @@
 import { motion as m } from "framer-motion"
-import { observations } from "../../../assets/sliderData"
+import { scottieAmex } from "../../../assets/sliderData"
 
-export default function Observations({ currentImage }) {
+export default function ScottieAmex({ currentImage }) {
   return (
     <m.div
       key={1}
@@ -11,7 +11,7 @@ export default function Observations({ currentImage }) {
       transition={{ duration: 2, delay: 0.25 }}
       className="z-10 w-[90vw] lg:max-h-[900px]"
     >
-      {observations.map((image, index) => {
+      {scottieAmex.map((image, index) => {
         return (
           <img
             id={image.id}

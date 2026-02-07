@@ -1033,11 +1033,134 @@ let structure = [
   },
 ]
 
+let scottieAmex = [
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770428749/Scottie-Amex-14_fr2hdq.jpg",
+    alt: "Scottie AMEX with his son",
+    className: "h-[500px] lg:h-[900px] object-contain m-auto",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770428753/Scottie-Amex-2_g22mpl.jpg",
+    alt: "Scottie AMEX chip",
+    className: "h-[500px] lg:h-[900px] object-contain m-auto",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770428897/Scottie-Amex_uim7gt.jpg",
+    alt: "",
+    className: "h-[500px] lg:h-[900px] object-contain m-auto",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770428753/Scottie-Amex-7_rs8eqm.jpg",
+    alt: "scottie fairway chunk",
+    className: "h-[500px] lg:h-[900px] object-contain m-auto",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770429027/Scottie-Amex-15_jzmmlg.jpg",
+    alt: "",
+    className: "h-[500px] lg:h-[900px] object-contain m-auto",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770429033/Scottie-Amex-16_naekc6.jpg",
+    alt: "",
+    className: "h-[500px] lg:h-[900px] object-contain m-auto",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770428753/Scottie-Amex-8_zhxhkz.jpg",
+    alt: "",
+    className: "h-[500px] lg:h-[900px] object-contain m-auto",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770428751/Scottie-Amex-9_lqpfqp.jpg",
+    alt: "",
+    className: "h-[500px] lg:h-[900px] object-contain m-auto",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770428749/Scottie-Amex-6_eicqmn.jpg",
+    alt: "",
+    className: "h-[500px] lg:h-[900px] object-contain m-auto",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770429029/Scottie-Amex-17_v0itmt.jpg",
+    alt: "",
+    className: "h-[500px] lg:h-[900px] object-contain m-auto",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770428897/Scottie-Amex_uim7gt.jpg",
+    alt: "",
+    className: "h-[500px] lg:h-[900px] object-contain m-auto",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770429028/Scottie-Amex-18_fzzte0.jpg",
+    alt: "",
+    className: "h-[500px] lg:h-[900px] object-contain m-auto",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover",
+    loading: "eager",
+  },
+]
+
 let index = -1
 
 observations = observations.map((item, index) => ({ ...item, id: index + 1 }))
 people = people.map((item, index) => ({ ...item, id: index + 1 }))
 structure = structure.map((item, index) => ({ ...item, id: index + 1 }))
+scottieAmex = scottieAmex.map((item, index) => ({ ...item, id: index + 1 }))
 
-export { observations, people, structure }
-export default { observations, people, structure }
+export { observations, people, structure, scottieAmex }
+export default { observations, people, structure, scottieAmex }
