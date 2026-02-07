@@ -34,7 +34,7 @@ export default function MenuInformation({
               }}
               className="my-4 flex cursor-pointer justify-between hover:underline"
             >
-              <span>Scottie Scheffler - 2026 PGA</span>
+              <span>Scottie Scheffler • PGA • 2026</span>
               <span className=" sm:mr-10">{imageData.scottieAmex.length}</span>
             </a>
           </li>

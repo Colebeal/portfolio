@@ -74,13 +74,13 @@ export default function Slider({
 
   const animation = {
     title: {
-      initial: { opacity: 0, translateY: -100 },
+      initial: { opacity: 0, translateX: -25 },
       animate: {
         opacity: 1,
-        translateY: 0,
-        transition: { duration: 1, delay: 1 },
+        translateX: 0,
+        transition: { duration: 0.5, delay: 0.5 },
       },
-      exit: { opacity: 0, translateY: 50, transition: { duration: 1 } },
+      exit: { opacity: 0, translateX: 25, transition: { duration: 0.25 } },
     },
     slider: {
       initial: { opacity: 0 },
@@ -118,7 +118,7 @@ export default function Slider({
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 0.5, ease: "easeInOut" }}
+      transition={{ duration: 0.25, ease: "easeInOut" }}
       id="slider"
       className="flex h-[100vh] w-full flex-col items-center justify-center"
       onKeyDown={() => console.log("keydown")}
@@ -185,7 +185,7 @@ export default function Slider({
               initial="initial"
               animate="animate"
               exit="exit"
-              className="w-full pb-4 pl-6 text-center text-4xl text-teal-900 dark:text-white lg:left-20 lg:text-5xl"
+              className="w-full pb-4 pl-6 pt-4 text-center text-4xl text-teal-900 dark:text-white lg:left-20 lg:text-5xl"
             >
               People
             </m.h2>
@@ -197,7 +197,7 @@ export default function Slider({
               initial="initial"
               animate="animate"
               exit="exit"
-              className="w-full pb-4 pl-6 text-center text-4xl text-teal-900 dark:text-white lg:left-20 lg:text-5xl"
+              className="w-full pb-4 pl-6 pt-4 text-center text-4xl text-teal-900 dark:text-white lg:left-20 lg:text-5xl"
             >
               Structure
             </m.h2>
@@ -209,7 +209,7 @@ export default function Slider({
               initial="initial"
               animate="animate"
               exit="exit"
-              className="w-full pb-4 pl-6 text-center text-4xl text-teal-900 dark:text-white lg:left-20 lg:text-5xl"
+              className="w-full pb-4 pl-6 pt-4 text-center text-4xl text-teal-900 dark:text-white lg:left-20 lg:text-5xl"
             >
               Observations
             </m.h2>

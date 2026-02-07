@@ -8,7 +8,7 @@ export default function ScottieAmex({ currentImage }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: [0, 0, 1] }}
       exit={{ opacity: [1, 0, 0] }}
-      transition={{ duration: 2, delay: 0.25 }}
+      transition={{ duration: 0.5, delay: 0.25 }}
       className="z-10 w-[90vw] lg:max-h-[900px]"
     >
       {scottieAmex.map((image, index) => {

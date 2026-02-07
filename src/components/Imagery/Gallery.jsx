@@ -38,7 +38,7 @@ export default function Slider({
 
   return (
     <section
-      className="m-auto w-screen bg-white dark:bg-[#111111] md:mt-10 md:w-auto"
+      className="m-auto w-screen bg-white py-8 dark:bg-[#111111] md:mt-10 md:w-auto"
       id="gallery"
     >
       <div>
