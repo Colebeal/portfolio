@@ -9,7 +9,7 @@ export default function LabOZ1i({ currentImage }) {
       animate={{ opacity: [0, 0, 1] }}
       exit={{ opacity: [1, 0, 0] }}
       transition={{ duration: 0.5, delay: 0.25 }}
-      className="z-10 w-[90vw] lg:max-h-[900px]"
+      className="z-10 flex h-[424px] w-[90vw] items-center justify-center md:h-[600px] lg:h-[900px]"
     >
       {labOZ1i.map((image, index) => {
         return (

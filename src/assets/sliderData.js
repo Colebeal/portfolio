@@ -1140,7 +1140,7 @@ let scottieAmex = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770428749/Scottie-Amex-14_fr2hdq.jpg",
     alt: "Scottie AMEX with his son",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[2px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
@@ -1151,7 +1151,7 @@ let scottieAmex = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770428753/Scottie-Amex-2_g22mpl.jpg",
     alt: "Scottie AMEX chip",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[2px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
@@ -1162,7 +1162,7 @@ let scottieAmex = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770428897/Scottie-Amex_uim7gt.jpg",
     alt: "",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
@@ -1173,7 +1173,7 @@ let scottieAmex = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770428753/Scottie-Amex-7_rs8eqm.jpg",
     alt: "scottie fairway chunk",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
@@ -1184,7 +1184,7 @@ let scottieAmex = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770429027/Scottie-Amex-15_jzmmlg.jpg",
     alt: "",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
@@ -1195,7 +1195,7 @@ let scottieAmex = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770429033/Scottie-Amex-16_naekc6.jpg",
     alt: "",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
@@ -1206,7 +1206,7 @@ let scottieAmex = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770428753/Scottie-Amex-8_zhxhkz.jpg",
     alt: "",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
@@ -1217,7 +1217,7 @@ let scottieAmex = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770428751/Scottie-Amex-9_lqpfqp.jpg",
     alt: "",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
@@ -1228,7 +1228,7 @@ let scottieAmex = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770428749/Scottie-Amex-6_eicqmn.jpg",
     alt: "",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
@@ -1239,7 +1239,7 @@ let scottieAmex = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770429029/Scottie-Amex-17_v0itmt.jpg",
     alt: "",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
@@ -1250,7 +1250,7 @@ let scottieAmex = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770428897/Scottie-Amex_uim7gt.jpg",
     alt: "",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
@@ -1261,7 +1261,7 @@ let scottieAmex = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770429028/Scottie-Amex-18_fzzte0.jpg",
     alt: "",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
@@ -1274,7 +1274,7 @@ let labDF3 = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770513198/LAB-DF3-6_pnbimg.jpg",
     alt: "LAB DF3",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[2px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
@@ -1285,7 +1285,7 @@ let labDF3 = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770513204/LAB-DF3-2_nqt0ic.jpg",
     alt: "LAB DF3",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[2px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
@@ -1296,7 +1296,7 @@ let labDF3 = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770516119/LAB-DF3-12_js5pmk.jpg",
     alt: "LAB DF3",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[2px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
@@ -1307,7 +1307,7 @@ let labDF3 = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770513200/LAB-DF3-4_gtuwrn.jpg",
     alt: "LAB DF3",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
@@ -1318,7 +1318,7 @@ let labDF3 = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770513202/LAB-DF3-3_q6eskd.jpg",
     alt: "LAB DF3",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
@@ -1329,7 +1329,7 @@ let labDF3 = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770513201/LAB-DF3-7_smrdis.jpg",
     alt: "LAB DF3",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
@@ -1340,7 +1340,7 @@ let labDF3 = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770513199/LAB-DF3-8_dlmvwg.jpg",
     alt: "LAB DF3",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
@@ -1351,7 +1351,7 @@ let labDF3 = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770513202/LAB-DF3-10_dwew0s.jpg",
     alt: "",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
@@ -1362,7 +1362,7 @@ let labDF3 = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770513206/LAB-DF3_v8qevx.jpg",
     alt: "LAB DF3",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
@@ -1373,7 +1373,7 @@ let labDF3 = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770513203/LAB-DF3-5_v4ygmx.jpg",
     alt: "LAB DF3",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
@@ -1384,7 +1384,7 @@ let labDF3 = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770516118/LAB-DF3-11_ylpgu1.jpg",
     alt: "LAB DF3",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
@@ -1397,7 +1397,7 @@ let labOZ1i = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770525698/LAB-OZ1i-10_lsnyxf.jpg",
     alt: "LAB OZ1i",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[2px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
@@ -1408,7 +1408,7 @@ let labOZ1i = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770525696/LAB-OZ1i-8_kaniqn.jpg",
     alt: "LAB OZ1i",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[2px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
@@ -1419,7 +1419,7 @@ let labOZ1i = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770525701/LAB-OZ1i-11_yed28x.jpg",
     alt: "LAB OZ1i",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[2px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
@@ -1430,7 +1430,7 @@ let labOZ1i = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770525692/LAB-OZ1i-12_o5qhaq.jpg",
     alt: "LAB OZ1i",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
@@ -1441,7 +1441,7 @@ let labOZ1i = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770525719/LAB-OZ1i-6_f1dv76.jpg",
     alt: "LAB OZ1i",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
@@ -1452,7 +1452,7 @@ let labOZ1i = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770525705/LAB-OZ1i-3_ihyvae.jpg",
     alt: "LAB OZ1i",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
@@ -1463,7 +1463,7 @@ let labOZ1i = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770525718/LAB-OZ1i-5_myzkqy.jpg",
     alt: "LAB OZ1i",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
@@ -1474,7 +1474,7 @@ let labOZ1i = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770525703/LAB-OZ1i-9_wbemfh.jpg",
     alt: "LAB OZ1i",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
@@ -1485,7 +1485,7 @@ let labOZ1i = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770525745/LAB-OZ1i_hd20tg.jpg",
     alt: "LAB OZ1i",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
@@ -1496,7 +1496,7 @@ let labOZ1i = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770525740/LAB-OZ1i-7_qypteh.jpg",
     alt: "LAB OZ1i",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
@@ -1507,7 +1507,7 @@ let labOZ1i = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770525695/LAB-OZ1i-4_qshf0v.jpg",
     alt: "LAB OZ1i",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
@@ -1518,7 +1518,7 @@ let labOZ1i = [
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770525690/LAB-OZ1i-2_u1memb.jpg",
     alt: "LAB OZ1i",
     className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",

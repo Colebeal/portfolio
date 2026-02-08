@@ -4,6 +4,7 @@ import { motion as m, AnimatePresence, easeInOut } from "framer-motion"
 import {
   scottieAmex,
   labDF3,
+  labOZ1i,
   people,
   structure,
   observations,
@@ -19,6 +20,7 @@ export default function ImageryNav({
   const folderLength = [
     scottieAmex.length,
     labDF3.length,
+    labOZ1i.length,
     people.length,
     structure.length,
     observations.length,
