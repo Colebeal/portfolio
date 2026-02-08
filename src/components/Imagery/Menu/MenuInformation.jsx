@@ -46,6 +46,17 @@ export default function MenuInformation({
               <span className=" sm:mr-10">{imageData.labDF3.length}</span>
             </a>
           </li>
+          <li>
+            <a
+              onClick={() => {
+                selectFolder(2)
+              }}
+              className="my-4 flex cursor-pointer justify-between hover:underline"
+            >
+              <span>L.A.B. Golf • OZ1i</span>
+              <span className=" sm:mr-10">{imageData.labOZ1i.length}</span>
+            </a>
+          </li>
           <h2 className="mb-5 mt-28 text-2xl font-bold">Archives</h2>
           <li>
             <a

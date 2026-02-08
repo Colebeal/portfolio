@@ -1278,7 +1278,7 @@ let labDF3 = [
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
-    loading: "lazy",
+    loading: "eager",
   },
 
   {
@@ -1388,10 +1388,143 @@ let labDF3 = [
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
-    loading: "lazy",
+    loading: "eager",
   },
 ]
 
+let labOZ1i = [
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770525698/LAB-OZ1i-10_lsnyxf.jpg",
+    alt: "LAB OZ1i",
+    className:
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[2px] dark:border-white border-black",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "eager",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770525696/LAB-OZ1i-8_kaniqn.jpg",
+    alt: "LAB OZ1i",
+    className:
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[2px] dark:border-white border-black",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770525701/LAB-OZ1i-11_yed28x.jpg",
+    alt: "LAB OZ1i",
+    className:
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[2px] dark:border-white border-black",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770525692/LAB-OZ1i-12_o5qhaq.jpg",
+    alt: "LAB OZ1i",
+    className:
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770525719/LAB-OZ1i-6_f1dv76.jpg",
+    alt: "LAB OZ1i",
+    className:
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770525705/LAB-OZ1i-3_ihyvae.jpg",
+    alt: "LAB OZ1i",
+    className:
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770525718/LAB-OZ1i-5_myzkqy.jpg",
+    alt: "LAB OZ1i",
+    className:
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770525703/LAB-OZ1i-9_wbemfh.jpg",
+    alt: "LAB OZ1i",
+    className:
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770525745/LAB-OZ1i_hd20tg.jpg",
+    alt: "LAB OZ1i",
+    className:
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770525740/LAB-OZ1i-7_qypteh.jpg",
+    alt: "LAB OZ1i",
+    className:
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770525695/LAB-OZ1i-4_qshf0v.jpg",
+    alt: "LAB OZ1i",
+    className:
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770525690/LAB-OZ1i-2_u1memb.jpg",
+    alt: "LAB OZ1i",
+    className:
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "eager",
+  },
+]
 let index = -1
 
 observations = observations.map((item, index) => ({ ...item, id: index + 1 }))
@@ -1399,6 +1532,7 @@ people = people.map((item, index) => ({ ...item, id: index + 1 }))
 structure = structure.map((item, index) => ({ ...item, id: index + 1 }))
 scottieAmex = scottieAmex.map((item, index) => ({ ...item, id: index + 1 }))
 labDF3 = labDF3.map((item, index) => ({ ...item, id: index + 1 }))
+labOZ1i = labOZ1i.map((item, index) => ({ ...item, id: index + 1 }))
 
-export { observations, people, structure, scottieAmex, labDF3 }
-export default { observations, people, structure, scottieAmex, labDF3 }
+export { observations, people, structure, scottieAmex, labDF3, labOZ1i }
+export default { observations, people, structure, scottieAmex, labDF3, labOZ1i }
