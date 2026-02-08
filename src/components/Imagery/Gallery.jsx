@@ -8,9 +8,6 @@ import {
 } from "../../assets/sliderData"
 import { motion as m } from "framer-motion"
 
-import MiniMenu from "./MiniMenu"
-import LabOZ1i from "./Slider/LabOZ1i"
-
 export default function Slider({
   slideIndex,
   setSlideIndex,
@@ -175,7 +172,3 @@ export default function Slider({
     </section>
   )
 }
-
-// observations.map(image => <img onClick={()=>{enlargeImage(image.id)}} id={image.id} key={image.id} loading={"lazy"} className={image.gallery} src={image.src}/>)
-// {currentFolder === 1 && people.map(image => <img onClick={()=>{enlargeImage(image.id)}} id={image.id} key={image.id} loading={"lazy"} className={image.gallery} src={image.src}/>)}
-// {currentFolder === 2 && structure.map(image => <img onClick={()=>{enlargeImage(image.id)}} id={image.id} key={image.id} loading={"lazy"} className={image.gallery} src={image.src}/>)}

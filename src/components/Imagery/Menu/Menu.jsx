@@ -14,7 +14,7 @@ export default function Menu({
   const [menuContent, setMenuContent] = useState(true)
   const menuStyles = {
     showMain:
-      "z-50 opacity-100 fixed flex flex-col right-5 md:top-0 md:right-0 h-[90%] md:h-full w-[90%] md:w-[30%] bg-white dark:bg-[#000000] dark:border-white animate-fade-in rounded-lg shadow-lg border-[1px] border-black",
+      "z-50 opacity-100 fixed flex flex-col bottom-6 right-5 md:top-0 md:right-0 h-[80%] md:h-full w-[90%] md:w-[30%] bg-white dark:bg-[#000000] dark:border-white animate-fade-in rounded-lg shadow-lg border-[1px] border-black",
     hideMain: "hidden",
     showBkg:
       "z-50 opacity-60 fixed top-0 left-0 h-full w-full bg-black animate-fade-in-Bkg",
