@@ -4,10 +4,12 @@ import {
   structure,
   observations,
   labDF3,
+  labOZ1i,
 } from "../../assets/sliderData"
 import { motion as m } from "framer-motion"
 
 import MiniMenu from "./MiniMenu"
+import LabOZ1i from "./Slider/LabOZ1i"
 
 export default function Slider({
   slideIndex,
@@ -93,6 +95,27 @@ export default function Slider({
             exit="exit"
             className="flex h-full w-full flex-1 flex-col gap-10 lg:grid lg:grid-cols-2 xl:grid-cols-3"
           >
+            {labOZ1i.map((image) => (
+              <img
+                onClick={() => {
+                  enlargeImage(image.id)
+                }}
+                id={image.id}
+                key={image.id}
+                className={image.gallery}
+                src={image.src}
+              />
+            ))}
+          </m.div>
+        )}
+        {currentFolder === 3 && (
+          <m.div
+            variants={animation}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            className="flex h-full w-full flex-1 flex-col gap-10 lg:grid lg:grid-cols-2 xl:grid-cols-3"
+          >
             {people.map((image) => (
               <img
                 onClick={() => {
@@ -106,7 +129,7 @@ export default function Slider({
             ))}
           </m.div>
         )}
-        {currentFolder === 2 && (
+        {currentFolder === 4 && (
           <m.div
             variants={animation}
             initial="initial"
@@ -127,7 +150,7 @@ export default function Slider({
             ))}
           </m.div>
         )}
-        {currentFolder === 3 && (
+        {currentFolder === 5 && (
           <m.div
             variants={animation}
             initial="initial"
