@@ -14,7 +14,7 @@ import Observations from "./Observations"
 import People from "./People"
 import Structure from "./Structure"
 import ScottieAmex from "./ScottieAmex"
-import LabDF3 from "./LABDF3"
+import LabDF3 from "./LabDF3"
 
 export default function Slider({
   slideIndex,
