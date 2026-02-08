@@ -3,6 +3,7 @@ import {
   people,
   structure,
   scottieAmex,
+  labDF3,
 } from "../../../assets/sliderData"
 import { AnimatePresence, motion as m } from "framer-motion"
 import { useSwipeable } from "react-swipeable"
@@ -13,6 +14,7 @@ import Observations from "./Observations"
 import People from "./People"
 import Structure from "./Structure"
 import ScottieAmex from "./ScottieAmex"
+import LabDF3 from "./LABDF3"
 
 export default function Slider({
   slideIndex,
@@ -27,7 +29,7 @@ export default function Slider({
   setIsTransitioning,
 }) {
   const currentImage = slideIndex
-  const folder = [scottieAmex, people, structure, observations]
+  const folder = [scottieAmex, labDF3, people, structure, observations]
   const prevCursorRef = useRef(null)
   const nextCursorRef = useRef(null)
 
@@ -38,7 +40,7 @@ export default function Slider({
       return
     } else if (slideIndex === 0 && currentFolder === 0) {
       setSlideIndex(observations.length - 1)
-      setCurrentFolder(3)
+      setCurrentFolder(4)
     } else if (slideIndex == 0) {
       setSlideIndex(previousFolder.length - 1)
       setCurrentFolder(currentFolder - 1)
@@ -52,7 +54,7 @@ export default function Slider({
 
     if (isTransitioning === true) {
       return
-    } else if (slideIndex === observations.length - 1 && currentFolder === 3) {
+    } else if (slideIndex === observations.length - 1 && currentFolder === 4) {
       setCurrentFolder(0)
       setSlideIndex(0)
       return
@@ -170,7 +172,7 @@ export default function Slider({
               initial="initial"
               animate="animate"
               exit="exit"
-              className="w-full pb-4 pl-6 text-center text-4xl text-teal-900 dark:text-white lg:left-20 lg:text-5xl"
+              className="w-full pb-4 text-center text-4xl text-teal-900 dark:text-white lg:left-20 lg:text-5xl"
             >
               <p className="lg:text-md text-xs font-light">
                 The Amex • PGA • 2026
@@ -185,32 +187,48 @@ export default function Slider({
               initial="initial"
               animate="animate"
               exit="exit"
-              className="w-full pb-4 pl-6 pt-4 text-center text-4xl text-teal-900 dark:text-white lg:left-20 lg:text-5xl"
+              className="w-full pb-4 text-center text-4xl text-teal-900 dark:text-white lg:left-20 lg:text-5xl"
             >
-              People
+              <p className="lg:text-md text-xs font-light">L.A.B. Golf</p>
+              DF3
             </m.h2>
           )}
           {currentFolder === 2 && (
+            <m.h2
+              key={1}
+              variants={animation.title}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              className="w-full pb-4 text-center text-4xl text-teal-900 dark:text-white lg:left-20 lg:text-5xl"
+            >
+              <p className="lg:text-md text-xs font-light">Archives</p>
+              People
+            </m.h2>
+          )}
+          {currentFolder === 3 && (
             <m.h2
               key={2}
               variants={animation.title}
               initial="initial"
               animate="animate"
               exit="exit"
-              className="w-full pb-4 pl-6 pt-4 text-center text-4xl text-teal-900 dark:text-white lg:left-20 lg:text-5xl"
+              className="w-full pb-4 text-center text-4xl text-teal-900 dark:text-white lg:left-20 lg:text-5xl"
             >
+              <p className="lg:text-md text-xs font-light">Archives</p>
               Structure
             </m.h2>
           )}
-          {currentFolder === 3 && (
+          {currentFolder === 4 && (
             <m.h2
               key={3}
               variants={animation.title}
               initial="initial"
               animate="animate"
               exit="exit"
-              className="w-full pb-4 pl-6 pt-4 text-center text-4xl text-teal-900 dark:text-white lg:left-20 lg:text-5xl"
+              className="w-full pb-4 text-center text-4xl text-teal-900 dark:text-white lg:left-20 lg:text-5xl"
             >
+              <p className="lg:text-md text-xs font-light">Archives</p>
               Observations
             </m.h2>
           )}
@@ -243,7 +261,7 @@ export default function Slider({
                 onAnimationComplete={() => setIsTransitioning(false)}
                 className="z-10 "
               >
-                <People currentImage={currentImage} />
+                <LabDF3 currentImage={currentImage} />
               </m.div>
             )}
             {currentFolder === 2 && (
@@ -255,14 +273,28 @@ export default function Slider({
                 exit="exit"
                 onAnimationStart={() => setIsTransitioning(true)}
                 onAnimationComplete={() => setIsTransitioning(false)}
-                className="z-10"
+                className="z-10 "
               >
-                <Structure currentImage={currentImage} />
+                <People currentImage={currentImage} />
               </m.div>
             )}
             {currentFolder === 3 && (
               <m.div
                 key={3}
+                variants={animation.slider}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                onAnimationStart={() => setIsTransitioning(true)}
+                onAnimationComplete={() => setIsTransitioning(false)}
+                className="z-10"
+              >
+                <Structure currentImage={currentImage} />
+              </m.div>
+            )}
+            {currentFolder === 4 && (
+              <m.div
+                key={4}
                 variants={animation.slider}
                 initial="initial"
                 animate="animate"

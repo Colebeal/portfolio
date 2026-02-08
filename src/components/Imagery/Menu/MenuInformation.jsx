@@ -23,10 +23,7 @@ export default function MenuInformation({
     <>
       <ul className="flex h-full animate-fade-in flex-col pt-5">
         <div className="mx-10 mt-auto text-left md:my-auto">
-          <li>
-            <span>More Work Uploading...</span>
-            <span className=" sm:mr-10"> Very Soon</span>
-          </li>
+          <h2 className="mb-5 text-2xl font-bold">Selects</h2>
           <li>
             <a
               onClick={() => {
@@ -34,7 +31,7 @@ export default function MenuInformation({
               }}
               className="my-4 flex cursor-pointer justify-between hover:underline"
             >
-              <span>Scottie Scheffler • PGA • 2026</span>
+              <span>Scottie Scheffler • PGA</span>
               <span className=" sm:mr-10">{imageData.scottieAmex.length}</span>
             </a>
           </li>
@@ -45,6 +42,18 @@ export default function MenuInformation({
               }}
               className="my-4 flex cursor-pointer justify-between hover:underline"
             >
+              <span>L.A.B. Golf • DF3</span>
+              <span className=" sm:mr-10">{imageData.labDF3.length}</span>
+            </a>
+          </li>
+          <h2 className="mb-5 mt-28 text-2xl font-bold">Archives</h2>
+          <li>
+            <a
+              onClick={() => {
+                selectFolder(2)
+              }}
+              className="my-4 flex cursor-pointer justify-between hover:underline"
+            >
               <span>People</span>
               <span className=" sm:mr-10">{imageData.people.length}</span>
             </a>
@@ -52,7 +61,7 @@ export default function MenuInformation({
           <li>
             <a
               onClick={() => {
-                selectFolder(2)
+                selectFolder(3)
               }}
               className="my-4 flex cursor-pointer justify-between hover:underline"
             >
@@ -63,7 +72,7 @@ export default function MenuInformation({
           <li>
             <a
               onClick={() => {
-                selectFolder(3)
+                selectFolder(4)
               }}
               className="my-4 flex cursor-pointer justify-between hover:underline"
             >

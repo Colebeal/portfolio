@@ -3,6 +3,7 @@ import {
   people,
   structure,
   observations,
+  labDF3,
 } from "../../assets/sliderData"
 import { motion as m } from "framer-motion"
 
@@ -71,6 +72,27 @@ export default function Slider({
             exit="exit"
             className="flex h-full w-full flex-1 flex-col gap-10 lg:grid lg:grid-cols-2 xl:grid-cols-3"
           >
+            {labDF3.map((image) => (
+              <img
+                onClick={() => {
+                  enlargeImage(image.id)
+                }}
+                id={image.id}
+                key={image.id}
+                className={image.gallery}
+                src={image.src}
+              />
+            ))}
+          </m.div>
+        )}
+        {currentFolder === 2 && (
+          <m.div
+            variants={animation}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            className="flex h-full w-full flex-1 flex-col gap-10 lg:grid lg:grid-cols-2 xl:grid-cols-3"
+          >
             {people.map((image) => (
               <img
                 onClick={() => {
@@ -82,7 +104,6 @@ export default function Slider({
                 src={image.src}
               />
             ))}
-            d
           </m.div>
         )}
         {currentFolder === 2 && (

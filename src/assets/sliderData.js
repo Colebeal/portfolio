@@ -1269,12 +1269,136 @@ let scottieAmex = [
   },
 ]
 
+let labDF3 = [
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770513198/LAB-DF3-6_pnbimg.jpg",
+    alt: "LAB DF3",
+    className:
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[2px] dark:border-white border-black",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770513204/LAB-DF3-2_nqt0ic.jpg",
+    alt: "LAB DF3",
+    className:
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[2px] dark:border-white border-black",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770516119/LAB-DF3-12_js5pmk.jpg",
+    alt: "LAB DF3",
+    className:
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[2px] dark:border-white border-black",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770513200/LAB-DF3-4_gtuwrn.jpg",
+    alt: "LAB DF3",
+    className:
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770513202/LAB-DF3-3_q6eskd.jpg",
+    alt: "LAB DF3",
+    className:
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770513201/LAB-DF3-7_smrdis.jpg",
+    alt: "LAB DF3",
+    className:
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770513199/LAB-DF3-8_dlmvwg.jpg",
+    alt: "LAB DF3",
+    className:
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770513202/LAB-DF3-10_dwew0s.jpg",
+    alt: "",
+    className:
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770513206/LAB-DF3_v8qevx.jpg",
+    alt: "LAB DF3",
+    className:
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770513203/LAB-DF3-5_v4ygmx.jpg",
+    alt: "LAB DF3",
+    className:
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770516118/LAB-DF3-11_ylpgu1.jpg",
+    alt: "LAB DF3",
+    className:
+      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+]
+
 let index = -1
 
 observations = observations.map((item, index) => ({ ...item, id: index + 1 }))
 people = people.map((item, index) => ({ ...item, id: index + 1 }))
 structure = structure.map((item, index) => ({ ...item, id: index + 1 }))
 scottieAmex = scottieAmex.map((item, index) => ({ ...item, id: index + 1 }))
+labDF3 = labDF3.map((item, index) => ({ ...item, id: index + 1 }))
 
-export { observations, people, structure, scottieAmex }
-export default { observations, people, structure, scottieAmex }
+export { observations, people, structure, scottieAmex, labDF3 }
+export default { observations, people, structure, scottieAmex, labDF3 }
