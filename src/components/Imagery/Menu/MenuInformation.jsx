@@ -23,7 +23,7 @@ export default function MenuInformation({
     <>
       <ul className="flex h-full animate-fade-in flex-col pt-5">
         <div className="mx-10 mt-auto text-left md:my-auto">
-          <h2 className="mb-5 text-2xl font-bold">Selects</h2>
+          <h2 className="mb-5 text-xl font-bold">Selects</h2>
           <li>
             <a
               onClick={() => {
@@ -57,11 +57,22 @@ export default function MenuInformation({
               <span className=" sm:mr-10">{imageData.labOZ1i.length}</span>
             </a>
           </li>
-          <h2 className="mb-5 mt-28 text-2xl font-bold">Archives</h2>
           <li>
             <a
               onClick={() => {
-                selectFolder(2)
+                selectFolder(3)
+              }}
+              className="my-4 flex cursor-pointer justify-between hover:underline"
+            >
+              <span>L.A.B. Golf • OZ1i HS</span>
+              <span className=" sm:mr-10">{imageData.labHeelShaft.length}</span>
+            </a>
+          </li>
+          <h2 className="mb-5 mt-28 text-xl font-bold">Archives</h2>
+          <li>
+            <a
+              onClick={() => {
+                selectFolder(4)
               }}
               className="my-4 flex cursor-pointer justify-between hover:underline"
             >
@@ -72,7 +83,7 @@ export default function MenuInformation({
           <li>
             <a
               onClick={() => {
-                selectFolder(3)
+                selectFolder(5)
               }}
               className="my-4 flex cursor-pointer justify-between hover:underline"
             >
@@ -83,7 +94,7 @@ export default function MenuInformation({
           <li>
             <a
               onClick={() => {
-                selectFolder(4)
+                selectFolder(6)
               }}
               className="my-4 flex cursor-pointer justify-between hover:underline"
             >

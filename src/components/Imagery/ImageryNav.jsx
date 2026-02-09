@@ -8,6 +8,7 @@ import {
   people,
   structure,
   observations,
+  labHeelShaft,
 } from "../../assets/sliderData"
 
 export default function ImageryNav({
@@ -21,6 +22,7 @@ export default function ImageryNav({
     scottieAmex.length,
     labDF3.length,
     labOZ1i.length,
+    labHeelShaft.length,
     people.length,
     structure.length,
     observations.length,

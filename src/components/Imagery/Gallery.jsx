@@ -5,6 +5,7 @@ import {
   observations,
   labDF3,
   labOZ1i,
+  labHeelShaft,
 } from "../../assets/sliderData"
 import { motion as m } from "framer-motion"
 
@@ -113,7 +114,7 @@ export default function Slider({
             exit="exit"
             className="flex h-full w-full flex-1 flex-col gap-10 lg:grid lg:grid-cols-2 xl:grid-cols-3"
           >
-            {people.map((image) => (
+            {labHeelShaft.map((image) => (
               <img
                 onClick={() => {
                   enlargeImage(image.id)
@@ -134,7 +135,7 @@ export default function Slider({
             exit="exit"
             className="flex h-full w-full flex-1 flex-col gap-10 lg:grid lg:grid-cols-2 xl:grid-cols-3"
           >
-            {structure.map((image) => (
+            {people.map((image) => (
               <img
                 onClick={() => {
                   enlargeImage(image.id)
@@ -148,6 +149,27 @@ export default function Slider({
           </m.div>
         )}
         {currentFolder === 5 && (
+          <m.div
+            variants={animation}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            className="flex h-full w-full flex-1 flex-col gap-10 lg:grid lg:grid-cols-2 xl:grid-cols-3"
+          >
+            {structure.map((image) => (
+              <img
+                onClick={() => {
+                  enlargeImage(image.id)
+                }}
+                id={image.id}
+                key={image.id}
+                className={image.gallery}
+                src={image.src}
+              />
+            ))}
+          </m.div>
+        )}
+        {currentFolder === 6 && (
           <m.div
             variants={animation}
             initial="initial"

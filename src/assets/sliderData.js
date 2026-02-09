@@ -1525,6 +1525,130 @@ let labOZ1i = [
     loading: "eager",
   },
 ]
+
+let labHeelShaft = [
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770602468/LAB-Heel_Shaft-11_kdsu3w.jpg",
+    alt: "LAB Heel Shaft",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "eager",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770602478/LAB-Heel_Shaft-4_jdubze.jpg",
+    alt: "LAB Heel Shaft",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770602470/LAB-Heel_Shaft-10_u6mqdl.jpg",
+    alt: "LAB Heel Shaft",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770602475/LAB-Heel_Shaft_kzzbgx.jpg",
+    alt: "LAB Heel Shaft",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770602478/LAB-Heel_Shaft-7_vgie6f.jpg",
+    alt: "LAB Heel Shaft",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770602471/LAB-Heel_Shaft-2_hwwazf.jpg",
+    alt: "LAB Heel Shaft",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770602471/LAB-Heel_Shaft-3_uvellq.jpg",
+    alt: "LAB Heel Shaft",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770602469/LAB-Heel_Shaft-8_xvl8lv.jpg",
+    alt: "LAB Heel Shaft",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770602472/LAB-Heel_Shaft-5_uyvzhg.jpg",
+    alt: "LAB Heel Shaft",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770602468/LAB-Heel_Shaft-9_u4bqmt.jpg",
+    alt: "LAB Heel Shaft",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770602471/LAB-Heel_Shaft-6_x3fpwv.jpg",
+    alt: "LAB Heel Shaft",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+]
+
 let index = -1
 
 observations = observations.map((item, index) => ({ ...item, id: index + 1 }))
@@ -1533,6 +1657,23 @@ structure = structure.map((item, index) => ({ ...item, id: index + 1 }))
 scottieAmex = scottieAmex.map((item, index) => ({ ...item, id: index + 1 }))
 labDF3 = labDF3.map((item, index) => ({ ...item, id: index + 1 }))
 labOZ1i = labOZ1i.map((item, index) => ({ ...item, id: index + 1 }))
+labHeelShaft = labHeelShaft.map((item, index) => ({ ...item, id: index + 1 }))
 
-export { observations, people, structure, scottieAmex, labDF3, labOZ1i }
-export default { observations, people, structure, scottieAmex, labDF3, labOZ1i }
+export {
+  observations,
+  people,
+  structure,
+  scottieAmex,
+  labDF3,
+  labOZ1i,
+  labHeelShaft,
+}
+export default {
+  observations,
+  people,
+  structure,
+  scottieAmex,
+  labDF3,
+  labOZ1i,
+  labHeelShaft,
+}
