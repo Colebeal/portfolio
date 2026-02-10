@@ -29,12 +29,12 @@ export default function ThemeToggle() {
       {theme === "light" ? (
         <BiSun
           onClick={handleThemeSwitch}
-          className="z-50 animate-fade-in cursor-pointer text-2xl text-teal-900  lg:text-2xl"
+          className="z-50 animate-fade-in cursor-pointer text-2xl text-black  lg:text-2xl"
         />
       ) : (
         <BiMoon
           onClick={handleThemeSwitch}
-          className="md: z-50 animate-fade-in cursor-pointer text-2xl text-teal-900 dark:text-orange-50 lg:text-2xl"
+          className="md: z-50 animate-fade-in cursor-pointer text-2xl text-teal-900 dark:text-white lg:text-2xl"
         />
       )}
     </>

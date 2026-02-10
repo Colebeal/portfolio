@@ -20,7 +20,7 @@ export default function MenuContents({
           </p>
           <p>
             I have been fortunate to work with a wide range of clients,
-            primarily in professional sports, shooting I have a particular
+            primarily in professional sports. I have a particular
             affinity for shooting golf, and am always looking for new
             opportunities to expand my portfolio and collaborate with
             like-minded clients.
