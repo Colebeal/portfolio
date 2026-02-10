@@ -352,16 +352,16 @@ let people = [
     loading: "lazy",
   },
 
-  {
-    src: "images/people/color-plus-200_Elena_5808-18.jpg",
-    alt: "",
-    className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
-    hidden: "hidden",
-    gallery:
-      "cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px]",
-    loading: "lazy",
-  },
+  // {
+  //   src: "images/people/color-plus-200_Elena_5808-18.jpg",
+  //   alt: "",
+  //   className:
+  //     "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+  //   hidden: "hidden",
+  //   gallery:
+  //     "cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px]",
+  //   loading: "lazy",
+  // },
 
   {
     src: "images/people/Portfolio-071.jpg",
@@ -407,16 +407,16 @@ let people = [
     loading: "lazy",
   },
 
-  {
-    src: "images/people/Portfolio-116.jpg ",
-    alt: "",
-    className:
-      "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
-    hidden: "hidden",
-    gallery:
-      "cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover",
-    loading: "lazy",
-  },
+  // {
+  //   src: "images/people/Portfolio-116.jpg ",
+  //   alt: "",
+  //   className:
+  //     "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
+  //   hidden: "hidden",
+  //   gallery:
+  //     "cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover",
+  //   loading: "lazy",
+  // },
 
   {
     src: "images/people/Portfolio-3.jpg",
@@ -1143,7 +1143,7 @@ let scottieAmex = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "col-span-2 md:col-span-1 md:cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1154,18 +1154,7 @@ let scottieAmex = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
-    loading: "lazy",
-  },
-
-  {
-    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770428897/Scottie-Amex_uim7gt.jpg",
-    alt: "",
-    className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
-    hidden: "hidden",
-    gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1176,7 +1165,7 @@ let scottieAmex = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1187,18 +1176,7 @@ let scottieAmex = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
-    loading: "lazy",
-  },
-
-  {
-    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770429033/Scottie-Amex-16_naekc6.jpg",
-    alt: "",
-    className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
-    hidden: "hidden",
-    gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1209,7 +1187,18 @@ let scottieAmex = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770429033/Scottie-Amex-16_naekc6.jpg",
+    alt: "",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1220,7 +1209,7 @@ let scottieAmex = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1231,7 +1220,7 @@ let scottieAmex = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1242,7 +1231,7 @@ let scottieAmex = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1253,7 +1242,7 @@ let scottieAmex = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1264,7 +1253,7 @@ let scottieAmex = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "eager",
   },
 ]
@@ -1277,7 +1266,7 @@ let labDF3 = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "eager",
   },
 
@@ -1288,7 +1277,7 @@ let labDF3 = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1299,7 +1288,7 @@ let labDF3 = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1310,7 +1299,7 @@ let labDF3 = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1321,7 +1310,7 @@ let labDF3 = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1332,7 +1321,7 @@ let labDF3 = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1343,7 +1332,7 @@ let labDF3 = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1354,7 +1343,7 @@ let labDF3 = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1365,7 +1354,7 @@ let labDF3 = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1376,7 +1365,7 @@ let labDF3 = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto  max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1387,7 +1376,7 @@ let labDF3 = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "eager",
   },
 ]
@@ -1400,7 +1389,7 @@ let labOZ1i = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "eager",
   },
 
@@ -1411,7 +1400,7 @@ let labOZ1i = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1422,7 +1411,7 @@ let labOZ1i = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1433,7 +1422,7 @@ let labOZ1i = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1444,7 +1433,7 @@ let labOZ1i = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1455,7 +1444,7 @@ let labOZ1i = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1466,7 +1455,7 @@ let labOZ1i = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1477,7 +1466,7 @@ let labOZ1i = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1488,7 +1477,7 @@ let labOZ1i = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1499,7 +1488,7 @@ let labOZ1i = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "col-span-2 md:col-span-1cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1510,7 +1499,7 @@ let labOZ1i = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1521,7 +1510,7 @@ let labOZ1i = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "eager",
   },
 ]
@@ -1534,7 +1523,7 @@ let labHeelShaft = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "eager",
   },
 
@@ -1545,7 +1534,7 @@ let labHeelShaft = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1556,7 +1545,7 @@ let labHeelShaft = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1567,7 +1556,7 @@ let labHeelShaft = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1578,7 +1567,7 @@ let labHeelShaft = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1589,7 +1578,7 @@ let labHeelShaft = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1600,7 +1589,7 @@ let labHeelShaft = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1611,7 +1600,7 @@ let labHeelShaft = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1622,7 +1611,7 @@ let labHeelShaft = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1633,7 +1622,7 @@ let labHeelShaft = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1644,7 +1633,7 @@ let labHeelShaft = [
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 ]

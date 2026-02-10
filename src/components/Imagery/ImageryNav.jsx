@@ -35,16 +35,17 @@ export default function ImageryNav({
       transition={{ duration: 1, delay: 1.5, ease: easeInOut }}
       className="z-20 my-1 mb-6 flex h-10 w-full justify-center md:mt-10 lg:mb-0 xl:m-5"
     >
-      <div className="z-50 flex h-fit w-fit rounded-lg border-[1px] border-black bg-white p-2 shadow-lg dark:bg-[#333333]">
-        <Link onClick={menuHandler} className="m-2 font-semibold">
-          Menu
+      <div className="z-50 flex h-fit w-fit rounded-lg border-[1px] border-black bg-white p-2 shadow-lg dark:border-white dark:bg-[#000]">
+        <Link onClick={galleryHandler} className="m-2 font-semibold">
+          Gallery
         </Link>
+
         <h2 className="text-md m-2 w-[100px]">
           {slideIndex + 1} of {folderLength[currentFolder]}
         </h2>
 
-        <Link onClick={galleryHandler} className="m-2 font-semibold">
-          Gallery
+        <Link onClick={menuHandler} className="m-2 font-semibold">
+          Menu
         </Link>
       </div>
     </m.header>

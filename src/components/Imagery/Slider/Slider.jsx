@@ -228,7 +228,7 @@ export default function Slider({
               className="w-full pb-4 text-center text-4xl text-teal-900 dark:text-white lg:left-20 lg:text-5xl"
             >
               <p className="lg:text-md text-xs font-light">L.A.B. Golf</p>
-              OZ1i • Heel Shaft
+              OZ1i <span className="font-extrabold">HS</span>
             </m.h2>
           )}
           {currentFolder === 4 && (

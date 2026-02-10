@@ -23,7 +23,7 @@ export default function MenuInformation({
     <>
       <ul className="flex h-full animate-fade-in flex-col pt-5">
         <div className="mx-10 mt-auto text-left md:my-auto">
-          <h2 className="mb-5 text-xl font-bold">Selects</h2>
+          <h2 className="mb-5 text-xl font-bold">Portfolio</h2>
           <li>
             <a
               onClick={() => {
