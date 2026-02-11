@@ -20,10 +20,9 @@ export default function MenuContents({
           </p>
           <p>
             I have been fortunate to work with a wide range of clients,
-            primarily in professional sports. I have a particular
-            affinity for shooting golf, and am always looking for new
-            opportunities to expand my portfolio and collaborate with
-            like-minded clients.
+            primarily in professional sports. I have a particular affinity for
+            shooting golf, and am always looking for new opportunities to expand
+            my portfolio and collaborate with like-minded clients.
           </p>
           <div className="gap-2">
             <h3 className="text-md">Past Clients:</h3>
@@ -37,16 +36,6 @@ export default function MenuContents({
           <li>
             <h3 className="text-lg font-bold">Get In Touch</h3>
           </li>
-          <li className="flex gap-2">
-            <AiFillInstagram className="text-2xl text-teal-900 dark:text-white" />
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.instagram.com/colebeal/"
-            >
-              <span className="cursor-pointer hover:underline">@colebeal</span>
-            </a>
-          </li>
           <li
             href="mailto:cole@colebeal.com?subject=Let's connect!"
             className="flex gap-2"
@@ -56,6 +45,16 @@ export default function MenuContents({
               <span className="cursor-pointer hover:underline">
                 cole@colebeal.com
               </span>
+            </a>
+          </li>
+          <li className="flex gap-2">
+            <AiFillInstagram className="text-2xl text-teal-900 dark:text-white" />
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.instagram.com/colebeal/"
+            >
+              <span className="cursor-pointer hover:underline">@colebeal</span>
             </a>
           </li>
         </ul>

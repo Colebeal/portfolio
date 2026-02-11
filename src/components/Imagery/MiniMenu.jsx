@@ -7,7 +7,7 @@ import ThemeToggle from "../ThemeToggle"
 export default function MiniMenu({ isGallery, menuHandler }) {
   const mobileToggles = {
     slider:
-      "flex basis-1/5 z-40 sm:flex-col w-fit h-fit p-2 rounded-md gap-4 bg-white border-[1px] border-black dark:border-white dark:bg-[#000000] fixed top-10 right-5 shadow-lg",
+      "flex basis-1/5 z-40 sm:flex-col w-fit h-fit p-2 rounded-md gap-4 bg-white border-[1px] border-black dark:border-white dark:bg-[#000000] fixed top-5 right-5 lg:top-10 shadow-lg",
     gallery:
       "z-40 flex flex-col w-fit h-fit p-2 rounded-md gap-4 bg-orange-100 bg-white border-[1px] border-black dark:bg-[#333333] fixed bottom-10 md:top-10 right-5 shadow-lg ",
   }
