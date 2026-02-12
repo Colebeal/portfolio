@@ -1182,7 +1182,29 @@ let scottieAmex = [
   },
 
   {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770847023/PGA_Social-6_osjccw.jpg",
+    alt: "",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
     src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770428753/Scottie-Amex-8_zhxhkz.jpg",
+    alt: "",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1770847024/PGA_Social-5_k0nr7c.jpg",
     alt: "",
     className:
       "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
