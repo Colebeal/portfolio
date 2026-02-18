@@ -12,7 +12,7 @@ export default function MenuContents({
   return (
     <>
       <main className="mx-10 h-full animate-fade-in overflow-auto pt-5 text-left">
-        <div className="flex flex-col gap-4 2xl:flex-row ">
+        <div className="flex flex-col gap-4  ">
           <h2 className="w-[100%] text-2xl">About me</h2>
           <p>
             Over my +10 years as a working photographer, I seek out clients who
@@ -25,10 +25,10 @@ export default function MenuContents({
             my portfolio and collaborate with like-minded clients.
           </p>
           <div className="gap-2">
-            <h3 className="text-md">Past Clients:</h3>
+            <h3 className="text-lg">Clients:</h3>
             <p>
-              L.A.B. Golf, Red Bull Media House, SURFER Magazine, TCSS, Bing
-              Surfboards, Wilderness Collective and more.
+              L.A.B. Golf, Red Bull, SURFER Magazine, TCSS, DeadKook Surfboards,
+              Bing Surfboards, Kassia Surf, Wilderness Collective.
             </p>
           </div>
         </div>

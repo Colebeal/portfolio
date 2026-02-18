@@ -61,7 +61,7 @@ export default function Slider({
       return
     } else if (slideIndex === 0 && currentFolder === 0) {
       setSlideIndex(observations.length - 1)
-      setCurrentFolder(6)
+      setCurrentFolder(9)
     } else if (slideIndex == 0) {
       setSlideIndex(previousFolder.length - 1)
       setCurrentFolder(currentFolder - 1)
@@ -75,7 +75,7 @@ export default function Slider({
 
     if (isTransitioning === true) {
       return
-    } else if (slideIndex === observations.length - 1 && currentFolder === 6) {
+    } else if (slideIndex === observations.length - 1 && currentFolder === 9) {
       setCurrentFolder(0)
       setSlideIndex(0)
       return
