@@ -1661,6 +1661,304 @@ let labHeelShaft = [
   },
 ]
 
+let tcssDeadKooks = [
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1771371940/Portfolio_surfer-18_zca00s.jpg",
+    alt: "TCSS x Dead Kooks",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1771371935/Portfolio_surfer-11_usvqdy.jpg",
+    alt: "TCSS x Dead Kooks",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+
+    gallery:
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "eager",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1771371928/Portfolio_surfer-20_htrfi5.jpg",
+    alt: "TCSS x Dead Kooks",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1771371931/Portfolio_surfer-15_nceygk.jpg",
+    alt: "TCSS x Dead Kooks",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1771371940/Portfolio_surfer-13_tovgum.jpg",
+    alt: "TCSS x Dead Kooks",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1771371928/Portfolio_surfer-10_b1lysi.jpg",
+    alt: "TCSS x Dead Kooks",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1771371929/Portfolio_surfer-19_xhj2sp.jpg",
+    alt: "TCSS x Dead Kooks",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1771371932/Portfolio_surfer-16_sxlkan.jpg",
+    alt: "TCSS x Dead Kooks",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1771371933/Portfolio_surfer-14_x508xk.jpg",
+    alt: "TCSS x Dead Kooks",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1771371934/Portfolio_surfer-12_cawbkv.jpg",
+    alt: "TCSS x Dead Kooks",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+]
+
+let surferUsOpen = [
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1771371728/Portfolio_surfer-32_lvd3u8.jpg",
+    alt: "Surfer Magazine - US OPEN",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "eager",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1771371732/Portfolio_surfer-33_bfdp4o.jpg",
+    alt: "Surfer Magazine - US OPEN",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1771371729/Portfolio_surfer-35_z7tqta.jpg",
+    alt: "Surfer Magazine - US OPEN",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1771371728/Portfolio_surfer-34_vvlfay.jpg",
+    alt: "Surfer Magazine - US OPEN",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1771371729/Portfolio_surfer-36_wqstha.jpg",
+    alt: "Surfer Magazine - US OPEN",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1771371727/Portfolio_surfer-31_qkwll7.jpg",
+    alt: "Surfer Magazine - US OPEN",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1771371675/Portfolio_surfer-39_zd2ajt.jpg",
+    alt: "Surfer Magazine - US OPEN",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1771371730/Portfolio_surfer-37_asevbi.jpg",
+    alt: "Surfer Magazine - US OPEN",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+]
+
+let surferMickRodgers = [
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1771371798/Portfolio_surfer-28_z7mob0.jpg",
+    alt: "Surfer Magazine - Mick Rodgers",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "eager",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1771371803/Portfolio_surfer-23_szqm61.jpg",
+    alt: "Surfer Magazine - Mick Rodgers",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1771371806/Portfolio_surfer-27_wubnbf.jpg",
+    alt: "Surfer Magazine - Mick Rodgers",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1771371803/Portfolio_surfer-25_lkotma.jpg",
+    alt: "Surfer Magazine - Mick Rodgers",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1771371800/Portfolio_surfer-26_pz7tuh.jpg",
+    alt: "Surfer Magazine - Mick Rodgers",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1771371797/Portfolio_surfer-29_anzolj.jpg",
+    alt: "Surfer Magazine - Mick Rodgers",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1771371803/Portfolio_surfer-21_zwe3zb.jpg",
+    alt: "Surfer Magazine - Mick Rodgers",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1771371800/Portfolio_surfer-24_e1ezyx.jpg",
+    alt: "Surfer Magazine - Mick Rodgers",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+  {
+    src: "https://res.cloudinary.com/dvfqeowxm/image/upload/v1771371808/Portfolio_surfer-22_hbyeg1.jpg",
+    alt: "Surfer Magazine - Mick Rodgers",
+    className:
+      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+    hidden: "hidden",
+    gallery:
+      "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
+  },
+]
+
 let index = -1
 
 observations = observations.map((item, index) => ({ ...item, id: index + 1 }))
@@ -1670,6 +1968,18 @@ scottieAmex = scottieAmex.map((item, index) => ({ ...item, id: index + 1 }))
 labDF3 = labDF3.map((item, index) => ({ ...item, id: index + 1 }))
 labOZ1i = labOZ1i.map((item, index) => ({ ...item, id: index + 1 }))
 labHeelShaft = labHeelShaft.map((item, index) => ({ ...item, id: index + 1 }))
+surferUsOpen = surferUsOpen.map((item, index) => ({
+  ...item,
+  id: index + 1,
+}))
+surferMickRodgers = surferMickRodgers.map((item, index) => ({
+  ...item,
+  id: index + 1,
+}))
+tcssDeadKooks = tcssDeadKooks.map((item, index) => ({
+  ...item,
+  id: index + 1,
+}))
 
 export {
   observations,
@@ -1679,6 +1989,9 @@ export {
   labDF3,
   labOZ1i,
   labHeelShaft,
+  surferUsOpen,
+  surferMickRodgers,
+  tcssDeadKooks,
 }
 export default {
   observations,
@@ -1688,4 +2001,7 @@ export default {
   labDF3,
   labOZ1i,
   labHeelShaft,
+  surferUsOpen,
+  surferMickRodgers,
+  tcssDeadKooks,
 }

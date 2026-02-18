@@ -1,7 +1,7 @@
 import { motion as m } from "framer-motion"
-import { labOZ1i } from "../../../assets/sliderData"
+import { labHeelShaft } from "../../../../assets/sliderData"
 
-export default function LabOZ1i({ currentImage }) {
+export default function LabHeelShaft({ currentImage }) {
   return (
     <m.div
       key={0}
@@ -11,7 +11,7 @@ export default function LabOZ1i({ currentImage }) {
       transition={{ duration: 0.5, delay: 0.25 }}
       className="z-10 flex h-[424px] w-[90vw] items-center justify-center md:h-[600px] lg:h-[900px]"
     >
-      {labOZ1i.map((image, index) => {
+      {labHeelShaft.map((image, index) => {
         return (
           <img
             id={image.id}

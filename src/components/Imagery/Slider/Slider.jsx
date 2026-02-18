@@ -6,19 +6,25 @@ import {
   labDF3,
   labOZ1i,
   labHeelShaft,
+  surferMickRodgers,
+  surferUsOpen,
+  tcssDeadKooks,
 } from "../../../assets/sliderData"
 import { AnimatePresence, motion as m } from "framer-motion"
 import { useSwipeable } from "react-swipeable"
 import { useRef } from "react"
 
 import ImageryNav from "../ImageryNav"
-import Observations from "./Observations"
-import People from "./People"
-import Structure from "./Structure"
-import ScottieAmex from "./ScottieAmex"
-import LabDF3 from "./LabDF3"
-import LabOZ1i from "./LabOZ1i"
-import LabHeelShaft from "./LabHeelShaft"
+import Observations from "./ImageSets/Observations"
+import People from "./ImageSets/People"
+import Structure from "./ImageSets/Structure"
+import ScottieAmex from "./ImageSets/ScottieAmex"
+import LabDF3 from "./ImageSets/LabDF3"
+import LabOZ1i from "./ImageSets/LabOZ1i"
+import LabHeelShaft from "./ImageSets/LabHeelShaft"
+import SurferMickRodgers from "./ImageSets/SurferMickRodgers"
+import SurferUsOpen from "./ImageSets/SurferUSOpen"
+import TCSSDeadKooks from "./ImageSets/TCSSDeadKooks"
 
 export default function Slider({
   slideIndex,
@@ -38,6 +44,9 @@ export default function Slider({
     labDF3,
     labOZ1i,
     labHeelShaft,
+    surferUsOpen,
+    surferMickRodgers,
+    tcssDeadKooks,
     people,
     structure,
     observations,
@@ -240,8 +249,8 @@ export default function Slider({
               exit="exit"
               className="w-full pb-4 text-center text-4xl text-teal-900 dark:text-white lg:left-20 lg:text-5xl"
             >
-              <p className="lg:text-md text-xs font-light">Archives</p>
-              People
+              <p className="lg:text-md text-xs font-light">SURFER Magazine</p>
+              US Open
             </m.h2>
           )}
           {currentFolder === 5 && (
@@ -253,13 +262,52 @@ export default function Slider({
               exit="exit"
               className="w-full pb-4 text-center text-4xl text-teal-900 dark:text-white lg:left-20 lg:text-5xl"
             >
-              <p className="lg:text-md text-xs font-light">Archives</p>
-              Structure
+              <p className="lg:text-md text-xs font-light">SURFER Magazine</p>
+              Mick Rodgers x TCSS
             </m.h2>
           )}
           {currentFolder === 6 && (
             <m.h2
               key={6}
+              variants={animation.title}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              className="w-full pb-4 text-center text-4xl text-teal-900 dark:text-white lg:left-20 lg:text-5xl"
+            >
+              <p className="lg:text-md text-xs font-light">TCSS</p>
+              DeadKooks
+            </m.h2>
+          )}
+          {currentFolder === 7 && (
+            <m.h2
+              key={7}
+              variants={animation.title}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              className="w-full pb-4 text-center text-4xl text-teal-900 dark:text-white lg:left-20 lg:text-5xl"
+            >
+              <p className="lg:text-md text-xs font-light">Archives</p>
+              People
+            </m.h2>
+          )}
+          {currentFolder === 8 && (
+            <m.h2
+              key={8}
+              variants={animation.title}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              className="w-full pb-4 text-center text-4xl text-teal-900 dark:text-white lg:left-20 lg:text-5xl"
+            >
+              <p className="lg:text-md text-xs font-light">Archives</p>
+              Structure
+            </m.h2>
+          )}
+          {currentFolder === 9 && (
+            <m.h2
+              key={9}
               variants={animation.title}
               initial="initial"
               animate="animate"
@@ -341,7 +389,7 @@ export default function Slider({
                 onAnimationComplete={() => setIsTransitioning(false)}
                 className="z-10 "
               >
-                <People currentImage={currentImage} />
+                <SurferUsOpen currentImage={currentImage} />
               </m.div>
             )}
             {currentFolder === 5 && (
@@ -353,14 +401,56 @@ export default function Slider({
                 exit="exit"
                 onAnimationStart={() => setIsTransitioning(true)}
                 onAnimationComplete={() => setIsTransitioning(false)}
-                className="z-10"
+                className="z-10 "
               >
-                <Structure currentImage={currentImage} />
+                <SurferMickRodgers currentImage={currentImage} />
               </m.div>
             )}
             {currentFolder === 6 && (
               <m.div
                 key={6}
+                variants={animation.slider}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                onAnimationStart={() => setIsTransitioning(true)}
+                onAnimationComplete={() => setIsTransitioning(false)}
+                className="z-10 "
+              >
+                <TCSSDeadKooks currentImage={currentImage} />
+              </m.div>
+            )}
+            {currentFolder === 7 && (
+              <m.div
+                key={7}
+                variants={animation.slider}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                onAnimationStart={() => setIsTransitioning(true)}
+                onAnimationComplete={() => setIsTransitioning(false)}
+                className="z-10 "
+              >
+                <People currentImage={currentImage} />
+              </m.div>
+            )}
+            {currentFolder === 8 && (
+              <m.div
+                key={8}
+                variants={animation.slider}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                onAnimationStart={() => setIsTransitioning(true)}
+                onAnimationComplete={() => setIsTransitioning(false)}
+                className="z-10"
+              >
+                <Structure currentImage={currentImage} />
+              </m.div>
+            )}
+            {currentFolder === 9 && (
+              <m.div
+                key={9}
                 variants={animation.slider}
                 initial="initial"
                 animate="animate"

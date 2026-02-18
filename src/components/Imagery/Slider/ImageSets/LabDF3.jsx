@@ -1,5 +1,5 @@
 import { motion as m } from "framer-motion"
-import { labDF3 } from "../../../assets/sliderData"
+import { labDF3 } from "../../../../assets/sliderData"
 
 export default function LabDF3({ currentImage }) {
   return (

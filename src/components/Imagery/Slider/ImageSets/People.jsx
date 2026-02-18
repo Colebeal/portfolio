@@ -1,7 +1,7 @@
 import { motion as m } from "framer-motion"
-import { observations } from "../../../assets/sliderData"
+import { people } from "../../../../assets/sliderData"
 
-export default function Observations({ currentImage }) {
+export default function People({ currentImage }) {
   return (
     <m.div
       key={0}
@@ -11,7 +11,7 @@ export default function Observations({ currentImage }) {
       transition={{ duration: 0.5, delay: 0.25 }}
       className="z-10 flex h-[424px] w-[90vw] items-center justify-center md:h-[600px] lg:h-[900px] 4xl:h-[1200px]"
     >
-      {observations.map((image, index) => {
+      {people.map((image, index) => {
         return (
           <img
             id={image.id}

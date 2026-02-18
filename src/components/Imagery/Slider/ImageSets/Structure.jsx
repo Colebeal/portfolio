@@ -1,5 +1,5 @@
 import { motion as m } from "framer-motion"
-import { structure } from "../../../assets/sliderData"
+import { structure } from "../../../../assets/sliderData"
 
 export default function Structure({ currentImage }) {
   return (

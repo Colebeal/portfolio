@@ -6,6 +6,9 @@ import {
   labDF3,
   labOZ1i,
   labHeelShaft,
+  surferUsOpen,
+  surferMickRodgers,
+  tcssDeadKooks,
 } from "../../assets/sliderData"
 import { motion as m } from "framer-motion"
 import GalleryNav from "./GalleryNav"
@@ -142,9 +145,10 @@ export default function Slider({
             initial="initial"
             animate="animate"
             exit="exit"
-            className="flex h-full w-full flex-1 flex-col gap-10 lg:grid lg:grid-cols-2 xl:grid-cols-3"
+            className="grid h-full w-full grid-cols-2 gap-10 px-4 py-8
+             md:gap-16 xl:grid-cols-3"
           >
-            {people.map((image) => (
+            {surferUsOpen.map((image) => (
               <img
                 onClick={() => {
                   enlargeImage(image.id)
@@ -163,9 +167,10 @@ export default function Slider({
             initial="initial"
             animate="animate"
             exit="exit"
-            className="flex h-full w-full flex-1 flex-col gap-10 lg:grid lg:grid-cols-2 xl:grid-cols-3"
+            className="grid h-full w-full grid-cols-2 gap-10 px-4 py-8
+             md:gap-16 xl:grid-cols-3"
           >
-            {structure.map((image) => (
+            {surferMickRodgers.map((image) => (
               <img
                 onClick={() => {
                   enlargeImage(image.id)
@@ -184,7 +189,74 @@ export default function Slider({
             initial="initial"
             animate="animate"
             exit="exit"
-            className="flex h-full w-full flex-1 flex-col gap-10 lg:grid lg:grid-cols-2 xl:grid-cols-3"
+            className="grid h-full w-full grid-cols-2 gap-10 px-4 py-8
+             md:gap-16 xl:grid-cols-3"
+          >
+            {tcssDeadKooks.map((image) => (
+              <img
+                onClick={() => {
+                  enlargeImage(image.id)
+                }}
+                id={image.id}
+                key={image.id}
+                className={image.gallery}
+                src={image.src}
+              />
+            ))}
+          </m.div>
+        )}
+        {currentFolder === 7 && (
+          <m.div
+            variants={animation}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            className="grid h-full w-full grid-cols-2 gap-10 px-4 py-8
+             md:gap-16 xl:grid-cols-3 2xl:grid-cols-4"
+          >
+            {people.map((image) => (
+              <img
+                onClick={() => {
+                  enlargeImage(image.id)
+                }}
+                id={image.id}
+                key={image.id}
+                className={image.gallery}
+                src={image.src}
+              />
+            ))}
+          </m.div>
+        )}
+        {currentFolder === 8 && (
+          <m.div
+            variants={animation}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            className="grid h-full w-full grid-cols-2 gap-10 px-4 py-8
+             md:gap-16 xl:grid-cols-3 2xl:grid-cols-4"
+          >
+            {structure.map((image) => (
+              <img
+                onClick={() => {
+                  enlargeImage(image.id)
+                }}
+                id={image.id}
+                key={image.id}
+                className={image.gallery}
+                src={image.src}
+              />
+            ))}
+          </m.div>
+        )}
+        {currentFolder === 9 && (
+          <m.div
+            variants={animation}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            className="grid h-full w-full grid-cols-2 gap-10 px-4 py-8
+             md:gap-16 xl:grid-cols-3 2xl:grid-cols-4"
           >
             {observations.map((image) => (
               <img

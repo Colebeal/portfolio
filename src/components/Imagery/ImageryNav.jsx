@@ -9,6 +9,9 @@ import {
   structure,
   observations,
   labHeelShaft,
+  surferUsOpen,
+  surferMickRodgers,
+  tcssDeadKooks,
 } from "../../assets/sliderData"
 
 export default function ImageryNav({
@@ -23,6 +26,9 @@ export default function ImageryNav({
     labDF3.length,
     labOZ1i.length,
     labHeelShaft.length,
+    surferUsOpen.length,
+    surferMickRodgers.length,
+    tcssDeadKooks.length,
     people.length,
     structure.length,
     observations.length,

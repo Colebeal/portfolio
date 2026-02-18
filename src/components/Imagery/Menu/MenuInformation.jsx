@@ -6,13 +6,6 @@ export default function MenuInformation({
   menuHandler,
   menuContentHandler,
 }) {
-  // function selectFolderHandler(folderIndex) {
-  //   menuHandler()
-  //    // setFolderDisplayed(0)
-  //   setSlideIndex(5)
-  //   menuHandler()
-  // }
-
   const selectFolder = (e) => {
     setCurrentFolder(e)
     setSlideIndex(0)
@@ -68,11 +61,48 @@ export default function MenuInformation({
               <span className=" sm:mr-10">{imageData.labHeelShaft.length}</span>
             </a>
           </li>
-          <h2 className="mb-5 mt-28 text-xl font-bold">Archives</h2>
           <li>
             <a
               onClick={() => {
                 selectFolder(4)
+              }}
+              className="my-4 flex cursor-pointer justify-between hover:underline"
+            >
+              <span>SURFER Magazine • US Open</span>
+              <span className=" sm:mr-10">{imageData.surferUsOpen.length}</span>
+            </a>
+          </li>
+          <li>
+            <a
+              onClick={() => {
+                selectFolder(5)
+              }}
+              className="my-4 flex cursor-pointer justify-between hover:underline"
+            >
+              <span>SURFER Magazine • Mick Rodgers</span>
+              <span className=" sm:mr-10">
+                {imageData.surferMickRodgers.length}
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              onClick={() => {
+                selectFolder(6)
+              }}
+              className="my-4 flex cursor-pointer justify-between hover:underline"
+            >
+              <span>TCSS • DeadKooks</span>
+              <span className=" sm:mr-10">
+                {imageData.tcssDeadKooks.length}
+              </span>
+            </a>
+          </li>
+          <h2 className="mb-5 mt-28 text-xl font-bold">Archives</h2>
+          <li>
+            <a
+              onClick={() => {
+                selectFolder(7)
               }}
               className="my-4 flex cursor-pointer justify-between hover:underline"
             >
@@ -83,7 +113,7 @@ export default function MenuInformation({
           <li>
             <a
               onClick={() => {
-                selectFolder(5)
+                selectFolder(8)
               }}
               className="my-4 flex cursor-pointer justify-between hover:underline"
             >
@@ -94,7 +124,7 @@ export default function MenuInformation({
           <li>
             <a
               onClick={() => {
-                selectFolder(6)
+                selectFolder(9)
               }}
               className="my-4 flex cursor-pointer justify-between hover:underline"
             >
