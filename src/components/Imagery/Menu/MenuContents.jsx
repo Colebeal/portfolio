@@ -25,16 +25,26 @@ export default function MenuContents({
             my portfolio and collaborate with like-minded clients.
           </p>
           <div className="gap-2">
-            <h3 className="text-lg">Clients:</h3>
-            <p>
+            <h3 className="mb-2 text-2xl">Clients</h3>
+            <ul>
+              <li>L.A.B. Golf - Staff Photographer</li>
+              <li>Red Bull</li>
+              <li>SURFER Magazine</li>
+              <li>TCSS</li>
+              <li>DeadKooks Surfboards</li>
+              <li>Bing Surfboards</li>
+              <li>Kassia Surf</li>
+              <li>Wilderness Collective</li>
+            </ul>
+            <p className="hidden">
               L.A.B. Golf, Red Bull, SURFER Magazine, TCSS, DeadKook Surfboards,
               Bing Surfboards, Kassia Surf, Wilderness Collective.
             </p>
           </div>
         </div>
-        <ul className="mt-5 flex flex-col gap-3 2xl:flex-row">
+        <ul className=" mt-5 flex flex-col gap-3">
           <li>
-            <h3 className="text-lg font-bold">Get In Touch</h3>
+            <h3 className="text-2xl font-bold">Get In Touch</h3>
           </li>
           <li
             href="mailto:cole@colebeal.com?subject=Let's connect!"

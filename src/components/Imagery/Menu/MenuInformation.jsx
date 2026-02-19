@@ -98,7 +98,7 @@ export default function MenuInformation({
               </span>
             </a>
           </li>
-          <h2 className="mb-5 mt-28 text-xl font-bold">Archives</h2>
+          <h2 className="mb-5 mt-16 text-xl font-bold md:mt-28">Archives</h2>
           <li>
             <a
               onClick={() => {
