@@ -68,7 +68,7 @@ export default function Menu({
             setCurrentFolder={setCurrentFolder}
           />
         )}
-        <div className="h-24">
+        <div className="h-6">
           <BsXLg
             onClick={menuHandler}
             className="absolute right-10 top-11 animate-rise-up text-2xl md:hidden"

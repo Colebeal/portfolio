@@ -11,7 +11,7 @@ export default function MenuContents({
 }) {
   return (
     <>
-      <main className="mx-10 h-full animate-fade-in overflow-auto pt-5 text-left">
+      <main className="mx-10 h-full animate-fade-in overflow-auto pt-2 text-left">
         <div className="flex flex-col gap-4  ">
           <h2 className="w-[100%] text-2xl">About me</h2>
           <p>
