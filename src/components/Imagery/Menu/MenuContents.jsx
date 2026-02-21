@@ -51,7 +51,12 @@ export default function MenuContents({
             className="flex gap-2"
           >
             <MdMail className="text-2xl text-teal-900 dark:text-white" />
-            <a href="mailto:cole@colebeal.com?subject=Let's connect">
+            <a
+              href="mailto:cole@colebeal.com?subject=Let's connect"
+              data-gtm-event="cta_click"
+              data-gtm-location="menu"
+              data-gtm-label="email"
+            >
               <span className="cursor-pointer hover:underline">
                 cole@colebeal.com
               </span>
@@ -63,6 +68,9 @@ export default function MenuContents({
               target="_blank"
               rel="noopener noreferrer"
               href="https://www.instagram.com/colebeal/"
+              data-gtm-event="cta_click"
+              data-gtm-location="menu"
+              data-gtm-label="instagram"
             >
               <span className="cursor-pointer hover:underline">@colebeal</span>
             </a>
