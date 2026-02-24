@@ -22,6 +22,9 @@ export default function MenuInformation({
               onClick={() => {
                 selectFolder(0)
               }}
+              data-gtm-event="cta_click"
+              data-gtm-location="menu"
+              data-gtm-label="scottie-scheffler"
               className="my-4 flex cursor-pointer justify-between hover:underline"
             >
               <span>Scottie Scheffler • PGA</span>
@@ -33,6 +36,9 @@ export default function MenuInformation({
               onClick={() => {
                 selectFolder(1)
               }}
+              data-gtm-event="cta_click"
+              data-gtm-location="menu"
+              data-gtm-label="lab-df3"
               className="my-4 flex cursor-pointer justify-between hover:underline"
             >
               <span>L.A.B. Golf • DF3</span>
@@ -44,6 +50,9 @@ export default function MenuInformation({
               onClick={() => {
                 selectFolder(2)
               }}
+              data-gtm-event="cta_click"
+              data-gtm-location="menu"
+              data-gtm-label="oz1i"
               className="my-4 flex cursor-pointer justify-between hover:underline"
             >
               <span>L.A.B. Golf • OZ1i</span>
@@ -55,6 +64,9 @@ export default function MenuInformation({
               onClick={() => {
                 selectFolder(3)
               }}
+              data-gtm-event="cta_click"
+              data-gtm-location="menu"
+              data-gtm-label="oz1i-hs"
               className="my-4 flex cursor-pointer justify-between hover:underline"
             >
               <span>L.A.B. Golf • OZ1i HS</span>
@@ -66,6 +78,9 @@ export default function MenuInformation({
               onClick={() => {
                 selectFolder(4)
               }}
+              data-gtm-event="cta_click"
+              data-gtm-location="menu"
+              data-gtm-label="surfer-us-open"
               className="my-4 flex cursor-pointer justify-between hover:underline"
             >
               <span>SURFER Magazine • US Open</span>
@@ -77,6 +92,9 @@ export default function MenuInformation({
               onClick={() => {
                 selectFolder(5)
               }}
+              data-gtm-event="cta_click"
+              data-gtm-location="menu"
+              data-gtm-label="surfer-mick-rodgers"
               className="my-4 flex cursor-pointer justify-between hover:underline"
             >
               <span>SURFER Magazine • Mick Rodgers</span>
@@ -90,6 +108,9 @@ export default function MenuInformation({
               onClick={() => {
                 selectFolder(6)
               }}
+              data-gtm-event="cta_click"
+              data-gtm-location="menu"
+              data-gtm-label="tcss-deadkooks"
               className="my-4 flex cursor-pointer justify-between hover:underline"
             >
               <span>TCSS • DeadKooks</span>
@@ -104,6 +125,9 @@ export default function MenuInformation({
               onClick={() => {
                 selectFolder(7)
               }}
+              data-gtm-event="cta_click"
+              data-gtm-location="menu"
+              data-gtm-label="people"
               className="my-4 flex cursor-pointer justify-between hover:underline"
             >
               <span>People</span>
@@ -115,6 +139,9 @@ export default function MenuInformation({
               onClick={() => {
                 selectFolder(8)
               }}
+              data-gtm-event="cta_click"
+              data-gtm-location="menu"
+              data-gtm-label="structure"
               className="my-4 flex cursor-pointer justify-between hover:underline"
             >
               <span>Structure</span>
@@ -126,6 +153,9 @@ export default function MenuInformation({
               onClick={() => {
                 selectFolder(9)
               }}
+              data-gtm-event="cta_click"
+              data-gtm-location="menu"
+              data-gtm-label="observations"
               className="my-4 flex cursor-pointer justify-between hover:underline"
             >
               <span>Observations</span>

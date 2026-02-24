@@ -76,7 +76,12 @@ export default function MenuContents({
             </a>
           </li>
         </ul>
-        {/* <div className="mt-8 aspect-[4/3] bg-[url('/images/hero-image.jpg')] bg-cover bg-center md:fixed md:bottom-32 md:right-0 md:w-[300px]"></div> */}
+        <div className="mt-8 aspect-[4/3] bg-[url('/images/hero-image.jpg')] bg-cover bg-center   md:w-full"></div>
+        <div className="mt-2">
+          <span className=" text-[10px]">
+            © 2026 Cole Beal Digital Services
+          </span>
+        </div>
       </main>
     </>
   )

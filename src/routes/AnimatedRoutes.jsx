@@ -6,6 +6,8 @@ import DevHome from "./DevHome"
 import Imagery from "./Imagery"
 import DorffDesigns from "./DorffDesigns"
 import Bonsai from "./Bonsai"
+import ScottieAmex from "../components/Imagery/Slider/ImageSets/ScottieAmex"
+import LabDF3 from "../components/Imagery/Slider/ImageSets/LabDF3"
 
 const AnimatedRoutes = () => {
   const location = useLocation()
@@ -13,14 +15,12 @@ const AnimatedRoutes = () => {
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<Imagery />} />
+        <Route path="/" element={<Imagery />}></Route>
         <Route path="/dev" element={<Dev />}>
           <Route path="home" element={<DevHome />} />
           <Route path="dorff-designs" element={<DorffDesigns />} />
           <Route path="bonsai" element={<Bonsai />} />
         </Route>
-
-        {/* <Route path="/imagery" element={<Imagery />} /> */}
       </Routes>
     </AnimatePresence>
   )
