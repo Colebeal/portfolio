@@ -46,7 +46,7 @@ export default function BlurImage({
       aspectRatio,
       ...(isHorizontal
         ? { width: "100%", height: "auto", objectFit: "contain" }
-        : { width: "auto", height: "100%", objectFit: "contain" }),
+        : { width: "min-content", height: "100%", objectFit: "contain" }),
     }
     return (
       <div
