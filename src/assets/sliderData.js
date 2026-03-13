@@ -9,7 +9,7 @@ let observations = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "eager",
   },
 
@@ -23,7 +23,7 @@ let observations = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "eager",
   },
 
@@ -37,7 +37,7 @@ let observations = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "eager",
   },
 
@@ -51,7 +51,7 @@ let observations = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -65,7 +65,7 @@ let observations = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "eager",
   },
 
@@ -79,7 +79,7 @@ let observations = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -93,7 +93,7 @@ let observations = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "eager",
   },
 
@@ -107,7 +107,7 @@ let observations = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "eager",
   },
 
@@ -121,7 +121,7 @@ let observations = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "eager",
   },
 
@@ -135,7 +135,7 @@ let observations = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -146,7 +146,7 @@ let observations = [
   //     "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
   //   hidden: "hidden",
   //   gallery:
-  //     "cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover",
+  //     "w-[stretch] cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover",
   //   loading: "lazy",
   // },
 
@@ -157,7 +157,7 @@ let observations = [
   //     "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
   //   hidden: "hidden",
   //   gallery:
-  //     "cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover",
+  //     "w-[stretch] cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover",
   //   loading: "lazy",
   // },
 
@@ -171,7 +171,7 @@ let observations = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -185,7 +185,7 @@ let observations = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -199,7 +199,7 @@ let observations = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -213,7 +213,7 @@ let observations = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -224,7 +224,7 @@ let observations = [
   //     "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
   //   hidden: "hidden",
   //   gallery:
-  //     "cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover",
+  //     "w-[stretch] cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover",
   //   loading: "lazy",
   // },
 
@@ -238,7 +238,7 @@ let observations = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -252,7 +252,7 @@ let observations = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -266,7 +266,7 @@ let observations = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "eager",
   },
 
@@ -280,7 +280,7 @@ let observations = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -291,7 +291,7 @@ let observations = [
   //     "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
   //   hidden: "hidden",
   //   gallery:
-  //     "cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover",
+  //     "w-[stretch] cursor-pointer self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover",
   //   loading: "lazy",
   // },
 
@@ -305,7 +305,7 @@ let observations = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -319,7 +319,7 @@ let observations = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -333,7 +333,7 @@ let observations = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -347,7 +347,7 @@ let observations = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -358,7 +358,7 @@ let observations = [
   //     "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
   //   hidden: "hidden",
   //   gallery:
-  //     "cursor-pointer row-span-2 self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover",
+  //     "w-[stretch] cursor-pointer row-span-2 self-center max-w-[300px] md:max-w-[400px] md:max-h-[500px] justify-self-center object-cover",
   //   loading: "lazy",
   // },
 
@@ -372,7 +372,7 @@ let observations = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -386,7 +386,7 @@ let observations = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -400,7 +400,7 @@ let observations = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -414,7 +414,7 @@ let observations = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "eager",
   },
 ]
@@ -430,7 +430,7 @@ let people = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -441,7 +441,7 @@ let people = [
   //     "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
   //   hidden: "hidden",
   //   gallery:
-  //     "cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px]",
+  //     "w-[stretch] cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px]",
   //   loading: "lazy",
   // },
 
@@ -455,7 +455,7 @@ let people = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -469,7 +469,7 @@ let people = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -483,7 +483,7 @@ let people = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -497,7 +497,7 @@ let people = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -508,7 +508,7 @@ let people = [
   //     "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
   //   hidden: "hidden",
   //   gallery:
-  //     "cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover",
+  //     "w-[stretch] cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover",
   //   loading: "lazy",
   // },
 
@@ -522,7 +522,7 @@ let people = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -536,7 +536,7 @@ let people = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -550,7 +550,7 @@ let people = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -564,7 +564,7 @@ let people = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -578,7 +578,7 @@ let people = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -592,7 +592,7 @@ let people = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -606,7 +606,7 @@ let people = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -620,7 +620,7 @@ let people = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -634,7 +634,7 @@ let people = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -648,7 +648,7 @@ let people = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -662,7 +662,7 @@ let people = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -676,7 +676,7 @@ let people = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -687,7 +687,7 @@ let people = [
   //     "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
   //   hidden: "hidden",
   //   gallery:
-  //     "cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover",
+  //     "w-[stretch] cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover",
   //   loading: "lazy",
   // },
 
@@ -701,7 +701,7 @@ let people = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -715,7 +715,7 @@ let people = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -726,7 +726,7 @@ let people = [
   //     "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
   //   hidden: "hidden",
   //   gallery:
-  //     "cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover",
+  //     "w-[stretch] cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover",
   //   loading: "lazy",
   // },
 
@@ -740,7 +740,7 @@ let people = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -754,7 +754,7 @@ let people = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -768,7 +768,7 @@ let people = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -782,7 +782,7 @@ let people = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -796,7 +796,7 @@ let people = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -810,7 +810,7 @@ let people = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -824,7 +824,7 @@ let people = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -835,7 +835,7 @@ let people = [
   //     "h-[424px] lg:h-[900px] object-contain m-auto w-fit lg:border-[1px] dark:border-white border-black",
   //   hidden: "hidden",
   //   gallery:
-  //     "cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover",
+  //     "w-[stretch] cursor-pointer self-center max-w-[300px] md:max-w-[400px] max-h-[400px] md:max-h-[500px] justify-self-center object-cover",
   //   loading: "lazy",
   // },
 
@@ -849,7 +849,7 @@ let people = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -863,7 +863,7 @@ let people = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -877,7 +877,7 @@ let people = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -891,7 +891,7 @@ let people = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -905,7 +905,7 @@ let people = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "eager",
   },
 ]
@@ -921,7 +921,7 @@ let structure = [
       "h-full w-full md:w-[unset] max-h-full max-w-full border-2 border-black dark:border- bg-center bg-contain bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -935,7 +935,7 @@ let structure = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -949,7 +949,7 @@ let structure = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -963,7 +963,7 @@ let structure = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -977,7 +977,7 @@ let structure = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -991,7 +991,7 @@ let structure = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1005,7 +1005,7 @@ let structure = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1019,7 +1019,7 @@ let structure = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1033,7 +1033,7 @@ let structure = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1047,7 +1047,7 @@ let structure = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1061,7 +1061,7 @@ let structure = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1075,7 +1075,7 @@ let structure = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1089,7 +1089,7 @@ let structure = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1103,7 +1103,7 @@ let structure = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1117,7 +1117,7 @@ let structure = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1131,7 +1131,7 @@ let structure = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1142,7 +1142,7 @@ let structure = [
   //     "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
   //   hidden: "hidden",
   //   gallery:
-  //     "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+  //     "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
   // },
 
   {
@@ -1155,7 +1155,7 @@ let structure = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1169,7 +1169,7 @@ let structure = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1183,7 +1183,7 @@ let structure = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1197,7 +1197,7 @@ let structure = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1211,7 +1211,7 @@ let structure = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1225,7 +1225,7 @@ let structure = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1239,7 +1239,7 @@ let structure = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1253,7 +1253,7 @@ let structure = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1264,7 +1264,7 @@ let structure = [
   //     "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
   //   hidden: "hidden",
   //   gallery:
-  //     "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+  //     "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
   //   loading: "lazy",
   // },
 
@@ -1275,7 +1275,7 @@ let structure = [
   //     "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
   //   hidden: "hidden",
   //   gallery:
-  //     "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+  //     "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
   //   loading: "lazy",
   // },
 
@@ -1286,7 +1286,7 @@ let structure = [
   //     "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
   //   hidden: "hidden",
   //   gallery:
-  //     "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+  //     "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
   //   loading: "lazy",
   // },
 
@@ -1300,7 +1300,7 @@ let structure = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1314,7 +1314,7 @@ let structure = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1328,7 +1328,7 @@ let structure = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1342,7 +1342,7 @@ let structure = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1356,7 +1356,7 @@ let structure = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1367,7 +1367,7 @@ let structure = [
   //     "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
   //   hidden: "hidden",
   //   gallery:
-  //     "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+  //     "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
   //   loading: "lazy",
   // },
 
@@ -1378,7 +1378,7 @@ let structure = [
   //     "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
   //   hidden: "hidden",
   //   gallery:
-  //     "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+  //     "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
   //   loading: "lazy",
   // },
 
@@ -1392,7 +1392,7 @@ let structure = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "eager",
   },
 ]
@@ -1408,7 +1408,7 @@ let scottieAmex = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full  border-2  border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "col-span-2 md:col-span-1 md:cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] col-span-2 md:col-span-1 md:cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "eager",
   },
 
@@ -1422,7 +1422,7 @@ let scottieAmex = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1436,7 +1436,7 @@ let scottieAmex = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w- max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w- max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1450,7 +1450,7 @@ let scottieAmex = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1464,7 +1464,7 @@ let scottieAmex = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1478,7 +1478,7 @@ let scottieAmex = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1492,7 +1492,7 @@ let scottieAmex = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1506,7 +1506,7 @@ let scottieAmex = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1520,7 +1520,7 @@ let scottieAmex = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1534,7 +1534,7 @@ let scottieAmex = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1548,7 +1548,7 @@ let scottieAmex = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1562,7 +1562,7 @@ let scottieAmex = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1576,7 +1576,7 @@ let scottieAmex = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "eager",
   },
 ]
@@ -1592,7 +1592,7 @@ let labDF3 = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "eager",
   },
 
@@ -1606,7 +1606,7 @@ let labDF3 = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1620,7 +1620,7 @@ let labDF3 = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1634,7 +1634,7 @@ let labDF3 = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1648,7 +1648,7 @@ let labDF3 = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1662,7 +1662,7 @@ let labDF3 = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1676,7 +1676,7 @@ let labDF3 = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1690,7 +1690,7 @@ let labDF3 = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1704,7 +1704,7 @@ let labDF3 = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1718,7 +1718,7 @@ let labDF3 = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto  max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto  max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1732,7 +1732,7 @@ let labDF3 = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "eager",
   },
 ]
@@ -1748,7 +1748,7 @@ let labOZ1i = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "eager",
   },
 
@@ -1762,7 +1762,7 @@ let labOZ1i = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1776,7 +1776,7 @@ let labOZ1i = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1790,7 +1790,7 @@ let labOZ1i = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1804,7 +1804,7 @@ let labOZ1i = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1818,7 +1818,7 @@ let labOZ1i = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1832,7 +1832,7 @@ let labOZ1i = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1846,7 +1846,7 @@ let labOZ1i = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1860,7 +1860,7 @@ let labOZ1i = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1874,7 +1874,7 @@ let labOZ1i = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "col-span-2 md:col-span-1cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1888,7 +1888,7 @@ let labOZ1i = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1902,7 +1902,7 @@ let labOZ1i = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "eager",
   },
 ]
@@ -1918,7 +1918,7 @@ let labHeelShaft = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "eager",
   },
 
@@ -1932,7 +1932,7 @@ let labHeelShaft = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1946,7 +1946,7 @@ let labHeelShaft = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1960,7 +1960,7 @@ let labHeelShaft = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1974,7 +1974,7 @@ let labHeelShaft = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -1988,7 +1988,7 @@ let labHeelShaft = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -2002,7 +2002,7 @@ let labHeelShaft = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -2016,7 +2016,7 @@ let labHeelShaft = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -2030,7 +2030,7 @@ let labHeelShaft = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -2044,7 +2044,7 @@ let labHeelShaft = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -2058,7 +2058,7 @@ let labHeelShaft = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 ]
@@ -2074,7 +2074,7 @@ let tcssDeadKooks = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "eager",
   },
   {
@@ -2088,7 +2088,7 @@ let tcssDeadKooks = [
     hidden: "hidden",
 
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "eager",
   },
 
@@ -2102,7 +2102,7 @@ let tcssDeadKooks = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -2116,7 +2116,7 @@ let tcssDeadKooks = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -2130,7 +2130,7 @@ let tcssDeadKooks = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -2144,7 +2144,7 @@ let tcssDeadKooks = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
   {
@@ -2157,7 +2157,7 @@ let tcssDeadKooks = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
   {
@@ -2170,7 +2170,7 @@ let tcssDeadKooks = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
   {
@@ -2183,7 +2183,7 @@ let tcssDeadKooks = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
   {
@@ -2196,7 +2196,7 @@ let tcssDeadKooks = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 ]
@@ -2212,7 +2212,7 @@ let surferUsOpen = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "eager",
   },
 
@@ -2226,7 +2226,7 @@ let surferUsOpen = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -2240,7 +2240,7 @@ let surferUsOpen = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -2254,7 +2254,7 @@ let surferUsOpen = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -2268,7 +2268,7 @@ let surferUsOpen = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -2282,7 +2282,7 @@ let surferUsOpen = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -2296,7 +2296,7 @@ let surferUsOpen = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -2310,7 +2310,7 @@ let surferUsOpen = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 ]
@@ -2326,7 +2326,7 @@ let surferMickRodgers = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "eager",
   },
 
@@ -2340,7 +2340,7 @@ let surferMickRodgers = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -2354,7 +2354,7 @@ let surferMickRodgers = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -2368,7 +2368,7 @@ let surferMickRodgers = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -2382,7 +2382,7 @@ let surferMickRodgers = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -2396,7 +2396,7 @@ let surferMickRodgers = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -2410,7 +2410,7 @@ let surferMickRodgers = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 
@@ -2424,7 +2424,7 @@ let surferMickRodgers = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
   {
@@ -2437,7 +2437,7 @@ let surferMickRodgers = [
       "block max-inline-fit h-auto w-full md:h-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "w-[stretch] col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
     loading: "lazy",
   },
 ]
