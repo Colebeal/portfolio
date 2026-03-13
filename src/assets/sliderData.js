@@ -6,10 +6,11 @@ let observations = [
     height: 33,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "eager",
   },
 
   {
@@ -19,10 +20,11 @@ let observations = [
     height: 33,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "eager",
   },
 
   {
@@ -32,10 +34,11 @@ let observations = [
     height: 33,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "eager",
   },
 
   {
@@ -45,10 +48,11 @@ let observations = [
     height: 40,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -58,10 +62,11 @@ let observations = [
     height: 63,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "eager",
   },
 
   {
@@ -71,10 +76,11 @@ let observations = [
     height: 33,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -84,10 +90,11 @@ let observations = [
     height: 35,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "eager",
   },
 
   {
@@ -97,10 +104,11 @@ let observations = [
     height: 38,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "eager",
   },
 
   {
@@ -110,10 +118,11 @@ let observations = [
     height: 33,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "eager",
   },
 
   {
@@ -123,10 +132,11 @@ let observations = [
     height: 40,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   // {
@@ -158,10 +168,11 @@ let observations = [
     height: 28,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -171,10 +182,11 @@ let observations = [
     height: 63,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -184,10 +196,11 @@ let observations = [
     height: 72,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -197,10 +210,11 @@ let observations = [
     height: 33,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   // {
@@ -221,10 +235,11 @@ let observations = [
     height: 28,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -234,10 +249,11 @@ let observations = [
     height: 33,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -247,10 +263,11 @@ let observations = [
     height: 33,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "eager",
   },
 
   {
@@ -260,10 +277,11 @@ let observations = [
     height: 36,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   // {
@@ -284,10 +302,11 @@ let observations = [
     height: 33,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -297,10 +316,11 @@ let observations = [
     height: 33,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -310,10 +330,11 @@ let observations = [
     height: 33,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -323,10 +344,11 @@ let observations = [
     height: 36,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   // {
@@ -347,10 +369,11 @@ let observations = [
     height: 36,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -360,10 +383,11 @@ let observations = [
     height: 40,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -373,10 +397,11 @@ let observations = [
     height: 33,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -386,10 +411,11 @@ let observations = [
     height: 28,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "eager",
   },
 ]
 
@@ -401,10 +427,11 @@ let people = [
     height: 1600,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   // {
@@ -425,10 +452,11 @@ let people = [
     height: 1600,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -438,10 +466,11 @@ let people = [
     height: 1061,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -451,10 +480,11 @@ let people = [
     height: 1600,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -464,10 +494,11 @@ let people = [
     height: 1115,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   // {
@@ -488,10 +519,11 @@ let people = [
     height: 1600,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -501,10 +533,11 @@ let people = [
     height: 1092,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -514,10 +547,11 @@ let people = [
     height: 1069,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -527,10 +561,11 @@ let people = [
     height: 900,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -540,10 +575,11 @@ let people = [
     height: 1061,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -553,10 +589,11 @@ let people = [
     height: 1069,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -566,10 +603,11 @@ let people = [
     height: 1600,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -579,10 +617,11 @@ let people = [
     height: 1069,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -592,10 +631,11 @@ let people = [
     height: 1061,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -605,10 +645,11 @@ let people = [
     height: 1068,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -618,10 +659,11 @@ let people = [
     height: 1600,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -631,10 +673,11 @@ let people = [
     height: 1600,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   // {
@@ -655,10 +698,11 @@ let people = [
     height: 1069,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -668,10 +712,11 @@ let people = [
     height: 1600,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   // {
@@ -692,10 +737,11 @@ let people = [
     height: 1069,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -705,10 +751,11 @@ let people = [
     height: 1069,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -718,10 +765,11 @@ let people = [
     height: 1061,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -731,10 +779,11 @@ let people = [
     height: 1600,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -744,10 +793,11 @@ let people = [
     height: 1069,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -757,10 +807,11 @@ let people = [
     height: 1060,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -770,10 +821,11 @@ let people = [
     height: 1069,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   // {
@@ -794,10 +846,11 @@ let people = [
     height: 1061,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -807,10 +860,11 @@ let people = [
     height: 1061,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -820,10 +874,11 @@ let people = [
     height: 1069,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -833,10 +888,11 @@ let people = [
     height: 1600,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -846,10 +902,11 @@ let people = [
     height: 1061,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "eager",
   },
 ]
 
@@ -861,10 +918,11 @@ let structure = [
     height: 1600,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -874,10 +932,11 @@ let structure = [
     height: 1559,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -887,10 +946,11 @@ let structure = [
     height: 1600,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -900,10 +960,11 @@ let structure = [
     height: 1143,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -913,10 +974,11 @@ let structure = [
     height: 900,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -926,10 +988,11 @@ let structure = [
     height: 1069,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -939,10 +1002,11 @@ let structure = [
     height: 1600,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -952,10 +1016,11 @@ let structure = [
     height: 1600,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -965,10 +1030,11 @@ let structure = [
     height: 1600,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -978,10 +1044,11 @@ let structure = [
     height: 1600,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -991,10 +1058,11 @@ let structure = [
     height: 898,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1004,10 +1072,11 @@ let structure = [
     height: 1060,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1017,10 +1086,11 @@ let structure = [
     height: 1600,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1030,10 +1100,11 @@ let structure = [
     height: 1600,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1043,10 +1114,11 @@ let structure = [
     height: 1600,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1056,20 +1128,21 @@ let structure = [
     height: 988,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   // {
   //   src: "images/structure/Portfolio-095.jpg",
   //   alt: "",
   //   className:
-  //     "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+  //     "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
   //   hidden: "hidden",
   //   gallery:
-  //     "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+  //     "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
   // },
 
   {
@@ -1079,10 +1152,11 @@ let structure = [
     height: 1600,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1092,10 +1166,11 @@ let structure = [
     height: 1600,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1105,10 +1180,11 @@ let structure = [
     height: 1061,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1118,10 +1194,11 @@ let structure = [
     height: 1069,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1131,10 +1208,11 @@ let structure = [
     height: 1143,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1144,10 +1222,11 @@ let structure = [
     height: 1600,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1157,10 +1236,11 @@ let structure = [
     height: 1600,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1170,20 +1250,21 @@ let structure = [
     height: 1600,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   // {
   //   src: "images/structure/Portfolio-2.jpg",
   //   alt: "",
   //   className:
-  //     "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+  //     "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
   //   hidden: "hidden",
   //   gallery:
-  //     "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+  //     "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
   //   loading: "lazy",
   // },
 
@@ -1191,10 +1272,10 @@ let structure = [
   //   src: "images/structure/Portfolio-082.jpg",
   //   alt: "",
   //   className:
-  //     "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+  //     "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
   //   hidden: "hidden",
   //   gallery:
-  //     "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+  //     "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
   //   loading: "lazy",
   // },
 
@@ -1202,10 +1283,10 @@ let structure = [
   //   src: "images/structure/Portfolio-128.jpg",
   //   alt: "",
   //   className:
-  //     "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+  //     "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
   //   hidden: "hidden",
   //   gallery:
-  //     "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+  //     "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
   //   loading: "lazy",
   // },
 
@@ -1216,10 +1297,11 @@ let structure = [
     height: 1061,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1229,10 +1311,11 @@ let structure = [
     height: 1068,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1242,10 +1325,11 @@ let structure = [
     height: 1600,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1255,10 +1339,11 @@ let structure = [
     height: 1600,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1268,20 +1353,21 @@ let structure = [
     height: 1600,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   // {
   //   src: "images/structure/Portfolio-072.jpg",
   //   alt: "",
   //   className:
-  //     "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+  //     "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
   //   hidden: "hidden",
   //   gallery:
-  //     "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+  //     "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
   //   loading: "lazy",
   // },
 
@@ -1289,10 +1375,10 @@ let structure = [
   //   src: "images/structure/Portfolio-086.jpg",
   //   alt: "",
   //   className:
-  //     "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+  //     "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
   //   hidden: "hidden",
   //   gallery:
-  //     "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+  //     "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
   //   loading: "lazy",
   // },
 
@@ -1303,10 +1389,11 @@ let structure = [
     height: 1600,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "eager",
   },
 ]
 
@@ -1318,10 +1405,11 @@ let scottieAmex = [
     height: 4664,
     alt: "Scottie AMEX with his son",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
       "col-span-2 md:col-span-1 md:cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "eager",
   },
 
   {
@@ -1331,10 +1419,11 @@ let scottieAmex = [
     height: 1466,
     alt: "Scottie AMEX chip",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1344,10 +1433,11 @@ let scottieAmex = [
     height: 3308,
     alt: "scottie fairway chunk",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w- max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1357,10 +1447,11 @@ let scottieAmex = [
     height: 3984,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
       "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1370,10 +1461,11 @@ let scottieAmex = [
     height: 1157,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
       "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1383,10 +1475,11 @@ let scottieAmex = [
     height: 1393,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1396,10 +1489,11 @@ let scottieAmex = [
     height: 4389,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1409,10 +1503,11 @@ let scottieAmex = [
     height: 4000,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1422,10 +1517,11 @@ let scottieAmex = [
     height: 3984,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1435,10 +1531,11 @@ let scottieAmex = [
     height: 2018,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1448,10 +1545,11 @@ let scottieAmex = [
     height: 4000,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1461,10 +1559,11 @@ let scottieAmex = [
     height: 3673,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1474,10 +1573,11 @@ let scottieAmex = [
     height: 5000,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
       "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "eager",
   },
 ]
 
@@ -1489,10 +1589,11 @@ let labDF3 = [
     height: 3984,
     alt: "LAB DF3",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
       "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "eager",
   },
 
   {
@@ -1502,10 +1603,11 @@ let labDF3 = [
     height: 5558,
     alt: "LAB DF3",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1515,10 +1617,11 @@ let labDF3 = [
     height: 4457,
     alt: "LAB DF3",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1528,10 +1631,11 @@ let labDF3 = [
     height: 3473,
     alt: "LAB DF3",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1541,10 +1645,11 @@ let labDF3 = [
     height: 4277,
     alt: "LAB DF3",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1554,10 +1659,11 @@ let labDF3 = [
     height: 3791,
     alt: "LAB DF3",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1567,10 +1673,11 @@ let labDF3 = [
     height: 3522,
     alt: "LAB DF3",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1580,10 +1687,11 @@ let labDF3 = [
     height: 2684,
     alt: "",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1593,10 +1701,11 @@ let labDF3 = [
     height: 3984,
     alt: "LAB DF3",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1606,10 +1715,11 @@ let labDF3 = [
     height: 3984,
     alt: "LAB DF3",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
       "cursor-pointer self-center lg:self-start w-auto  max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1619,10 +1729,11 @@ let labDF3 = [
     height: 5499,
     alt: "LAB DF3",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "eager",
   },
 ]
 
@@ -1634,10 +1745,11 @@ let labOZ1i = [
     height: 2378,
     alt: "LAB OZ1i",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
       "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "eager",
   },
 
   {
@@ -1647,10 +1759,11 @@ let labOZ1i = [
     height: 4790,
     alt: "LAB OZ1i",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1660,10 +1773,11 @@ let labOZ1i = [
     height: 3105,
     alt: "LAB OZ1i",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1673,10 +1787,11 @@ let labOZ1i = [
     height: 2778,
     alt: "LAB OZ1i",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1686,10 +1801,11 @@ let labOZ1i = [
     height: 3633,
     alt: "LAB OZ1i",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1699,10 +1815,11 @@ let labOZ1i = [
     height: 2693,
     alt: "LAB OZ1i",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1712,10 +1829,11 @@ let labOZ1i = [
     height: 3534,
     alt: "LAB OZ1i",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1725,10 +1843,11 @@ let labOZ1i = [
     height: 4000,
     alt: "LAB OZ1i",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1738,10 +1857,11 @@ let labOZ1i = [
     height: 3287,
     alt: "LAB OZ1i",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1751,10 +1871,11 @@ let labOZ1i = [
     height: 3161,
     alt: "LAB OZ1i",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
       "col-span-2 md:col-span-1cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1764,10 +1885,11 @@ let labOZ1i = [
     height: 5103,
     alt: "LAB OZ1i",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1777,10 +1899,11 @@ let labOZ1i = [
     height: 6052,
     alt: "LAB OZ1i",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "eager",
   },
 ]
 
@@ -1792,10 +1915,11 @@ let labHeelShaft = [
     height: 2324,
     alt: "LAB Heel Shaft",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
       "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "eager",
   },
 
   {
@@ -1805,10 +1929,11 @@ let labHeelShaft = [
     height: 4000,
     alt: "LAB Heel Shaft",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1818,10 +1943,11 @@ let labHeelShaft = [
     height: 3984,
     alt: "LAB Heel Shaft",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1831,10 +1957,11 @@ let labHeelShaft = [
     height: 4682,
     alt: "LAB Heel Shaft",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1844,10 +1971,11 @@ let labHeelShaft = [
     height: 3869,
     alt: "LAB Heel Shaft",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1857,10 +1985,11 @@ let labHeelShaft = [
     height: 5838,
     alt: "LAB Heel Shaft",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
       "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1870,10 +1999,11 @@ let labHeelShaft = [
     height: 4072,
     alt: "LAB Heel Shaft",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1883,10 +2013,11 @@ let labHeelShaft = [
     height: 4000,
     alt: "LAB Heel Shaft",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1896,10 +2027,11 @@ let labHeelShaft = [
     height: 3316,
     alt: "LAB Heel Shaft",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1909,10 +2041,11 @@ let labHeelShaft = [
     height: 33,
     alt: "LAB Heel Shaft",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1922,10 +2055,11 @@ let labHeelShaft = [
     height: 5000,
     alt: "LAB Heel Shaft",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
       "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 ]
 
@@ -1937,10 +2071,11 @@ let tcssDeadKooks = [
     height: 4016,
     alt: "TCSS x Dead Kooks",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
       "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "eager",
   },
   {
     src: "https://images.colebeal.com/Portfolio_surfer-11_usvqdy.jpg",
@@ -1949,11 +2084,12 @@ let tcssDeadKooks = [
     height: 3925,
     alt: "TCSS x Dead Kooks",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
 
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "eager",
   },
 
   {
@@ -1963,10 +2099,11 @@ let tcssDeadKooks = [
     height: 3274,
     alt: "TCSS x Dead Kooks",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1976,10 +2113,11 @@ let tcssDeadKooks = [
     height: 3159,
     alt: "TCSS x Dead Kooks",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
       "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -1989,10 +2127,11 @@ let tcssDeadKooks = [
     height: 4016,
     alt: "TCSS x Dead Kooks",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -2002,10 +2141,11 @@ let tcssDeadKooks = [
     height: 4963,
     alt: "TCSS x Dead Kooks",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
   {
     src: "https://images.colebeal.com/Portfolio_surfer-19_xhj2sp.jpg",
@@ -2014,10 +2154,11 @@ let tcssDeadKooks = [
     height: 4016,
     alt: "TCSS x Dead Kooks",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
   {
     src: "https://images.colebeal.com/Portfolio_surfer-16_sxlkan.jpg",
@@ -2026,10 +2167,11 @@ let tcssDeadKooks = [
     height: 3108,
     alt: "TCSS x Dead Kooks",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
   {
     src: "https://images.colebeal.com/Portfolio_surfer-14_x508xk.jpg",
@@ -2038,10 +2180,11 @@ let tcssDeadKooks = [
     height: 3586,
     alt: "TCSS x Dead Kooks",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
   {
     src: "https://images.colebeal.com/Portfolio_surfer-12_cawbkv.jpg",
@@ -2050,10 +2193,11 @@ let tcssDeadKooks = [
     height: 4016,
     alt: "TCSS x Dead Kooks",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 ]
 
@@ -2065,10 +2209,11 @@ let surferUsOpen = [
     height: 3162,
     alt: "Surfer Magazine - US OPEN",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "eager",
   },
 
   {
@@ -2078,10 +2223,11 @@ let surferUsOpen = [
     height: 2760,
     alt: "Surfer Magazine - US OPEN",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -2091,10 +2237,11 @@ let surferUsOpen = [
     height: 4279,
     alt: "Surfer Magazine - US OPEN",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
       "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -2104,10 +2251,11 @@ let surferUsOpen = [
     height: 2576,
     alt: "Surfer Magazine - US OPEN",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -2117,10 +2265,11 @@ let surferUsOpen = [
     height: 1860,
     alt: "Surfer Magazine - US OPEN",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -2130,10 +2279,11 @@ let surferUsOpen = [
     height: 4293,
     alt: "Surfer Magazine - US OPEN",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -2143,10 +2293,11 @@ let surferUsOpen = [
     height: 2743,
     alt: "Surfer Magazine - US OPEN",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -2156,10 +2307,11 @@ let surferUsOpen = [
     height: 3156,
     alt: "Surfer Magazine - US OPEN",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
       "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 ]
 
@@ -2171,10 +2323,11 @@ let surferMickRodgers = [
     height: 4016,
     alt: "Surfer Magazine - Mick Rodgers",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
       "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "eager",
   },
 
   {
@@ -2184,10 +2337,11 @@ let surferMickRodgers = [
     height: 3716,
     alt: "Surfer Magazine - Mick Rodgers",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -2197,10 +2351,11 @@ let surferMickRodgers = [
     height: 3455,
     alt: "Surfer Magazine - Mick Rodgers",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -2210,10 +2365,11 @@ let surferMickRodgers = [
     height: 3527,
     alt: "Surfer Magazine - Mick Rodgers",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -2223,10 +2379,11 @@ let surferMickRodgers = [
     height: 2722,
     alt: "Surfer Magazine - Mick Rodgers",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -2236,10 +2393,11 @@ let surferMickRodgers = [
     height: 2764,
     alt: "Surfer Magazine - Mick Rodgers",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
       "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -2249,10 +2407,11 @@ let surferMickRodgers = [
     height: 3269,
     alt: "Surfer Magazine - Mick Rodgers",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 
   {
@@ -2262,10 +2421,11 @@ let surferMickRodgers = [
     height: 2971,
     alt: "Surfer Magazine - Mick Rodgers",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
-      "cursor-pointer self-center lg:self-start w-full max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+      "cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
   {
     src: "https://images.colebeal.com/Portfolio_surfer-22_hbyeg1.jpg",
@@ -2274,10 +2434,11 @@ let surferMickRodgers = [
     height: 3449,
     alt: "Surfer Magazine - Mick Rodgers",
     className:
-      "block max-h-full max-w-full w-auto h-auto object-contain border-2 border-black dark:border-white",
+      "flex-1 max-h-full max-w-full border-2 border-black dark:border-white bg-center bg-cover bg-no-repeat",
     hidden: "hidden",
     gallery:
       "col-span-2 md:col-span-1 cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
+    loading: "lazy",
   },
 ]
 

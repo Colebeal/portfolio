@@ -17,12 +17,22 @@ function blurHashToDataURL(hash, width, height) {
   return canvas.toDataURL()
 }
 
-export default function BlurImage({ src, blurHash, blurWidth, blurHeight, fit, className, ...props }) {
+export default function BlurImage({
+  src,
+  blurHash,
+  blurWidth,
+  blurHeight,
+  fit,
+  className,
+  ...props
+}) {
   const [currentSrc, setCurrentSrc] = useState(blurHash ? null : src)
 
   useEffect(() => {
     if (blurHash) {
-      setCurrentSrc(blurHashToDataURL(blurHash, blurWidth || 32, blurHeight || 32))
+      setCurrentSrc(
+        blurHashToDataURL(blurHash, blurWidth || 32, blurHeight || 32),
+      )
     }
 
     const img = new Image()
@@ -34,36 +44,29 @@ export default function BlurImage({ src, blurHash, blurWidth, blurHeight, fit, c
     }
   }, [src, blurHash, blurWidth, blurHeight])
 
-  const aspectRatio = blurWidth && blurHeight ? blurWidth / blurHeight : undefined
+  const aspectRatio =
+    blurWidth && blurHeight ? blurWidth / blurHeight : undefined
 
   // Slider: div with background-image
   if (fit) {
     const style = {
       backgroundImage: currentSrc ? `url("${currentSrc}")` : undefined,
-      backgroundPosition: "center",
-      backgroundSize: "cover",
-      backgroundRepeat: "no-repeat",
       aspectRatio,
-      ...(fit === "height" ? { height: "100%", width: "unset" } : {}),
     }
+    // const style = {
+    //   backgroundImage: currentSrc ? `url("${currentSrc}")` : undefined,
+    //   backgroundPosition: "center",
+    //   backgroundSize: "cover",
+    //   backgroundRepeat: "no-repeat",
+    //   aspectRatio,
+    //   ...(fit === "height" ? { height: "100%", width: "unset" } : {}),
+    // }
 
-    return (
-      <div
-        className={className}
-        style={style}
-        {...props}
-      />
-    )
+    return <div className={className} style={style} {...props} />
   }
 
   // Gallery: standard img
-  return (
-    <img
-      src={currentSrc ?? src}
-      className={className}
-      {...props}
-    />
-  )
+  return <img src={currentSrc ?? src} className={className} style={{ width: "stretch" }} {...props} />
 }
 
 BlurImage.propTypes = {
