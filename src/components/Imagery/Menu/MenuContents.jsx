@@ -30,6 +30,7 @@ export default function MenuContents({
               <li>L.A.B. Golf - Staff Photographer</li>
               <li>Red Bull</li>
               <li>SURFER Magazine</li>
+              <li>B. Draddy</li>
               <li>TCSS</li>
               <li>DeadKooks Surfboards</li>
               <li>Bing Surfboards</li>
@@ -76,7 +77,7 @@ export default function MenuContents({
             </a>
           </li>
         </ul>
-        <div className="mt-8 aspect-[4/3] bg-[url('/images/hero-image.jpg')] bg-cover bg-center   md:w-full"></div>
+        <div className=" mt-8 aspect-[1/1] max-w-md border-2 border-black bg-[url('https://images.colebeal.com/Website_Headshot.JPG')] bg-cover bg-center dark:border-white   md:w-full"></div>
         <div className="mt-2">
           <span className=" text-[10px]">
             © 2026 Cole Beal Digital Services

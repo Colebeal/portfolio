@@ -48,17 +48,9 @@ export default function BlurImage({
         ? { width: "100%", height: "auto", objectFit: "contain" }
         : { width: "min-content", height: "100%", objectFit: "contain" }),
     }
-
-    const classNameSlider = {
-      aspectRatio,
-      ...(isHorizontal
-        ? { width: "100%", height: "auto" }
-        : { width: "auto", height: "100%" }),
-    }
-
     return (
       <div
-        className={className}
+        className={`${className} bg-[#111] dark:bg-white`}
         style={{
           aspectRatio,
           position: "relative",

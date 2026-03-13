@@ -39,7 +39,7 @@ export default function ImageryNav({
       initial={{ opacity: 0 }}
       animate={{ translateY: 0, opacity: 1 }}
       transition={{ duration: 1, delay: 1.5, ease: easeInOut }}
-      className="z-20 my-1 mb-6 flex h-10 w-full justify-center md:mt-10 lg:mb-0 xl:m-5"
+      className="z-20 my-1 mb-6 flex h-10 w-full justify-center md:mb-0"
     >
       <div className="z-50 flex h-fit w-fit rounded-lg border-[1px] border-black bg-white p-2 shadow-lg dark:border-white dark:bg-[#000]">
         <Link onClick={galleryHandler} className="m-2 font-semibold">
