@@ -42,21 +42,19 @@ export default function BlurImage({
 
   // Slider: stacked div with blurhash overlay that fades out
   if (fit) {
+    const style = {
+      aspectRatio,
+      ...(isHorizontal
+        ? { width: "100%", height: "auto", objectFit: "contain" }
+        : { width: "auto", height: "100%", objectFit: "contain" }),
+    }
     return (
       <div
         className={className}
         style={{ aspectRatio, position: "relative", overflow: "hidden" }}
         {...props}
       >
-        <img
-          src={src}
-          onLoad={() => setLoaded(true)}
-          style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "contain",
-          }}
-        />
+        <img src={src} onLoad={() => setLoaded(true)} style={style} />
         {blurDataUrl && (
           <img
             src={blurDataUrl}
