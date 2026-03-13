@@ -25,14 +25,11 @@ export default function BlurImage({
   className,
   ...props
 }) {
-  const [currentSrc, setCurrentSrc] = useState(() => {
-    if (!blurHash) return src
-    // Skip blurhash if image is already in browser cache
-    const cached = new Image()
-    cached.src = src
-    if (cached.complete) return src
-    return blurHashToDataURL(blurHash, blurWidth || 32, blurHeight || 32)
-  })
+  const [currentSrc, setCurrentSrc] = useState(() =>
+    blurHash
+      ? blurHashToDataURL(blurHash, blurWidth || 32, blurHeight || 32)
+      : src,
+  )
 
   useEffect(() => {
     const img = new Image()
