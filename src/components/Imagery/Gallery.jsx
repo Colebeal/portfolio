@@ -58,7 +58,7 @@ export default function Slider({
             initial="initial"
             animate="animate"
             exit="exit"
-            className="grid h-full w-full grid-cols-2 gap-10 px-4 py-8
+            className="grid h-full w-screen grid-cols-2 gap-10 px-4 py-8
              md:gap-16 xl:grid-cols-3 2xl:grid-cols-4"
           >
             {scottieAmex.map((image) => (
@@ -83,7 +83,7 @@ export default function Slider({
             initial="initial"
             animate="animate"
             exit="exit"
-            className="grid h-full w-full grid-cols-2 gap-10 px-4 py-8
+            className="grid h-full w-screen grid-cols-2 gap-10 px-4 py-8
              md:gap-16 xl:grid-cols-3 2xl:grid-cols-4"
           >
             {labDF3.map((image) => (
@@ -108,7 +108,7 @@ export default function Slider({
             initial="initial"
             animate="animate"
             exit="exit"
-            className="grid h-full w-full grid-cols-2 gap-10 px-4 py-8
+            className="grid h-full w-screen grid-cols-2 gap-10 px-4 py-8
              md:gap-16 xl:grid-cols-3 2xl:grid-cols-4"
           >
             {labOZ1i.map((image) => (
@@ -133,7 +133,7 @@ export default function Slider({
             initial="initial"
             animate="animate"
             exit="exit"
-            className="grid h-full w-full grid-cols-2 gap-10 px-4 py-8
+            className="grid h-full w-screen grid-cols-2 gap-10 px-4 py-8
              md:gap-16 xl:grid-cols-3 2xl:grid-cols-4"
           >
             {labHeelShaft.map((image) => (
@@ -158,7 +158,7 @@ export default function Slider({
             initial="initial"
             animate="animate"
             exit="exit"
-            className="grid h-full w-full grid-cols-2 gap-10 px-4 py-8
+            className="grid h-full w-screen grid-cols-2 gap-10 px-4 py-8
              md:gap-16 xl:grid-cols-3"
           >
             {surferUsOpen.map((image) => (
@@ -183,7 +183,7 @@ export default function Slider({
             initial="initial"
             animate="animate"
             exit="exit"
-            className="grid h-full w-full grid-cols-2 gap-10 px-4 py-8
+            className="grid h-full w-screen grid-cols-2 gap-10 px-4 py-8
              md:gap-16 xl:grid-cols-3"
           >
             {surferMickRodgers.map((image) => (
@@ -208,7 +208,7 @@ export default function Slider({
             initial="initial"
             animate="animate"
             exit="exit"
-            className="grid h-full w-full grid-cols-2 gap-10 px-4 py-8
+            className="grid h-full w-screen grid-cols-2 gap-10 px-4 py-8
              md:gap-16 xl:grid-cols-3"
           >
             {tcssDeadKooks.map((image) => (
@@ -233,7 +233,7 @@ export default function Slider({
             initial="initial"
             animate="animate"
             exit="exit"
-            className="grid h-full w-full grid-cols-2 gap-10 px-4 py-8
+            className="grid h-full w-screen grid-cols-2 gap-10 px-4 py-8
              md:gap-16 xl:grid-cols-3 2xl:grid-cols-4"
           >
             {people.map((image) => (
@@ -258,7 +258,7 @@ export default function Slider({
             initial="initial"
             animate="animate"
             exit="exit"
-            className="grid h-full w-full grid-cols-2 gap-10 px-4 py-8
+            className="grid h-full w-screen grid-cols-2 gap-10 px-4 py-8
              md:gap-16 xl:grid-cols-3 2xl:grid-cols-4"
           >
             {structure.map((image) => (
@@ -283,7 +283,7 @@ export default function Slider({
             initial="initial"
             animate="animate"
             exit="exit"
-            className="grid h-full w-full grid-cols-2 gap-10 px-4 py-8
+            className="grid h-full w-screen grid-cols-2 gap-10 px-4 py-8
              md:gap-16 xl:grid-cols-3 2xl:grid-cols-4"
           >
             {observations.map((image) => (
