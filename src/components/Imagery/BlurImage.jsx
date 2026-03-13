@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useMemo, useState } from "react"
 import { decode } from "blurhash"
 import PropTypes from "prop-types"
 
@@ -22,41 +22,84 @@ export default function BlurImage({
   blurHash,
   blurWidth,
   blurHeight,
+  fit,
   className,
   ...props
 }) {
-  const [currentSrc, setCurrentSrc] = useState(() =>
-    blurHash
-      ? blurHashToDataURL(blurHash, blurWidth || 32, blurHeight || 32)
-      : src,
+  const [loaded, setLoaded] = useState(false)
+
+  const blurDataUrl = useMemo(
+    () =>
+      blurHash
+        ? blurHashToDataURL(blurHash, blurWidth || 32, blurHeight || 32)
+        : null,
+    [blurHash, blurWidth, blurHeight],
   )
-
-  useEffect(() => {
-    const img = new Image()
-    img.onload = () => setCurrentSrc(src)
-    img.src = src
-
-    return () => {
-      img.onload = null
-    }
-  }, [src])
 
   const aspectRatio =
     blurWidth && blurHeight ? blurWidth / blurHeight : undefined
-  const isBlur = blurHash && currentSrc !== src
   const isHorizontal = aspectRatio > 1
 
-  const blurStyle = isBlur
-    ? isHorizontal
-      ? { aspectRatio, width: "100%", height: "auto", maxInlineSize: "100%" }
-      : { aspectRatio, width: "auto", height: "100%", maxInlineSize: "100%" }
-    : { aspectRatio }
+  // Slider: stacked div with blurhash overlay that fades out
+  if (fit) {
+    return (
+      <div
+        className={className}
+        style={{ aspectRatio, position: "relative", overflow: "hidden" }}
+        {...props}
+      >
+        <img
+          src={src}
+          onLoad={() => setLoaded(true)}
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "contain",
+          }}
+        />
+        {blurDataUrl && (
+          <img
+            src={blurDataUrl}
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              opacity: loaded ? 0 : 1,
+              transition: "opacity 0.3s ease-in-out",
+              pointerEvents: "none",
+            }}
+          />
+        )}
+      </div>
+    )
+  }
+
+  // Gallery: plain img with background-image blurhash
+  const style = {
+    aspectRatio,
+    ...(isHorizontal
+      ? { width: "100%", height: "auto" }
+      : { width: "auto", height: "100%" }),
+    ...(!loaded && blurDataUrl
+      ? {
+          backgroundImage: `url("${blurDataUrl}")`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          maxInlineSize: "100%",
+        }
+      : {}),
+  }
 
   return (
     <img
-      src={currentSrc ?? src}
+      src={src}
       className={className}
-      style={blurStyle}
+      style={style}
+      onLoad={() => setLoaded(true)}
       {...props}
     />
   )
@@ -67,5 +110,6 @@ BlurImage.propTypes = {
   blurHash: PropTypes.string,
   blurWidth: PropTypes.number,
   blurHeight: PropTypes.number,
+  fit: PropTypes.string,
   className: PropTypes.string,
 }
