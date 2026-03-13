@@ -25,15 +25,13 @@ export default function BlurImage({
   className,
   ...props
 }) {
-  const [currentSrc, setCurrentSrc] = useState(blurHash ? null : src)
+  const [currentSrc, setCurrentSrc] = useState(() =>
+    blurHash
+      ? blurHashToDataURL(blurHash, blurWidth || 32, blurHeight || 32)
+      : src,
+  )
 
   useEffect(() => {
-    if (blurHash) {
-      setCurrentSrc(
-        blurHashToDataURL(blurHash, blurWidth || 32, blurHeight || 32),
-      )
-    }
-
     const img = new Image()
     img.onload = () => setCurrentSrc(src)
     img.src = src
@@ -41,7 +39,7 @@ export default function BlurImage({
     return () => {
       img.onload = null
     }
-  }, [src, blurHash, blurWidth, blurHeight])
+  }, [src])
 
   const aspectRatio =
     blurWidth && blurHeight ? blurWidth / blurHeight : undefined
