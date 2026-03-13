@@ -178,3 +178,6 @@ button:hover {
     justify-content: flex-end;
   }
 }
+.max-inline-fit {
+  max-inline-size: fit-content;
+}

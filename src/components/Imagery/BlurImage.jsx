@@ -22,7 +22,6 @@ export default function BlurImage({
   blurHash,
   blurWidth,
   blurHeight,
-  fit,
   className,
   ...props
 }) {
@@ -47,26 +46,14 @@ export default function BlurImage({
   const aspectRatio =
     blurWidth && blurHeight ? blurWidth / blurHeight : undefined
 
-  // Slider: div with background-image
-  if (fit) {
-    const style = {
-      backgroundImage: currentSrc ? `url("${currentSrc}")` : undefined,
-      aspectRatio,
-    }
-    // const style = {
-    //   backgroundImage: currentSrc ? `url("${currentSrc}")` : undefined,
-    //   backgroundPosition: "center",
-    //   backgroundSize: "cover",
-    //   backgroundRepeat: "no-repeat",
-    //   aspectRatio,
-    //   ...(fit === "height" ? { height: "100%", width: "unset" } : {}),
-    // }
-
-    return <div className={className} style={style} {...props} />
-  }
-
-  // Gallery: standard img
-  return <img src={currentSrc ?? src} className={className} style={{ width: "stretch" }} {...props} />
+  return (
+    <img
+      src={currentSrc ?? src}
+      className={className}
+      style={{ aspectRatio }}
+      {...props}
+    />
+  )
 }
 
 BlurImage.propTypes = {
@@ -74,6 +61,5 @@ BlurImage.propTypes = {
   blurHash: PropTypes.string,
   blurWidth: PropTypes.number,
   blurHeight: PropTypes.number,
-  fit: PropTypes.string,
   className: PropTypes.string,
 }
