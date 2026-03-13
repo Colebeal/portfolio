@@ -12,6 +12,7 @@ import {
 } from "../../assets/sliderData"
 import { motion as m } from "framer-motion"
 import GalleryNav from "./GalleryNav"
+import BlurImage from "./BlurImage"
 
 export default function Slider({
   slideIndex,
@@ -61,7 +62,7 @@ export default function Slider({
              md:gap-16 xl:grid-cols-3 2xl:grid-cols-4"
           >
             {scottieAmex.map((image) => (
-              <img
+              <BlurImage
                 onClick={() => {
                   enlargeImage(image.id)
                 }}
@@ -69,6 +70,9 @@ export default function Slider({
                 key={image.id}
                 className={image.gallery}
                 src={image.src}
+                blurHash={image.blurHash}
+                blurWidth={image.width}
+                blurHeight={image.height}
               />
             ))}
           </m.div>
@@ -83,7 +87,7 @@ export default function Slider({
              md:gap-16 xl:grid-cols-3 2xl:grid-cols-4"
           >
             {labDF3.map((image) => (
-              <img
+              <BlurImage
                 onClick={() => {
                   enlargeImage(image.id)
                 }}
@@ -91,6 +95,9 @@ export default function Slider({
                 key={image.id}
                 className={image.gallery}
                 src={image.src}
+                blurHash={image.blurHash}
+                blurWidth={image.width}
+                blurHeight={image.height}
               />
             ))}
           </m.div>
@@ -105,7 +112,7 @@ export default function Slider({
              md:gap-16 xl:grid-cols-3 2xl:grid-cols-4"
           >
             {labOZ1i.map((image) => (
-              <img
+              <BlurImage
                 onClick={() => {
                   enlargeImage(image.id)
                 }}
@@ -113,6 +120,9 @@ export default function Slider({
                 key={image.id}
                 className={image.gallery}
                 src={image.src}
+                blurHash={image.blurHash}
+                blurWidth={image.width}
+                blurHeight={image.height}
               />
             ))}
           </m.div>
@@ -127,7 +137,7 @@ export default function Slider({
              md:gap-16 xl:grid-cols-3 2xl:grid-cols-4"
           >
             {labHeelShaft.map((image) => (
-              <img
+              <BlurImage
                 onClick={() => {
                   enlargeImage(image.id)
                 }}
@@ -135,6 +145,9 @@ export default function Slider({
                 key={image.id}
                 className={image.gallery}
                 src={image.src}
+                blurHash={image.blurHash}
+                blurWidth={image.width}
+                blurHeight={image.height}
               />
             ))}
           </m.div>
@@ -149,7 +162,7 @@ export default function Slider({
              md:gap-16 xl:grid-cols-3"
           >
             {surferUsOpen.map((image) => (
-              <img
+              <BlurImage
                 onClick={() => {
                   enlargeImage(image.id)
                 }}
@@ -157,6 +170,9 @@ export default function Slider({
                 key={image.id}
                 className={image.gallery}
                 src={image.src}
+                blurHash={image.blurHash}
+                blurWidth={image.width}
+                blurHeight={image.height}
               />
             ))}
           </m.div>
@@ -171,7 +187,7 @@ export default function Slider({
              md:gap-16 xl:grid-cols-3"
           >
             {surferMickRodgers.map((image) => (
-              <img
+              <BlurImage
                 onClick={() => {
                   enlargeImage(image.id)
                 }}
@@ -179,6 +195,9 @@ export default function Slider({
                 key={image.id}
                 className={image.gallery}
                 src={image.src}
+                blurHash={image.blurHash}
+                blurWidth={image.width}
+                blurHeight={image.height}
               />
             ))}
           </m.div>
@@ -193,7 +212,7 @@ export default function Slider({
              md:gap-16 xl:grid-cols-3"
           >
             {tcssDeadKooks.map((image) => (
-              <img
+              <BlurImage
                 onClick={() => {
                   enlargeImage(image.id)
                 }}
@@ -201,6 +220,9 @@ export default function Slider({
                 key={image.id}
                 className={image.gallery}
                 src={image.src}
+                blurHash={image.blurHash}
+                blurWidth={image.width}
+                blurHeight={image.height}
               />
             ))}
           </m.div>
@@ -215,7 +237,7 @@ export default function Slider({
              md:gap-16 xl:grid-cols-3 2xl:grid-cols-4"
           >
             {people.map((image) => (
-              <img
+              <BlurImage
                 onClick={() => {
                   enlargeImage(image.id)
                 }}
@@ -223,6 +245,9 @@ export default function Slider({
                 key={image.id}
                 className={image.gallery}
                 src={image.src}
+                blurHash={image.blurHash}
+                blurWidth={image.width}
+                blurHeight={image.height}
               />
             ))}
           </m.div>
@@ -237,7 +262,7 @@ export default function Slider({
              md:gap-16 xl:grid-cols-3 2xl:grid-cols-4"
           >
             {structure.map((image) => (
-              <img
+              <BlurImage
                 onClick={() => {
                   enlargeImage(image.id)
                 }}
@@ -245,6 +270,9 @@ export default function Slider({
                 key={image.id}
                 className={image.gallery}
                 src={image.src}
+                blurHash={image.blurHash}
+                blurWidth={image.width}
+                blurHeight={image.height}
               />
             ))}
           </m.div>
@@ -259,7 +287,7 @@ export default function Slider({
              md:gap-16 xl:grid-cols-3 2xl:grid-cols-4"
           >
             {observations.map((image) => (
-              <img
+              <BlurImage
                 onClick={() => {
                   enlargeImage(image.id)
                 }}
@@ -267,6 +295,9 @@ export default function Slider({
                 key={image.id}
                 className={image.gallery}
                 src={image.src}
+                blurHash={image.blurHash}
+                blurWidth={image.width}
+                blurHeight={image.height}
               />
             ))}
           </m.div>

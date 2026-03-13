@@ -1,5 +1,6 @@
 import { motion as m } from "framer-motion"
 import { labDF3 } from "../../../../assets/sliderData"
+import BlurImage from "../../BlurImage"
 
 export default function LabDF3({ currentImage }) {
   return (
@@ -13,12 +14,18 @@ export default function LabDF3({ currentImage }) {
     >
       {labDF3.map((image, index) => {
         return (
-          <img
+          <BlurImage
             id={image.id}
             key={index}
             width="1600px"
             className={currentImage === index ? image.className : image.hidden}
             src={image.src}
+            blurHash={image.blurHash}
+            fit="height"
+            blurWidth={image.width}
+            blurHeight={image.height}
+            loading={index === 0 ? "eager" : "lazy"}
+            fetchPriority={index === 0 ? "high" : undefined}
           />
         )
       })}
