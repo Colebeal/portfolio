@@ -45,12 +45,20 @@ export default function BlurImage({
 
   const aspectRatio =
     blurWidth && blurHeight ? blurWidth / blurHeight : undefined
+  const isBlur = blurHash && currentSrc !== src
+  const isHorizontal = aspectRatio > 1
+
+  const blurStyle = isBlur
+    ? isHorizontal
+      ? { aspectRatio, width: "100%", height: "auto", maxInlineSize: "100%" }
+      : { aspectRatio, width: "auto", height: "100%", maxInlineSize: "100%" }
+    : {}
 
   return (
     <img
       src={currentSrc ?? src}
       className={className}
-      style={{ aspectRatio }}
+      style={blurStyle}
       {...props}
     />
   )
