@@ -4,11 +4,13 @@ import { portfolioCollections } from "../../../assets/sliderData"
 export default function MenuInformation({
   setCurrentFolder,
   setSlideIndex,
+  setActiveView,
   menuHandler,
 }) {
   const selectFolder = (index) => {
     setCurrentFolder(index)
     setSlideIndex(0)
+    setActiveView("viewer")
     menuHandler()
   }
 
@@ -55,5 +57,6 @@ export default function MenuInformation({
 MenuInformation.propTypes = {
   setCurrentFolder: PropTypes.func.isRequired,
   setSlideIndex: PropTypes.func.isRequired,
+  setActiveView: PropTypes.func.isRequired,
   menuHandler: PropTypes.func.isRequired,
 }

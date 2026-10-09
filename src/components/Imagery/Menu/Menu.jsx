@@ -1,34 +1,22 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import PropTypes from "prop-types"
 import MenuInformation from "./MenuInformation"
-import MenuContents from "./MenuContents"
 import { BsXLg } from "react-icons/bs"
 
 export default function Menu({
   menuStatus,
   setSlideIndex,
   setCurrentFolder,
+  setActiveView,
   menuHandler,
 }) {
-  const [menuContent, setMenuContent] = useState(true)
   const menuStyles = {
     showMain:
-      "z-50 opacity-100 fixed flex flex-col bottom-6 right-5 md:top-0 md:right-0 h-[90%] md:h-full w-[90%] md:w-[50%] lg:w-[30%] bg-white dark:bg-[#000000] dark:border-white animate-fade-in rounded-lg shadow-lg border-[1px] border-black overflow-auto ",
+      "z-50 opacity-100 fixed flex flex-col bottom-6 right-5 md:top-0 md:right-0 h-[90%] md:h-full w-[90%] md:w-[50%] bg-white dark:bg-[#000000] dark:border-white animate-fade-in rounded-lg shadow-lg border-[1px] border-black overflow-auto lg:hidden",
     hideMain: "hidden",
     showBkg:
-      "z-50 opacity-60 fixed top-0 left-0 h-full w-full bg-black animate-fade-in-Bkg",
+      "z-50 opacity-60 fixed top-0 left-0 h-full w-full bg-black animate-fade-in-Bkg lg:hidden",
     hideBkg: "hidden",
-    //menuNav
-    contentHidden: "border-0 bg-transparent p-0 text-lg cursor-pointer",
-    contentShown:
-      "border-0 bg-transparent p-0 underline text-lg cursor-pointer font-semibold",
-    menuHidden: "border-0 bg-transparent p-0 text-lg cursor-pointer mr-5",
-    menuShown:
-      "border-0 bg-transparent p-0 underline text-lg cursor-pointer mr-5 font-semibold",
-  }
-
-  const menuContentHandler = () => {
-    menuContent ? setMenuContent(false) : setMenuContent(true)
   }
 
   useEffect(() => {
@@ -53,35 +41,30 @@ export default function Menu({
         aria-hidden={!menuStatus}
         aria-label="Photography menu"
       >
-        <div className="m-10 mb-0 pb-5 text-left">
+        <div className="m-10 mb-0 flex items-center gap-5 pb-5 text-left">
+          <h2 className="text-lg font-semibold">Menu</h2>
           <button
             type="button"
-            onClick={menuContentHandler}
-            className={
-              menuContent ? menuStyles.menuShown : menuStyles.menuHidden
-            }
-          >
-            Menu
-          </button>
-          <button
-            type="button"
-            onClick={menuContentHandler}
-            className={
-              menuContent ? menuStyles.contentHidden : menuStyles.contentShown
-            }
+            onClick={() => {
+              setActiveView("about")
+              menuHandler()
+              window.requestAnimationFrame(() => {
+                document
+                  .getElementById("about-index")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              })
+            }}
+            className="border-0 bg-transparent p-0 text-lg underline-offset-4 hover:underline"
           >
             About
           </button>
         </div>
-        {menuContent ? (
-          <MenuInformation
-            setCurrentFolder={setCurrentFolder}
-            setSlideIndex={setSlideIndex}
-            menuHandler={menuHandler}
-          />
-        ) : (
-          <MenuContents />
-        )}
+        <MenuInformation
+          setCurrentFolder={setCurrentFolder}
+          setSlideIndex={setSlideIndex}
+          setActiveView={setActiveView}
+          menuHandler={menuHandler}
+        />
         <div className="h-6">
           <button
             type="button"
@@ -101,5 +84,6 @@ Menu.propTypes = {
   menuStatus: PropTypes.bool.isRequired,
   setSlideIndex: PropTypes.func.isRequired,
   setCurrentFolder: PropTypes.func.isRequired,
+  setActiveView: PropTypes.func.isRequired,
   menuHandler: PropTypes.func.isRequired,
 }

@@ -4,6 +4,7 @@ import { AnimatePresence, motion as m } from "framer-motion"
 import { useSwipeable } from "react-swipeable"
 
 import { portfolioCollections } from "../../../assets/sliderData"
+import { getResponsiveImageProps } from "../../../utils/resolveImageSrc"
 import ImageryNav from "../ImageryNav"
 import BlurImage from "../BlurImage"
 
@@ -12,13 +13,15 @@ export default function Slider({
   setSlideIndex,
   currentFolder,
   setCurrentFolder,
-  menuHandler,
-  galleryHandler,
   isTransitioning,
   setIsTransitioning,
 }) {
   const prevCursorRef = useRef(null)
   const nextCursorRef = useRef(null)
+  const wheelDistanceRef = useRef(0)
+  const wheelCooldownRef = useRef(false)
+  const wheelResetTimerRef = useRef(null)
+  const wheelCooldownTimerRef = useRef(null)
   const collection = portfolioCollections[currentFolder]
   const currentImage = collection.images[slideIndex]
 
@@ -46,10 +49,46 @@ export default function Slider({
   }
 
   useEffect(() => {
-    const nextIndex = (slideIndex + 1) % collection.images.length
-    const preload = new Image()
-    preload.src = collection.images[nextIndex].src
-  }, [collection, slideIndex])
+    const getAdjacentImage = (offset) => {
+      let folderIndex = currentFolder
+      let imageIndex = slideIndex + offset
+
+      while (imageIndex >= portfolioCollections[folderIndex].images.length) {
+        imageIndex -= portfolioCollections[folderIndex].images.length
+        folderIndex = (folderIndex + 1) % portfolioCollections.length
+      }
+
+      while (imageIndex < 0) {
+        folderIndex =
+          (folderIndex - 1 + portfolioCollections.length) %
+          portfolioCollections.length
+        imageIndex += portfolioCollections[folderIndex].images.length
+      }
+
+      return portfolioCollections[folderIndex].images[imageIndex]
+    }
+
+    ;[1, 2, -1].forEach((offset) => {
+      const preload = new Image()
+      const image = getResponsiveImageProps(getAdjacentImage(offset).src)
+      preload.fetchPriority = "low"
+      preload.decoding = "async"
+      if (image.srcSet) {
+        preload.srcset = image.srcSet
+        preload.sizes =
+          "(min-width: 1536px) calc(100vw - 24rem), (min-width: 1024px) calc(100vw - 22rem), 90vw"
+      }
+      preload.src = image.src
+    })
+  }, [currentFolder, slideIndex])
+
+  useEffect(
+    () => () => {
+      window.clearTimeout(wheelResetTimerRef.current)
+      window.clearTimeout(wheelCooldownTimerRef.current)
+    },
+    [],
+  )
 
   const swipeHandlers = useSwipeable({
     onSwipedLeft: nextSlide,
@@ -73,6 +112,29 @@ export default function Slider({
     if (event.key === "ArrowRight") nextSlide()
   }
 
+  const handleTrackpadSwipe = (event) => {
+    if (Math.abs(event.deltaX) <= Math.abs(event.deltaY)) return
+    event.preventDefault()
+    if (wheelCooldownRef.current || isTransitioning) return
+
+    wheelDistanceRef.current += event.deltaX
+    window.clearTimeout(wheelResetTimerRef.current)
+    wheelResetTimerRef.current = window.setTimeout(() => {
+      wheelDistanceRef.current = 0
+    }, 140)
+
+    if (Math.abs(wheelDistanceRef.current) < 55) return
+
+    if (wheelDistanceRef.current > 0) nextSlide()
+    else prevSlide()
+
+    wheelDistanceRef.current = 0
+    wheelCooldownRef.current = true
+    wheelCooldownTimerRef.current = window.setTimeout(() => {
+      wheelCooldownRef.current = false
+    }, 450)
+  }
+
   return (
     <m.section
       initial={{ opacity: 0 }}
@@ -80,8 +142,9 @@ export default function Slider({
       exit={{ opacity: 0 }}
       transition={{ duration: 0.25, ease: "easeInOut" }}
       id="slider"
-      className="flex h-[100vh] w-full flex-col items-center justify-center"
+      className="relative flex h-[100vh] w-full flex-col items-center justify-center overflow-hidden"
       onKeyDown={handleKeyDown}
+      onWheel={handleTrackpadSwipe}
       aria-label={`${collection.title} photo viewer`}
       {...swipeHandlers}
     >
@@ -148,7 +211,7 @@ export default function Slider({
             transition={{ duration: 0.25 }}
             onAnimationStart={() => setIsTransitioning(true)}
             onAnimationComplete={() => setIsTransitioning(false)}
-            className="z-10 flex h-[424px] w-[90vw] items-center justify-center md:h-[50vh] lg:h-[60vh] 4xl:h-[70vh]"
+            className="z-10 flex h-[424px] w-[90vw] items-center justify-center md:h-[50vh] lg:h-[60vh] lg:w-[calc(100vw-22rem)] 2xl:w-[calc(100vw-24rem)] 4xl:h-[70vh]"
           >
             <BlurImage
               className={currentImage.className}
@@ -167,9 +230,8 @@ export default function Slider({
 
       <ImageryNav
         slideIndex={slideIndex}
+        setSlideIndex={setSlideIndex}
         currentFolder={currentFolder}
-        menuHandler={menuHandler}
-        galleryHandler={galleryHandler}
       />
     </m.section>
   )
@@ -180,8 +242,6 @@ Slider.propTypes = {
   setSlideIndex: PropTypes.func.isRequired,
   currentFolder: PropTypes.number.isRequired,
   setCurrentFolder: PropTypes.func.isRequired,
-  menuHandler: PropTypes.func.isRequired,
-  galleryHandler: PropTypes.func.isRequired,
   isTransitioning: PropTypes.bool.isRequired,
   setIsTransitioning: PropTypes.func.isRequired,
 }

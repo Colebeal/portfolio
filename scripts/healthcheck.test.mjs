@@ -5,6 +5,7 @@ import test from "node:test"
 import { fileURLToPath } from "node:url"
 
 import { portfolioCollections } from "../src/assets/sliderData.js"
+import { getResponsiveImageProps } from "../src/utils/resolveImageSrc.js"
 
 const projectRoot = resolve(fileURLToPath(new URL("..", import.meta.url)))
 
@@ -46,5 +47,17 @@ test("application routes include aliases and a fallback", () => {
 
   assert.match(routes, /path="\/imagery"/)
   assert.match(routes, /<Route index/)
+  assert.match(routes, /path="index\/:collectionSlug"/)
+  assert.match(routes, /path="image\/:collectionSlug\/:imageNumber"/)
   assert.match(routes, /path="\*"/)
+})
+
+test("remote portfolio images receive responsive Cloudinary sources", () => {
+  const image = getResponsiveImageProps(
+    "https://images.colebeal.com/Scottie-Amex-14_fr2hdq.jpg",
+  )
+
+  assert.match(image.src, /q_auto:best,c_limit,w_1600/)
+  assert.match(image.srcSet, /w_480/)
+  assert.match(image.srcSet, /2400w/)
 })

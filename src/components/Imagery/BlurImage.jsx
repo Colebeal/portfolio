@@ -2,6 +2,8 @@ import { useMemo, useState } from "react"
 import { decode } from "blurhash"
 import PropTypes from "prop-types"
 
+import { getResponsiveImageProps } from "../../utils/resolveImageSrc"
+
 function blurHashToDataURL(hash, width, height) {
   const aspect = width / height
   const decodeW = aspect >= 1 ? 32 : Math.round(32 * aspect)
@@ -25,10 +27,20 @@ export default function BlurImage({
   blurHeight,
   fit,
   className,
+  onLoad,
   ...props
 }) {
   const [loaded, setLoaded] = useState(false)
   const [failed, setFailed] = useState(false)
+  const responsiveImage = getResponsiveImageProps(src)
+  const sizes = fit
+    ? "(min-width: 1536px) calc(100vw - 24rem), (min-width: 1024px) calc(100vw - 22rem), 90vw"
+    : "(min-width: 1536px) 20vw, (min-width: 1280px) 25vw, (min-width: 1024px) 35vw, 50vw"
+
+  const handleLoad = (event) => {
+    setLoaded(true)
+    onLoad?.(event)
+  }
 
   const blurDataUrl = useMemo(
     () =>
@@ -56,51 +68,26 @@ export default function BlurImage({
 
   // Slider: stacked div with blurhash overlay that fades out
   if (fit) {
-    const style = {
-      aspectRatio,
-      ...(isHorizontal
-        ? { width: "100%", height: "auto", objectFit: "contain" }
-        : { width: "min-content", height: "100%", objectFit: "contain" }),
-    }
     return (
-      <div
-        className={`${className} bg-[#111] dark:bg-white`}
+      <img
+        src={responsiveImage.src}
+        srcSet={responsiveImage.srcSet}
+        sizes={responsiveImage.srcSet ? sizes : undefined}
+        alt={alt}
+        width={blurWidth}
+        height={blurHeight}
+        onLoad={handleLoad}
+        onError={() => setFailed(true)}
+        className="block h-auto max-h-full w-auto max-w-full object-contain"
         style={{
           aspectRatio,
-          position: "relative",
-          overflow: "hidden",
-          ...(isHorizontal
-            ? { width: "100%", height: "auto" }
-            : { width: "auto", height: "100%" }),
+          backgroundImage:
+            !loaded && blurDataUrl ? `url("${blurDataUrl}")` : undefined,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
-      >
-        <img
-          src={src}
-          alt={alt}
-          onLoad={() => setLoaded(true)}
-          onError={() => setFailed(true)}
-          style={style}
-          {...props}
-        />
-        {blurDataUrl && (
-          <img
-            src={blurDataUrl}
-            alt=""
-            aria-hidden="true"
-            style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              opacity: loaded ? 0 : 1,
-              transition: "opacity 0.3s ease-in-out",
-              pointerEvents: "none",
-            }}
-          />
-        )}
-      </div>
+        {...props}
+      />
     )
   }
 
@@ -123,11 +110,13 @@ export default function BlurImage({
 
   return (
     <img
-      src={src}
+      src={responsiveImage.src}
+      srcSet={responsiveImage.srcSet}
+      sizes={responsiveImage.srcSet ? sizes : undefined}
       alt={alt}
       className={className}
       style={style}
-      onLoad={() => setLoaded(true)}
+      onLoad={handleLoad}
       onError={() => setFailed(true)}
       {...props}
     />
@@ -142,4 +131,5 @@ BlurImage.propTypes = {
   blurHeight: PropTypes.number,
   fit: PropTypes.string,
   className: PropTypes.string,
+  onLoad: PropTypes.func,
 }

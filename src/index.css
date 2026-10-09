@@ -197,3 +197,11 @@ button:hover {
 .max-inline-fit {
   max-inline-size: fit-content;
 }
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}

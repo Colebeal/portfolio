@@ -9,11 +9,24 @@ import NotFound from "./NotFound"
 
 const AnimatedRoutes = () => {
   const location = useLocation()
+  const isImageryRoute = ["/", "/about", "/index", "/image"].some(
+    (path) =>
+      location.pathname === path || location.pathname.startsWith(`${path}/`),
+  )
 
   return (
     <AnimatePresence mode="wait">
-      <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<Imagery />} />
+      <Routes
+        location={location}
+        key={isImageryRoute ? "imagery" : location.pathname}
+      >
+        <Route path="/" element={<Imagery />}>
+          <Route index />
+          <Route path="about" />
+          <Route path="index" />
+          <Route path="index/:collectionSlug" />
+          <Route path="image/:collectionSlug/:imageNumber" />
+        </Route>
         <Route path="/imagery" element={<Navigate to="/" replace />} />
         <Route path="/dev" element={<Dev />}>
           <Route index element={<Navigate to="home" replace />} />

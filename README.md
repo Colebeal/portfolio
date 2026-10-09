@@ -4,14 +4,17 @@ A React portfolio for Cole Beal's photography and web-development work. The phot
 
 ## Routes
 
-| Route                | Purpose                               |
-| -------------------- | ------------------------------------- |
-| `/`                  | Photography viewer and gallery        |
-| `/imagery`           | Redirects to the photography homepage |
-| `/dev`               | Redirects to the developer homepage   |
-| `/dev/home`          | Developer portfolio                   |
-| `/dev/bonsai`        | Bonsai Buddy case study               |
-| `/dev/dorff-designs` | Dorff Designs case study              |
+| Route                                 | Purpose                                     |
+| ------------------------------------- | ------------------------------------------- |
+| `/`                                   | Photographer biography and contact details  |
+| `/imagery`                            | Redirects to the photography homepage       |
+| `/about`                              | Legacy alias for the photography homepage   |
+| `/index/:collectionSlug`              | Continuous Index positioned at a collection |
+| `/image/:collectionSlug/:imageNumber` | Shareable individual photograph             |
+| `/dev`                                | Redirects to the developer homepage         |
+| `/dev/home`                           | Developer portfolio                         |
+| `/dev/bonsai`                         | Bonsai Buddy case study                     |
+| `/dev/dorff-designs`                  | Dorff Designs case study                    |
 
 Unknown routes display the not-found page.
 
