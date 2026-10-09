@@ -1,14 +1,7 @@
 import { AiFillInstagram } from "react-icons/ai"
-import { MdMail, MdOutlineComputer } from "react-icons/md"
-import { Link } from "react-router-dom"
+import { MdMail } from "react-icons/md"
 
-export default function MenuContents({
-  menuHandler,
-  menuContentHandler,
-  folderDisplayed,
-  setFolderDisplayed,
-  setSlideIndex,
-}) {
+export default function MenuContents() {
   return (
     <>
       <main className="mx-10 h-full animate-fade-in overflow-auto pt-2 text-left">
@@ -47,10 +40,7 @@ export default function MenuContents({
           <li>
             <h3 className="text-2xl font-bold">Get In Touch</h3>
           </li>
-          <li
-            href="mailto:cole@colebeal.com?subject=Let's connect!"
-            className="flex gap-2"
-          >
+          <li className="flex gap-2">
             <MdMail className="text-2xl text-teal-900 dark:text-white" />
             <a
               href="mailto:cole@colebeal.com?subject=Let's connect"

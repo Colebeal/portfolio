@@ -1,23 +1,16 @@
 import { motion as m } from "framer-motion"
 import { Link } from "react-router-dom"
-import { Cloudinary } from "@cloudinary/url-gen"
+import { useEffect } from "react"
 
 import ThemeToggle from "../components/ThemeToggle"
 
 export default function App() {
-  document.body.style.overflow = "hidden"
-  const cld = new Cloudinary({ cloud: { cloudName: "dvfqeowxm" } })
-
-  const loadAnimation = {
-    initialTitle: { translateY: 500, opacity: 0 },
-    initial: { opacity: 1 },
-    animate: {
-      translateY: 0,
-      opacity: 1,
-      transition: { duration: 0.25, ease: "easeInOut" },
-    },
-    exit: { opacity: 0, transition: { duration: 0.5, ease: "easeInOut" } },
-  }
+  useEffect(() => {
+    document.body.style.overflow = "hidden"
+    return () => {
+      document.body.style.overflow = "auto"
+    }
+  }, [])
 
   return (
     <>
@@ -33,7 +26,7 @@ export default function App() {
           transition={{ duration: 1, ease: "easeInOut" }}
           className="text-6xl dark:text-orange-100"
         >
-          Hi, I'm Cole.
+          Hi, I&apos;m Cole.
         </m.h2>
         <m.div
           initial={{ translateY: 0, opacity: 0 }}
@@ -52,7 +45,7 @@ export default function App() {
               Web Developer
             </Link>
             <Link
-              to="/imagery"
+              to="/"
               className="m-2 rounded-lg bg-orange-100 p-3 shadow-lg dark:bg-teal-900 dark:text-white"
             >
               Photographer

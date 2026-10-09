@@ -1,169 +1,59 @@
-import imageData from "../../../assets/sliderData"
+import PropTypes from "prop-types"
+import { portfolioCollections } from "../../../assets/sliderData"
 
 export default function MenuInformation({
   setCurrentFolder,
   setSlideIndex,
   menuHandler,
-  menuContentHandler,
 }) {
-  const selectFolder = (e) => {
-    setCurrentFolder(e)
+  const selectFolder = (index) => {
+    setCurrentFolder(index)
     setSlideIndex(0)
     menuHandler()
   }
 
   return (
-    <>
-      <ul className="flex h-full animate-fade-in flex-col pt-5">
-        <div className="mx-10 mt-auto text-left md:my-auto">
-          <h2 className="mb-5 text-xl font-bold">Portfolio</h2>
-          <li>
-            <a
-              onClick={() => {
-                selectFolder(0)
-              }}
-              data-gtm-event="cta_click"
-              data-gtm-location="menu"
-              data-gtm-label="scottie-scheffler"
-              className="my-4 flex cursor-pointer justify-between hover:underline"
-            >
-              <span>Scottie Scheffler • PGA</span>
-              <span className=" sm:mr-10">{imageData.scottieAmex.length}</span>
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={() => {
-                selectFolder(1)
-              }}
-              data-gtm-event="cta_click"
-              data-gtm-location="menu"
-              data-gtm-label="lab-df3"
-              className="my-4 flex cursor-pointer justify-between hover:underline"
-            >
-              <span>L.A.B. Golf • DF3</span>
-              <span className=" sm:mr-10">{imageData.labDF3.length}</span>
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={() => {
-                selectFolder(2)
-              }}
-              data-gtm-event="cta_click"
-              data-gtm-location="menu"
-              data-gtm-label="oz1i"
-              className="my-4 flex cursor-pointer justify-between hover:underline"
-            >
-              <span>L.A.B. Golf • OZ1i</span>
-              <span className=" sm:mr-10">{imageData.labOZ1i.length}</span>
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={() => {
-                selectFolder(3)
-              }}
-              data-gtm-event="cta_click"
-              data-gtm-location="menu"
-              data-gtm-label="oz1i-hs"
-              className="my-4 flex cursor-pointer justify-between hover:underline"
-            >
-              <span>L.A.B. Golf • OZ1i HS</span>
-              <span className=" sm:mr-10">{imageData.labHeelShaft.length}</span>
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={() => {
-                selectFolder(4)
-              }}
-              data-gtm-event="cta_click"
-              data-gtm-location="menu"
-              data-gtm-label="surfer-us-open"
-              className="my-4 flex cursor-pointer justify-between hover:underline"
-            >
-              <span>SURFER Magazine • US Open</span>
-              <span className=" sm:mr-10">{imageData.surferUsOpen.length}</span>
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={() => {
-                selectFolder(5)
-              }}
-              data-gtm-event="cta_click"
-              data-gtm-location="menu"
-              data-gtm-label="surfer-mick-rodgers"
-              className="my-4 flex cursor-pointer justify-between hover:underline"
-            >
-              <span>SURFER Magazine • Mick Rodgers</span>
-              <span className=" sm:mr-10">
-                {imageData.surferMickRodgers.length}
-              </span>
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={() => {
-                selectFolder(6)
-              }}
-              data-gtm-event="cta_click"
-              data-gtm-location="menu"
-              data-gtm-label="tcss-deadkooks"
-              className="my-4 flex cursor-pointer justify-between hover:underline"
-            >
-              <span>TCSS • DeadKooks</span>
-              <span className=" sm:mr-10">
-                {imageData.tcssDeadKooks.length}
-              </span>
-            </a>
-          </li>
-          <h2 className="mb-5 mt-16 text-xl font-bold md:mt-28">Archives</h2>
-          <li>
-            <a
-              onClick={() => {
-                selectFolder(7)
-              }}
-              data-gtm-event="cta_click"
-              data-gtm-location="menu"
-              data-gtm-label="people"
-              className="my-4 flex cursor-pointer justify-between hover:underline"
-            >
-              <span>People</span>
-              <span className=" sm:mr-10">{imageData.people.length}</span>
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={() => {
-                selectFolder(8)
-              }}
-              data-gtm-event="cta_click"
-              data-gtm-location="menu"
-              data-gtm-label="structure"
-              className="my-4 flex cursor-pointer justify-between hover:underline"
-            >
-              <span>Structure</span>
-              <span className=" sm:mr-10">{imageData.structure.length}</span>
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={() => {
-                selectFolder(9)
-              }}
-              data-gtm-event="cta_click"
-              data-gtm-location="menu"
-              data-gtm-label="observations"
-              className="my-4 flex cursor-pointer justify-between hover:underline"
-            >
-              <span>Observations</span>
-              <span className=" sm:mr-10">{imageData.observations.length}</span>
-            </a>
-          </li>
-        </div>
-      </ul>
-    </>
+    <div className="flex h-full animate-fade-in flex-col px-10 pb-10 pt-5 text-left">
+      {["Portfolio", "Archives"].map((section) => (
+        <section
+          key={section}
+          className={section === "Archives" ? "mt-12" : ""}
+        >
+          <h2 className="mb-5 text-xl font-bold">{section}</h2>
+          <ul>
+            {portfolioCollections.map((collection, index) => {
+              const isArchive = collection.eyebrow === "Archives"
+              if ((section === "Archives") !== isArchive) return null
+
+              return (
+                <li key={collection.slug}>
+                  <button
+                    type="button"
+                    onClick={() => selectFolder(index)}
+                    data-gtm-event="cta_click"
+                    data-gtm-location="menu"
+                    data-gtm-label={collection.slug}
+                    className="my-2 flex w-full justify-between rounded-none border-0 bg-transparent px-0 py-2 text-left hover:underline"
+                  >
+                    <span>
+                      {isArchive
+                        ? collection.title
+                        : `${collection.eyebrow} • ${collection.title}`}
+                    </span>
+                    <span>{collection.images.length}</span>
+                  </button>
+                </li>
+              )
+            })}
+          </ul>
+        </section>
+      ))}
+    </div>
   )
+}
+
+MenuInformation.propTypes = {
+  setCurrentFolder: PropTypes.func.isRequired,
+  setSlideIndex: PropTypes.func.isRequired,
+  menuHandler: PropTypes.func.isRequired,
 }

@@ -84,25 +84,25 @@ const DorffDesigns = () => {
               Design and Goal
             </p>
             <h2 className="mb-10 text-6xl text-teal-700 dark:text-orange-200 xl:text-5xl">
-              Crafting a holistic depitction of this client
+              Crafting a holistic depiction of this client
             </h2>
             <p className="w-full text-xl text-teal-950 dark:text-orange-100 xl:text-2xl">
               Broken into three distinct sections, the site is designed to
-              provide a clear picture of the client's abilities and services.
-              The first section is a gallery of his photography, the second a
-              overview of his past woodworking projects and the third a gallery
-              of his on camera work. Each containing a distinct call to action
-              to contact him for his services. The most intentional of the three
-              sections is the craftsman tab. Considering most of his work is
-              custom, it didnt make sense to build him a shopify storefront.
-              Instead, I chose to implement a simple catalogue style gallery of
-              images that when clicked, would open a modal containing aproduct
-              description, a handful of FAQ's and a mailto link for an order
-              CTA.
+              provide a clear picture of the client&apos;s abilities and
+              services. The first section is a gallery of his photography, the
+              second a overview of his past woodworking projects and the third a
+              gallery of his on camera work. Each containing a distinct call to
+              action to contact him for his services. The most intentional of
+              the three sections is the craftsman tab. Considering most of his
+              work is custom, it didnt make sense to build him a shopify
+              storefront. Instead, I chose to implement a simple catalogue style
+              gallery of images that when clicked, would open a modal containing
+              aproduct description, a handful of FAQs and a mailto link for an
+              order CTA.
             </p>
             <p className="my-5 w-full text-xl text-teal-950 dark:text-orange-100 xl:text-2xl">
               When designing the site, I wanted to make sure that the clients
-              honest charm and scrappy work ethic were paplable. Combined with
+              honest charm and scrappy work ethic were palpable. Combined with
               the fact that he spends most of his time in the wilderness, I made
               the site using a dusty color palette reminiscent of a desert
               sunrise. For font I used Crimbo Vintage, and Vintage Rovery to
@@ -113,9 +113,9 @@ const DorffDesigns = () => {
               The final thing worth calling out was the intention behind site
               layout, and the integral transition animations made with framer
               motion. The intention was to maintain the same layout throughout
-              the site only changing his title, and the cooresponding content.
-              Simple, however it is an ever so slight nod to the client's
-              steadfast charachter among his various disciplines. Designed to
+              the site only changing his title, and the corresponding content.
+              Simple, however it is an ever so slight nod to the client&apos;s
+              steadfast character among his various disciplines. Designed to
               share a similar feel on both desktop and mobile, the site has a
               playful feel that is sure to please the client and his customers.
             </p>

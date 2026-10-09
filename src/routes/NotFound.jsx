@@ -42,14 +42,10 @@ export default function NotFound() {
               </a>
             </li>
             <li className="rounded-lg border-2 border-teal-900 p-2 hover:border-teal-700 hover:bg-orange-50">
-              <a href="/dev" rel="noopener noreferrer">
-                Web Development
-              </a>
+              <Link to="/dev/home">Web Development</Link>
             </li>
             <li className="rounded-lg border-2 border-teal-900 p-2 hover:border-teal-700 hover:bg-orange-50">
-              <a href="/imagery" rel="noopener noreferrer">
-                Imagery
-              </a>
+              <Link to="/">Imagery</Link>
             </li>
           </ul>
           <Link

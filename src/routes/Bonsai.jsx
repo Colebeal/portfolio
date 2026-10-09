@@ -57,11 +57,11 @@ const Bonsai = () => {
             <div className="w-full text-teal-950 dark:text-orange-100 2xl:text-3xl">
               <p>
                 Being someone who practices bonsai myself, I took notice to the
-                fact that it's hardly a craft that has many modern tools
+                fact that it&apos;s hardly a craft that has many modern tools
                 available to aid its community members in creating beautiful
                 trees. I set out to create this project to fill my own need for
-                an app that allows me to track my tree's progress, and easily
-                get training tips from a chatGPT assistant.
+                an app that allows me to track my tree&apos;s progress, and
+                easily get training tips from a chatGPT assistant.
               </p>
             </div>
             <div className="w-full text-teal-950 dark:text-orange-100 2xl:text-3xl">
@@ -69,8 +69,8 @@ const Bonsai = () => {
                 With this in mind, I used this as a learning opportunity to
                 create a useful tool while also learning new technologies. In my
                 pursuit, I gained experience using TypeScript, Nextjs, SASS,
-                Firebase, and OpenAI's chatGPT API. This simple app created to
-                help me track my trees has now become a pivotal point of
+                Firebase, and OpenAI&apos;s ChatGPT API. This simple app created
+                to help me track my trees has now become a pivotal point of
                 learning.
               </p>
             </div>

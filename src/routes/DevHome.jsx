@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from "react"
+import { useRef, useEffect } from "react"
 import { motion as m } from "framer-motion"
 
 import Footer from "../components/Dev/Footer"
@@ -12,52 +12,28 @@ import Nav from "../components/Dev/Nav"
 import { useLocation } from "react-router-dom"
 
 const DevHome = () => {
-  document.body.style.overflow = "auto"
-
-  const [location, setLocation] = useState("")
   const homeRef = useRef(null)
   const aboutRef = useRef(null)
   const porfolioRef = useRef(null)
   const servicesRef = useRef(null)
 
-  const handleScroll = (ref) => {
-    window.scrollTo({
-      top: ref.offsetTop,
-      left: 0,
-      behavior: "smooth",
-    })
-  }
-  let locationData = useLocation()
-
-  console.log("location state", locationData.state)
+  const location = useLocation()
 
   useEffect(() => {
-    setLocation(locationData.state)
-    console.log("before", location)
-    if (location === "" || location === undefined || location === null) {
-      return
-    } else if (location.localeCompare("home") == 0) {
-      handleScroll(homeRef.current)
-    } else if (location.localeCompare("about") == 0) {
-      handleScroll(aboutRef.current)
-    } else if (location.localeCompare("portfolio") == 0) {
-      handleScroll(porfolioRef.current)
-    } else if (location.localeCompare("services") == 0) {
-      handleScroll(servicesRef.current)
+    const sections = {
+      home: homeRef,
+      about: aboutRef,
+      portfolio: porfolioRef,
+      services: servicesRef,
     }
-  })
+    sections[location.state]?.current?.scrollIntoView({ behavior: "smooth" })
+  }, [location.state])
 
   return (
     <>
-      <Nav
-        aboutRef={aboutRef}
-        porfolioRef={porfolioRef}
-        servicesRef={servicesRef}
-      />
+      <Nav />
       <m.div
-        initial={
-          window.innerWidth > 768 ? { translateY: 0 } : { translateY: 0 }
-        }
+        initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.5, ease: "easeInOut" }}

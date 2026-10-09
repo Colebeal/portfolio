@@ -1,28 +1,31 @@
-import { Link } from "react-router-dom"
-import { motion as m, AnimatePresence, easeInOut } from "framer-motion"
+import PropTypes from "prop-types"
+import { motion as m } from "framer-motion"
 import ThemeToggle from "../ThemeToggle"
 
-export default function GalleryNav({
-  menuStatus,
-  slideIndex,
-  menuHandler,
-  currentFolder,
-  galleryHandler,
-}) {
+export default function GalleryNav({ menuHandler, galleryHandler }) {
   return (
-    <m.header
+    <m.nav
       initial={{ opacity: 0 }}
-      animate={{ translateY: 0, opacity: 1 }}
-      transition={{ duration: 1, delay: 1.5, ease: easeInOut }}
-      className="fixed bottom-8 left-0 z-10 my-1 mb-4 flex h-10 w-full items-center justify-center md:mt-10 lg:mb-0 xl:my-5"
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5, delay: 0.25 }}
+      className="fixed bottom-8 left-0 z-40 flex w-full justify-center"
+      aria-label="Gallery controls"
     >
-      <div className="z-50 flex h-fit w-fit items-center justify-center gap-4 rounded-lg border-[1px] border-black bg-white p-2 px-4 shadow-lg dark:border-white dark:bg-[#000] md:w-[20%]">
+      <div className="flex items-center gap-3 rounded-lg border border-black bg-white p-2 px-4 shadow-lg dark:border-white dark:bg-black">
         <ThemeToggle />
-        <div className="h-full w-[1px] bg-gray-700"></div>
-        <Link onClick={menuHandler} className="m-2 text-sm font-semibold">
+        <span className="h-6 w-px bg-gray-400" aria-hidden="true" />
+        <button type="button" onClick={galleryHandler} className="p-2 text-sm">
+          Viewer
+        </button>
+        <button type="button" onClick={menuHandler} className="p-2 text-sm">
           Menu
-        </Link>
+        </button>
       </div>
-    </m.header>
+    </m.nav>
   )
+}
+
+GalleryNav.propTypes = {
+  menuHandler: PropTypes.func.isRequired,
+  galleryHandler: PropTypes.func.isRequired,
 }

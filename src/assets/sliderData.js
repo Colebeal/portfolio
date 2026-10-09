@@ -488,7 +488,7 @@ let people = [
   },
 
   {
-    src: "images/people/Portfolio-22.jpg ",
+    src: "images/people/Portfolio-22.jpg",
     blurHash: "L49jv0~q9F-;%M0000RjM{%M%MWB",
     width: 1600,
     height: 1115,
@@ -2442,8 +2442,6 @@ let surferMickRodgers = [
   },
 ]
 
-let index = -1
-
 observations = observations.map((item, index) => ({ ...item, id: index + 1 }))
 people = people.map((item, index) => ({ ...item, id: index + 1 }))
 structure = structure.map((item, index) => ({ ...item, id: index + 1 }))
@@ -2464,6 +2462,54 @@ tcssDeadKooks = tcssDeadKooks.map((item, index) => ({
   id: index + 1,
 }))
 
+const portfolioCollections = [
+  {
+    slug: "scottie-amex",
+    eyebrow: "The Amex • PGA • 2026",
+    title: "Scottie Scheffler",
+    images: scottieAmex,
+  },
+  { slug: "lab-df3", eyebrow: "L.A.B. Golf", title: "DF3", images: labDF3 },
+  { slug: "lab-oz1i", eyebrow: "L.A.B. Golf", title: "OZ1i", images: labOZ1i },
+  {
+    slug: "lab-heel-shaft",
+    eyebrow: "L.A.B. Golf",
+    title: "OZ1i HS",
+    images: labHeelShaft,
+  },
+  {
+    slug: "surfer-us-open",
+    eyebrow: "SURFER Magazine",
+    title: "US Open",
+    images: surferUsOpen,
+  },
+  {
+    slug: "surfer-mick-rodgers",
+    eyebrow: "SURFER Magazine",
+    title: "Mick Rodgers x TCSS",
+    images: surferMickRodgers,
+  },
+  {
+    slug: "tcss-deadkooks",
+    eyebrow: "TCSS",
+    title: "DeadKooks",
+    images: tcssDeadKooks,
+  },
+  { slug: "people", eyebrow: "Archives", title: "People", images: people },
+  {
+    slug: "structure",
+    eyebrow: "Archives",
+    title: "Structure",
+    images: structure,
+  },
+  {
+    slug: "observations",
+    eyebrow: "Archives",
+    title: "Observations",
+    images: observations,
+  },
+]
+
 export {
   observations,
   people,
@@ -2475,6 +2521,7 @@ export {
   surferUsOpen,
   surferMickRodgers,
   tcssDeadKooks,
+  portfolioCollections,
 }
 export default {
   observations,
@@ -2487,4 +2534,5 @@ export default {
   surferUsOpen,
   surferMickRodgers,
   tcssDeadKooks,
+  portfolioCollections,
 }

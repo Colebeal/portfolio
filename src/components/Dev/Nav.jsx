@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { Link, useLocation } from "react-router-dom"
 
 import { motion as m } from "framer-motion"
@@ -9,19 +9,8 @@ import { IoClose } from "react-icons/io5"
 
 import ThemeToggle from "../ThemeToggle"
 
-export default function Nav({ servicesRef, aboutRef, porfolioRef }) {
+export default function Nav() {
   const [isHovering, setIsHovering] = useState(false)
-  const [isScroll, setIsScroll] = useState(null)
-
-  const handleScroll = (ref) => {
-    window.scrollTo({
-      top: ref.offsetTop,
-      left: 0,
-      behavior: "smooth",
-    })
-
-    console.log(ref)
-  }
 
   const menuHandler = () => {
     setIsHovering(!isHovering)
@@ -54,7 +43,7 @@ export default function Nav({ servicesRef, aboutRef, porfolioRef }) {
           </li>
           <li
             onMouseOver={() => setIsHovering(true)}
-            onMouseOut={menuHandler}
+            onMouseLeave={() => setIsHovering(false)}
             className="relative"
           >
             <Link

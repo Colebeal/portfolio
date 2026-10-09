@@ -5,13 +5,10 @@ import {
   BsWrench,
 } from "react-icons/bs"
 
-export default function Services({ servicesRef }) {
+export default function Services() {
   return (
     <>
-      <section
-        ref={servicesRef}
-        className="flex w-full flex-col justify-around text-left text-xl text-teal-900 dark:text-orange-50 "
-      >
+      <section className="flex w-full flex-col justify-around text-left text-xl text-teal-900 dark:text-orange-50 ">
         <h2 className="my-5 text-4xl text-teal-900 dark:text-orange-100 md:my-10 md:text-6xl xl:mx-12">
           Services
         </h2>

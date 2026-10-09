@@ -1,513 +1,75 @@
-import {
-  scottieAmex,
-  people,
-  structure,
-  observations,
-  labDF3,
-  labOZ1i,
-  labHeelShaft,
-  surferUsOpen,
-  surferMickRodgers,
-  tcssDeadKooks,
-} from "../../assets/sliderData"
+import PropTypes from "prop-types"
 import { motion as m } from "framer-motion"
+
+import { portfolioCollections } from "../../assets/sliderData"
 import GalleryNav from "./GalleryNav"
 import BlurImage from "./BlurImage"
 
-export default function Slider({
-  slideIndex,
+export default function Gallery({
   setSlideIndex,
   currentFolder,
-  setCurrentFolder,
   setIsGallery,
-  isGallery,
-  menuStatus,
   menuHandler,
   galleryHandler,
 }) {
-  // const folder = [observations, people, structure];
+  const collection = portfolioCollections[currentFolder]
 
-  const enlargeImage = (e) => {
+  const enlargeImage = (index) => {
+    setSlideIndex(index)
     setIsGallery(false)
-    setSlideIndex(e - 1)
-  }
-
-  const animation = {
-    initial: { translateY: 100, opacity: 0 },
-    animate: {
-      translateY: 0,
-      opacity: 1,
-      transition: { duration: 1, ease: "easeInOut" },
-    },
-    exit: {
-      translateY: 0,
-      opacity: 0,
-      transition: { duration: 0.5, ease: "easeInOut" },
-    },
   }
 
   return (
-    <section
-      className="m-auto w-auto bg-white pb-8 dark:bg-[#111111] md:mt-10"
+    <m.section
+      initial={{ translateY: 100, opacity: 0 }}
+      animate={{ translateY: 0, opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5, ease: "easeInOut" }}
+      className="m-auto min-h-screen w-full bg-white pb-28 dark:bg-[#111111] md:pt-10"
       id="gallery"
+      aria-labelledby="gallery-title"
     >
-      <div>
-        {currentFolder === 0 && (
-          <m.div
-            variants={animation}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-            className="grid h-full w-screen grid-cols-2 gap-10 px-4 py-8
-             md:gap-16 xl:grid-cols-3 2xl:grid-cols-4"
-          >
-            {scottieAmex.map((image) => (
+      <div className="px-4 py-8">
+        <h1
+          id="gallery-title"
+          className="mb-2 text-4xl text-teal-900 dark:text-white"
+        >
+          {collection.title}
+        </h1>
+        <p className="mb-8 text-sm text-gray-600 dark:text-gray-300">
+          {collection.eyebrow} · {collection.images.length} photographs
+        </p>
+        <div className="grid grid-cols-2 gap-5 md:gap-10 xl:grid-cols-3 2xl:grid-cols-4">
+          {collection.images.map((image, index) => (
+            <button
+              type="button"
+              key={image.id}
+              onClick={() => enlargeImage(index)}
+              className="min-h-32 flex items-center justify-center border-0 bg-transparent p-0"
+              aria-label={`Open ${collection.title} photograph ${index + 1}`}
+            >
               <BlurImage
-                onClick={() => {
-                  enlargeImage(image.id)
-                }}
-                id={image.id}
-                key={image.id}
                 className={image.gallery}
                 src={image.src}
+                alt={image.alt || `${collection.title} photograph ${index + 1}`}
                 blurHash={image.blurHash}
                 blurWidth={image.width}
                 blurHeight={image.height}
+                loading="lazy"
               />
-            ))}
-          </m.div>
-        )}
-        {currentFolder === 1 && (
-          <m.div
-            variants={animation}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-            className="grid h-full w-screen grid-cols-2 gap-10 px-4 py-8
-             md:gap-16 xl:grid-cols-3 2xl:grid-cols-4"
-          >
-            {labDF3.map((image) => (
-              <BlurImage
-                onClick={() => {
-                  enlargeImage(image.id)
-                }}
-                id={image.id}
-                key={image.id}
-                className={image.gallery}
-                src={image.src}
-                blurHash={image.blurHash}
-                blurWidth={image.width}
-                blurHeight={image.height}
-              />
-            ))}
-          </m.div>
-        )}
-        {currentFolder === 2 && (
-          <m.div
-            variants={animation}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-            className="grid h-full w-screen grid-cols-2 gap-10 px-4 py-8
-             md:gap-16 xl:grid-cols-3 2xl:grid-cols-4"
-          >
-            {labOZ1i.map((image) => (
-              <BlurImage
-                onClick={() => {
-                  enlargeImage(image.id)
-                }}
-                id={image.id}
-                key={image.id}
-                className={image.gallery}
-                src={image.src}
-                blurHash={image.blurHash}
-                blurWidth={image.width}
-                blurHeight={image.height}
-              />
-            ))}
-          </m.div>
-        )}
-        {currentFolder === 3 && (
-          <m.div
-            variants={animation}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-            className="grid h-full w-screen grid-cols-2 gap-10 px-4 py-8
-             md:gap-16 xl:grid-cols-3 2xl:grid-cols-4"
-          >
-            {labHeelShaft.map((image) => (
-              <BlurImage
-                onClick={() => {
-                  enlargeImage(image.id)
-                }}
-                id={image.id}
-                key={image.id}
-                className={image.gallery}
-                src={image.src}
-                blurHash={image.blurHash}
-                blurWidth={image.width}
-                blurHeight={image.height}
-              />
-            ))}
-          </m.div>
-        )}
-        {currentFolder === 4 && (
-          <m.div
-            variants={animation}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-            className="grid h-full w-screen grid-cols-2 gap-10 px-4 py-8
-             md:gap-16 xl:grid-cols-3"
-          >
-            {surferUsOpen.map((image) => (
-              <BlurImage
-                onClick={() => {
-                  enlargeImage(image.id)
-                }}
-                id={image.id}
-                key={image.id}
-                className={image.gallery}
-                src={image.src}
-                blurHash={image.blurHash}
-                blurWidth={image.width}
-                blurHeight={image.height}
-              />
-            ))}
-          </m.div>
-        )}
-        {currentFolder === 5 && (
-          <m.div
-            variants={animation}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-            className="grid h-full w-screen grid-cols-2 gap-10 px-4 py-8
-             md:gap-16 xl:grid-cols-3"
-          >
-            {surferMickRodgers.map((image) => (
-              <BlurImage
-                onClick={() => {
-                  enlargeImage(image.id)
-                }}
-                id={image.id}
-                key={image.id}
-                className={image.gallery}
-                src={image.src}
-                blurHash={image.blurHash}
-                blurWidth={image.width}
-                blurHeight={image.height}
-              />
-            ))}
-          </m.div>
-        )}
-        {currentFolder === 6 && (
-          <m.div
-            variants={animation}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-            className="grid h-full w-screen grid-cols-2 gap-10 px-4 py-8
-             md:gap-16 xl:grid-cols-3"
-          >
-            {tcssDeadKooks.map((image) => (
-              <BlurImage
-                onClick={() => {
-                  enlargeImage(image.id)
-                }}
-                id={image.id}
-                key={image.id}
-                className={image.gallery}
-                src={image.src}
-                blurHash={image.blurHash}
-                blurWidth={image.width}
-                blurHeight={image.height}
-              />
-            ))}
-          </m.div>
-        )}
-        {currentFolder === 7 && (
-          <m.div
-            variants={animation}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-            className="grid h-full w-screen grid-cols-2 gap-10 px-4 py-8
-             md:gap-16 xl:grid-cols-3 2xl:grid-cols-4"
-          >
-            {people.map((image) => (
-              <BlurImage
-                onClick={() => {
-                  enlargeImage(image.id)
-                }}
-                id={image.id}
-                key={image.id}
-                className={image.gallery}
-                src={image.src}
-                blurHash={image.blurHash}
-                blurWidth={image.width}
-                blurHeight={image.height}
-              />
-            ))}
-          </m.div>
-        )}
-        {currentFolder === 8 && (
-          <m.div
-            variants={animation}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-            className="grid h-full w-screen grid-cols-2 gap-10 px-4 py-8
-             md:gap-16 xl:grid-cols-3 2xl:grid-cols-4"
-          >
-            {structure.map((image) => (
-              <BlurImage
-                onClick={() => {
-                  enlargeImage(image.id)
-                }}
-                id={image.id}
-                key={image.id}
-                className={image.gallery}
-                src={image.src}
-                blurHash={image.blurHash}
-                blurWidth={image.width}
-                blurHeight={image.height}
-              />
-            ))}
-          </m.div>
-        )}
-        {currentFolder === 9 && (
-          <m.div
-            variants={animation}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-            className="grid h-full w-screen grid-cols-2 gap-10 px-4 py-8
-             md:gap-16 xl:grid-cols-3 2xl:grid-cols-4"
-          >
-            {observations.map((image) => (
-              <BlurImage
-                onClick={() => {
-                  enlargeImage(image.id)
-                }}
-                id={image.id}
-                key={image.id}
-                className={image.gallery}
-                src={image.src}
-                blurHash={image.blurHash}
-                blurWidth={image.width}
-                blurHeight={image.height}
-              />
-            ))}
-          </m.div>
-        )}
-        {isGallery && (
-          <GalleryNav
-            slideIndex={slideIndex}
-            menuHandler={menuHandler}
-            currentFolder={currentFolder}
-            galleryHandler={galleryHandler}
-            isGallery={isGallery}
-          />
-        )}
+            </button>
+          ))}
+        </div>
       </div>
-      {/* <div>
-
-        <h2 className="mt-4 w-full text-center text-2xl text-teal-900 dark:text-gray-400 lg:left-20 lg:text-4xl">
-          <p className="lg:text-md text-xs font-light">The AmEx • PGA • 2026</p>
-          Scottie Scheffler
-        </h2>
-
-        <div className=" mb-8 h-[1px] w-full bg-gray-700"></div>
-
-        <m.div
-          variants={animation}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-          className="grid h-full w-full grid-cols-2 gap-10 px-4 md:gap-16 xl:grid-cols-3 2xl:grid-cols-4"
-        >
-          {scottieAmex.map((image) => (
-            <img
-              onClick={() => {
-                enlargeImage(image.id)
-              }}
-              id={image.id}
-              key={image.id}
-              className={image.gallery}
-              src={image.src}
-            />
-          ))}
-        </m.div>
-
-        <h2 className="mt-12 w-full text-center text-2xl text-teal-900 dark:text-gray-400 lg:left-20 lg:mt-20 lg:text-4xl">
-          <p className="lg:text-md text-xs font-light">L.A.B. Golf</p>
-          DF3
-        </h2>
-        <div className=" mb-4 h-[1px] w-full bg-gray-700"></div>
-
-        <m.div
-          variants={animation}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-          className="flex h-full w-full flex-1 flex-col gap-10 lg:grid lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4"
-        >
-          {labDF3.map((image) => (
-            <img
-              onClick={() => {
-                enlargeImage(image.id)
-              }}
-              id={image.id}
-              key={image.id}
-              className={image.gallery}
-              src={image.src}
-            />
-          ))}
-        </m.div>
-
-        <h2 className="mt-12 w-full text-center text-2xl text-teal-900 dark:text-gray-400 lg:left-20 lg:mt-20 lg:text-4xl">
-          <p className="lg:text-md text-xs font-light">L.A.B. Golf</p>
-          OZ1i
-        </h2>
-        <div className=" mb-4 h-[1px] w-full bg-gray-700"></div>
-
-        <m.div
-          variants={animation}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-          className="flex h-full w-full flex-1 flex-col gap-10 lg:grid lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4"
-        >
-          {labOZ1i.map((image) => (
-            <img
-              onClick={() => {
-                enlargeImage(image.id)
-              }}
-              id={image.id}
-              key={image.id}
-              className={image.gallery}
-              src={image.src}
-            />
-          ))}
-        </m.div>
-
-
-        <h2 className="mt-12 w-full text-center text-2xl text-teal-900 dark:text-gray-400 lg:left-20 lg:mt-20 lg:text-4xl">
-          <p className="lg:text-md text-xs font-light">L.A.B. Golf</p>
-          OZ1i HS
-        </h2>
-        <div className=" mb-4 h-[1px] w-full bg-gray-700"></div>
-
-        <m.div
-          variants={animation}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-          className="flex h-full w-full flex-1 flex-col gap-10 lg:grid lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4"
-        >
-          {labHeelShaft.map((image) => (
-            <img
-              onClick={() => {
-                enlargeImage(image.id)
-              }}
-              id={image.id}
-              key={image.id}
-              className={image.gallery}
-              src={image.src}
-            />
-          ))}
-        </m.div>
-
-
-        <h2 className="mt-12 w-full text-center text-2xl text-teal-900 dark:text-gray-400 lg:left-20 lg:mt-20 lg:text-4xl">
-          <p className="lg:text-md text-xs font-light">Archives</p>
-          People
-        </h2>
-        <div className=" mb-4 h-[1px] w-full bg-gray-700"></div>
-        <m.div
-          variants={animation}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-          className="xl:grid-cols-32xl:grid-cols-4 flex h-full w-full flex-1 flex-col gap-10 lg:grid lg:grid-cols-2 2xl:grid-cols-4"
-        >
-          {people.map((image) => (
-            <img
-              onClick={() => {
-                enlargeImage(image.id)
-              }}
-              id={image.id}
-              key={image.id}
-              className={image.gallery}
-              src={image.src}
-            />
-          ))}
-        </m.div>
-
-
-        <h2 className="mt-4 w-full text-center text-2xl text-teal-900 dark:text-gray-400 lg:left-20 lg:mt-20 lg:text-4xl">
-          <p className="lg:text-md text-xs font-light">Archives</p>
-          Structure
-        </h2>
-        <div className=" mb-4 h-[1px] w-full bg-gray-700"></div>
-
-        <m.div
-          variants={animation}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-          className="flex h-full w-full flex-1 flex-col gap-10 lg:grid lg:grid-cols-2 xl:grid-cols-3"
-        >
-          {structure.map((image) => (
-            <img
-              onClick={() => {
-                enlargeImage(image.id)
-              }}
-              id={image.id}
-              key={image.id}
-              className={image.gallery}
-              src={image.src}
-            />
-          ))}
-        </m.div>
-
-
-        <h2 className="mt-12 w-full text-left text-2xl text-teal-900 dark:text-gray-400 lg:left-20 lg:mt-20 lg:text-4xl">
-          <p className="lg:text-md text-xs font-light">Archives</p>
-          Observations
-        </h2>
-        <div className=" mb-4 h-[1px] w-full bg-gray-700"></div>
-        <m.div
-          variants={animation}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-          className="flex h-full w-full flex-1 flex-col gap-10 lg:grid lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4"
-        >
-          {observations.map((image) => (
-            <img
-              onClick={() => {
-                enlargeImage(image.id)
-              }}
-              id={image.id}
-              key={image.id}
-              className={image.gallery}
-              src={image.src}
-            />
-          ))}
-        </m.div>
-        {isGallery && (
-          <GalleryNav
-            slideIndex={slideIndex}
-            menuHandler={menuHandler}
-            currentFolder={currentFolder}
-            galleryHandler={galleryHandler}
-            isGallery={isGallery}
-          />
-        )}
-      </div> */}
-    </section>
+      <GalleryNav menuHandler={menuHandler} galleryHandler={galleryHandler} />
+    </m.section>
   )
+}
+
+Gallery.propTypes = {
+  setSlideIndex: PropTypes.func.isRequired,
+  currentFolder: PropTypes.number.isRequired,
+  setIsGallery: PropTypes.func.isRequired,
+  menuHandler: PropTypes.func.isRequired,
+  galleryHandler: PropTypes.func.isRequired,
 }

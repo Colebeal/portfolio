@@ -19,6 +19,7 @@ function blurHashToDataURL(hash, width, height) {
 
 export default function BlurImage({
   src,
+  alt,
   blurHash,
   blurWidth,
   blurHeight,
@@ -27,6 +28,7 @@ export default function BlurImage({
   ...props
 }) {
   const [loaded, setLoaded] = useState(false)
+  const [failed, setFailed] = useState(false)
 
   const blurDataUrl = useMemo(
     () =>
@@ -39,6 +41,18 @@ export default function BlurImage({
   const aspectRatio =
     blurWidth && blurHeight ? blurWidth / blurHeight : undefined
   const isHorizontal = aspectRatio > 1
+
+  if (failed) {
+    return (
+      <div
+        className={`${className} min-h-32 flex items-center justify-center bg-gray-100 p-4 text-center text-sm text-gray-600 dark:bg-gray-900 dark:text-gray-300`}
+        role="img"
+        aria-label={`${alt}. Image unavailable.`}
+      >
+        Image unavailable
+      </div>
+    )
+  }
 
   // Slider: stacked div with blurhash overlay that fades out
   if (fit) {
@@ -60,10 +74,19 @@ export default function BlurImage({
             : { width: "auto", height: "100%" }),
         }}
       >
-        <img src={src} onLoad={() => setLoaded(true)} style={style} />
+        <img
+          src={src}
+          alt={alt}
+          onLoad={() => setLoaded(true)}
+          onError={() => setFailed(true)}
+          style={style}
+          {...props}
+        />
         {blurDataUrl && (
           <img
             src={blurDataUrl}
+            alt=""
+            aria-hidden="true"
             style={{
               position: "absolute",
               top: 0,
@@ -101,9 +124,11 @@ export default function BlurImage({
   return (
     <img
       src={src}
+      alt={alt}
       className={className}
       style={style}
       onLoad={() => setLoaded(true)}
+      onError={() => setFailed(true)}
       {...props}
     />
   )
@@ -111,6 +136,7 @@ export default function BlurImage({
 
 BlurImage.propTypes = {
   src: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
   blurHash: PropTypes.string,
   blurWidth: PropTypes.number,
   blurHeight: PropTypes.number,

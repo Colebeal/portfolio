@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useCallback, useEffect, useState } from "react"
 import { motion as m, AnimatePresence, easeInOut } from "framer-motion"
 
 import Slider from "../components/Imagery/Slider/Slider"
@@ -13,27 +13,20 @@ export default function Imagery() {
   const [isGallery, setIsGallery] = useState(false)
   const [isTransitioning, setIsTransitioning] = useState(false)
 
-  const galleryHandler = () => {
-    if (isGallery) {
-      setIsGallery(false)
-    }
-    if (!isGallery) {
-      setIsGallery(true)
-    }
-  }
+  const galleryHandler = useCallback(() => {
+    setIsGallery((current) => !current)
+  }, [])
 
-  const menuHandler = () => {
-    if (menuStatus) {
-      setMenuStatus(false)
-    }
-    if (!menuStatus) {
-      setMenuStatus(true)
-    }
-  }
+  const menuHandler = useCallback(() => {
+    setMenuStatus((current) => !current)
+  }, [])
 
-  isGallery
-    ? (document.body.style.overflow = "auto")
-    : (document.body.style.overflow = "hidden")
+  useEffect(() => {
+    document.body.style.overflow = isGallery ? "auto" : "hidden"
+    return () => {
+      document.body.style.overflow = "auto"
+    }
+  }, [isGallery])
 
   return (
     <m.section
@@ -46,13 +39,10 @@ export default function Imagery() {
       <Menu
         menuStatus={menuStatus}
         setSlideIndex={setSlideIndex}
-        currentFolder={currentFolder}
         setCurrentFolder={setCurrentFolder}
         menuHandler={menuHandler}
       />
-      {!isGallery && (
-        <MiniMenu menuHandler={menuHandler} isGallery={isGallery} />
-      )}
+      {!isGallery && <MiniMenu />}
 
       {/* Gallery and Slider Logic */}
 
@@ -60,15 +50,9 @@ export default function Imagery() {
         {isGallery && (
           <Gallery
             key={"gallery"}
-            slideIndex={slideIndex}
             setSlideIndex={setSlideIndex}
             currentFolder={currentFolder}
-            setCurrentFolder={setCurrentFolder}
             setIsGallery={setIsGallery}
-            isTransitioning={isTransitioning}
-            setIsTransitioning={setIsTransitioning}
-            isGallery={isGallery}
-            menuStatus={menuStatus}
             menuHandler={menuHandler}
             galleryHandler={galleryHandler}
           />
@@ -80,8 +64,6 @@ export default function Imagery() {
             setSlideIndex={setSlideIndex}
             currentFolder={currentFolder}
             setCurrentFolder={setCurrentFolder}
-            isGallery={isGallery}
-            menuStatus={menuStatus}
             menuHandler={menuHandler}
             galleryHandler={galleryHandler}
             isTransitioning={isTransitioning}

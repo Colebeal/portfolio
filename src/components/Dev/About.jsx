@@ -11,7 +11,7 @@ export default function About() {
           As a self-taught developer, my mission is to work with like-minded
           individuals to create authentic and engaging experiences purposed to
           solve your unique problems. Whether custom or using a CMS of your
-          choice, let's explore options to create something that meets your
+          choice, let&apos;s explore options to create something that meets your
           needs.
         </p>
         <a
