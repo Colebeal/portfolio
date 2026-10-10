@@ -2442,6 +2442,121 @@ let surferMickRodgers = [
   },
 ]
 
+let sunroom = [
+  {
+    src: "https://images.colebeal.com/sunroom/L1009075.jpg",
+    blurHash: "LBG+5gD;00%~PEXn?G=|.9D*Dj%z",
+    width: 2048,
+    height: 1368,
+  },
+  {
+    src: "https://images.colebeal.com/sunroom/L1009168.jpg",
+    blurHash: "LIJ*n}IV0g%2O_t8-;W=?daKr;R*",
+    width: 2048,
+    height: 1638,
+  },
+  {
+    src: "https://images.colebeal.com/sunroom/L1009194.jpg",
+    blurHash: "LfONF3NGM|of~qa}kCofE1WBRjof",
+    width: 2048,
+    height: 1368,
+  },
+  {
+    src: "https://images.colebeal.com/sunroom/L1009198.jpg",
+    blurHash: "LZKKp3ESN#ac~pbcNLxZ-;oLxuRQ",
+    width: 2048,
+    height: 1368,
+  },
+  {
+    src: "https://images.colebeal.com/sunroom/L1009265.jpg",
+    blurHash: "LTD0GrWFNLof?wxaj[s:%ga#slR*",
+    width: 2048,
+    height: 1638,
+  },
+  {
+    src: "https://images.colebeal.com/sunroom/L1009294.jpg",
+    blurHash: "LUH_=B_3M{of~qxuxut74nM{xuxu",
+    width: 2048,
+    height: 1404,
+  },
+  {
+    src: "https://images.colebeal.com/sunroom/L1009344.jpg",
+    blurHash: "LED8tR0g5S^Ps;R*kBs.0g}@V[I;",
+    width: 1638,
+    height: 2048,
+  },
+  {
+    src: "https://images.colebeal.com/sunroom/L1009374.jpg",
+    blurHash: "LIJ*#ZPDMbS5yGtSWVxZ00Vs%MR-",
+    width: 2048,
+    height: 1368,
+  },
+  {
+    src: "https://images.colebeal.com/sunroom/L1009390.jpg",
+    blurHash: "LRMjp[?vKQwb.A-;%Me-EPM{IAR*",
+    width: 2048,
+    height: 1413,
+  },
+  {
+    src: "https://images.colebeal.com/sunroom/L1009460.jpg",
+    blurHash: "LVFYfQozS5%1_N%Ms.R+x^tRRjog",
+    width: 1768,
+    height: 2048,
+  },
+  {
+    src: "https://images.colebeal.com/sunroom/L1009515-Duplicate.jpg",
+    blurHash: "LqGbn]RkNxj]~qWWkCazx]kCsljZ",
+    width: 2048,
+    height: 1365,
+  },
+  {
+    src: "https://images.colebeal.com/sunroom/L1009532.jpg",
+    blurHash: "LiLD}lIpkrjZ_4M{t6f,yEkWMxoe",
+    width: 2048,
+    height: 1368,
+  },
+  {
+    src: "https://images.colebeal.com/sunroom/L1009650.jpg",
+    blurHash: "LcHBMHD*NatR~pIoRj%L?af5V[kC",
+    width: 2048,
+    height: 1368,
+  },
+  {
+    src: "https://images.colebeal.com/sunroom/L1009694.jpg",
+    blurHash: "L^N0^;jsNFof~qofRjoLNGofofj[",
+    width: 1638,
+    height: 2048,
+  },
+  {
+    src: "https://images.colebeal.com/sunroom/L1009777.jpg",
+    blurHash: "LuM@AX%2%M-;~qogbIozS%aeWBRj",
+    width: 2048,
+    height: 1152,
+  },
+  {
+    src: "https://images.colebeal.com/sunroom/L1009842.jpg",
+    blurHash: "LWK1%fRj%Mt7~q-;M{j[ofayRjof",
+    width: 2048,
+    height: 1368,
+  },
+]
+
+sunroom = [10, 0, 6, 13, 3, 7, 1, 4, 5, 9, 11, 12, 14, 15].map(
+  (imageIndex) => sunroom[imageIndex],
+)
+
+sunroom = sunroom.map((item, index) => ({
+  ...item,
+  id: index + 1,
+  alt: `Sunroom photograph ${index + 1}`,
+  className:
+    "block max-inline-fit h-auto w-full md:w-auto max-h-full bg-contain bg-center bg-no-repeat",
+  hidden: "hidden",
+  gallery:
+    "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover",
+  loading: index < 2 ? "eager" : "lazy",
+}))
+
 observations = observations.map((item, index) => ({ ...item, id: index + 1 }))
 people = people.map((item, index) => ({ ...item, id: index + 1 }))
 structure = structure.map((item, index) => ({ ...item, id: index + 1 }))
@@ -2468,6 +2583,12 @@ const portfolioCollections = [
     eyebrow: "The Amex • PGA • 2026",
     title: "Scottie Scheffler",
     images: scottieAmex,
+  },
+  {
+    slug: "sunroom",
+    eyebrow: "Music Video",
+    title: "Sunroom Band",
+    images: sunroom,
   },
   { slug: "lab-df3", eyebrow: "L.A.B. Golf", title: "DF3", images: labDF3 },
   { slug: "lab-oz1i", eyebrow: "L.A.B. Golf", title: "OZ1i", images: labOZ1i },
@@ -2511,6 +2632,7 @@ const portfolioCollections = [
 ]
 
 export {
+  sunroom,
   observations,
   people,
   structure,
@@ -2524,6 +2646,7 @@ export {
   portfolioCollections,
 }
 export default {
+  sunroom,
   observations,
   people,
   structure,

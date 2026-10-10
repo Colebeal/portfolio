@@ -10,8 +10,8 @@ import { getResponsiveImageProps } from "../src/utils/resolveImageSrc.js"
 const projectRoot = resolve(fileURLToPath(new URL("..", import.meta.url)))
 
 test("portfolio collection configuration is complete", () => {
-  assert.equal(portfolioCollections.length, 10)
-  assert.equal(new Set(portfolioCollections.map(({ slug }) => slug)).size, 10)
+  assert.equal(portfolioCollections.length, 11)
+  assert.equal(new Set(portfolioCollections.map(({ slug }) => slug)).size, 11)
 
   for (const collection of portfolioCollections) {
     assert.ok(collection.title)
@@ -60,4 +60,9 @@ test("remote portfolio images receive responsive Cloudinary sources", () => {
   assert.match(image.src, /q_auto:best,c_limit,w_1600/)
   assert.match(image.srcSet, /w_480/)
   assert.match(image.srcSet, /2400w/)
+})
+
+test("nested R2 portfolio images keep their direct source URL", () => {
+  const src = "https://images.colebeal.com/sunroom/L1009075.jpg"
+  assert.deepEqual(getResponsiveImageProps(src), { src })
 })

@@ -48,13 +48,13 @@ export default function DesktopNav({
   const collectionGroups = [
     {
       label: "Selected Works",
-      collections: portfolioCollections.slice(0, 7),
+      collections: portfolioCollections.slice(0, 8),
       offset: 0,
     },
     {
       label: "Archive",
-      collections: portfolioCollections.slice(7),
-      offset: 7,
+      collections: portfolioCollections.slice(8),
+      offset: 8,
     },
   ]
 

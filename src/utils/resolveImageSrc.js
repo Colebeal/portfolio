@@ -11,7 +11,8 @@ function getCloudinaryPath(src) {
     const url = new URL(src)
 
     if (url.hostname === "images.colebeal.com") {
-      return url.pathname.replace(/^\//, "")
+      const path = url.pathname.replace(/^\//, "")
+      return path.includes("/") ? null : path
     }
 
     if (url.hostname !== "res.cloudinary.com") return null
