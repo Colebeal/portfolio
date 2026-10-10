@@ -1,89 +1,73 @@
 import { useEffect } from "react"
 import PropTypes from "prop-types"
-import MenuInformation from "./MenuInformation"
-import { BsXLg } from "react-icons/bs"
+import { AnimatePresence, motion as m } from "framer-motion"
+
+import { NavigationPanel } from "../DesktopNav"
 
 export default function Menu({
   menuStatus,
+  currentFolder,
   setSlideIndex,
   setCurrentFolder,
+  activeView,
   setActiveView,
-  menuHandler,
+  closeMenu,
 }) {
-  const menuStyles = {
-    showMain:
-      "portfolio-accent-border z-50 opacity-100 fixed flex flex-col bottom-6 right-5 md:top-0 md:right-0 h-[90%] md:h-full w-[90%] md:w-[50%] bg-white dark:bg-[#000000] animate-fade-in rounded-lg shadow-lg border-[1px] overflow-auto lg:hidden",
-    hideMain: "hidden",
-    showBkg:
-      "z-50 opacity-60 fixed top-0 left-0 h-full w-full bg-black animate-fade-in-Bkg lg:hidden",
-    hideBkg: "hidden",
-  }
-
   useEffect(() => {
     if (!menuStatus) return undefined
+
     const closeOnEscape = (event) => {
-      if (event.key === "Escape") menuHandler()
+      if (event.key === "Escape") closeMenu()
     }
+
     window.addEventListener("keydown", closeOnEscape)
     return () => window.removeEventListener("keydown", closeOnEscape)
-  }, [menuStatus, menuHandler])
+  }, [menuStatus, closeMenu])
 
   return (
     <>
-      <button
-        type="button"
-        aria-label="Close menu"
-        onClick={menuHandler}
-        className={menuStatus ? menuStyles.showBkg : menuStyles.hideBkg}
-      />
-      <aside
-        className={menuStatus ? menuStyles.showMain : menuStyles.hideMain}
-        aria-hidden={!menuStatus}
-        aria-label="Photography menu"
-      >
-        <div className="m-10 mb-0 flex items-center gap-5 pb-5 text-left">
-          <h2 className="text-lg font-semibold">Menu</h2>
-          <button
-            type="button"
-            onClick={() => {
-              setActiveView("about")
-              menuHandler()
-              window.requestAnimationFrame(() => {
-                document
-                  .getElementById("about-index")
-                  ?.scrollIntoView({ behavior: "smooth" })
-              })
-            }}
-            className="border-0 bg-transparent p-0 text-lg underline-offset-4 hover:underline"
-          >
-            About
-          </button>
-        </div>
-        <MenuInformation
-          setCurrentFolder={setCurrentFolder}
-          setSlideIndex={setSlideIndex}
-          setActiveView={setActiveView}
-          menuHandler={menuHandler}
+      {menuStatus && (
+        <button
+          type="button"
+          onClick={closeMenu}
+          className="fixed inset-0 z-[45] rounded-none border-0 bg-transparent p-0 lg:hidden"
+          aria-label="Close menu"
         />
-        <div className="h-6">
-          <button
-            type="button"
-            onClick={menuHandler}
-            className="absolute right-10 top-9 animate-rise-up border-0 bg-transparent p-2 text-2xl md:hidden"
-            aria-label="Close menu"
+      )}
+      <AnimatePresence>
+        {menuStatus && (
+          <m.aside
+            initial={{ x: "-100%" }}
+            animate={{ x: 0 }}
+            exit={{ x: "-100%" }}
+            transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+            id="mobile-navigation"
+            className="portfolio-accent-border-strong fixed inset-y-0 left-0 z-50 flex w-72 flex-col border-r bg-white text-left shadow-2xl dark:bg-[#111111] lg:hidden"
+            aria-label="Photography menu"
           >
-            <BsXLg aria-hidden="true" />
-          </button>
-        </div>
-      </aside>
+            <NavigationPanel
+              currentFolder={currentFolder}
+              setCurrentFolder={setCurrentFolder}
+              setSlideIndex={setSlideIndex}
+              activeView={activeView}
+              setActiveView={setActiveView}
+              onNavigate={closeMenu}
+              onClose={closeMenu}
+              controlsAtBottom
+            />
+          </m.aside>
+        )}
+      </AnimatePresence>
     </>
   )
 }
 
 Menu.propTypes = {
   menuStatus: PropTypes.bool.isRequired,
+  currentFolder: PropTypes.number.isRequired,
   setSlideIndex: PropTypes.func.isRequired,
   setCurrentFolder: PropTypes.func.isRequired,
+  activeView: PropTypes.oneOf(["viewer", "gallery", "about"]).isRequired,
   setActiveView: PropTypes.func.isRequired,
-  menuHandler: PropTypes.func.isRequired,
+  closeMenu: PropTypes.func.isRequired,
 }

@@ -173,9 +173,9 @@ export default function Slider({
       exit={{ opacity: 0 }}
       transition={{ duration: 0.25, ease: "easeInOut" }}
       id="slider"
-      className="relative flex h-[100vh] w-full flex-col items-center justify-center overflow-hidden"
+      className="relative flex h-[100vh] w-full flex-col items-center justify-center overflow-hidden pb-16 lg:pb-0"
       onWheel={handleTrackpadSwipe}
-      aria-label={`${collection.title} photo viewer`}
+      aria-label={`${collection.title} photo loupe`}
       {...swipeHandlers}
     >
       <div className="absolute left-0 top-0 grid h-full w-full grid-cols-2">

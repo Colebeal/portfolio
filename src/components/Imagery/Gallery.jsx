@@ -103,7 +103,7 @@ export default function Gallery({
           id={`collection-${collection.slug}`}
           data-index-section="collection"
           data-collection-index={collectionIndex}
-          className="portfolio-accent-border-strong scroll-mt-20 border-b px-4 py-12 md:px-10 lg:scroll-mt-0 lg:px-12 lg:py-16 2xl:px-16"
+          className="portfolio-accent-border-strong border-b px-4 py-12 md:px-10 lg:px-12 lg:py-16 2xl:px-16"
           aria-labelledby={`heading-${collection.slug}`}
         >
           <header className="mb-8 flex items-end justify-between gap-8">

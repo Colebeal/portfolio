@@ -1,16 +1,26 @@
 import PropTypes from "prop-types"
-import ThemeToggle from "../ThemeToggle"
 
 export default function MiniMenu({
   menuHandler,
+  homeHandler,
   primaryHandler,
   primaryLabel,
+  menuStatus,
 }) {
   return (
     <nav
-      className="portfolio-accent-text fixed inset-x-0 top-0 z-40 flex items-center justify-end gap-3 bg-white px-5 py-5 text-xs uppercase tracking-[0.12em] dark:bg-[#111111] lg:hidden"
+      className={`portfolio-accent-text fixed inset-x-0 bottom-0 z-40 flex items-center justify-center gap-3 bg-white px-5 pb-[calc(1.25rem+env(safe-area-inset-bottom))] pt-5 text-xs uppercase tracking-[0.12em] transition-transform duration-300 ease-out dark:bg-[#111111] lg:hidden ${
+        menuStatus ? "translate-x-72" : "transform-none"
+      }`}
       aria-label="Photography navigation"
     >
+      <button
+        type="button"
+        onClick={homeHandler}
+        className="border-0 bg-transparent p-1"
+      >
+        Home
+      </button>
       <button
         type="button"
         onClick={primaryHandler}
@@ -22,16 +32,19 @@ export default function MiniMenu({
         type="button"
         onClick={menuHandler}
         className="border-0 bg-transparent p-1"
+        aria-controls="mobile-navigation"
+        aria-expanded={menuStatus}
       >
         Menu
       </button>
-      <ThemeToggle />
     </nav>
   )
 }
 
 MiniMenu.propTypes = {
   menuHandler: PropTypes.func.isRequired,
+  homeHandler: PropTypes.func.isRequired,
   primaryHandler: PropTypes.func.isRequired,
-  primaryLabel: PropTypes.oneOf(["Index", "Viewer"]).isRequired,
+  primaryLabel: PropTypes.oneOf(["Index", "Loupe"]).isRequired,
+  menuStatus: PropTypes.bool.isRequired,
 }

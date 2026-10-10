@@ -80,6 +80,10 @@ export default function Imagery() {
     setMenuStatus((current) => !current)
   }, [])
 
+  const closeMenu = useCallback(() => {
+    setMenuStatus(false)
+  }, [])
+
   const showIndex = useCallback(() => {
     setActiveView("gallery")
     window.requestAnimationFrame(() => {
@@ -92,6 +96,17 @@ export default function Imagery() {
       })
     })
   }, [currentFolder])
+
+  const showAbout = useCallback(() => {
+    setActiveView("about")
+    window.requestAnimationFrame(() => {
+      window.requestAnimationFrame(() => {
+        document
+          .getElementById("about-index")
+          ?.scrollIntoView({ behavior: "smooth" })
+      })
+    })
+  }, [])
 
   useLayoutEffect(() => {
     const route = getRouteState(location.pathname)
@@ -126,6 +141,7 @@ export default function Imagery() {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5, ease: easeInOut }}
       id="wrapper"
+      className="w-full overflow-x-hidden"
     >
       <DesktopNav
         currentFolder={currentFolder}
@@ -136,46 +152,58 @@ export default function Imagery() {
       />
       <Menu
         menuStatus={menuStatus}
+        currentFolder={currentFolder}
         setSlideIndex={setSlideIndex}
         setCurrentFolder={setCurrentFolder}
+        activeView={activeView}
         setActiveView={setActiveView}
-        menuHandler={menuHandler}
+        closeMenu={closeMenu}
       />
-      <MiniMenu
-        menuHandler={menuHandler}
-        primaryLabel={activeView === "gallery" ? "Viewer" : "Index"}
-        primaryHandler={
-          activeView === "gallery" ? () => setActiveView("viewer") : showIndex
-        }
-      />
+      <div className="min-h-screen w-full">
+        <MiniMenu
+          menuHandler={menuHandler}
+          homeHandler={showAbout}
+          menuStatus={menuStatus}
+          primaryLabel={activeView === "gallery" ? "Loupe" : "Index"}
+          primaryHandler={
+            activeView === "gallery"
+              ? () => setActiveView("viewer")
+              : showIndex
+          }
+        />
 
-      {/* Gallery and Slider Logic */}
+        {/* Gallery and Slider Logic */}
 
-      <main className="min-h-screen w-full lg:pl-72 2xl:pl-80">
-        <AnimatePresence mode="wait">
-          {(activeView === "gallery" || activeView === "about") && (
-            <Gallery
-              key={"gallery"}
-              setSlideIndex={setSlideIndex}
-              currentFolder={currentFolder}
-              setCurrentFolder={setCurrentFolder}
-              setActiveView={setActiveView}
-              activeView={activeView}
-            />
-          )}
-          {activeView === "viewer" && (
-            <Slider
-              key={"slider"}
-              slideIndex={slideIndex}
-              setSlideIndex={setSlideIndex}
-              currentFolder={currentFolder}
-              setCurrentFolder={setCurrentFolder}
-              isTransitioning={isTransitioning}
-              setIsTransitioning={setIsTransitioning}
-            />
-          )}
-        </AnimatePresence>
-      </main>
+        <main
+          className={`min-h-screen w-full transition-transform duration-300 ease-out lg:pl-72 lg:transform-none 2xl:pl-80 ${
+            menuStatus ? "translate-x-72" : "transform-none"
+          }`}
+        >
+          <AnimatePresence mode="wait">
+            {(activeView === "gallery" || activeView === "about") && (
+              <Gallery
+                key={"gallery"}
+                setSlideIndex={setSlideIndex}
+                currentFolder={currentFolder}
+                setCurrentFolder={setCurrentFolder}
+                setActiveView={setActiveView}
+                activeView={activeView}
+              />
+            )}
+            {activeView === "viewer" && (
+              <Slider
+                key={"slider"}
+                slideIndex={slideIndex}
+                setSlideIndex={setSlideIndex}
+                currentFolder={currentFolder}
+                setCurrentFolder={setCurrentFolder}
+                isTransitioning={isTransitioning}
+                setIsTransitioning={setIsTransitioning}
+              />
+            )}
+          </AnimatePresence>
+        </main>
+      </div>
     </m.section>
   )
 }

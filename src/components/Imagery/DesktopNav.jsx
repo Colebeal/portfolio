@@ -1,28 +1,34 @@
 import PropTypes from "prop-types"
+import { BsXLg } from "react-icons/bs"
 
 import { portfolioCollections } from "../../assets/sliderData"
 import ThemeToggle from "../ThemeToggle"
 
-export default function DesktopNav({
+const collectionGroups = [
+  {
+    label: "Selected Works",
+    collections: portfolioCollections
+      .map((collection, index) => ({ collection, index }))
+      .filter(({ collection }) => collection.eyebrow !== "Moments"),
+  },
+  {
+    label: "Moments",
+    collections: portfolioCollections
+      .map((collection, index) => ({ collection, index }))
+      .filter(({ collection }) => collection.eyebrow === "Moments"),
+  },
+]
+
+export function NavigationPanel({
   currentFolder,
   setCurrentFolder,
   setSlideIndex,
   activeView,
   setActiveView,
+  onNavigate,
+  onClose,
+  controlsAtBottom = false,
 }) {
-  const selectCollection = (index) => {
-    setCurrentFolder(index)
-    setSlideIndex(0)
-    if (activeView === "gallery" || activeView === "about") {
-      setActiveView("gallery")
-      document
-        .getElementById(`collection-${portfolioCollections[index].slug}`)
-        ?.scrollIntoView({ behavior: "smooth" })
-      return
-    }
-    setActiveView("viewer")
-  }
-
   const scrollAfterViewChange = (targetId) => {
     window.requestAnimationFrame(() => {
       window.requestAnimationFrame(() => {
@@ -33,33 +39,84 @@ export default function DesktopNav({
     })
   }
 
+  const selectCollection = (index) => {
+    setCurrentFolder(index)
+    setSlideIndex(0)
+    onNavigate?.()
+
+    if (activeView === "gallery" || activeView === "about") {
+      setActiveView("gallery")
+      scrollAfterViewChange(
+        `collection-${portfolioCollections[index].slug}`,
+      )
+      return
+    }
+
+    setActiveView("viewer")
+  }
+
   const showAbout = () => {
     setActiveView("about")
+    onNavigate?.()
     scrollAfterViewChange("about-index")
   }
 
   const showIndex = () => {
     setActiveView("gallery")
+    onNavigate?.()
     scrollAfterViewChange(
       `collection-${portfolioCollections[currentFolder].slug}`,
     )
   }
 
-  const collectionGroups = [
-    {
-      label: "Selected Works",
-      collections: portfolioCollections.slice(0, 8),
-      offset: 0,
-    },
-    {
-      label: "Archive",
-      collections: portfolioCollections.slice(8),
-      offset: 8,
-    },
-  ]
+  const showViewer = () => {
+    setActiveView("viewer")
+    onNavigate?.()
+  }
+
+  const viewControls = (
+    <div className="portfolio-accent-border-strong grid grid-cols-3 border">
+      <button
+        type="button"
+        onClick={showAbout}
+        className={`rounded-none border-0 px-3 py-2 text-xs uppercase tracking-[0.16em] ${
+          activeView === "about"
+            ? "portfolio-accent-fill"
+            : "bg-transparent text-black dark:text-white"
+        }`}
+        aria-pressed={activeView === "about"}
+      >
+        About
+      </button>
+      <button
+        type="button"
+        onClick={showIndex}
+        className={`portfolio-accent-border-strong rounded-none border-0 border-l px-3 py-2 text-xs uppercase tracking-[0.16em] ${
+          activeView === "gallery"
+            ? "portfolio-accent-fill"
+            : "bg-transparent text-black dark:text-white"
+        }`}
+        aria-pressed={activeView === "gallery"}
+      >
+        Index
+      </button>
+      <button
+        type="button"
+        onClick={showViewer}
+        className={`portfolio-accent-border-strong rounded-none border-0 border-l px-3 py-2 text-xs uppercase tracking-[0.16em] ${
+          activeView === "viewer"
+            ? "portfolio-accent-fill"
+            : "bg-transparent text-black dark:text-white"
+        }`}
+        aria-pressed={activeView === "viewer"}
+      >
+        Loupe
+      </button>
+    </div>
+  )
 
   return (
-    <aside className="portfolio-accent-border-strong fixed inset-y-0 left-0 z-40 hidden w-72 flex-col border-r bg-white text-left dark:bg-[#111111] lg:flex 2xl:w-80">
+    <>
       <header className="portfolio-accent-border-strong border-b px-7 py-7">
         <div className="flex items-start justify-between gap-4">
           <div>
@@ -70,47 +127,22 @@ export default function DesktopNav({
               Photography
             </p>
           </div>
-          <ThemeToggle />
+          <div className="flex items-center gap-2">
+            <ThemeToggle />
+            {onClose && (
+              <button
+                type="button"
+                onClick={onClose}
+                className="portfolio-accent-text flex h-9 w-9 items-center justify-center rounded-none border-0 bg-transparent p-0 text-lg"
+                aria-label="Close menu"
+              >
+                <BsXLg aria-hidden="true" />
+              </button>
+            )}
+          </div>
         </div>
 
-        <div className="portfolio-accent-border-strong mt-7 grid grid-cols-3 border">
-          <button
-            type="button"
-            onClick={showAbout}
-            className={`rounded-none border-0 px-3 py-2 text-xs uppercase tracking-[0.16em] ${
-              activeView === "about"
-                ? "portfolio-accent-fill"
-                : "bg-transparent text-black dark:text-white"
-            }`}
-            aria-pressed={activeView === "about"}
-          >
-            About
-          </button>
-          <button
-            type="button"
-            onClick={showIndex}
-            className={`portfolio-accent-border-strong rounded-none border-0 border-l px-3 py-2 text-xs uppercase tracking-[0.16em] ${
-              activeView === "gallery"
-                ? "portfolio-accent-fill"
-                : "bg-transparent text-black dark:text-white"
-            }`}
-            aria-pressed={activeView === "gallery"}
-          >
-            Index
-          </button>
-          <button
-            type="button"
-            onClick={() => setActiveView("viewer")}
-            className={`portfolio-accent-border-strong rounded-none border-0 border-l px-3 py-2 text-xs uppercase tracking-[0.16em] ${
-              activeView === "viewer"
-                ? "portfolio-accent-fill"
-                : "bg-transparent text-black dark:text-white"
-            }`}
-            aria-pressed={activeView === "viewer"}
-          >
-            Viewer
-          </button>
-        </div>
+        {!controlsAtBottom && <div className="mt-7">{viewControls}</div>}
       </header>
 
       <nav
@@ -126,9 +158,8 @@ export default function DesktopNav({
               {group.label}
             </h2>
             <ol>
-              {group.collections.map((collection, index) => {
-                const collectionIndex = group.offset + index
-                const isActive = collectionIndex === currentFolder
+              {group.collections.map(({ collection, index }) => {
+                const isActive = index === currentFolder
 
                 return (
                   <li
@@ -137,12 +168,12 @@ export default function DesktopNav({
                   >
                     <button
                       type="button"
-                      onClick={() => selectCollection(collectionIndex)}
+                      onClick={() => selectCollection(index)}
                       className="group flex w-full items-start gap-3 rounded-none border-0 bg-transparent px-0 py-3 text-left"
                       aria-current={isActive ? "page" : undefined}
                     >
                       <span className="mt-1 w-5 text-[10px] tabular-nums text-gray-400">
-                        {String(collectionIndex + 1).padStart(2, "0")}
+                        {String(index + 1).padStart(2, "0")}
                       </span>
                       <span className="min-w-0 flex-1">
                         <span
@@ -171,6 +202,12 @@ export default function DesktopNav({
         ))}
       </nav>
 
+      {controlsAtBottom && (
+        <div className="portfolio-accent-border-strong border-t px-7 py-5">
+          {viewControls}
+        </div>
+      )}
+
       <footer className="portfolio-accent-border-strong border-t px-7 py-5 text-[11px] leading-relaxed">
         <div className="flex gap-4">
           <a
@@ -189,14 +226,31 @@ export default function DesktopNav({
           </a>
         </div>
       </footer>
+    </>
+  )
+}
+
+export default function DesktopNav(props) {
+  return (
+    <aside className="portfolio-accent-border-strong fixed inset-y-0 left-0 z-40 hidden w-72 flex-col border-r bg-white text-left dark:bg-[#111111] lg:flex 2xl:w-80">
+      <NavigationPanel {...props} />
     </aside>
   )
 }
 
-DesktopNav.propTypes = {
+const navigationPropTypes = {
   currentFolder: PropTypes.number.isRequired,
   setCurrentFolder: PropTypes.func.isRequired,
   setSlideIndex: PropTypes.func.isRequired,
   activeView: PropTypes.oneOf(["viewer", "gallery", "about"]).isRequired,
   setActiveView: PropTypes.func.isRequired,
 }
+
+NavigationPanel.propTypes = {
+  ...navigationPropTypes,
+  onNavigate: PropTypes.func,
+  onClose: PropTypes.func,
+  controlsAtBottom: PropTypes.bool,
+}
+
+DesktopNav.propTypes = navigationPropTypes

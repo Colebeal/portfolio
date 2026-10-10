@@ -18,7 +18,7 @@ export default function ThemeToggle() {
     <button
       type="button"
       onClick={() => setTheme(nextTheme)}
-      className="z-50 border-0 bg-transparent p-1 text-2xl text-teal-900 dark:text-white"
+      className="portfolio-accent-text z-50 border-0 bg-transparent p-1 text-xl"
       aria-label={`Switch to ${nextTheme} theme`}
       title={`Switch to ${nextTheme} theme`}
     >

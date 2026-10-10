@@ -15,7 +15,7 @@ export default function AboutPage() {
     <section
       id="about-index"
       data-index-section="about"
-      className="portfolio-accent-border-strong min-h-screen scroll-mt-20 border-b px-5 pb-20 pt-20 text-left md:px-10 lg:scroll-mt-0 lg:px-14 lg:pb-16 lg:pt-12 2xl:px-20"
+      className="portfolio-accent-border-strong min-h-screen border-b px-5 pb-20 pt-20 text-left md:px-10 lg:px-14 lg:pb-16 lg:pt-12 2xl:px-20"
       aria-labelledby="about-title"
     >
       <header className="pb-3 lg:mb-14 lg:pb-6">
