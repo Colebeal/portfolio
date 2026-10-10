@@ -80,7 +80,7 @@ export default function BlurImage({
         height={blurHeight}
         onLoad={handleLoad}
         onError={() => setFailed(true)}
-        className="block h-full w-full object-contain"
+        className="block h-auto max-h-full w-auto max-w-full object-contain"
         style={{
           aspectRatio,
           backgroundImage:

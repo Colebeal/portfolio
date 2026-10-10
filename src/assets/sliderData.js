@@ -926,20 +926,6 @@ let structure = [
   },
 
   {
-    src: "images/structure/Portfolio-119.jpg",
-    blurHash: "LqG+BvR+S5j[~qbHoLaykrkCsSj[",
-    width: 1600,
-    height: 1559,
-    alt: "",
-    className:
-      "block max-inline-fit h-auto w-full md:w-auto max-h-full border-2 border-black dark:border-white bg-contain bg-center bg-no-repeat",
-    hidden: "hidden",
-    gallery:
-      "w-[stretch] cursor-pointer self-center lg:self-start w-auto max-h-[400px] md:max-h-[500px] justify-self-center object-cover border-[1px] dark:border-white border-black",
-    loading: "lazy",
-  },
-
-  {
     src: "images/structure/Portfolio-102.jpg",
     blurHash: "L4BMocoH9aRP00IoxuIn00xb~W%M",
     width: 1280,

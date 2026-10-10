@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef } from "react"
+import { useCallback, useEffect, useRef, useState } from "react"
 import PropTypes from "prop-types"
 import { AnimatePresence, motion as m } from "framer-motion"
 import { useSwipeable } from "react-swipeable"
@@ -19,14 +19,17 @@ export default function Slider({
   const prevCursorRef = useRef(null)
   const nextCursorRef = useRef(null)
   const wheelDistanceRef = useRef(0)
+  const wheelAxisRef = useRef(null)
   const wheelCooldownRef = useRef(false)
   const wheelResetTimerRef = useRef(null)
   const wheelCooldownTimerRef = useRef(null)
+  const [collectionDirection, setCollectionDirection] = useState(0)
   const collection = portfolioCollections[currentFolder]
   const currentImage = collection.images[slideIndex]
 
   const prevSlide = useCallback(() => {
     if (isTransitioning) return
+    setCollectionDirection(0)
     if (slideIndex > 0) {
       setSlideIndex(slideIndex - 1)
       return
@@ -46,6 +49,7 @@ export default function Slider({
 
   const nextSlide = useCallback(() => {
     if (isTransitioning) return
+    setCollectionDirection(0)
     if (slideIndex < collection.images.length - 1) {
       setSlideIndex(slideIndex + 1)
       return
@@ -81,9 +85,22 @@ export default function Slider({
       return portfolioCollections[folderIndex].images[imageIndex]
     }
 
-    ;[1, 2, -1].forEach((offset) => {
+    const previousFolder =
+      (currentFolder - 1 + portfolioCollections.length) %
+      portfolioCollections.length
+    const nextFolder = (currentFolder + 1) % portfolioCollections.length
+    const imagesToPreload = [
+      ...[1, 2, -1].map(getAdjacentImage),
+      portfolioCollections[previousFolder].images[0],
+      portfolioCollections[nextFolder].images[0],
+    ].filter(
+      (image, index, images) =>
+        images.findIndex(({ src }) => src === image.src) === index,
+    )
+
+    imagesToPreload.forEach((imageToPreload) => {
       const preload = new Image()
-      const image = getResponsiveImageProps(getAdjacentImage(offset).src)
+      const image = getResponsiveImageProps(imageToPreload.src)
       preload.fetchPriority = "low"
       preload.decoding = "async"
       if (image.srcSet) {
@@ -103,9 +120,27 @@ export default function Slider({
     [],
   )
 
+  const changeCollection = useCallback(
+    (direction) => {
+      if (isTransitioning) return
+
+      const nextFolder =
+        (currentFolder + direction + portfolioCollections.length) %
+        portfolioCollections.length
+
+      setCollectionDirection(direction)
+      setCurrentFolder(nextFolder)
+      setSlideIndex(0)
+    },
+    [currentFolder, isTransitioning, setCurrentFolder, setSlideIndex],
+  )
+
   const swipeHandlers = useSwipeable({
     onSwipedLeft: nextSlide,
     onSwipedRight: prevSlide,
+    onSwipedUp: () => changeCollection(1),
+    onSwipedDown: () => changeCollection(-1),
+    delta: { left: 12, right: 12, up: 70, down: 70 },
     preventScrollOnSwipe: true,
     trackMouse: true,
   })
@@ -137,29 +172,56 @@ export default function Slider({
         event.preventDefault()
         nextSlide()
       }
+      if (event.key === "ArrowUp") {
+        event.preventDefault()
+        changeCollection(-1)
+      }
+      if (event.key === "ArrowDown") {
+        event.preventDefault()
+        changeCollection(1)
+      }
     }
 
     window.addEventListener("keydown", handleKeyDown)
     return () => window.removeEventListener("keydown", handleKeyDown)
-  }, [nextSlide, prevSlide])
+  }, [changeCollection, nextSlide, prevSlide])
 
   const handleTrackpadSwipe = (event) => {
-    if (Math.abs(event.deltaX) <= Math.abs(event.deltaY)) return
+    const axis =
+      Math.abs(event.deltaX) > Math.abs(event.deltaY)
+        ? "horizontal"
+        : "vertical"
+    const distance = axis === "horizontal" ? event.deltaX : event.deltaY
+
     event.preventDefault()
     if (wheelCooldownRef.current || isTransitioning) return
 
-    wheelDistanceRef.current += event.deltaX
+    if (wheelAxisRef.current !== axis) {
+      wheelAxisRef.current = axis
+      wheelDistanceRef.current = 0
+    }
+
+    wheelDistanceRef.current += distance
     window.clearTimeout(wheelResetTimerRef.current)
     wheelResetTimerRef.current = window.setTimeout(() => {
       wheelDistanceRef.current = 0
+      wheelAxisRef.current = null
     }, 140)
 
-    if (Math.abs(wheelDistanceRef.current) < 55) return
+    const threshold = axis === "horizontal" ? 55 : 70
+    if (Math.abs(wheelDistanceRef.current) < threshold) return
 
-    if (wheelDistanceRef.current > 0) nextSlide()
-    else prevSlide()
+    if (axis === "horizontal") {
+      if (wheelDistanceRef.current > 0) nextSlide()
+      else prevSlide()
+    } else if (wheelDistanceRef.current > 0) {
+      changeCollection(1)
+    } else {
+      changeCollection(-1)
+    }
 
     wheelDistanceRef.current = 0
+    wheelAxisRef.current = null
     wheelCooldownRef.current = true
     wheelCooldownTimerRef.current = window.setTimeout(() => {
       wheelCooldownRef.current = false
@@ -216,13 +278,27 @@ export default function Slider({
       </div>
 
       <div className="flex flex-col items-center justify-center py-4">
-        <AnimatePresence mode="wait">
+        <AnimatePresence custom={collectionDirection} mode="wait">
           <m.h2
             key={collection.slug}
-            initial={{ opacity: 0, translateX: -25 }}
-            animate={{ opacity: 1, translateX: 0 }}
-            exit={{ opacity: 0, translateX: 25 }}
-            transition={{ duration: 0.25 }}
+            custom={collectionDirection}
+            variants={{
+              enter: (direction) => ({
+                opacity: 0,
+                x: direction === 0 ? -25 : 0,
+                y: direction * 32,
+              }),
+              center: { opacity: 1, x: 0, y: 0 },
+              exit: (direction) => ({
+                opacity: 0,
+                x: direction === 0 ? 25 : 0,
+                y: direction * -32,
+              }),
+            }}
+            initial="enter"
+            animate="center"
+            exit="exit"
+            transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
             className="portfolio-accent-text w-full pb-4 text-center text-4xl 2xl:text-5xl"
           >
             <span className="block text-xs font-light lg:text-base">
@@ -232,13 +308,25 @@ export default function Slider({
           </m.h2>
         </AnimatePresence>
 
-        <AnimatePresence mode="wait">
+        <AnimatePresence custom={collectionDirection} mode="wait">
           <m.div
             key={`${collection.slug}-${slideIndex}`}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.25 }}
+            custom={collectionDirection}
+            variants={{
+              enter: (direction) => ({
+                opacity: 0,
+                y: direction * 72,
+              }),
+              center: { opacity: 1, y: 0 },
+              exit: (direction) => ({
+                opacity: 0,
+                y: direction * -72,
+              }),
+            }}
+            initial="enter"
+            animate="center"
+            exit="exit"
+            transition={{ duration: 0.32, ease: [0.22, 1, 0.36, 1] }}
             onAnimationStart={() => setIsTransitioning(true)}
             onAnimationComplete={() => setIsTransitioning(false)}
             className="z-10 flex h-[424px] w-[90vw] items-center justify-center md:h-[50vh] lg:h-[80vh] lg:w-[calc(100vw-22rem)] 2xl:w-[calc(100vw-24rem)]"
