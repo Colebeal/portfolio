@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react"
+import { useCallback, useEffect, useRef } from "react"
 import PropTypes from "prop-types"
 import { AnimatePresence, motion as m } from "framer-motion"
 import { useSwipeable } from "react-swipeable"
@@ -25,7 +25,7 @@ export default function Slider({
   const collection = portfolioCollections[currentFolder]
   const currentImage = collection.images[slideIndex]
 
-  const prevSlide = () => {
+  const prevSlide = useCallback(() => {
     if (isTransitioning) return
     if (slideIndex > 0) {
       setSlideIndex(slideIndex - 1)
@@ -36,9 +36,15 @@ export default function Slider({
       portfolioCollections.length
     setCurrentFolder(previousFolder)
     setSlideIndex(portfolioCollections[previousFolder].images.length - 1)
-  }
+  }, [
+    currentFolder,
+    isTransitioning,
+    setCurrentFolder,
+    setSlideIndex,
+    slideIndex,
+  ])
 
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     if (isTransitioning) return
     if (slideIndex < collection.images.length - 1) {
       setSlideIndex(slideIndex + 1)
@@ -46,7 +52,14 @@ export default function Slider({
     }
     setCurrentFolder((currentFolder + 1) % portfolioCollections.length)
     setSlideIndex(0)
-  }
+  }, [
+    collection.images.length,
+    currentFolder,
+    isTransitioning,
+    setCurrentFolder,
+    setSlideIndex,
+    slideIndex,
+  ])
 
   useEffect(() => {
     const getAdjacentImage = (offset) => {
@@ -107,10 +120,28 @@ export default function Slider({
     if (ref.current) ref.current.style.opacity = opacity
   }
 
-  const handleKeyDown = (event) => {
-    if (event.key === "ArrowLeft") prevSlide()
-    if (event.key === "ArrowRight") nextSlide()
-  }
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      const target = event.target
+      const isEditing =
+        target instanceof HTMLElement &&
+        (target.isContentEditable ||
+          ["INPUT", "TEXTAREA", "SELECT"].includes(target.tagName))
+      if (isEditing) return
+
+      if (event.key === "ArrowLeft") {
+        event.preventDefault()
+        prevSlide()
+      }
+      if (event.key === "ArrowRight") {
+        event.preventDefault()
+        nextSlide()
+      }
+    }
+
+    window.addEventListener("keydown", handleKeyDown)
+    return () => window.removeEventListener("keydown", handleKeyDown)
+  }, [nextSlide, prevSlide])
 
   const handleTrackpadSwipe = (event) => {
     if (Math.abs(event.deltaX) <= Math.abs(event.deltaY)) return
@@ -143,7 +174,6 @@ export default function Slider({
       transition={{ duration: 0.25, ease: "easeInOut" }}
       id="slider"
       className="relative flex h-[100vh] w-full flex-col items-center justify-center overflow-hidden"
-      onKeyDown={handleKeyDown}
       onWheel={handleTrackpadSwipe}
       aria-label={`${collection.title} photo viewer`}
       {...swipeHandlers}
@@ -193,7 +223,7 @@ export default function Slider({
             animate={{ opacity: 1, translateX: 0 }}
             exit={{ opacity: 0, translateX: 25 }}
             transition={{ duration: 0.25 }}
-            className="w-full pb-4 text-center text-4xl text-teal-900 dark:text-white 2xl:text-5xl"
+            className="portfolio-accent-text w-full pb-4 text-center text-4xl 2xl:text-5xl"
           >
             <span className="block text-xs font-light lg:text-base">
               {collection.eyebrow}
@@ -211,7 +241,7 @@ export default function Slider({
             transition={{ duration: 0.25 }}
             onAnimationStart={() => setIsTransitioning(true)}
             onAnimationComplete={() => setIsTransitioning(false)}
-            className="z-10 flex h-[424px] w-[90vw] items-center justify-center md:h-[50vh] lg:h-[60vh] lg:w-[calc(100vw-22rem)] 2xl:w-[calc(100vw-24rem)] 4xl:h-[70vh]"
+            className="z-10 flex h-[424px] w-[90vw] items-center justify-center md:h-[50vh] lg:h-[80vh] lg:w-[calc(100vw-22rem)] 2xl:w-[calc(100vw-24rem)]"
           >
             <BlurImage
               className={currentImage.className}

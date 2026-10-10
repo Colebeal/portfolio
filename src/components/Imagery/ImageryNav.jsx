@@ -64,7 +64,7 @@ export default function ImageryNav({
               whileHover={{ y: -7, scale: 1.12, opacity: 1 }}
               transition={{ type: "spring", stiffness: 360, damping: 24 }}
               data-active={isActive}
-              className="flex h-8 w-7 shrink-0 items-center justify-center rounded-none border-0 bg-transparent p-0 text-xs tabular-nums text-black dark:text-white md:w-8"
+              className="portfolio-accent-text flex h-8 w-7 shrink-0 items-center justify-center rounded-none border-0 bg-transparent p-0 text-xs tabular-nums md:w-8"
               aria-label={`View photograph ${index + 1}`}
               aria-current={isActive ? "true" : undefined}
             >

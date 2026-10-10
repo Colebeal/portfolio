@@ -59,8 +59,8 @@ export default function DesktopNav({
   ]
 
   return (
-    <aside className="fixed inset-y-0 left-0 z-40 hidden w-72 flex-col border-r border-black bg-white text-left dark:border-white/30 dark:bg-[#111111] lg:flex 2xl:w-80">
-      <header className="border-b border-black px-7 py-7 dark:border-white/30">
+    <aside className="portfolio-accent-border-strong fixed inset-y-0 left-0 z-40 hidden w-72 flex-col border-r bg-white text-left dark:bg-[#111111] lg:flex 2xl:w-80">
+      <header className="portfolio-accent-border-strong border-b px-7 py-7">
         <div className="flex items-start justify-between gap-4">
           <div>
             <a href="/" className="text-2xl tracking-tight">
@@ -73,13 +73,13 @@ export default function DesktopNav({
           <ThemeToggle />
         </div>
 
-        <div className="mt-7 grid grid-cols-3 border border-black dark:border-white/40">
+        <div className="portfolio-accent-border-strong mt-7 grid grid-cols-3 border">
           <button
             type="button"
             onClick={showAbout}
             className={`rounded-none border-0 px-3 py-2 text-xs uppercase tracking-[0.16em] ${
               activeView === "about"
-                ? "bg-black text-white dark:bg-white dark:text-black"
+                ? "portfolio-accent-fill"
                 : "bg-transparent text-black dark:text-white"
             }`}
             aria-pressed={activeView === "about"}
@@ -89,9 +89,9 @@ export default function DesktopNav({
           <button
             type="button"
             onClick={showIndex}
-            className={`rounded-none border-0 border-l border-black px-3 py-2 text-xs uppercase tracking-[0.16em] dark:border-white/40 ${
+            className={`portfolio-accent-border-strong rounded-none border-0 border-l px-3 py-2 text-xs uppercase tracking-[0.16em] ${
               activeView === "gallery"
-                ? "bg-black text-white dark:bg-white dark:text-black"
+                ? "portfolio-accent-fill"
                 : "bg-transparent text-black dark:text-white"
             }`}
             aria-pressed={activeView === "gallery"}
@@ -101,9 +101,9 @@ export default function DesktopNav({
           <button
             type="button"
             onClick={() => setActiveView("viewer")}
-            className={`rounded-none border-0 border-l border-black px-3 py-2 text-xs uppercase tracking-[0.16em] dark:border-white/40 ${
+            className={`portfolio-accent-border-strong rounded-none border-0 border-l px-3 py-2 text-xs uppercase tracking-[0.16em] ${
               activeView === "viewer"
-                ? "bg-black text-white dark:bg-white dark:text-black"
+                ? "portfolio-accent-fill"
                 : "bg-transparent text-black dark:text-white"
             }`}
             aria-pressed={activeView === "viewer"}
@@ -133,7 +133,7 @@ export default function DesktopNav({
                 return (
                   <li
                     key={collection.slug}
-                    className="border-black/15 dark:border-white/15 border-t"
+                    className="portfolio-accent-border-subtle border-t"
                   >
                     <button
                       type="button"
@@ -161,7 +161,7 @@ export default function DesktopNav({
                       </span>
                     </button>
                     {isActive && (
-                      <span className="block h-px w-full bg-black dark:bg-white" />
+                      <span className="portfolio-accent-background block h-px w-full" />
                     )}
                   </li>
                 )
@@ -171,7 +171,7 @@ export default function DesktopNav({
         ))}
       </nav>
 
-      <footer className="border-t border-black px-7 py-5 text-[11px] leading-relaxed dark:border-white/30">
+      <footer className="portfolio-accent-border-strong border-t px-7 py-5 text-[11px] leading-relaxed">
         <div className="flex gap-4">
           <a
             href="mailto:cole@colebeal.com"

@@ -80,6 +80,19 @@ export default function Imagery() {
     setMenuStatus((current) => !current)
   }, [])
 
+  const showIndex = useCallback(() => {
+    setActiveView("gallery")
+    window.requestAnimationFrame(() => {
+      window.requestAnimationFrame(() => {
+        document
+          .getElementById(
+            `collection-${portfolioCollections[currentFolder].slug}`,
+          )
+          ?.scrollIntoView({ behavior: "smooth" })
+      })
+    })
+  }, [currentFolder])
+
   useLayoutEffect(() => {
     const route = getRouteState(location.pathname)
     setActiveView(route.activeView)
@@ -128,12 +141,13 @@ export default function Imagery() {
         setActiveView={setActiveView}
         menuHandler={menuHandler}
       />
-      {activeView === "viewer" && (
-        <MiniMenu
-          menuHandler={menuHandler}
-          indexHandler={() => setActiveView("gallery")}
-        />
-      )}
+      <MiniMenu
+        menuHandler={menuHandler}
+        primaryLabel={activeView === "gallery" ? "Viewer" : "Index"}
+        primaryHandler={
+          activeView === "gallery" ? () => setActiveView("viewer") : showIndex
+        }
+      />
 
       {/* Gallery and Slider Logic */}
 
@@ -147,7 +161,6 @@ export default function Imagery() {
               setCurrentFolder={setCurrentFolder}
               setActiveView={setActiveView}
               activeView={activeView}
-              menuHandler={menuHandler}
             />
           )}
           {activeView === "viewer" && (

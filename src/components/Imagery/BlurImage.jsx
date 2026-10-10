@@ -66,7 +66,9 @@ export default function BlurImage({
     )
   }
 
-  // Slider: stacked div with blurhash overlay that fades out
+  // Slider: let the image itself determine its fitted dimensions. Keeping the
+  // placeholder on the image prevents it from filling unused space around
+  // letterboxed photographs.
   if (fit) {
     return (
       <img
@@ -78,13 +80,14 @@ export default function BlurImage({
         height={blurHeight}
         onLoad={handleLoad}
         onError={() => setFailed(true)}
-        className="block h-auto max-h-full w-auto max-w-full object-contain"
+        className="block h-full w-full object-contain"
         style={{
           aspectRatio,
           backgroundImage:
             !loaded && blurDataUrl ? `url("${blurDataUrl}")` : undefined,
           backgroundSize: "cover",
           backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
         {...props}
       />

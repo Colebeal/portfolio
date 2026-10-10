@@ -15,24 +15,36 @@ export default function AboutPage() {
     <section
       id="about-index"
       data-index-section="about"
-      className="min-h-screen scroll-mt-0 border-b border-black px-5 pb-20 pt-16 text-left dark:border-white/30 md:px-10 lg:px-14 lg:pb-16 lg:pt-12 2xl:px-20"
+      className="portfolio-accent-border-strong min-h-screen scroll-mt-20 border-b px-5 pb-20 pt-20 text-left md:px-10 lg:scroll-mt-0 lg:px-14 lg:pb-16 lg:pt-12 2xl:px-20"
       aria-labelledby="about-title"
     >
-      <header className="mb-10 pb-6 lg:mb-14">
+      <header className="pb-3 lg:mb-14 lg:pb-6">
         <p className="mb-3 text-[10px] uppercase tracking-[0.24em] text-gray-500 dark:text-gray-400">
           About the artist
         </p>
         <h1
           id="about-title"
-          className="max-w-5xl text-5xl md:text-7xl xl:text-8xl"
+          className="portfolio-accent-text max-w-5xl text-5xl md:text-[9rem] min-[1440px]:text-[15rem]"
         >
           Cole Beal
         </h1>
       </header>
 
-      <div className="grid gap-10 lg:grid-cols-[minmax(0,1.35fr)_minmax(280px,0.65fr)] lg:gap-16 xl:gap-24">
-        <div>
-          <div className="max-w-4xl space-y-6 text-xl leading-relaxed md:text-2xl xl:text-3xl">
+      <div className="mt-4 grid gap-10 lg:mt-0 lg:grid-cols-[minmax(0,40rem)_minmax(280px,1fr)] lg:gap-16 xl:gap-24">
+        <figure className="lg:col-start-2 lg:row-start-1">
+          <img
+            src="/images/about/cole-beal-768.webp"
+            srcSet="/images/about/cole-beal-480.webp 480w, /images/about/cole-beal-768.webp 768w, /images/about/cole-beal-1200.webp 1200w"
+            sizes="(min-width: 1536px) 28vw, (min-width: 1024px) 24vw, 100vw"
+            alt="Portrait of photographer Cole Beal"
+            width="1200"
+            height="1200"
+            className="aspect-square w-full object-cover object-center"
+          />
+        </figure>
+
+        <div className="lg:col-start-1 lg:row-start-1">
+          <div className="max-w-4xl space-y-6 text-lg leading-relaxed md:text-2xl xl:text-3xl">
             <p>
               Over more than ten years as a working photographer, I have sought
               out clients who want to create high-quality, stylized imagery.
@@ -45,7 +57,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="mt-14 grid gap-10 border-t border-black/30 pt-8 dark:border-white/20 md:grid-cols-2">
+          <div className="portfolio-accent-border-muted mt-8 grid gap-10 border-t pt-8 md:grid-cols-2 lg:mt-14">
             <section>
               <h2 className="mb-5 text-xs font-normal uppercase tracking-[0.22em] text-gray-500 dark:text-gray-400">
                 Selected clients
@@ -80,21 +92,6 @@ export default function AboutPage() {
             </section>
           </div>
         </div>
-
-        <figure>
-          <img
-            src="/images/about/cole-beal-768.webp"
-            srcSet="/images/about/cole-beal-480.webp 480w, /images/about/cole-beal-768.webp 768w, /images/about/cole-beal-1200.webp 1200w"
-            sizes="(min-width: 1536px) 28vw, (min-width: 1024px) 24vw, 100vw"
-            alt="Portrait of photographer Cole Beal"
-            width="1200"
-            height="1200"
-            className="aspect-square w-full object-cover object-center"
-          />
-          <figcaption className="mt-3 text-[10px] uppercase tracking-[0.18em] text-gray-500 dark:text-gray-400">
-            Cole Beal · Photographer
-          </figcaption>
-        </figure>
       </div>
     </section>
   )

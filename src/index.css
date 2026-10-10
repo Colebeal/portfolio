@@ -39,6 +39,10 @@
 } */
 
 :root {
+  --portfolio-accent-rgb: 119 0 17;
+  --portfolio-accent-contrast: #ffffff;
+  --portfolio-accent-strong-opacity: 1;
+  --portfolio-accent-subtle-opacity: 0.15;
   font-family:
     Gt-Planar,
     system-ui,
@@ -149,8 +153,7 @@ button:hover {
 }
 
 :focus-visible {
-  outline: 3px solid #f59e0b;
-  outline-offset: 3px;
+  outline: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -165,9 +168,45 @@ button:hover {
 }
 
 .dark {
+  --portfolio-accent-rgb: 255 255 255;
+  --portfolio-accent-contrast: #111111;
+  --portfolio-accent-strong-opacity: 0.6;
+  --portfolio-accent-subtle-opacity: 0.25;
   color: #ffffff;
-  /* background-color: #042f2e; */
   background-color: #111111;
+}
+
+.portfolio-accent-text {
+  color: rgb(var(--portfolio-accent-rgb));
+}
+
+.portfolio-accent-fill {
+  color: var(--portfolio-accent-contrast);
+  background-color: rgb(var(--portfolio-accent-rgb));
+}
+
+.portfolio-accent-background {
+  background-color: rgb(var(--portfolio-accent-rgb));
+}
+
+.portfolio-accent-border {
+  border-color: rgb(var(--portfolio-accent-rgb));
+}
+
+.portfolio-accent-border-strong {
+  border-color: rgb(
+    var(--portfolio-accent-rgb) / var(--portfolio-accent-strong-opacity)
+  );
+}
+
+.portfolio-accent-border-muted {
+  border-color: rgb(var(--portfolio-accent-rgb) / 0.3);
+}
+
+.portfolio-accent-border-subtle {
+  border-color: rgb(
+    var(--portfolio-accent-rgb) / var(--portfolio-accent-subtle-opacity)
+  );
 }
 
 #wrapper {

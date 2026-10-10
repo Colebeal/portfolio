@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 import { motion as m } from "framer-motion"
 
 import { portfolioCollections } from "../../assets/sliderData"
-import GalleryNav from "./GalleryNav"
 import BlurImage from "./BlurImage"
 import AboutPage from "./AboutPage"
 
@@ -13,7 +12,6 @@ export default function Gallery({
   setCurrentFolder,
   setActiveView,
   activeView,
-  menuHandler,
 }) {
   const initialFolder = useRef(currentFolder)
   const initialView = useRef(activeView)
@@ -105,7 +103,7 @@ export default function Gallery({
           id={`collection-${collection.slug}`}
           data-index-section="collection"
           data-collection-index={collectionIndex}
-          className="scroll-mt-0 border-b border-black px-4 py-12 dark:border-white/30 md:px-10 lg:px-12 lg:py-16 2xl:px-16"
+          className="portfolio-accent-border-strong scroll-mt-20 border-b px-4 py-12 md:px-10 lg:scroll-mt-0 lg:px-12 lg:py-16 2xl:px-16"
           aria-labelledby={`heading-${collection.slug}`}
         >
           <header className="mb-8 flex items-end justify-between gap-8">
@@ -116,7 +114,7 @@ export default function Gallery({
               </p>
               <h2
                 id={`heading-${collection.slug}`}
-                className="text-3xl text-teal-900 dark:text-white md:text-5xl"
+                className="portfolio-accent-text text-3xl md:text-5xl"
               >
                 {collection.title}
               </h2>
@@ -166,11 +164,6 @@ export default function Gallery({
           Continue from the beginning
         </button>
       </footer>
-
-      <GalleryNav
-        menuHandler={menuHandler}
-        viewerHandler={() => setActiveView("viewer")}
-      />
     </m.section>
   )
 }
@@ -181,5 +174,4 @@ Gallery.propTypes = {
   setCurrentFolder: PropTypes.func.isRequired,
   setActiveView: PropTypes.func.isRequired,
   activeView: PropTypes.oneOf(["gallery", "about"]).isRequired,
-  menuHandler: PropTypes.func.isRequired,
 }
