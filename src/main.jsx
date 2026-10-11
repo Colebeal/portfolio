@@ -5,13 +5,16 @@ import { BrowserRouter } from "react-router-dom"
 import { MotionConfig } from "framer-motion"
 
 import AnimatedRoutes from "./routes/AnimatedRoutes"
+import PortfolioDataProvider from "./sanity/PortfolioDataProvider"
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
-      <MotionConfig reducedMotion="user">
-        <AnimatedRoutes />
-      </MotionConfig>
+      <PortfolioDataProvider>
+        <MotionConfig reducedMotion="user">
+          <AnimatedRoutes />
+        </MotionConfig>
+      </PortfolioDataProvider>
     </BrowserRouter>
   </React.StrictMode>,
 )

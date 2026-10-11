@@ -2,7 +2,7 @@ import { useEffect, useLayoutEffect, useRef } from "react"
 import PropTypes from "prop-types"
 import { motion as m } from "framer-motion"
 
-import { portfolioCollections } from "../../assets/sliderData"
+import usePortfolioCollections from "../../sanity/usePortfolioCollections"
 import BlurImage from "./BlurImage"
 import AboutPage from "./AboutPage"
 
@@ -13,6 +13,7 @@ export default function Gallery({
   setActiveView,
   activeView,
 }) {
+  const portfolioCollections = usePortfolioCollections()
   const initialFolder = useRef(currentFolder)
   const initialView = useRef(activeView)
 
@@ -25,7 +26,7 @@ export default function Gallery({
     document
       .getElementById(`collection-${activeCollection.slug}`)
       ?.scrollIntoView()
-  }, [])
+  }, [portfolioCollections])
 
   useEffect(() => {
     const sections = document.querySelectorAll("[data-index-section]")
@@ -71,7 +72,7 @@ export default function Gallery({
 
     window.addEventListener("wheel", enterIndex, { passive: false })
     return () => window.removeEventListener("wheel", enterIndex)
-  }, [activeView, setActiveView, setCurrentFolder])
+  }, [activeView, portfolioCollections, setActiveView, setCurrentFolder])
 
   const enlargeImage = (collectionIndex, imageIndex) => {
     setCurrentFolder(collectionIndex)

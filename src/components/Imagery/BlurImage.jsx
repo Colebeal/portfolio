@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react"
+import { useLayoutEffect, useMemo, useRef, useState } from "react"
 import { decode } from "blurhash"
 import PropTypes from "prop-types"
 
@@ -32,6 +32,8 @@ export default function BlurImage({
 }) {
   const [loaded, setLoaded] = useState(false)
   const [failed, setFailed] = useState(false)
+  const [fitSize, setFitSize] = useState(null)
+  const fitFrameRef = useRef(null)
   const responsiveImage = getResponsiveImageProps(src)
   const sizes = fit
     ? "(min-width: 1536px) calc(100vw - 24rem), (min-width: 1024px) calc(100vw - 22rem), 90vw"
@@ -52,7 +54,43 @@ export default function BlurImage({
 
   const aspectRatio =
     blurWidth && blurHeight ? blurWidth / blurHeight : undefined
-  const isHorizontal = aspectRatio > 1
+
+  useLayoutEffect(() => {
+    if (!fit || !blurWidth || !blurHeight) return undefined
+
+    const frame = fitFrameRef.current
+    const container = frame?.parentElement
+    if (!container) return undefined
+
+    const updateFitSize = () => {
+      const bounds = container.getBoundingClientRect()
+      const scale = Math.min(
+        bounds.width / blurWidth,
+        bounds.height / blurHeight,
+      )
+
+      setFitSize({
+        width: Math.round(blurWidth * scale),
+        height: Math.round(blurHeight * scale),
+      })
+    }
+
+    updateFitSize()
+    const observer = new ResizeObserver(updateFitSize)
+    observer.observe(container)
+
+    return () => observer.disconnect()
+  }, [blurHeight, blurWidth, fit])
+
+  const placeholder = blurDataUrl ? (
+    <span
+      aria-hidden="true"
+      className={`pointer-events-none absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-500 ease-out ${
+        loaded ? "opacity-0" : "opacity-100"
+      }`}
+      style={{ backgroundImage: `url("${blurDataUrl}")` }}
+    />
+  ) : null
 
   if (failed) {
     return (
@@ -71,6 +109,40 @@ export default function BlurImage({
   // letterboxed photographs.
   if (fit) {
     return (
+      <span
+        ref={fitFrameRef}
+        className="relative block max-h-full max-w-full shrink-0 overflow-hidden leading-none"
+        style={{
+          aspectRatio,
+          width: fitSize?.width ?? blurWidth,
+          height: fitSize?.height ?? blurHeight,
+        }}
+      >
+        {placeholder}
+        <img
+          src={responsiveImage.src}
+          srcSet={responsiveImage.srcSet}
+          sizes={responsiveImage.srcSet ? sizes : undefined}
+          alt={alt}
+          width={blurWidth}
+          height={blurHeight}
+          onLoad={handleLoad}
+          onError={() => setFailed(true)}
+          className={`absolute inset-0 block h-full w-full object-contain transition-opacity duration-500 ease-out ${
+            loaded ? "opacity-100" : "opacity-0"
+          }`}
+          {...props}
+        />
+      </span>
+    )
+  }
+
+  return (
+    <span
+      className="relative block w-full max-w-full overflow-hidden leading-none"
+      style={{ aspectRatio }}
+    >
+      {placeholder}
       <img
         src={responsiveImage.src}
         srcSet={responsiveImage.srcSet}
@@ -78,51 +150,14 @@ export default function BlurImage({
         alt={alt}
         width={blurWidth}
         height={blurHeight}
+        className={`${className} absolute inset-0 block h-full w-full object-contain transition-opacity duration-500 ease-out ${
+          loaded ? "opacity-100" : "opacity-0"
+        }`}
         onLoad={handleLoad}
         onError={() => setFailed(true)}
-        className="block h-auto max-h-full w-auto max-w-full object-contain"
-        style={{
-          aspectRatio,
-          backgroundImage:
-            !loaded && blurDataUrl ? `url("${blurDataUrl}")` : undefined,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
         {...props}
       />
-    )
-  }
-
-  // Gallery: plain img with background-image blurhash
-  const style = {
-    aspectRatio,
-    ...(isHorizontal
-      ? { width: "100%", height: "auto" }
-      : { width: "auto", height: "100%" }),
-    ...(!loaded && blurDataUrl
-      ? {
-          backgroundImage: `url("${blurDataUrl}")`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          maxInlineSize: "100%",
-        }
-      : {}),
-  }
-
-  return (
-    <img
-      src={responsiveImage.src}
-      srcSet={responsiveImage.srcSet}
-      sizes={responsiveImage.srcSet ? sizes : undefined}
-      alt={alt}
-      className={className}
-      style={style}
-      onLoad={handleLoad}
-      onError={() => setFailed(true)}
-      {...props}
-    />
+    </span>
   )
 }
 

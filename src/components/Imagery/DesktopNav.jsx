@@ -1,23 +1,8 @@
 import PropTypes from "prop-types"
 import { BsXLg } from "react-icons/bs"
 
-import { portfolioCollections } from "../../assets/sliderData"
+import usePortfolioCollections from "../../sanity/usePortfolioCollections"
 import ThemeToggle from "../ThemeToggle"
-
-const collectionGroups = [
-  {
-    label: "Selected Works",
-    collections: portfolioCollections
-      .map((collection, index) => ({ collection, index }))
-      .filter(({ collection }) => collection.eyebrow !== "Moments"),
-  },
-  {
-    label: "Moments",
-    collections: portfolioCollections
-      .map((collection, index) => ({ collection, index }))
-      .filter(({ collection }) => collection.eyebrow === "Moments"),
-  },
-]
 
 export function NavigationPanel({
   currentFolder,
@@ -29,6 +14,29 @@ export function NavigationPanel({
   onClose,
   controlsAtBottom = false,
 }) {
+  const portfolioCollections = usePortfolioCollections()
+  const collectionGroups = [
+    {
+      label: "Selected Works",
+      collections: portfolioCollections
+        .map((collection, index) => ({ collection, index }))
+        .filter(
+          ({ collection }) =>
+            collection.section !== "moments" &&
+            collection.eyebrow !== "Moments",
+        ),
+    },
+    {
+      label: "Moments",
+      collections: portfolioCollections
+        .map((collection, index) => ({ collection, index }))
+        .filter(
+          ({ collection }) =>
+            collection.section === "moments" ||
+            collection.eyebrow === "Moments",
+        ),
+    },
+  ]
   const scrollAfterViewChange = (targetId) => {
     window.requestAnimationFrame(() => {
       window.requestAnimationFrame(() => {

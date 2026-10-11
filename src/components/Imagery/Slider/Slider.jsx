@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { AnimatePresence, motion as m } from "framer-motion"
 import { useSwipeable } from "react-swipeable"
 
-import { portfolioCollections } from "../../../assets/sliderData"
+import usePortfolioCollections from "../../../sanity/usePortfolioCollections"
 import { getResponsiveImageProps } from "../../../utils/resolveImageSrc"
 import ImageryNav from "../ImageryNav"
 import BlurImage from "../BlurImage"
@@ -16,6 +16,7 @@ export default function Slider({
   isTransitioning,
   setIsTransitioning,
 }) {
+  const portfolioCollections = usePortfolioCollections()
   const prevCursorRef = useRef(null)
   const nextCursorRef = useRef(null)
   const wheelDistanceRef = useRef(0)
@@ -42,6 +43,7 @@ export default function Slider({
   }, [
     currentFolder,
     isTransitioning,
+    portfolioCollections,
     setCurrentFolder,
     setSlideIndex,
     slideIndex,
@@ -60,6 +62,7 @@ export default function Slider({
     collection.images.length,
     currentFolder,
     isTransitioning,
+    portfolioCollections.length,
     setCurrentFolder,
     setSlideIndex,
     slideIndex,
@@ -110,7 +113,7 @@ export default function Slider({
       }
       preload.src = image.src
     })
-  }, [currentFolder, slideIndex])
+  }, [currentFolder, portfolioCollections, slideIndex])
 
   useEffect(
     () => () => {
@@ -132,7 +135,13 @@ export default function Slider({
       setCurrentFolder(nextFolder)
       setSlideIndex(0)
     },
-    [currentFolder, isTransitioning, setCurrentFolder, setSlideIndex],
+    [
+      currentFolder,
+      isTransitioning,
+      portfolioCollections.length,
+      setCurrentFolder,
+      setSlideIndex,
+    ],
   )
 
   const swipeHandlers = useSwipeable({

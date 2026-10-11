@@ -13,9 +13,9 @@ import Menu from "../components/Imagery/Menu/Menu"
 import Gallery from "../components/Imagery/Gallery"
 import MiniMenu from "../components/Imagery/MiniMenu"
 import DesktopNav from "../components/Imagery/DesktopNav"
-import { portfolioCollections } from "../assets/sliderData"
+import usePortfolioCollections from "../sanity/usePortfolioCollections"
 
-function getRouteState(pathname) {
+function getRouteState(pathname, portfolioCollections) {
   if (pathname === "/" || pathname === "/about") {
     return {
       activeView: "about",
@@ -69,7 +69,10 @@ function getRouteState(pathname) {
 export default function Imagery() {
   const location = useLocation()
   const navigate = useNavigate()
-  const initialRoute = useRef(getRouteState(location.pathname)).current
+  const portfolioCollections = usePortfolioCollections()
+  const initialRoute = useRef(
+    getRouteState(location.pathname, portfolioCollections),
+  ).current
   const [slideIndex, setSlideIndex] = useState(initialRoute.slideIndex)
   const [menuStatus, setMenuStatus] = useState(false)
   const [currentFolder, setCurrentFolder] = useState(initialRoute.currentFolder)
@@ -95,7 +98,7 @@ export default function Imagery() {
           ?.scrollIntoView({ behavior: "smooth" })
       })
     })
-  }, [currentFolder])
+  }, [currentFolder, portfolioCollections])
 
   const showAbout = useCallback(() => {
     setActiveView("about")
@@ -109,11 +112,11 @@ export default function Imagery() {
   }, [])
 
   useLayoutEffect(() => {
-    const route = getRouteState(location.pathname)
+    const route = getRouteState(location.pathname, portfolioCollections)
     setActiveView(route.activeView)
     setCurrentFolder(route.currentFolder)
     setSlideIndex(route.slideIndex)
-  }, [location.pathname])
+  }, [location.pathname, portfolioCollections])
 
   useEffect(() => {
     const collection = portfolioCollections[currentFolder]
@@ -125,7 +128,14 @@ export default function Imagery() {
         : `/image/${collection.slug}/${slideIndex + 1}`
 
     if (location.pathname !== target) navigate(target, { replace: true })
-  }, [activeView, currentFolder, location.pathname, navigate, slideIndex])
+  }, [
+    activeView,
+    currentFolder,
+    location.pathname,
+    navigate,
+    portfolioCollections,
+    slideIndex,
+  ])
 
   useEffect(() => {
     document.body.style.overflow = activeView === "viewer" ? "hidden" : "auto"

@@ -32,7 +32,29 @@ function cloudinaryUrl(path, width) {
   return `${CLOUDINARY_BASE}/f_auto,q_auto:best,c_limit,w_${width}/${path}`
 }
 
+function sanityUrl(src, width) {
+  const url = new URL(src)
+  url.searchParams.set("auto", "format")
+  url.searchParams.set("fit", "max")
+  url.searchParams.set("w", width)
+  return url.href
+}
+
 export function getResponsiveImageProps(src) {
+  try {
+    const url = new URL(src)
+    if (url.hostname === "cdn.sanity.io") {
+      return {
+        src: sanityUrl(src, 1600),
+        srcSet: RESPONSIVE_WIDTHS.map(
+          (width) => `${sanityUrl(src, width)} ${width}w`,
+        ).join(", "),
+      }
+    }
+  } catch {
+    // Relative paths continue through the existing local-image handling.
+  }
+
   const path = getCloudinaryPath(src)
   if (!path) return { src: resolveImageSrc(src) }
 

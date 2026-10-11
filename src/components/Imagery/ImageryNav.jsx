@@ -2,13 +2,14 @@ import { useEffect, useRef } from "react"
 import PropTypes from "prop-types"
 import { motion as m } from "framer-motion"
 
-import { portfolioCollections } from "../../assets/sliderData"
+import usePortfolioCollections from "../../sanity/usePortfolioCollections"
 
 export default function ImageryNav({
   slideIndex,
   setSlideIndex,
   currentFolder,
 }) {
+  const portfolioCollections = usePortfolioCollections()
   const imageCount = portfolioCollections[currentFolder].images.length
   const railRef = useRef(null)
 
