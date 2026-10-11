@@ -15,6 +15,7 @@ export default function Slider({
   setCurrentFolder,
   isTransitioning,
   setIsTransitioning,
+  desktopMenuOpen,
 }) {
   const portfolioCollections = usePortfolioCollections()
   const prevCursorRef = useRef(null)
@@ -108,12 +109,13 @@ export default function Slider({
       preload.decoding = "async"
       if (image.srcSet) {
         preload.srcset = image.srcSet
-        preload.sizes =
-          "(min-width: 1536px) calc(100vw - 24rem), (min-width: 1024px) calc(100vw - 22rem), 90vw"
+        preload.sizes = desktopMenuOpen
+          ? "(min-width: 1536px) calc(100vw - 24rem), (min-width: 1024px) calc(100vw - 22rem), 90vw"
+          : "(min-width: 1024px) calc(100vw - 4rem), 90vw"
       }
       preload.src = image.src
     })
-  }, [currentFolder, portfolioCollections, slideIndex])
+  }, [currentFolder, desktopMenuOpen, portfolioCollections, slideIndex])
 
   useEffect(
     () => () => {
@@ -338,7 +340,11 @@ export default function Slider({
             transition={{ duration: 0.32, ease: [0.22, 1, 0.36, 1] }}
             onAnimationStart={() => setIsTransitioning(true)}
             onAnimationComplete={() => setIsTransitioning(false)}
-            className="z-10 flex h-[424px] w-[90vw] items-center justify-center md:h-[50vh] lg:h-[80vh] lg:w-[calc(100vw-22rem)] 2xl:w-[calc(100vw-24rem)]"
+            className={`z-10 flex h-[424px] w-[90vw] items-center justify-center transition-[width] duration-300 md:h-[50vh] lg:h-[80vh] ${
+              desktopMenuOpen
+                ? "lg:w-[calc(100vw-22rem)] 2xl:w-[calc(100vw-24rem)]"
+                : "lg:w-[calc(100vw-4rem)]"
+            }`}
           >
             <BlurImage
               className={currentImage.className}
@@ -350,6 +356,11 @@ export default function Slider({
               fit="contain"
               loading="eager"
               fetchPriority="high"
+              sizes={
+                desktopMenuOpen
+                  ? "(min-width: 1536px) calc(100vw - 24rem), (min-width: 1024px) calc(100vw - 22rem), 90vw"
+                  : "(min-width: 1024px) calc(100vw - 4rem), 90vw"
+              }
             />
           </m.div>
         </AnimatePresence>
@@ -371,4 +382,5 @@ Slider.propTypes = {
   setCurrentFolder: PropTypes.func.isRequired,
   isTransitioning: PropTypes.bool.isRequired,
   setIsTransitioning: PropTypes.func.isRequired,
+  desktopMenuOpen: PropTypes.bool.isRequired,
 }

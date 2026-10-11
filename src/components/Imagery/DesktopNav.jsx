@@ -1,4 +1,5 @@
 import PropTypes from "prop-types"
+import { AnimatePresence, motion as m } from "framer-motion"
 import { BsXLg } from "react-icons/bs"
 
 import usePortfolioCollections from "../../sanity/usePortfolioCollections"
@@ -12,6 +13,7 @@ export function NavigationPanel({
   setActiveView,
   onNavigate,
   onClose,
+  onCollapse,
   controlsAtBottom = false,
 }) {
   const portfolioCollections = usePortfolioCollections()
@@ -80,6 +82,21 @@ export function NavigationPanel({
   const showViewer = () => {
     setActiveView("viewer")
     onNavigate?.()
+  }
+
+  const showContact = () => {
+    setActiveView("about")
+    onNavigate?.()
+    window.requestAnimationFrame(() => {
+      window.requestAnimationFrame(() => {
+        const contact = document.getElementById("contact-form")
+        const trigger = contact?.querySelector("[data-contact-trigger]")
+        if (trigger?.getAttribute("aria-expanded") !== "true") {
+          trigger?.click()
+        }
+        contact?.scrollIntoView({ behavior: "smooth", block: "start" })
+      })
+    })
   }
 
   const viewControls = (
@@ -216,14 +233,15 @@ export function NavigationPanel({
         </div>
       )}
 
-      <footer className="portfolio-accent-border-strong border-t px-7 py-5 text-[11px] leading-relaxed">
-        <div className="flex gap-4">
-          <a
-            href="mailto:cole@colebeal.com"
-            className="underline-offset-4 hover:underline"
+      <footer className="portfolio-accent-border-strong h-[59px] border-t px-7 text-[11px] leading-relaxed">
+        <div className="flex h-full items-center gap-4">
+          <button
+            type="button"
+            onClick={showContact}
+            className="rounded-none border border-black/20 bg-white px-3 py-1 text-[11px] font-normal text-black transition-colors hover:bg-gray-100"
           >
             Email
-          </a>
+          </button>
           <a
             href="https://www.instagram.com/colebeal/"
             target="_blank"
@@ -232,17 +250,60 @@ export function NavigationPanel({
           >
             Instagram
           </a>
+          {onCollapse && (
+            <button
+              type="button"
+              onClick={onCollapse}
+              className="ml-auto rounded-none border-0 bg-transparent p-0 text-[11px] font-normal underline-offset-4 hover:underline"
+            >
+              Hide
+            </button>
+          )}
         </div>
       </footer>
     </>
   )
 }
 
-export default function DesktopNav(props) {
+export default function DesktopNav({ isOpen, onToggle, activeView, ...props }) {
   return (
-    <aside className="portfolio-accent-border-strong fixed inset-y-0 left-0 z-40 hidden w-72 flex-col border-r bg-white text-left dark:bg-[#111111] lg:flex 2xl:w-80">
-      <NavigationPanel {...props} />
-    </aside>
+    <>
+      <AnimatePresence initial={false}>
+        {isOpen && (
+          <m.aside
+            initial={{ x: "-100%" }}
+            animate={{ x: 0 }}
+            exit={{ x: "-100%" }}
+            transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+            className="portfolio-accent-border-strong fixed inset-y-0 left-0 z-40 hidden w-72 flex-col border-r bg-white text-left dark:bg-[#111111] lg:flex 2xl:w-80"
+          >
+            <NavigationPanel
+              {...props}
+              activeView={activeView}
+              onCollapse={onToggle}
+            />
+          </m.aside>
+        )}
+      </AnimatePresence>
+
+      <AnimatePresence initial={false}>
+        {!isOpen && activeView === "viewer" && (
+          <m.button
+            type="button"
+            initial={{ x: "-100%" }}
+            animate={{ x: 0 }}
+            exit={{ x: "-100%" }}
+            transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }}
+            onClick={onToggle}
+            style={{ borderRadius: 0 }}
+            className="portfolio-accent-border-strong fixed bottom-0 left-0 z-40 hidden h-[59px] w-24 items-center justify-center border border-b-0 border-l-0 bg-white text-[11px] uppercase tracking-[0.16em] text-black hover:bg-gray-100 lg:flex"
+            aria-label="Show menu"
+          >
+            Menu
+          </m.button>
+        )}
+      </AnimatePresence>
+    </>
   )
 }
 
@@ -258,7 +319,12 @@ NavigationPanel.propTypes = {
   ...navigationPropTypes,
   onNavigate: PropTypes.func,
   onClose: PropTypes.func,
+  onCollapse: PropTypes.func,
   controlsAtBottom: PropTypes.bool,
 }
 
-DesktopNav.propTypes = navigationPropTypes
+DesktopNav.propTypes = {
+  ...navigationPropTypes,
+  isOpen: PropTypes.bool.isRequired,
+  onToggle: PropTypes.func.isRequired,
+}

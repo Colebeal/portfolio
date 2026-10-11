@@ -62,3 +62,21 @@ The generator reads local images from `public/`, fetches remote images, and upda
 The project is configured for Netlify. `netlify.toml` redirects requests to `index.html` so React Router can handle direct navigation to nested routes.
 
 Google Analytics and Google Tag Manager are initialized in `index.html`. Review both configurations before adding more analytics tags to prevent duplicate events.
+
+## Contact email
+
+The About form posts to the Netlify Function at `/api/contact`, which sends the inquiry to `cole@colebeal.com` through Resend. The API key stays server-side.
+
+For local development, add `RESEND_API_KEY` to `.env` and run the site through Netlify Dev so the function route is available:
+
+```bash
+npx netlify dev
+```
+
+To send the standalone Resend test message intentionally, run:
+
+```bash
+npm run email:test
+```
+
+For production, add `RESEND_API_KEY` in the Netlify project environment variables with Functions access, then redeploy. After verifying `colebeal.com` in Resend, optionally set `RESEND_FROM_EMAIL` to a sender on that domain, such as `Cole Beal Portfolio <hello@colebeal.com>`.

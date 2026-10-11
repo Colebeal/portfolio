@@ -209,6 +209,13 @@ button:hover {
   );
 }
 
+
+.portfolio-contact-field:focus {
+  border-color: rgb(
+    var(--portfolio-accent-rgb) / var(--portfolio-accent-strong-opacity)
+  );
+}
+
 #wrapper {
   min-height: 100vh;
   display: flex;

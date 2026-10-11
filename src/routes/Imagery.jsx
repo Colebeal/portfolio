@@ -75,6 +75,7 @@ export default function Imagery() {
   ).current
   const [slideIndex, setSlideIndex] = useState(initialRoute.slideIndex)
   const [menuStatus, setMenuStatus] = useState(false)
+  const [desktopMenuOpen, setDesktopMenuOpen] = useState(true)
   const [currentFolder, setCurrentFolder] = useState(initialRoute.currentFolder)
   const [activeView, setActiveView] = useState(initialRoute.activeView)
   const [isTransitioning, setIsTransitioning] = useState(false)
@@ -85,6 +86,10 @@ export default function Imagery() {
 
   const closeMenu = useCallback(() => {
     setMenuStatus(false)
+  }, [])
+
+  const toggleDesktopMenu = useCallback(() => {
+    setDesktopMenuOpen((current) => !current)
   }, [])
 
   const showIndex = useCallback(() => {
@@ -154,6 +159,8 @@ export default function Imagery() {
       className="w-full overflow-x-hidden"
     >
       <DesktopNav
+        isOpen={desktopMenuOpen}
+        onToggle={toggleDesktopMenu}
         currentFolder={currentFolder}
         setCurrentFolder={setCurrentFolder}
         setSlideIndex={setSlideIndex}
@@ -185,7 +192,9 @@ export default function Imagery() {
         {/* Gallery and Slider Logic */}
 
         <main
-          className={`min-h-screen w-full transition-transform duration-300 ease-out lg:pl-72 lg:transform-none 2xl:pl-80 ${
+          className={`min-h-screen w-full transition-[transform,padding] duration-300 ease-out lg:transform-none ${
+            desktopMenuOpen ? "lg:pl-72 2xl:pl-80" : "lg:pl-0"
+          } ${
             menuStatus ? "translate-x-72" : "transform-none"
           }`}
         >
@@ -198,6 +207,8 @@ export default function Imagery() {
                 setCurrentFolder={setCurrentFolder}
                 setActiveView={setActiveView}
                 activeView={activeView}
+                desktopMenuOpen={desktopMenuOpen}
+                onDesktopMenuToggle={toggleDesktopMenu}
               />
             )}
             {activeView === "viewer" && (
@@ -209,6 +220,7 @@ export default function Imagery() {
                 setCurrentFolder={setCurrentFolder}
                 isTransitioning={isTransitioning}
                 setIsTransitioning={setIsTransitioning}
+                desktopMenuOpen={desktopMenuOpen}
               />
             )}
           </AnimatePresence>

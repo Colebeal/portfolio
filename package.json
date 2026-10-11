@@ -7,8 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "test": "node --test scripts/healthcheck.test.mjs",
+    "test": "node --test scripts/*.test.mjs",
     "check": "npm run lint && npm test && npm run build",
+    "email:test": "node --env-file=.env scripts/sendTestEmail.mjs",
     "preview": "vite preview",
     "gen-blur": "node scripts/generateBlurhash.mjs"
   },
@@ -20,7 +21,8 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
     "react-router-dom": "^6.15.0",
-    "react-swipeable": "^7.0.1"
+    "react-swipeable": "^7.0.1",
+    "resend": "^6.32.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

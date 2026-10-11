@@ -12,6 +12,8 @@ export default function Gallery({
   setCurrentFolder,
   setActiveView,
   activeView,
+  desktopMenuOpen,
+  onDesktopMenuToggle,
 }) {
   const portfolioCollections = usePortfolioCollections()
   const initialFolder = useRef(currentFolder)
@@ -60,7 +62,10 @@ export default function Gallery({
       const isDesktop = window.matchMedia("(min-width: 1024px)").matches
       const isDownwardGesture =
         event.deltaY > 2 && Math.abs(event.deltaY) > Math.abs(event.deltaX)
-      if (!isDesktop || !isDownwardGesture) return
+      const isContactOpen = document.querySelector(
+        '[data-contact-trigger][aria-expanded="true"]',
+      )
+      if (!isDesktop || !isDownwardGesture || isContactOpen) return
 
       event.preventDefault()
       setCurrentFolder(0)
@@ -96,7 +101,10 @@ export default function Gallery({
       id="gallery"
       aria-label="Complete photography index"
     >
-      <AboutPage />
+      <AboutPage
+        desktopMenuOpen={desktopMenuOpen}
+        onDesktopMenuToggle={onDesktopMenuToggle}
+      />
 
       {portfolioCollections.map((collection, collectionIndex) => (
         <section
@@ -175,4 +183,6 @@ Gallery.propTypes = {
   setCurrentFolder: PropTypes.func.isRequired,
   setActiveView: PropTypes.func.isRequired,
   activeView: PropTypes.oneOf(["gallery", "about"]).isRequired,
+  desktopMenuOpen: PropTypes.bool.isRequired,
+  onDesktopMenuToggle: PropTypes.func.isRequired,
 }
