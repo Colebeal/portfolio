@@ -91,7 +91,6 @@ export default async function contact(request) {
 }
 
 export const config = {
-  path: "/api/contact",
   method: "POST",
   rateLimit: {
     windowLimit: 5,
