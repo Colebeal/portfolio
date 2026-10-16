@@ -5,6 +5,7 @@ import { prefetchPortfolioCollections } from "./fetchPortfolioCollections"
 import {
   fallbackCollections,
   PortfolioDataContext,
+  PortfolioDataReadyContext,
 } from "./PortfolioDataContext"
 
 const galleryClassName =
@@ -26,6 +27,7 @@ function normalizeCollections(collections) {
 
 export default function PortfolioDataProvider({ children }) {
   const [collections, setCollections] = useState(fallbackCollections)
+  const [isReady, setIsReady] = useState(false)
 
   useEffect(() => {
     let active = true
@@ -35,10 +37,12 @@ export default function PortfolioDataProvider({ children }) {
         if (active && sanityCollections?.length) {
           setCollections(normalizeCollections(sanityCollections))
         }
+        if (active) setIsReady(true)
       })
       .catch((error) => {
         if (active) {
           console.warn("Sanity content unavailable; using bundled portfolio data.", error)
+          setIsReady(true)
         }
       })
 
@@ -50,9 +54,11 @@ export default function PortfolioDataProvider({ children }) {
   const value = useMemo(() => collections, [collections])
 
   return (
-    <PortfolioDataContext.Provider value={value}>
-      {children}
-    </PortfolioDataContext.Provider>
+    <PortfolioDataReadyContext.Provider value={isReady}>
+      <PortfolioDataContext.Provider value={value}>
+        {children}
+      </PortfolioDataContext.Provider>
+    </PortfolioDataReadyContext.Provider>
   )
 }
 

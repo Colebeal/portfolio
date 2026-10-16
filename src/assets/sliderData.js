@@ -2572,7 +2572,7 @@ const portfolioCollections = [
   },
   {
     slug: "sunroom",
-    eyebrow: "Music Video",
+    eyebrow: "I Want You · Music Video",
     title: "Sunroom Band",
     images: sunroom,
   },

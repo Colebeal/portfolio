@@ -1,5 +1,6 @@
 import {
   useCallback,
+  useContext,
   useEffect,
   useLayoutEffect,
   useRef,
@@ -14,6 +15,7 @@ import Gallery from "../components/Imagery/Gallery"
 import MiniMenu from "../components/Imagery/MiniMenu"
 import DesktopNav from "../components/Imagery/DesktopNav"
 import usePortfolioCollections from "../sanity/usePortfolioCollections"
+import { PortfolioDataReadyContext } from "../sanity/PortfolioDataContext"
 
 function getRouteState(pathname, portfolioCollections) {
   if (pathname === "/" || pathname === "/about") {
@@ -70,15 +72,40 @@ export default function Imagery() {
   const location = useLocation()
   const navigate = useNavigate()
   const portfolioCollections = usePortfolioCollections()
+  const portfolioDataReady = useContext(PortfolioDataReadyContext)
   const initialRoute = useRef(
     getRouteState(location.pathname, portfolioCollections),
   ).current
   const [slideIndex, setSlideIndex] = useState(initialRoute.slideIndex)
   const [menuStatus, setMenuStatus] = useState(false)
   const [desktopMenuOpen, setDesktopMenuOpen] = useState(true)
-  const [currentFolder, setCurrentFolder] = useState(initialRoute.currentFolder)
+  const [currentCollectionSlug, setCurrentCollectionSlug] = useState(
+    portfolioCollections[initialRoute.currentFolder]?.slug,
+  )
   const [activeView, setActiveView] = useState(initialRoute.activeView)
+  const [routeIsReady, setRouteIsReady] = useState(initialRoute.explicit)
   const [isTransitioning, setIsTransitioning] = useState(false)
+  const matchedFolder = portfolioCollections.findIndex(
+    ({ slug }) => slug === currentCollectionSlug,
+  )
+  const currentFolder = matchedFolder >= 0 ? matchedFolder : 0
+
+  const setCurrentFolder = useCallback(
+    (nextFolder) => {
+      setCurrentCollectionSlug((currentSlug) => {
+        const existingFolder = portfolioCollections.findIndex(
+          ({ slug }) => slug === currentSlug,
+        )
+        const resolvedFolder =
+          typeof nextFolder === "function"
+            ? nextFolder(existingFolder >= 0 ? existingFolder : 0)
+            : nextFolder
+
+        return portfolioCollections[resolvedFolder]?.slug || currentSlug
+      })
+    },
+    [portfolioCollections],
+  )
 
   const menuHandler = useCallback(() => {
     setMenuStatus((current) => !current)
@@ -121,9 +148,17 @@ export default function Imagery() {
     setActiveView(route.activeView)
     setCurrentFolder(route.currentFolder)
     setSlideIndex(route.slideIndex)
-  }, [location.pathname, portfolioCollections])
+    if (portfolioDataReady) setRouteIsReady(true)
+  }, [
+    location.pathname,
+    portfolioCollections,
+    portfolioDataReady,
+    setCurrentFolder,
+  ])
 
   useEffect(() => {
+    if (!routeIsReady) return
+
     const collection = portfolioCollections[currentFolder]
     const target =
       activeView === "about"
@@ -139,6 +174,7 @@ export default function Imagery() {
     location.pathname,
     navigate,
     portfolioCollections,
+    routeIsReady,
     slideIndex,
   ])
 
@@ -181,6 +217,7 @@ export default function Imagery() {
           menuHandler={menuHandler}
           homeHandler={showAbout}
           menuStatus={menuStatus}
+          hasShadow={activeView === "gallery"}
           primaryLabel={activeView === "gallery" ? "Loupe" : "Index"}
           primaryHandler={
             activeView === "gallery"
@@ -199,7 +236,8 @@ export default function Imagery() {
           }`}
         >
           <AnimatePresence mode="wait">
-            {(activeView === "gallery" || activeView === "about") && (
+            {routeIsReady &&
+              (activeView === "gallery" || activeView === "about") && (
               <Gallery
                 key={"gallery"}
                 setSlideIndex={setSlideIndex}
@@ -211,7 +249,7 @@ export default function Imagery() {
                 onDesktopMenuToggle={toggleDesktopMenu}
               />
             )}
-            {activeView === "viewer" && (
+            {routeIsReady && activeView === "viewer" && (
               <Slider
                 key={"slider"}
                 slideIndex={slideIndex}

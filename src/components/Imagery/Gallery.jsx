@@ -16,7 +16,9 @@ export default function Gallery({
   onDesktopMenuToggle,
 }) {
   const portfolioCollections = usePortfolioCollections()
-  const initialFolder = useRef(currentFolder)
+  const initialCollectionSlug = useRef(
+    portfolioCollections[currentFolder]?.slug,
+  )
   const initialView = useRef(activeView)
 
   useLayoutEffect(() => {
@@ -24,7 +26,10 @@ export default function Gallery({
       document.getElementById("about-index")?.scrollIntoView()
       return
     }
-    const activeCollection = portfolioCollections[initialFolder.current]
+    const activeCollection = portfolioCollections.find(
+      ({ slug }) => slug === initialCollectionSlug.current,
+    )
+    if (!activeCollection) return
     document
       .getElementById(`collection-${activeCollection.slug}`)
       ?.scrollIntoView()
